@@ -68,7 +68,7 @@
                 var image = data[i][4];
                 htmlString += '<li class="nav-item">';
                 htmlString += '<a class="channel nav-link" data-value="'+url+'"';
-                htmlString += ' href="'+url+'" target="_blank">'+title+'</a>';
+                htmlString += ' href="'+url+'" >'+title+'</a>';
                 htmlString += '</li>';
             }
 
@@ -100,11 +100,11 @@
         tvlists(sqlstring);
     }
     if (t == "1"){
-        var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
+        var sqlstring = "select pid,title,'https://pkj99.github.io/demo/m3u8/iptv/chinatv/'||title||'.m3u8' as url,catalog,image from iptv where catalog in ('央视','卫视')";
         tvlists2(sqlstring);
     }
     if (t == "2"){
-        var sqlstring = "select * from iptv where catalog in ('央视','卫视')";
+        var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
         tvlists2(sqlstring);
     }
     if (t == "3"){
