@@ -30,6 +30,7 @@
     $(document).ready(function () {
         $(".channel").click(function () {
             let channel = $(this).data("value");
+            console.log(channel);
             player.configure({ source: channel, });
             player.play();
         });
