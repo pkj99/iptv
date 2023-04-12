@@ -60,6 +60,10 @@
         var sqlstring = "select * from iptv where catalog = '台湾頻道'";
         tvlists(sqlstring);
     }
+    if (t == "1"){
+        var sqlstring = "select * from iptv where catalog = '四季頻道'";
+        tvlists(sqlstring);
+    }
 
 
     // if (t==1001){ document.getElementById('menu-1001').classList.add("active"); } 
