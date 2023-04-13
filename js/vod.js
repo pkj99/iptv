@@ -85,6 +85,7 @@
                 var title = data[i][1];
                 var url = data[i][2];
                 var image = data[i][4];
+                image = 'images/iptv/' + title + '.png';
                 htmlString += `<li class="col-lg-10 col-md-10 col-sm-5 col-xs-4">`;
                 htmlString += `<div class="myui-vodlist__box">`;
                 htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
