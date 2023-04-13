@@ -1,70 +1,52 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Access-Control-Allow-Origin" content="*">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    
-  <!-- <script src="chrome-extension://jhffgcfmcckgmioipfnmbannkpncfipo/util.js"></script>
-  <script src="chrome-extension://jhffgcfmcckgmioipfnmbannkpncfipo/pagejs.js"></script>
-  <script src="//www.gstatic.com/eureka/clank/112/cast_sender.js"></script> -->
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Askbootstrap">
   <meta name="author" content="PKJWeb">
   <title>FREE IPTV Player - Play M3U Stream Files Online</title>
 
-  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/all.min.css" rel="stylesheet" type="text/css"> -->
 
-  <link href="css/main.css" rel="stylesheet">
+  <!-- <link href="css/main.css" rel="stylesheet"> -->
   <link href="css/osahan.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet">
 
-  <!-- <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script> -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.chromecast-plugin/latest/clappr-chromecast-plugin.min.js"></script>
-  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mokoshalb/clappr-ads/ads.js"></script> -->
-  <script type="text/javascript" src="js/player-error.js"></script>
-  <!-- <script type="text/javascript" src="dist/vast-ads.js"></script> -->
-
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <script src="vendor/owl-carousel/owl.carousel.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-
-  <script type="text/javascript" src='js/sql.js'></script>
-  <script type="text/javascript" src="js/vod.js"></script>
-
-  <script src="js/custom.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  
+  <script src="js/hls.min.js"></script>
+  <script src="js/DPlayer.min.js"></script>
 
 </head>
 
 <body id="page-top">
   <div style="text-align:center">
-
+<!-- 
     <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
       &nbsp;&nbsp;
       <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
         <i class="fas fa-bars"></i>
       </button> &nbsp;&nbsp;
-      <p style="text-align: center;"><a href="watch.html">
-          <img style="float: left;" src="img/favicon.png"
-            alt="" height="50"></a></p>
+      <p style="text-align: center;">
+        <a href="watch.html"><img style="float: left;" src="images/favicon.png"  alt="" height="50"></a></p>
       <div> &nbsp;&nbsp;
       <a style="color:white" href="watch.html?t=0">台灣頻道</a> &nbsp;&nbsp;
       <a style="color:white" href="watch.html?t=1">大陸頻道</a> &nbsp;&nbsp;
       <a style="color:white" href="watch.html?t=2">Youtube頻道</a> &nbsp;&nbsp;
-      <a style="color:white" href="watch.html?t=3">其他頻道</a>
+      <a style="color:white" href="watch.html?t=3">新聞</a> &nbsp;&nbsp;
+      <a style="color:white" href="watch.html?t=4">體育</a> &nbsp;&nbsp;
+      <a style="color:white" href="watch.html?t=5">電影</a> &nbsp;&nbsp;
+      <a style="color:white" href="watch.html?t=6">綜藝</a> &nbsp;&nbsp;
       </div>
+
       <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
         <div class="input-group">
           <input type="text" class="form-control search" onkeyup="bait(this)" placeholder="Search for...">
@@ -76,15 +58,20 @@
         </div>
       </div>
 
-      <!-- <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">
-        <li class="nav-item mx-1">
-          <a class="nav-link" href="https://freeiptvplayer.com/iptv-player/">
-            <i class="fas fa-plus-circle fa-fw"></i>
-            Upload New Playlist
-          </a>
-        </li>
-      </ul> -->
-    </nav>
+      <div class="container">
+        <div class="row">
+            <div class="myui-panel myui-panel-bg clearfix">
+                <div class="myui-panel-box clearfix" id="movielist">
+    
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </nav> -->
+
+
+
     <div id="wrapper">
       <div id="lists">
 
@@ -96,215 +83,46 @@
 
       <div id="content-wrapper">
         <div class="container-fluid pb-0">
-          <div class="top-mobile-search">
-            <div class="row">
-              <div class="col-md-12">
-
-                <form class="mobile-search">
-                  <div class="input-group">
-                    <input type="text" placeholder="Search for..." class="form-control">
-                    <div class="input-group-append">
-                      <button type="button" class="btn btn-dark"><i class="fas fa-search"></i></button>
-                    </div>
-                  </div>
-                </form>
-
-
-              </div>
-            </div>
-          </div>
-
-
 
           <div class="video-block section-padding">
             <div class="row">
-              <div class="col-md-12">
-                <!-- <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8135466358969758" crossorigin="anonymous"></script>
 
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8135466358969758" data-ad-slot="8717648021" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script> -->
-
-                <div id="moko">
-                  <div class="media-control media-control-hide" data-media-control="" style="display: none;">
-                    <div class="media-control-background" data-background=""></div>
-                    <div class="media-control-layer" data-controls="">
-
-                      <div class="media-control-center-panel" data-media-control="">
-
-                        <div class="bar-container seek-disabled" data-seekbar="">
-                          <div class="bar-background" data-seekbar="">
-                            <div class="bar-fill-1" data-seekbar=""></div>
-                            <div class="bar-fill-2" data-seekbar=""
-                              style="width: 0%; background-color: rgb(0, 255, 0);"></div>
-                            <div class="bar-hover" data-seekbar=""></div>
-                          </div>
-                          <div class="bar-scrubber" data-seekbar="" style="left: 0%;">
-                            <div class="bar-scrubber-icon" data-seekbar=""></div>
-                          </div>
-                        </div>
-
-                      </div>
-
-                      <div class="media-control-left-panel" data-media-control="">
-
-                        <button type="button" class="media-control-button media-control-icon paused" data-playpause=""
-                          aria-label="playpause">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                            <path fill="#010101" d="M1.425.35L14.575 8l-13.15 7.65V.35z"
-                              style="fill: rgb(255, 255, 255);"></path>
-                          </svg>
-                        </button>
-                        <div class="media-control-indicator" data-position=""></div>
-                        <div class="media-control-indicator" data-duration=""></div>
-
-                      </div>
-
-                      <div class="media-control-right-panel" data-media-control="">
-
-                        <button type="button" class="media-control-button media-control-icon" data-fullscreen=""
-                          aria-label="fullscreen">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                            <path fill="#010101"
-                              d="M7.156 8L4 11.156V8.5H3V13h4.5v-1H4.844L8 8.844 7.156 8zM8.5 3v1h2.657L8 7.157 8.846 8 12 4.844V7.5h1V3H8.5z"
-                              style="fill: rgb(255, 255, 255);"></path>
-                          </svg>
-                        </button>
-                        <div class="cc-controls" data-cc-controls="">
-                          <button type="button" class="cc-button media-control-button media-control-icon"
-                            data-cc-button="" aria-label="cc-button">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49 41.8"
-                              style="enable-background:new 0 0 49 41.8;" xml:space="preserve">
-                              <path
-                                d="M47.1,0H3.2C1.6,0,0,1.2,0,2.8v31.5C0,35.9,1.6,37,3.2,37h11.9l3.2,1.9l4.7,2.7c0.9,0.5,2-0.1,2-1.1V37h22.1 c1.6,0,1.9-1.1,1.9-2.7V2.8C49,1.2,48.7,0,47.1,0z M7.2,18.6c0-4.8,3.5-9.3,9.9-9.3c4.8,0,7.1,2.7,7.1,2.7l-2.5,4 c0,0-1.7-1.7-4.2-1.7c-2.8,0-4.3,2.1-4.3,4.3c0,2.1,1.5,4.4,4.5,4.4c2.5,0,4.9-2.1,4.9-2.1l2.2,4.2c0,0-2.7,2.9-7.6,2.9 C10.8,27.9,7.2,23.5,7.2,18.6z M36.9,27.9c-6.4,0-9.9-4.4-9.9-9.3c0-4.8,3.5-9.3,9.9-9.3C41.7,9.3,44,12,44,12l-2.5,4 c0,0-1.7-1.7-4.2-1.7c-2.8,0-4.3,2.1-4.3,4.3c0,2.1,1.5,4.4,4.5,4.4c2.5,0,4.9-2.1,4.9-2.1l2.2,4.2C44.5,25,41.9,27.9,36.9,27.9z">
-                              </path>
-                            </svg>
-                          </button>
-                          <ul style="display: none;">
-                            <li><a href="#" data-cc-select="-1">Disabled</a></li>
-                          </ul>
-                        </div>
-
-                        <div class="drawer-container" data-volume="">
-                          <div class="drawer-icon-container" data-volume="">
-                            <div class="drawer-icon media-control-icon" data-volume=""><svg
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#010101"
-                                  d="M11.5 11h-.002v1.502L7.798 10H4.5V6h3.297l3.7-2.502V4.5h.003V11zM11 4.49L7.953 6.5H5v3h2.953L11 11.51V4.49z"
-                                  style="fill: rgb(255, 255, 255);"></path>
-                              </svg></div>
-                            <span class="drawer-text" data-volume=""></span>
-                          </div>
-
-                          <div class="bar-container volume-bar-hide" data-volume="">
-
-                            <div class="segmented-bar-element fill" data-volume=""
-                              style="box-shadow: rgb(255, 255, 255) 2px 0px 0px inset;"></div>
-
-                            <div class="segmented-bar-element fill" data-volume=""
-                              style="box-shadow: rgb(255, 255, 255) 2px 0px 0px inset;"></div>
-
-                            <div class="segmented-bar-element fill" data-volume=""
-                              style="box-shadow: rgb(255, 255, 255) 2px 0px 0px inset;"></div>
-
-                            <div class="segmented-bar-element fill" data-volume=""
-                              style="box-shadow: rgb(255, 255, 255) 2px 0px 0px inset;"></div>
-
-                            <div class="segmented-bar-element fill" data-volume=""
-                              style="box-shadow: rgb(255, 255, 255) 2px 0px 0px inset;"></div>
-
-                            <div class="segmented-bar-element fill" data-volume=""
-                              style="box-shadow: rgb(255, 255, 255) 2px 0px 0px inset;"></div>
-
-                            <div class="segmented-bar-element fill" data-volume=""
-                              style="box-shadow: rgb(255, 255, 255) 2px 0px 0px inset;"></div>
-
-                            <div class="segmented-bar-element fill" data-volume=""
-                              style="box-shadow: rgb(255, 255, 255) 2px 0px 0px inset;"></div>
-
-                            <div class="segmented-bar-element fill" data-volume=""
-                              style="box-shadow: rgb(255, 255, 255) 2px 0px 0px inset;"></div>
-
-                            <div class="segmented-bar-element fill" data-volume=""
-                              style="box-shadow: rgb(255, 255, 255) 2px 0px 0px inset;"></div>
-
-                          </div>
-
-                        </div>
-
-                        <button type="button" class="media-control-button media-control-icon" data-hd-indicator=""
-                          aria-label="hd-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                            <path fill="#010101"
-                              d="M5.375 7.062H2.637V4.26H.502v7.488h2.135V8.9h2.738v2.848h2.133V4.26H5.375v2.802zm5.97-2.81h-2.84v7.496h2.798c2.65 0 4.195-1.607 4.195-3.77v-.022c0-2.162-1.523-3.704-4.154-3.704zm2.06 3.758c0 1.21-.81 1.896-2.03 1.896h-.83V6.093h.83c1.22 0 2.03.696 2.03 1.896v.02z"
-                              style="fill: rgb(255, 255, 255);"></path>
-                          </svg></button>
-
-                      </div>
-
-                    </div>
-                    <div class="seek-time" data-seek-time="" style="display: none; left: -100%;">
-                      <span data-seek-time=""></span>
-                      <span data-duration="" style="display: none;"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div id="dplayer"></div>
 
 
-              <div align="center">
-                <script>
-                  var playerElement = document.getElementById("moko");
-                  var player = new Clappr.Player({
-                    source: "https://pkj99.github.io/YTLive/民視.m3u8",
-                    //mimeType: 'application/x-mpegURL',
-                    width: '100%',
-                    height: 'calc(100vh - 100px)',
-                    autoPlay: true,
-                    // watermark: "https://freeiptvplayer.com/wp-content/uploads/2019/04/FREE-IPTV-Player.png",
-                    // watermarkLink: "https://freeiptvplayer.com/",
-                    // position: 'bottom-right',
-                    mediacontrol: { seekbar: "#00FF00", buttons: "#FFFFFF" },
-                    mute: false,
-                    gaAccount: "UA-137728988-1",
-                    disableErrorScreen: true, // Disable the internal error screen plugin
-                    // plugins: [ChromecastPlugin, ErrorPlugin, LevelSelector, ClapprAds],
-                    plugins: [ChromecastPlugin],
-                    chromecast: {
-                      appId: "9DFB77C0",
-                      contentType: "video/m3u8",
-                      media: {
-                        type: ChromecastPlugin.None,
-                        title: "IPTV",
-                        subtitle: "Free IPTV Player"
-                      }
+              <script>
+                  const dp = new DPlayer({
+                    container: document.getElementById('dplayer'),
+                    autoplay:true,
+                    theme:"#e91e63",
+                    lang:'zh-tw',
+                    preload:'auto',
+                    airplay:true,
+                    chromecast:true,
+                    // logo:"images/favicon.png",
+                    video: {
+                      url: "https://pkj99.github.io/YTLive/民視.m3u8",
+                      // pic: '{{img|safe}}',
+                      type:'hls',
+                          customType: {
+                              hls: function (video, player) {
+                                  const hls = new Hls();
+                                  hls.loadSource(video.src);
+                                  hls.attachMedia(video);
+                              }
+                          }
                     },
-
-                    errorPlugin: {
-                      onRetry: function (e) {
-                      }
-                    },
-                    // ads: {
-                    //   preRoll: {
-                    //     src: '',
-                    //     skip: true,
-                    //     timeout: 1,
-                    //     link: ''
-                    //   },
-                    //   text: {
-                    //     wait: 'Wait % seconds...',
-                    //     skip: 'Skip Advert >>>'
-                    //   }
-                    // },
-                    disableVideoTagContextMenu: true,
-                    playbackNotSupportedMessage: 'Please select channel on the left side menu.'
-                    // playbackNotSupportedMessage: 'Your browser is not supported.'
+                      pluginOptions: {
+                      hls: {
+                          // hls config
+                          maxBufferLength:110,
+                          maxBufferSize: 80*1000*1000,
+                      },
+                  },
                   });
-                  player.attachTo(playerElement);
 
-                </script>
-              </div>
+                  // dp.play();
+              </script>
             </div>
           </div>
           <hr class="mt-0">
@@ -313,20 +131,136 @@
 
     </div>
 
+    <script type="text/javascript" src='js/sql.js'></script>
 
-
-<!-- 
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-137728988-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-137728988-1');
+        var db_url = 'https://pkj99.github.io/iptv/db/iptv.db';
+        function goplay(url){
+            dp.switchVideo({ url : url });
+            dp.play();
+        }
+
+        // create tv list 
+        function tvlists(sqlstring){
+            // console.log(sqlstring);
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', db_url, true);
+            xhr.responseType = 'arraybuffer';
+
+            xhr.onload = e => {
+                const uInt8Array = new Uint8Array(xhr.response);
+                const db = new SQL.Database(uInt8Array);
+                
+                const contents = db.exec(sqlstring);
+                var data = JSON.parse(JSON.stringify(contents));
+                
+                let htmlString = '';
+
+                if (typeof data[0] == "undefined" ) { data = [];} else { data = data[0].values; }
+
+                for (var i = 0; i < data.length; i++) {
+                    var title = data[i][1];
+                    var url = data[i][2];
+                    var image = data[i][4];
+                    htmlString += `<li class="nav-item">`;
+                    // htmlString += `<img src="${image}" height="12px">`;
+                    htmlString += `<a class="channel nav-link" data-value="${url}"`;
+                    htmlString += ` href="javascript:goplay('${url}');"><img src="${image}" width = "46px" height="20px">&nbsp;&nbsp;${title}</a>`;
+                    htmlString += `</li>`;
+                }
+
+                document.getElementById('list').innerHTML = htmlString;
+
+            };
+            xhr.send();
+        }
+
+        // create tv list 
+        function tvlists2(sqlstring){
+            // console.log(sqlstring);
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', db_url, true);
+            xhr.responseType = 'arraybuffer';
+
+            xhr.onload = e => {
+                const uInt8Array = new Uint8Array(xhr.response);
+                const db = new SQL.Database(uInt8Array);
+                
+                const contents = db.exec(sqlstring);
+                var data = JSON.parse(JSON.stringify(contents));
+                
+                let htmlString = '';
+
+                if (typeof data[0] == "undefined" ) { data = [];} else { data = data[0].values; }
+
+                for (var i = 0; i < data.length; i++) {
+                    var title = data[i][1];
+                    var url = data[i][2];
+                    var image = data[i][4];
+                    htmlString += '<li class="nav-item">';
+                    htmlString += '<a class="channel nav-link" data-value="'+url+'"';
+                    htmlString += ' href="'+url+'" >'+title+'</a>';
+                    htmlString += '</li>';
+                }
+
+                document.getElementById('list').innerHTML = htmlString;
+
+            };
+            xhr.send();
+        }
+
+
+        // get params
+        (window.onpopstate = function () {
+            var match,
+                pl     = /\+/g,  // Regex for replacing addition symbol with a space
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+                query  = window.location.search.substring(1);
+
+            urlParams = {};
+            while (match = search.exec(query))
+                urlParams[decode(match[1])] = decode(match[2]);
+        })();
+
+        if (urlParams["t"] == null){ var t = "0"; } else { var t = urlParams["t"];}
+        if (t == "0"){
+            var sqlstring = "select * from iptv where (catalog='台湾頻道' and title <> '民视新闻台' and title like '民视%') or (catalog = '四季頻道') ";
+            tvlists(sqlstring);
+            // document.getElementById('menu0').classList.add("active");
+        }
+        if (t == "1"){
+            var sqlstring = "select pid,title,'https://pkj99.github.io/demo/m3u8/iptv/chinatv/'||title||'.m3u8' as url,catalog,image from iptv where catalog in ('央视','卫视')";
+            tvlists2(sqlstring);
+            // document.getElementById('menu1').classList.add("active");
+        }
+        if (t == "2"){
+            var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
+            tvlists2(sqlstring);
+            // document.getElementById('menu2').classList.add("active");
+        }
+        if (t == "3"){
+            var sqlstring = "select * from iptv_news";
+            tvlists2(sqlstring);
+            // document.getElementById('menu3').classList.add("active");
+        }
+        if (t == "4"){
+            var sqlstring = "select * from iptv_sports";
+            tvlists2(sqlstring);
+            // document.getElementById('menu4').classList.add("active");
+        }
+        if (t == "5"){
+            var sqlstring = "select * from iptv_movies";
+            tvlists2(sqlstring);
+            // document.getElementById('menu5').classList.add("active");
+        }
+        if (t == "6"){
+            var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
+            tvlists2(sqlstring);
+            // document.getElementById('menu6').classList.add("active");
+        }
+
     </script>
-  </div>
-  </div>
-  <script type="text/javascript" async="async" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
-  <script type="text/javascript" async="async" src="https://www.google-analytics.com/ga.js"></script> -->
 
 
 </body>
