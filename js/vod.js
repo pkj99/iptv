@@ -122,7 +122,8 @@
 
     if (urlParams["t"] == null){ var t = "0"; } else { var t = urlParams["t"];}
     if (t == "0"){
-        var sqlstring = "select * from iptv where (catalog='台湾頻道' and title like '民视%') or (catalog = '四季頻道') ";
+        // var sqlstring = "select * from iptv where (catalog='台湾頻道' and title like '民视%') or (catalog = '四季頻道') ";
+        var sqlstring = "select * from iptv where (catalog = '台湾頻道WEB') or (catalog = '四季頻道') ";
         tvchannels(sqlstring);
         document.getElementById('menu0').classList.add("active");
     }

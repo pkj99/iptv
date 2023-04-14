@@ -15,15 +15,40 @@
   <!-- <link href="css/main.css" rel="stylesheet"> -->
   <link href="css/osahan.css" rel="stylesheet">
 
-  <link href="css/owl.carousel.css" rel="stylesheet">
-  <link href="css/owl.theme.css" rel="stylesheet">
+  <!-- <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet"> -->
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/owl.carousel.js"></script>
+  <!-- <script src="js/owl.carousel.js"></script> -->
   
+  <script type="text/javascript" src='js/sql.js'></script>
+
   <script src="js/hls.min.js"></script>
   <script src="js/DPlayer.min.js"></script>
+
+  <style>
+      #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 220px }
+      /* .sidebar-toggled #wrapper #content-wrapper .container-fluid { padding: 2px 2px 2px 122px } */
+
+      @media (min-width: 768px){
+        .sidebar .nav-item .nav-link{ padding: 8px 10px!important; }
+      }
+
+      @media (max-width: 575.98px){
+        #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 0px!important; }
+        .sidebar {
+          margin-top: 280px!important;;
+          width: 530px!important;
+        }
+        .sidebar .nav-item .nav-link{
+          padding: 8px 10px!important;
+          margin-left: 100px;
+          width:510px;
+          text-align: left;
+        }
+      }
+  </style>
 
 </head>
 
@@ -71,15 +96,11 @@
     </nav> -->
 
 
-
     <div id="wrapper">
       <div id="lists">
-
         <ul id="list" class="sidebar navbar-nav list">
-
         </ul>
       </div>
-
 
       <div id="content-wrapper">
         <div class="container-fluid pb-0">
@@ -88,7 +109,6 @@
             <div class="row">
 
               <div id="dplayer"></div>
-
 
               <script>
                   const dp = new DPlayer({
@@ -123,6 +143,7 @@
 
                   // dp.play();
               </script>
+
             </div>
           </div>
           <hr class="mt-0">
@@ -131,7 +152,7 @@
 
     </div>
 
-    <script type="text/javascript" src='js/sql.js'></script>
+
 
     <script>
         var db_url = 'https://pkj99.github.io/iptv/db/iptv.db';
@@ -164,7 +185,6 @@
                     var image = data[i][4];
                     image = 'images/iptv/' + title + '.png';
                     htmlString += `<li class="nav-item">`;
-                    // htmlString += `<img src="${image}" height="12px">`;
                     htmlString += `<a class="channel nav-link" data-value="${url}"`;
                     htmlString += ` href="javascript:goplay('${url}');"><img src="${image}" width = "46px" height="20px">&nbsp;&nbsp;${title}</a>`;
                     htmlString += `</li>`;
@@ -260,9 +280,7 @@
             tvlists2(sqlstring);
             // document.getElementById('menu6').classList.add("active");
         }
-
     </script>
-
 
 </body>
 </html>
