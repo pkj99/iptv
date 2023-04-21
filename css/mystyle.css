@@ -21,6 +21,10 @@ body.active {
     border-radius: 5px;
 }
 
+/* .myui-vodlist__box{
+    background-color: lightslategray;
+} */
+
 .myui-vodlist__thumb {
     border-radius: 5px;
     padding-top: 150%;
