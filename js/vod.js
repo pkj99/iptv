@@ -123,12 +123,13 @@
     if (urlParams["t"] == null){ var t = ""; } else { var t = urlParams["t"];}
     if (t == "0"){
         // var sqlstring = "select * from iptv where (catalog='台湾頻道' and title like '民视%') or (catalog = '四季頻道') ";
-        var sqlstring = "select * from iptv where catalog in ('民視頻道','台湾頻道') order by catalog desc";
+        var sqlstring = "select * from iptv where catalog in ('民視頻道','台湾頻道') order by catalog desc, hostname desc";
         tvchannels(sqlstring);
         document.getElementById('menu0').classList.add("active");
     }
     if (t == "1"){
-        var sqlstring = "select pid,title,'https://pkj99.github.io/demo/m3u8/iptv/chinatv/'||title||'.m3u8' as url,catalog,image from iptv where catalog in ('央视','卫视')";
+        // var sqlstring = "select pid,title,'https://pkj99.github.io/demo/m3u8/iptv/chinatv/'||title||'.m3u8' as url,catalog,image from iptv where catalog in ('央视','卫视')";
+        var sqlstring = "select pid,title,url,catalog,image from iptv where catalog in ('央视','卫视')";
         tvchannels(sqlstring);
         document.getElementById('menu1').classList.add("active");
     }
