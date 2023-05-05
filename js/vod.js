@@ -3,6 +3,7 @@
     var db_url = 'https://pkj99.github.io/iptv/db/iptv.db';
     var pagecount;
     var urlParams;
+    var m3u_url = 'https://pkj99.github.io/demo/media/iptv.m3u';
     
     // 收藏設定 Cookie 
   
@@ -107,6 +108,67 @@
     }
 
 
+    function tvchannels2(groupName){
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', m3u_url);
+        xhr.onload = e => {
+
+            var contents = xhr.response;
+            var channel = 0;
+            var url_tvg, tvg_logo, tvg_name, group_title, title, url, info;
+            let htmlString = '';
+
+            var lines = contents.split(/[\r\n]/);
+            for (var i in lines){
+                var line = lines[i];
+                if (/#EXTM3U/.test(line)) {
+                    if (/url-tvg/.test(line)){
+                        var keyVal = line.split(/ /)[1], url_tvg = keyVal.split(/[=]/)[1].replaceAll('\"','').trim();
+                    }
+                }
+                if (/#EXTINF/.test(line)) {
+                    channel = 0;
+                    title = line.split(/,/)[1].replaceAll('\"','').trim();
+                    info = line.split(/,/)[0];
+
+                    if (/tvg-logo/.test(info)){
+                        var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();                        
+                    }
+                    if (/tvg-name/.test(info)){
+                        var keyVal = info.split(/tvg-name/)[1], val2 = keyVal.split(/ /)[0], tvg_name = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                    }
+                    if (/group-title/.test(info)){
+                        var keyVal = info.split(/group-title/)[1], val2 = keyVal.split(/ /)[0], group_title = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                    }
+                } else {
+                    channel = 1;
+                    url = line.trim();
+                }
+                if (channel == 1) {
+                    // console.log(tvg_logo, tvg_name, group_title, title, url, groupName);
+                    if (group_title == groupName){
+                        htmlString += `<li class="col-lg-10 col-md-10 col-sm-5 col-xs-4">`;
+                        htmlString += `<div class="myui-vodlist__box">`;
+                        htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
+                        htmlString += `title="${title}" `;
+                        htmlString += `data-original="${url}" `;
+                        htmlString += `style="background-image: url('${tvg_logo}')"`;
+                        htmlString += `</a>`;
+                        htmlString += `</div>`;
+                        htmlString += `<div class="myui-vodlist__detail">`;
+                        htmlString += `<h4 class="title text-overflow"><a href="${url}">${title}</a></h4>`;
+                        htmlString += `</div>`;
+                        htmlString += `</li>`;
+                    }
+                }
+            }
+            document.getElementById('tvlist').innerHTML = htmlString;
+        };
+        xhr.send();
+    }
+
+
+
     // get params
     (window.onpopstate = function () {
         var match,
@@ -122,45 +184,51 @@
 
     if (urlParams["t"] == null){ var t = ""; } else { var t = urlParams["t"];}
     if (t == "0"){
-        // var sqlstring = "select * from iptv where (catalog='台湾頻道' and title like '民视%') or (catalog = '四季頻道') ";
-        var sqlstring = "select * from iptv where catalog in ('民視頻道','台湾頻道') order by catalog desc, hostname desc";
-        tvchannels(sqlstring);
+        // var sqlstring = "select * from iptv where catalog in ('民視頻道','台湾頻道') order by catalog desc, hostname desc";
+        // tvchannels(sqlstring);
+        tvchannels2('台湾頻道');
         document.getElementById('menu0').classList.add("active");
     }
     if (t == "1"){
-        // var sqlstring = "select pid,title,'https://pkj99.github.io/demo/m3u8/iptv/chinatv/'||title||'.m3u8' as url,catalog,image from iptv where catalog in ('央视','卫视')";
-        var sqlstring = "select pid,title,url,catalog,image from iptv where catalog in ('央视','卫视')";
-        tvchannels(sqlstring);
+        // var sqlstring = "select pid,title,url,catalog,image from iptv where catalog in ('央视','卫视')";
+        // tvchannels(sqlstring);
+        tvchannels2('大陸頻道');
         document.getElementById('menu1').classList.add("active");
     }
     if (t == "2"){
-        var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
-        tvchannels(sqlstring);
+        // var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
+        // tvchannels(sqlstring);
+        tvchannels2('Youtube頻道');
         document.getElementById('menu2').classList.add("active");
     }
     if (t == "3"){
-        var sqlstring = "select * from iptv_news";
-        tvchannels(sqlstring);
+        // var sqlstring = "select * from iptv_news";
+        // tvchannels(sqlstring);
+        tvchannels2('新聞頻道');
         document.getElementById('menu3').classList.add("active");
     }
     if (t == "4"){
-        var sqlstring = "select * from iptv_sports";
-        tvchannels(sqlstring);
+        // var sqlstring = "select * from iptv_sports";
+        // tvchannels(sqlstring);
+        tvchannels2('體育頻道');
         document.getElementById('menu4').classList.add("active");
     }
     if (t == "5"){
-        var sqlstring = "select * from iptv_movies";
-        tvchannels(sqlstring);
+        // var sqlstring = "select * from iptv_movies";
+        // tvchannels(sqlstring);
+        tvchannels2('電影頻道');
         document.getElementById('menu5').classList.add("active");
     }
     if (t == "6"){
-        var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
-        tvchannels(sqlstring);
+        // var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
+        // tvchannels(sqlstring);
+        tvchannels2('民視頻道');
         document.getElementById('menu6').classList.add("active");
     }
     if (t == "7"){
-        var sqlstring = "select * from iptv where catalog = '四季頻道'";
-        tvchannels(sqlstring);
+        // var sqlstring = "select * from iptv where catalog = '四季頻道'";
+        // tvchannels(sqlstring);
+        tvchannels2('四季頻道');
         document.getElementById('menu7').classList.add("active");
     }
 
