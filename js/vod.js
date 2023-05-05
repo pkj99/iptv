@@ -114,7 +114,7 @@
         xhr.onload = e => {
 
             var contents = xhr.response;
-            var channel = 0;
+            var channel = "0";
             var url_tvg, tvg_logo, tvg_name, group_title, title, url, info;
             let htmlString = '';
 
@@ -122,32 +122,37 @@
             for (var i in lines){
                 var line = lines[i];
                 if (/#EXTM3U/.test(line)) {
+                    channel = "0";
                     if (/url-tvg/.test(line)){
                         var keyVal = line.split(/ /)[1], url_tvg = keyVal.split(/[=]/)[1].replaceAll('\"','').trim();
                     }
-                }
-                if (/#EXTINF/.test(line)) {
-                    channel = 0;
-                    title = line.split(/,/)[1].replaceAll('\"','').trim();
-                    info = line.split(/,/)[0];
-
-                    if (/tvg-logo/.test(info)){
-                        var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();                        
-                    }
-                    if (/tvg-name/.test(info)){
-                        var keyVal = info.split(/tvg-name/)[1], val2 = keyVal.split(/ /)[0], tvg_name = val2.split(/[=]/)[1].replaceAll('\"','').trim();
-                    }
-                    if (/group-title/.test(info)){
-                        var keyVal = info.split(/group-title/)[1], val2 = keyVal.split(/ /)[0], group_title = val2.split(/[=]/)[1].replaceAll('\"','').trim();
-                    }
                 } else {
-                    channel = 1;
-                    url = line.trim();
+                    if (/#EXTINF/.test(line)) {
+                        channel = "0";
+                        title = line.split(/,/)[1].replaceAll('\"','').trim();
+                        info = line.split(/,/)[0];
+
+                        if (/tvg-logo/.test(info)){
+                            var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();                        
+                        }
+                        if (/tvg-name/.test(info)){
+                            var keyVal = info.split(/tvg-name/)[1], val2 = keyVal.split(/ /)[0], tvg_name = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                        }
+                        if (/group-title/.test(info)){
+                            var keyVal = info.split(/group-title/)[1], val2 = keyVal.split(/ /)[0], group_title = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                        }
+                    } else {
+                        if (line.trim() != ''){
+                            channel = "1";
+                            url = line.trim();
+                        }
+                    }
                 }
-                if (channel == 1) {
+                // alert("channel="+channel);
+                if (channel == "1") {
                     // console.log(tvg_logo, tvg_name, group_title, title, url, groupName);
-                    if (group_title == groupName){
-                        htmlString += `<li class="col-lg-10 col-md-10 col-sm-5 col-xs-4">`;
+                    if (group_title == groupName || groupName == 'ALL'){
+                        htmlString += `<li class="col-lg-10 col-md-10 col-sm-5 col-xs-3">`;
                         htmlString += `<div class="myui-vodlist__box">`;
                         htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
                         htmlString += `title="${title}" `;
@@ -160,6 +165,7 @@
                         htmlString += `</div>`;
                         htmlString += `</li>`;
                     }
+                    channel = "0";
                 }
             }
             document.getElementById('tvlist').innerHTML = htmlString;
@@ -228,8 +234,13 @@
     if (t == "7"){
         // var sqlstring = "select * from iptv where catalog = '四季頻道'";
         // tvchannels(sqlstring);
-        tvchannels2('四季頻道');
+        // tvchannels2('四季頻道');
+        m3u_url = 'https://iptv-org.github.io/iptv/languages/zho.m3u'; 
+        tvchannels2('ALL'); 
         document.getElementById('menu7').classList.add("active");
     }
 
-
+    if (urlParams["m3u"] != null){ 
+        m3u_url = urlParams["m3u"]; 
+        tvchannels2('ALL');        
+    }
