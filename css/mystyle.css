@@ -1,6 +1,7 @@
 body {
     font-family: "Microsoft YaHei", "微軟正黑體", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
     padding-top: 0px;
+    background-color:#212529!important;
 }
 
 .myui-header__top {
@@ -21,9 +22,16 @@ body.active {
     border-radius: 5px;
 }
 
-/* .myui-vodlist__box{
-    background-color: lightgray;
-} */
+
+/* .myui-vodlist__box  */
+.myui-panel-box {
+    background-color:#212529!important;
+}
+
+.myui-vodlist__detail a {
+    color: rgb(255, 255, 255);
+}
+
 
 .myui-vodlist__thumb {
     border-radius: 5px;
@@ -171,10 +179,14 @@ body.active {
         padding-bottom: 50px;
     }
 
+    .myui-panel {
+        background-color:#212529!important;
+    }
+
     [class*=col-],
     .myui-panel,
     .myui-content__list li {
-        padding: 5px
+        padding: 5px;
     }
 
     .flickity-prev-next-button.previous {

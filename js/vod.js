@@ -160,9 +160,9 @@
                         htmlString += `style="background-image: url('${tvg_logo}')"`;
                         htmlString += `</a>`;
                         htmlString += `</div>`;
-                        htmlString += `<div class="myui-vodlist__detail">`;
-                        htmlString += `<h4 class="title text-overflow"><a href="${url}">${title}</a></h4>`;
-                        htmlString += `</div>`;
+                        // htmlString += `<div class="myui-vodlist__detail">`;
+                        // htmlString += `<h4 class="title text-overflow"><a href="${url}">${title}</a></h4>`;
+                        // htmlString += `</div>`;
                         htmlString += `</li>`;
                     }
                     channel = "0";
