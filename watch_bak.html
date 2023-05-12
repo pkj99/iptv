@@ -34,6 +34,9 @@
   
   <script type="text/javascript" src='js/sql.js'></script>
 
+  <script src="js/hls.min.js"></script>
+  <script src="js/DPlayer.min.js"></script>
+
   <style>
       #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 220px }
       /* .sidebar-toggled #wrapper #content-wrapper .container-fluid { padding: 2px 2px 2px 122px } */
@@ -45,8 +48,8 @@
       @media (max-width: 575.98px){
         #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 0px!important; }
         .sidebar {
-          margin-top: 580px!important;;
-          width: 830px!important;
+          margin-top: 280px!important;;
+          width: 530px!important;
         }
         .sidebar .nav-item .nav-link{
           padding: 8px 10px!important;
@@ -61,26 +64,46 @@
 
 <body id="page-top">
   <div style="text-align:center">
-
+<!-- 
     <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
       &nbsp;&nbsp;
-      <!-- <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
+      <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
         <i class="fas fa-bars"></i>
-      </button> &nbsp;&nbsp; -->
+      </button> &nbsp;&nbsp;
       <p style="text-align: center;">
-        <a href=""><img style="float: left;" src="images/favicon.png"  alt="" height="50"></a></p>
+        <a href="watch.html"><img style="float: left;" src="images/favicon.png"  alt="" height="50"></a></p>
       <div> &nbsp;&nbsp;
-      <a style="color:white" href="?t=0">台灣頻道</a> &nbsp;&nbsp;
-      <a style="color:white" href="?t=1">大陸頻道</a> &nbsp;&nbsp;
-      <a style="color:white" href="?t=2">YT直播</a> &nbsp;&nbsp;
-      <a style="color:white" href="?t=3">新聞</a> &nbsp;&nbsp;
-      <a style="color:white" href="?t=4">體育</a> &nbsp;&nbsp;
-      <a style="color:white" href="?t=5">電影</a> &nbsp;&nbsp;
-      <a style="color:white" href="?t=6">綜藝</a> &nbsp;&nbsp;
-      <a style="color:white" href="?t=7">民視頻道</a> &nbsp;&nbsp;
+      <a style="color:white" href="watch.html?t=0">台灣頻道</a> &nbsp;&nbsp;
+      <a style="color:white" href="watch.html?t=1">大陸頻道</a> &nbsp;&nbsp;
+      <a style="color:white" href="watch.html?t=2">Youtube頻道</a> &nbsp;&nbsp;
+      <a style="color:white" href="watch.html?t=3">新聞</a> &nbsp;&nbsp;
+      <a style="color:white" href="watch.html?t=4">體育</a> &nbsp;&nbsp;
+      <a style="color:white" href="watch.html?t=5">電影</a> &nbsp;&nbsp;
+      <a style="color:white" href="watch.html?t=6">綜藝</a> &nbsp;&nbsp;
       </div>
 
-    </nav>
+      <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
+        <div class="input-group">
+          <input type="text" class="form-control search" onkeyup="bait(this)" placeholder="Search for...">
+          <div class="input-group-append">
+            <button class="btn btn-light sort" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="myui-panel myui-panel-bg clearfix">
+                <div class="myui-panel-box clearfix" id="movielist">
+    
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </nav> -->
 
 
     <div id="wrapper">
@@ -95,8 +118,42 @@
           <div class="video-block section-padding">
             <div class="row">
 
-                <iframe id='tv' src="" width="100%" height="900px" allowfullscreen>
-                </iframe>
+              <div id="dplayer"></div>
+
+              <script>
+                  const dp = new DPlayer({
+                    container: document.getElementById('dplayer'),
+                    autoplay:true,
+                    theme:"#e91e63",
+                    lang:'zh-tw',
+                    preload:'auto',
+                    airplay:true,
+                    chromecast:true,
+                    // logo:"images/favicon.png",
+                    video: {
+                      // url: "https://pkj99.github.io/YTLive/民視.m3u8",
+                      url: "https://ythls.onrender.com/channel/UC2VmWn8dAqkzlQqvy02E1PA.m3u8",
+                      // pic: '{{img|safe}}',
+                      type:'hls',
+                          customType: {
+                              hls: function (video, player) {
+                                  const hls = new Hls();
+                                  hls.loadSource(video.src);
+                                  hls.attachMedia(video);
+                              }
+                          }
+                    },
+                      pluginOptions: {
+                      hls: {
+                          // hls config
+                          maxBufferLength:110,
+                          maxBufferSize: 80*1000*1000,
+                      },
+                  },
+                  });
+
+                  // dp.play();
+              </script>
 
             </div>
           </div>
@@ -111,7 +168,8 @@
     <script>
         var db_url = 'https://pkj99.github.io/iptv/db/iptv.db';
         function goplay(url){
-            document.getElementById('tv')['src']="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#"+url
+            dp.switchVideo({ url : url });
+            dp.play();
         }
 
         // create tv list 
@@ -145,11 +203,44 @@
 
                 document.getElementById('list').innerHTML = htmlString;
 
-                goplay(data[0][2]);
-                
             };
             xhr.send();
         }
+
+        // create tv list 
+        function tvlists2(sqlstring){
+            // console.log(sqlstring);
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', db_url, true);
+            xhr.responseType = 'arraybuffer';
+
+            xhr.onload = e => {
+                const uInt8Array = new Uint8Array(xhr.response);
+                const db = new SQL.Database(uInt8Array);
+                
+                const contents = db.exec(sqlstring);
+                var data = JSON.parse(JSON.stringify(contents));
+                
+                let htmlString = '';
+
+                if (typeof data[0] == "undefined" ) { data = [];} else { data = data[0].values; }
+
+                for (var i = 0; i < data.length; i++) {
+                    var title = data[i][1];
+                    var url = data[i][2];
+                    var image = data[i][4];
+                    htmlString += '<li class="nav-item">';
+                    htmlString += '<a class="channel nav-link" data-value="'+url+'"';
+                    htmlString += ' href="'+url+'" >'+title+'</a>';
+                    htmlString += '</li>';
+                }
+
+                document.getElementById('list').innerHTML = htmlString;
+
+            };
+            xhr.send();
+        }
+
 
         // get params
         (window.onpopstate = function () {
@@ -166,11 +257,13 @@
 
         if (urlParams["t"] == null){ var t = "0"; } else { var t = urlParams["t"];}
         if (t == "0"){
-            var sqlstring = "select * from iptv_tw";
+            // var sqlstring = "select * from iptv where (catalog='台湾頻道' and title <> '民视新闻台' and title like '民视%') or (catalog = '四季頻道') ";
+            // var sqlstring = "select * from iptv where catalog='民視頻道' or (catalog='台湾頻道' and url like 'https://%' and url not like '%YTLive%')";
+            var sqlstring = "select * from iptv where catalog='民視頻道' or hostname in ('pull-l3-cny.douyincdn.com','d2e1asnsl7br7b.cloudfront.net','fox-foxnewsnow-samsungus.amagi.tv') order by catalog desc";
             tvlists(sqlstring);
         }
         if (t == "1"){
-            var sqlstring = "select * from iptv_cn";
+            var sqlstring = "select pid,title,'https://pkj99.github.io/demo/m3u8/iptv/chinatv/'||title||'.m3u8' as url,catalog,image from iptv where catalog in ('央视','卫视')";
             tvlists(sqlstring);
         }
         if (t == "2"){
@@ -191,11 +284,6 @@
         }
         if (t == "6"){
             var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
-            tvlists(sqlstring);
-        }
-        if (t == "7"){
-            // var sqlstring = "select * from iptv where catalog='民視頻道' or hostname in ('pull-l3-cny.douyincdn.com','d2e1asnsl7br7b.cloudfront.net','fox-foxnewsnow-samsungus.amagi.tv') order by catalog desc";
-            var sqlstring = "select * from iptv where catalog='民視頻道'";
             tvlists(sqlstring);
         }
         if (t == "9"){
