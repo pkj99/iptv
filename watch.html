@@ -45,7 +45,7 @@
       @media (max-width: 575.98px){
         #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 0px!important; }
         .sidebar {
-          margin-top: 580px!important;;
+          margin-top: 300px!important;;
           width: 830px!important;
         }
         .sidebar .nav-item .nav-link{
@@ -76,7 +76,7 @@
       <a style="color:white" href="?t=3">新聞</a> &nbsp;&nbsp;
       <a style="color:white" href="?t=4">體育</a> &nbsp;&nbsp;
       <a style="color:white" href="?t=5">電影</a> &nbsp;&nbsp;
-      <a style="color:white" href="?t=6">綜藝</a> &nbsp;&nbsp;
+      <a style="color:white" href="?t=6">歐飛</a> &nbsp;&nbsp;
       <a style="color:white" href="?t=7">民視頻道</a> &nbsp;&nbsp;
       </div>
 
@@ -94,10 +94,10 @@
 
           <div class="video-block section-padding">
             <div class="row">
-
-                <iframe id='tv' src="" width="100%" height="900px" allowfullscreen>
+              <div style="position: relative; width: 100%; padding-top: calc(100% * 720 / 1280); border: 2px black solid;">
+                <iframe id='tv' src="" class="iframe_tv" width="100%" style="position: absolute; width: 100%; height: 100%; top: 0; left:0;" allowfullscreen>
                 </iframe>
-
+              </div>
             </div>
           </div>
           <hr class="mt-0">
@@ -111,7 +111,8 @@
     <script>
         var db_url = 'https://pkj99.github.io/iptv/db/iptv.db';
         function goplay(url){
-            document.getElementById('tv')['src']="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#"+url
+            // document.getElementById('tv')['src']="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#"+url
+            document.getElementById('tv')['src']="dpplayer.html?url="+url
         }
 
         // create tv list 
@@ -151,6 +152,68 @@
             xhr.send();
         }
 
+        function tvchannels(groupName, m3u_url){
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', m3u_url);
+            xhr.onload = e => {
+
+                var contents = xhr.response;
+                var channel = "0";
+                var url_tvg, tvg_logo, tvg_name, group_title, title, url, info, firsturl;
+                let htmlString = '';
+
+                var lines = contents.split(/[\r\n]/);
+                for (var i in lines){
+                    var line = lines[i];
+                    if (/#EXTM3U/.test(line)) {
+                        channel = "0";
+                        if (/url-tvg/.test(line)){
+                            var keyVal = line.split(/ /)[1], url_tvg = keyVal.split(/[=]/)[1].replaceAll('\"','').trim();
+                        }
+                    } else {
+                        if (/#EXTINF/.test(line)) {
+                            channel = "0";
+                            title = line.split(/,/)[1].replaceAll('\"','').trim();
+                            info = line.split(/,/)[0];
+
+                            if (/tvg-logo/.test(info)){
+                                var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();                        
+                            }
+                            if (/tvg-name/.test(info)){
+                                var keyVal = info.split(/tvg-name/)[1], val2 = keyVal.split(/ /)[0], tvg_name = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                            }
+                            if (/group-title/.test(info)){
+                                var keyVal = info.split(/group-title/)[1], val2 = keyVal.split(/ /)[0], group_title = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                            }
+                        } else {
+                            if (line.trim() != ''){
+                                channel = "1";
+                                url = line.trim();
+                                if (i<3) { firsturl = url;}
+                            }
+                        }
+                    }
+                    // alert("channel="+channel);
+                    if (channel == "1") {
+                        // console.log(tvg_logo, tvg_name, group_title, title, url, groupName);
+                        if (group_title == groupName || groupName == 'ALL'){
+
+                            htmlString += `<li class="nav-item">`;
+                            htmlString += `<a class="channel nav-link" data-value="${url}"`;
+                            htmlString += ` href="javascript:goplay('${url}');"><img src="${tvg_logo}" width = "46px" height="20px">&nbsp;&nbsp;${title}</a>`;
+                            htmlString += `</li>`;
+                        }
+                        channel = "0";
+                    }
+                }
+                document.getElementById('list').innerHTML = htmlString;
+
+                goplay(firsturl);
+            };
+            xhr.send();
+        }
+
+
         // get params
         (window.onpopstate = function () {
             var match,
@@ -174,7 +237,8 @@
             tvlists(sqlstring);
         }
         if (t == "2"){
-            var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
+            // var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
+            var sqlstring = "select * from iptv where url like 'https://pkj99.github.io/YTLive/%'";
             tvlists(sqlstring);
         }
         if (t == "3"){
@@ -190,8 +254,11 @@
             tvlists(sqlstring);
         }
         if (t == "6"){
-            var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
-            tvlists(sqlstring);
+            // var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
+            // tvlists(sqlstring);
+            var m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u';
+            groupName = 'ALL';
+            tvchannels(groupName, m3u_url);
         }
         if (t == "7"){
             // var sqlstring = "select * from iptv where catalog='民視頻道' or hostname in ('pull-l3-cny.douyincdn.com','d2e1asnsl7br7b.cloudfront.net','fox-foxnewsnow-samsungus.amagi.tv') order by catalog desc";
