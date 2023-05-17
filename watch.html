@@ -77,7 +77,7 @@
       <a style="color:white" href="?t=2">YT</a> &nbsp;&nbsp;
       <a style="color:white" href="?t=3">新聞</a> &nbsp;&nbsp;
       <a style="color:white" href="?t=4">體育</a> &nbsp;&nbsp;
-      <a style="color:white" href="?t=5">電影</a> &nbsp;&nbsp;
+      <a style="color:white" href="?t=5">星視界</a> &nbsp;&nbsp;
       <a style="color:white" href="?t=6">歐飛</a> &nbsp;&nbsp;
       <a style="color:white" href="?t=7">民視</a> &nbsp;&nbsp;
       </div>
@@ -252,8 +252,11 @@
             tvlists(sqlstring);
         }
         if (t == "5"){
-            var sqlstring = "select * from iptv_movies";
-            tvlists(sqlstring);
+            // var sqlstring = "select * from iptv_movies";
+            // tvlists(sqlstring);
+            var m3u_url = 'https://pkj99.github.io/demo/media/histartv.m3u';
+            groupName = 'ALL';            
+            tvchannels(groupName, m3u_url);
         }
         if (t == "6"){
             // var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";

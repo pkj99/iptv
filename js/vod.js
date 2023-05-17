@@ -222,7 +222,9 @@
     if (t == "5"){
         // var sqlstring = "select * from iptv_movies";
         // tvchannels(sqlstring);
-        tvchannels2('電影頻道');
+        // tvchannels2('電影頻道');
+        m3u_url = 'https://pkj99.github.io/demo/media/histartv.m3u'; 
+        tvchannels2('ALL');
         document.getElementById('menu5').classList.add("active");
     }
     if (t == "6"){
