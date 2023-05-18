@@ -202,8 +202,7 @@
         document.getElementById('menu1').classList.add("active");
     }
     if (t == "2"){
-        // var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
-        // tvchannels(sqlstring);
+        // tvchannels("select * from iptv where catalog = 'Youtube頻道'");
         tvchannels2('Youtube頻道');
         document.getElementById('menu2').classList.add("active");
     }
@@ -214,14 +213,12 @@
         document.getElementById('menu3').classList.add("active");
     }
     if (t == "4"){
-        // var sqlstring = "select * from iptv_sports";
-        // tvchannels(sqlstring);
-        tvchannels2('體育頻道');
+        tvchannels("select * from iptv_sports");
+        // tvchannels2('體育頻道');
         document.getElementById('menu4').classList.add("active");
     }
     if (t == "5"){
-        // var sqlstring = "select * from iptv_movies";
-        // tvchannels(sqlstring);
+        // tvchannels("select * from iptv_movies");
         // tvchannels2('電影頻道');
         m3u_url = 'https://pkj99.github.io/demo/media/histartv.m3u'; 
         tvchannels2('ALL');
