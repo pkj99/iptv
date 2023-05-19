@@ -142,9 +142,9 @@ body.active {
 
 .myui-header__menu>li.active>a {
     background-color:white;
-    border:1px solid #fe474b;
+    /* border:1px solid #fe474b;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 5px; */
 }
 
 

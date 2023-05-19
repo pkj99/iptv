@@ -196,9 +196,9 @@
         document.getElementById('menu0').classList.add("active");
     }
     if (t == "1"){
-        // var sqlstring = "select pid,title,url,catalog,image from iptv where catalog in ('央视','卫视')";
-        // tvchannels(sqlstring);
-        tvchannels2('大陸頻道');
+        tvchannels("select pid,title,url,catalog,image from iptv where catalog in ('央视','卫视') order by catalog desc");
+        // m3u_url = 'https://pkj99.github.io/demo/media/chinatv.m3u';
+        // tvchannels2('ALL');
         document.getElementById('menu1').classList.add("active");
     }
     if (t == "2"){
@@ -220,22 +220,21 @@
     if (t == "5"){
         // tvchannels("select * from iptv_movies");
         // tvchannels2('電影頻道');
-        m3u_url = 'https://pkj99.github.io/demo/media/histartv.m3u'; 
-        tvchannels2('ALL');
+        tvchannels("select * from iptv where catalog = '星視界頻道'");
+        // m3u_url = 'https://pkj99.github.io/demo/media/histartv.m3u'; 
+        // tvchannels2('ALL');
         document.getElementById('menu5').classList.add("active");
     }
     if (t == "6"){
         // var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
         // tvchannels(sqlstring);
         // tvchannels2('民視頻道');
-        m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u'; 
-        tvchannels2('ALL');         
+        tvchannels("select * from iptv where catalog = '歐飛頻道'");
+        // m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u'; 
+        // tvchannels2('ALL');         
         document.getElementById('menu6').classList.add("active");
     }
     if (t == "7"){
-        // var sqlstring = "select * from iptv where catalog = '四季頻道'";
-        // tvchannels(sqlstring);
-        // tvchannels2('四季頻道');
         m3u_url = 'https://iptv-org.github.io/iptv/languages/zho.m3u'; 
         tvchannels2('ALL'); 
         document.getElementById('menu7').classList.add("active");
