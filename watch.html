@@ -96,7 +96,7 @@
 
           <div class="video-block section-padding">
             <div class="row">
-              <div style="position: relative; width: 100%; padding-top: calc(100% * 720 / 1280); border: 2px black solid;">
+              <div style="position: relative; width: 100%; padding-top: calc(100% * 720 / 1280); ">
                 <iframe id='tv' src="" class="iframe_tv" width="100%" style="position: absolute; width: 100%; height: 100%; top: 0; left:0;" allowfullscreen>
                 </iframe>
               </div>
@@ -261,9 +261,10 @@
         if (t == "6"){
             // var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
             // tvlists(sqlstring);
-            var m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u';
-            groupName = 'ALL';
-            tvchannels(groupName, m3u_url);
+            tvlists("select * from iptv where catalog = '歐飛頻道'");            
+            // var m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u';
+            // groupName = 'ALL';
+            // tvchannels(groupName, m3u_url);
         }
         if (t == "7"){
             // var sqlstring = "select * from iptv where catalog='民視頻道' or hostname in ('pull-l3-cny.douyincdn.com','d2e1asnsl7br7b.cloudfront.net','fox-foxnewsnow-samsungus.amagi.tv') order by catalog desc";
