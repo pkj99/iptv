@@ -261,10 +261,10 @@
         if (t == "6"){
             // var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
             // tvlists(sqlstring);
-            tvlists("select * from iptv where catalog = '歐飛頻道'");            
-            // var m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u';
-            // groupName = 'ALL';
-            // tvchannels(groupName, m3u_url);
+            // tvlists("select * from iptv where catalog = '歐飛頻道'");            
+            var m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u';
+            groupName = 'ALL';
+            tvchannels(groupName, m3u_url);
         }
         if (t == "7"){
             // var sqlstring = "select * from iptv where catalog='民視頻道' or hostname in ('pull-l3-cny.douyincdn.com','d2e1asnsl7br7b.cloudfront.net','fox-foxnewsnow-samsungus.amagi.tv') order by catalog desc";

@@ -229,9 +229,9 @@
         // var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
         // tvchannels(sqlstring);
         // tvchannels2('民視頻道');
-        tvchannels("select * from iptv where catalog = '歐飛頻道'");
-        // m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u'; 
-        // tvchannels2('ALL');         
+        // tvchannels("select * from iptv where catalog = '歐飛頻道'");
+        m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u'; 
+        tvchannels2('ALL');         
         document.getElementById('menu6').classList.add("active");
     }
     if (t == "7"){
