@@ -72,14 +72,14 @@
       <p style="text-align: center;">
         <a href=""><img style="float: left;" src="images/favicon.png"  alt="" height="40"></a></p>
       <div> &nbsp;&nbsp;
-      <a style="color:white" href="?t=0">台灣</a> &nbsp;
-      <a style="color:white" href="?t=1">大陸</a> &nbsp;
-      <a style="color:white" href="?t=2">YT</a> &nbsp;
-      <a style="color:white" href="?t=3">新聞</a> &nbsp;
-      <a style="color:white" href="?t=4">體育</a> &nbsp;
-      <a style="color:white" href="?t=5">星視界</a> &nbsp;
-      <a style="color:white" href="?t=6">歐飛</a> &nbsp;
-      <a style="color:white" href="?t=7">民視</a>
+      <a style="color:white" id="menu0" href="?t=0">台灣</a> &nbsp;
+      <a style="color:white" id="menu1" href="?t=1">大陸</a> &nbsp;
+      <a style="color:white" id="menu2" href="?t=2">YT</a> &nbsp;
+      <a style="color:white" id="menu3" href="?t=3">新聞</a> &nbsp;
+      <a style="color:white" id="menu4" href="?t=4">體育</a> &nbsp;
+      <a style="color:white" id="menu5" href="?t=5">星視界</a> &nbsp;
+      <a style="color:white" id="menu6" href="?t=6">歐飛</a> &nbsp;
+      <a style="color:white" id="menu7" href="?t=7">民視</a>
       </div>
 
     </nav>
@@ -233,23 +233,28 @@
         if (t == "0"){
             var sqlstring = "select * from iptv_tw";
             tvlists(sqlstring);
+            document.getElementById('menu0').style.color ="orange";
         }
         if (t == "1"){
             var sqlstring = "select * from iptv_cn";
             tvlists(sqlstring);
+            document.getElementById('menu1').style.color ="orange";
         }
         if (t == "2"){
             // var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
             var sqlstring = "select * from iptv where url like 'https://pkj99.github.io/YTLive/%'";
             tvlists(sqlstring);
+            document.getElementById('menu2').style.color ="orange";
         }
         if (t == "3"){
             var sqlstring = "select * from iptv_news";
             tvlists(sqlstring);
+            document.getElementById('menu3').style.color ="orange";
         }
         if (t == "4"){
             var sqlstring = "select * from iptv_sports";
             tvlists(sqlstring);
+            document.getElementById('menu4').style.color ="orange";
         }
         if (t == "5"){
             // var sqlstring = "select * from iptv_movies";
@@ -257,6 +262,7 @@
             var m3u_url = 'https://pkj99.github.io/demo/media/histartv.m3u';
             groupName = 'ALL';            
             tvchannels(groupName, m3u_url);
+            document.getElementById('menu5').style.color ="orange";
         }
         if (t == "6"){
             // var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
@@ -265,11 +271,13 @@
             var m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u';
             groupName = 'ALL';
             tvchannels(groupName, m3u_url);
-        }
+            document.getElementById('menu6').style.color ="orange";   
+        }         
         if (t == "7"){
             // var sqlstring = "select * from iptv where catalog='民視頻道' or hostname in ('pull-l3-cny.douyincdn.com','d2e1asnsl7br7b.cloudfront.net','fox-foxnewsnow-samsungus.amagi.tv') order by catalog desc";
             var sqlstring = "select * from iptv where catalog='民視頻道'";
             tvlists(sqlstring);
+            document.getElementById('menu7').style.color ="orange";
         }
         if (t == "9"){
             var sqlstring = "select pid,title,replace(url,'https://ythls.onrender.com','http://127.0.0.1:3000') as url,catalog,image,alive,netstat,speed,best,hostname,insert_time from iptv where catalog = 'Youtube頻道'";
