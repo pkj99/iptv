@@ -191,12 +191,13 @@
     if (urlParams["t"] == null){ var t = ""; } else { var t = urlParams["t"];}
     if (t == "0"){
         // var sqlstring = "select * from iptv where catalog in ('民視頻道','台湾頻道') order by catalog desc, hostname desc";
-        // tvchannels(sqlstring);
-        tvchannels2('台湾頻道');
+        tvchannels("select * from iptv_tw");
+        // tvchannels2('台湾頻道');
         document.getElementById('menu0').classList.add("active");
     }
     if (t == "1"){
-        tvchannels("select pid,title,url,catalog,image from iptv where catalog in ('央视','卫视') order by catalog desc");
+        // tvchannels("select pid,title,url,catalog,image from iptv where catalog in ('央视','卫视') order by catalog desc");
+        tvchannels("select * from iptv_cn");
         // m3u_url = 'https://pkj99.github.io/demo/media/chinatv.m3u';
         // tvchannels2('ALL');
         document.getElementById('menu1').classList.add("active");
@@ -213,7 +214,7 @@
         document.getElementById('menu3').classList.add("active");
     }
     if (t == "4"){
-        tvchannels("select * from iptv_sports where catalog='台湾頻道'");
+        tvchannels("select * from iptv_sports where catalog in ('台湾頻道','央视')");
         // tvchannels2('體育頻道');
         document.getElementById('menu4').classList.add("active");
     }
