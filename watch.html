@@ -255,12 +255,12 @@
             document.getElementById('menu2').style.color ="orange";
         }
         if (t == "3"){
-            var sqlstring = "select * from iptv_news";
+            var sqlstring = "select * from iptv_news where catalog='台湾頻道'";
             tvlists(sqlstring);
             document.getElementById('menu3').style.color ="orange";
         }
         if (t == "4"){
-            var sqlstring = "select * from iptv_sports";
+            var sqlstring = "select * from iptv_sports where catalog='台湾頻道'";
             tvlists(sqlstring);
             document.getElementById('menu4').style.color ="orange";
         }

@@ -207,13 +207,13 @@
         document.getElementById('menu2').classList.add("active");
     }
     if (t == "3"){
-        // var sqlstring = "select * from iptv_news";
-        // tvchannels(sqlstring);
-        tvchannels2('新聞頻道');
+        var sqlstring = "select * from iptv_news where catalog='台湾頻道'";
+        tvchannels(sqlstring);
+        // tvchannels2('新聞頻道');
         document.getElementById('menu3').classList.add("active");
     }
     if (t == "4"){
-        tvchannels("select * from iptv_sports");
+        tvchannels("select * from iptv_sports where catalog='台湾頻道'");
         // tvchannels2('體育頻道');
         document.getElementById('menu4').classList.add("active");
     }
