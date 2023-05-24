@@ -37,24 +37,32 @@
   <script type="text/javascript" src='js/sql.js'></script>
 
   <style>
-      #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 220px }
+      #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 280px }
       /* .sidebar-toggled #wrapper #content-wrapper .container-fluid { padding: 2px 2px 2px 122px } */
 
       @media (min-width: 768px){
-        .sidebar .nav-item .nav-link{ padding: 8px 10px!important; }
+        .sidebar {
+          width: 280px!important;
+        }        
+        .sidebar .nav-item .nav-link{ 
+          padding: 2px 8px!important; 
+          width:280px!important;
+          font-size: 14px;
+        }
       }
 
       @media (max-width: 575.98px){
         #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 0px!important; }
         .sidebar {
-          margin-top: 300px!important;;
-          width: 830px!important;
+          top: 300px!important;
+          width: 510px!important;
         }
         .sidebar .nav-item .nav-link{
-          padding: 8px 10px!important;
-          margin-left: 100px;
-          width:510px;
+          /* padding: 8px 10px!important; */
+          margin-left: 60px;
+          width: 510px!important;
           text-align: left;
+          font-size: 20px;
         }
       }
   </style>
@@ -142,7 +150,7 @@
                     image = 'images/iptv/' + title + '.png';
                     htmlString += `<li class="nav-item">`;
                     htmlString += `<a class="channel nav-link" data-value="${url}"`;
-                    htmlString += ` href="javascript:goplay('${url}');"><img src="${image}" width = "46px" height="20px">&nbsp;&nbsp;${title}</a>`;
+                    htmlString += ` href="javascript:goplay('${url}');"><img src="${image}" width="92px" height="40px">&nbsp;&nbsp;${title}</a>`;
                     htmlString += `</li>`;
                 }
 
@@ -202,7 +210,7 @@
 
                             htmlString += `<li class="nav-item">`;
                             htmlString += `<a class="channel nav-link" data-value="${url}"`;
-                            htmlString += ` href="javascript:goplay('${url}');"><img src="${tvg_logo}" width = "46px" height="20px">&nbsp;&nbsp;${title}</a>`;
+                            htmlString += ` href="javascript:goplay('${url}');"><img src="${tvg_logo}" width="92px" height="40px">&nbsp;&nbsp;${title}</a>`;
                             htmlString += `</li>`;
                         }
                         channel = "0";
