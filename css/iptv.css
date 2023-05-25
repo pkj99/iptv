@@ -196,7 +196,7 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
 
 .sidebar .nav-item .nav-link {
     font-size: 14px;
-    padding: 12px 14px!important;
+    /* padding: 12px 14px!important; */
     text-align: center;
     width: 90px;
     font-weight: 600
@@ -1368,8 +1368,9 @@ a:hover,h1,h2,h3,h4,h5,h6 {
 
     .sidebar .nav-item .nav-link {
         /* padding: 8px 14px!important; */
-        margin-left: 60px;
-        width: 600px!important;
+        /* margin-left: 60px; */
+        padding-left: 60px;
+        width: 575.98px!important;
         text-align: left;
         font-size: 20px;
     }
