@@ -125,7 +125,8 @@
         var db_url = 'https://pkj99.github.io/iptv/db/iptv.db';
         function goplay(url){
             // document.getElementById('tv')['src']="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#"+url
-            document.getElementById('tv')['src']="dpplayer.html?url="+url
+            document.getElementById('tv')['src']="dpplayer.html?url="+url;
+            document.getElementById('list').focus();
         }
 
         // create tv list 
@@ -303,8 +304,6 @@
             var sqlstring = "select pid,title,replace(url,'https://ythls.onrender.com','http://127.0.0.1:3000') as url,catalog,image,alive,netstat,speed,best,hostname,insert_time from iptv where catalog = 'Youtube頻道'";
             tvlists(sqlstring);
         }
-
-        document.getElementById('lists').focus();
 
     </script>
 
