@@ -25,7 +25,8 @@
   <!-- <link href="css/all.min.css" rel="stylesheet" type="text/css"> -->
 
   <!-- <link href="css/main.css" rel="stylesheet"> -->
-  <link href="css/osahan.css" rel="stylesheet">
+  <!-- <link href="css/osahan.css" rel="stylesheet"> -->
+  <link href="css/iptv.css" rel="stylesheet">
 
   <!-- <link href="css/owl.carousel.css" rel="stylesheet">
   <link href="css/owl.theme.css" rel="stylesheet"> -->
@@ -35,7 +36,7 @@
   <!-- <script src="js/owl.carousel.js"></script> -->
   
   <script type="text/javascript" src='js/sql.js'></script>
-
+<!-- 
   <style>
       #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 280px }
       /* .sidebar-toggled #wrapper #content-wrapper .container-fluid { padding: 2px 2px 2px 122px } */
@@ -65,7 +66,7 @@
           font-size: 20px;
         }
       }
-  </style>
+  </style> -->
 
 </head>
 
@@ -94,10 +95,12 @@
 
 
     <div id="wrapper">
+
       <div id="lists">
         <ul id="list" class="sidebar navbar-nav list">
         </ul>
       </div>
+
 
       <div id="content-wrapper">
         <div class="container-fluid pb-0">
@@ -149,9 +152,13 @@
                     var image = data[i][4];
                     image = 'images/iptv/' + title + '.png';
                     htmlString += `<li class="nav-item">`;
-                    htmlString += `<a class="channel nav-link" data-value="${url}"`;
+                    htmlString += `<a class="nav-link" data-value="${url}"`;
                     htmlString += ` href="javascript:goplay('${url}');"><img src="${image}" width="92px" height="40px">&nbsp;&nbsp;${title}</a>`;
                     htmlString += `</li>`;
+                }
+
+                for (let i = 0; i < 10; i++) {
+                    htmlString += `<li class="nav-item"><a class="nav-link" href="#"></a></li>`;
                 }
 
                 document.getElementById('list').innerHTML = htmlString;
@@ -209,13 +216,18 @@
                         if (group_title == groupName || groupName == 'ALL'){
 
                             htmlString += `<li class="nav-item">`;
-                            htmlString += `<a class="channel nav-link" data-value="${url}"`;
+                            htmlString += `<a class="nav-link" data-value="${url}"`;
                             htmlString += ` href="javascript:goplay('${url}');"><img src="${tvg_logo}" width="92px" height="40px">&nbsp;&nbsp;${title}</a>`;
                             htmlString += `</li>`;
                         }
                         channel = "0";
                     }
                 }
+
+                for (let i = 0; i < 10; i++) {
+                    htmlString += `<li class="nav-item"><a class="nav-link" href="#"></a></li>`;
+                }
+
                 document.getElementById('list').innerHTML = htmlString;
 
                 goplay(firsturl);
