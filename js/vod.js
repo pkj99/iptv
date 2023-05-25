@@ -87,7 +87,7 @@
                 var url = data[i][2];
                 var image = data[i][4];
                 image = 'images/iptv/' + title + '.png';
-                htmlString += `<li class="col-lg-10 col-md-10 col-sm-5 col-xs-4">`;
+                htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
                 htmlString += `<div class="myui-vodlist__box">`;
                 htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
                 htmlString += `title="${title}" `;
@@ -152,7 +152,7 @@
                 if (channel == "1") {
                     // console.log(tvg_logo, tvg_name, group_title, title, url, groupName);
                     if (group_title == groupName || groupName == 'ALL'){
-                        htmlString += `<li class="col-lg-10 col-md-10 col-sm-5 col-xs-3">`;
+                        htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
                         htmlString += `<div class="myui-vodlist__box">`;
                         htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
                         htmlString += `title="${title}" `;
