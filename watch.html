@@ -125,7 +125,7 @@
         function goplay(url){
             // document.getElementById('tv')['src']="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#"+url
             document.getElementById('tv')['src']="dpplayer.html?url="+url;
-            document.getElementById('listfocus').focus();
+            document.getElementById('list').focus();
         }
 
         // create tv list 
@@ -160,8 +160,6 @@
                 for (let i = 0; i < 10; i++) {
                     htmlString += `<li class="nav-item"><a class="nav-link" href="#">&nbsp;</a></li>`;
                 }
-
-                htmlString += `<li class="nav-item"><input type="text" id="listfocus"></li>`;
 
                 document.getElementById('list').innerHTML = htmlString;
 
@@ -229,8 +227,6 @@
                 for (let i = 0; i < 10; i++) {
                     htmlString += `<li class="nav-item"><a class="nav-link" href="#">&nbsp;</a></li>`;
                 }
-
-                htmlString += `<li class="nav-item"><input type="text" id="listfocus"></li>`;
 
                 document.getElementById('list').innerHTML = htmlString;
 
@@ -308,7 +304,7 @@
             tvlists(sqlstring);
         }
 
-        // document.getElementById('listfocus').focus();
+        document.getElementById('lists').focus();
 
   </script>
 
