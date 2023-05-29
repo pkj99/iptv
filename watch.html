@@ -95,7 +95,6 @@
 
 
     <div id="wrapper">
-
       <div id="lists">
         <ul id="list" class="sidebar navbar-nav list">
         </ul>
@@ -126,7 +125,7 @@
         function goplay(url){
             // document.getElementById('tv')['src']="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#"+url
             document.getElementById('tv')['src']="dpplayer.html?url="+url;
-            document.getElementById('list').focus();
+            document.getElementById('listfocus').click();
         }
 
         // create tv list 
@@ -146,6 +145,8 @@
                 let htmlString = '';
 
                 if (typeof data[0] == "undefined" ) { data = [];} else { data = data[0].values; }
+
+                htmlString += `<li class="nav-item"><a id="listfocus" class="nav-link" href="#">&nbsp;</a></li>`;
 
                 for (var i = 0; i < data.length; i++) {
                     var title = data[i][1];
@@ -179,6 +180,8 @@
                 var channel = "0";
                 var url_tvg, tvg_logo, tvg_name, group_title, title, url, info, firsturl;
                 let htmlString = '';
+
+                htmlString += `<li class="nav-item"><a id="listfocus" class="nav-link" href="#">&nbsp;</a></li>`;
 
                 var lines = contents.split(/[\r\n]/);
                 for (var i in lines){
@@ -305,7 +308,7 @@
             tvlists(sqlstring);
         }
 
-        document.getElementById('list').focus();
+        // document.getElementById('list').click();
 
   </script>
 
