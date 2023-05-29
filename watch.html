@@ -125,7 +125,7 @@
         function goplay(url){
             // document.getElementById('tv')['src']="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#"+url
             document.getElementById('tv')['src']="dpplayer.html?url="+url;
-            document.getElementById('listfocus').click();
+            document.getElementById('listfocus').focus();
         }
 
         // create tv list 
@@ -146,8 +146,6 @@
 
                 if (typeof data[0] == "undefined" ) { data = [];} else { data = data[0].values; }
 
-                htmlString += `<li class="nav-item"><a id="listfocus" class="nav-link" href="#">&nbsp;</a></li>`;
-
                 for (var i = 0; i < data.length; i++) {
                     var title = data[i][1];
                     var url = data[i][2];
@@ -162,6 +160,8 @@
                 for (let i = 0; i < 10; i++) {
                     htmlString += `<li class="nav-item"><a class="nav-link" href="#">&nbsp;</a></li>`;
                 }
+
+                htmlString += `<li class="nav-item"><input type="text" id="listfocus"></li>`;
 
                 document.getElementById('list').innerHTML = htmlString;
 
@@ -180,8 +180,6 @@
                 var channel = "0";
                 var url_tvg, tvg_logo, tvg_name, group_title, title, url, info, firsturl;
                 let htmlString = '';
-
-                htmlString += `<li class="nav-item"><a id="listfocus" class="nav-link" href="#">&nbsp;</a></li>`;
 
                 var lines = contents.split(/[\r\n]/);
                 for (var i in lines){
@@ -231,6 +229,8 @@
                 for (let i = 0; i < 10; i++) {
                     htmlString += `<li class="nav-item"><a class="nav-link" href="#">&nbsp;</a></li>`;
                 }
+
+                htmlString += `<li class="nav-item"><input type="text" id="listfocus"></li>`;
 
                 document.getElementById('list').innerHTML = htmlString;
 
@@ -308,7 +308,7 @@
             tvlists(sqlstring);
         }
 
-        // document.getElementById('list').click();
+        // document.getElementById('listfocus').focus();
 
   </script>
 
