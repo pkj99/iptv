@@ -88,7 +88,7 @@
       <a style="color:white" id="menu4" href="?t=4">體育</a> &nbsp;
       <a style="color:white" id="menu5" href="?t=5">星視界</a> &nbsp;
       <a style="color:white" id="menu6" href="?t=6">歐飛</a> &nbsp;
-      <a style="color:white" id="menu7" href="?t=7">民視</a>
+      <!-- <a style="color:white" id="menu7" href="?t=7">民視</a> -->
       </div>
 
     </nav>
@@ -122,10 +122,12 @@
 
     <script>
         var db_url = 'https://pkj99.github.io/iptv/db/iptv.db';
-        function goplay(url){
-            // document.getElementById('tv')['src']="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#"+url
+        var firsturl, firstid;
+
+        function goplay(url,id){
+            // alert(id);
             document.getElementById('tv')['src']="dpplayer.html?url="+url;
-            document.getElementById('list').focus();
+            document.getElementById(id).scrollIntoView();
         }
 
         // create tv list 
@@ -150,10 +152,16 @@
                     var title = data[i][1];
                     var url = data[i][2];
                     var image = data[i][4];
+
+                    if (i==0) { 
+                      firsturl = url;
+                      firstid = `m${i}`;
+                    }
+
                     image = 'images/iptv/' + title + '.png';
                     htmlString += `<li class="nav-item">`;
-                    htmlString += `<a class="nav-link" data-value="${url}"`;
-                    htmlString += ` href="javascript:goplay('${url}');"><img src="${image}" width="92px" height="40px">&nbsp;&nbsp;${title}</a>`;
+                    htmlString += `<a id="m${i}" class="nav-link" data-value="${url}"`;
+                    htmlString += ` href="#" onclick="javascript:goplay('${url}','m${i}');"><img src="${image}" width="92px" height="40px">&nbsp;&nbsp;${title}</a>`;
                     htmlString += `</li>`;
                 }
 
@@ -163,7 +171,7 @@
 
                 document.getElementById('list').innerHTML = htmlString;
 
-                goplay(data[0][2]);
+                goplay(firsturl,firstid);
                 
             };
             xhr.send();
@@ -176,7 +184,7 @@
 
                 var contents = xhr.response;
                 var channel = "0";
-                var url_tvg, tvg_logo, tvg_name, group_title, title, url, info, firsturl;
+                var url_tvg, tvg_logo, tvg_name, group_title, title, url, info;
                 let htmlString = '';
 
                 var lines = contents.split(/[\r\n]/);
@@ -206,7 +214,10 @@
                             if (line.trim() != ''){
                                 channel = "1";
                                 url = line.trim();
-                                if (i<3) { firsturl = url;}
+                                if (i<3) { 
+                                  firsturl = url;
+                                  firstid = `m${i}`;
+                                }
                             }
                         }
                     }
@@ -216,8 +227,8 @@
                         if (group_title == groupName || groupName == 'ALL'){
 
                             htmlString += `<li class="nav-item">`;
-                            htmlString += `<a class="nav-link" data-value="${url}"`;
-                            htmlString += ` href="javascript:goplay('${url}');"><img src="${tvg_logo}" width="92px" height="40px">&nbsp;&nbsp;${title}</a>`;
+                            htmlString += `<a id="m${i}" class="nav-link" data-value="${url}"`;
+                            htmlString += ` href="#" onclick="javascript:goplay('${url}','m${i}');"><img src="${tvg_logo}" width="92px" height="40px">&nbsp;&nbsp;${title}</a>`;
                             htmlString += `</li>`;
                         }
                         channel = "0";
@@ -230,7 +241,8 @@
 
                 document.getElementById('list').innerHTML = htmlString;
 
-                goplay(firsturl);
+                goplay(firsturl,firstid);
+
             };
             xhr.send();
         }
@@ -303,10 +315,12 @@
             var sqlstring = "select pid,title,replace(url,'https://ythls.onrender.com','http://127.0.0.1:3000') as url,catalog,image,alive,netstat,speed,best,hostname,insert_time from iptv where catalog = 'Youtube頻道'";
             tvlists(sqlstring);
         }
-
-        document.getElementById('lists').focus();
+       
 
   </script>
+
+
+<!-- <script>document.getElementById('q').focus();</script> -->
 
 </body>
 </html>
