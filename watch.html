@@ -10,13 +10,13 @@
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   <link rel="apple-touch-icon" href="images/favicon.png" />  
 
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="full-screen" content="yes">
   <meta name="browsermode" content="application">
   <meta name="x5-fullscreen" content="true">
-  <meta name="x5-page-mode" content="app">
+  <meta name="x5-page-mode" content="app"> -->
   
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
@@ -122,16 +122,25 @@
 
     <script>
         var db_url = 'https://pkj99.github.io/iptv/db/iptv.db';
-        var firsturl, firstid;
+        var initurl, initid;
 
         function goplay(url,id){
-            // alert(id);
             document.getElementById('tv')['src']="dpplayer.html?url="+url;
             document.getElementById(id).scrollIntoView();
         }
 
+        function initlist(id){
+            // document.getElementById(id).scrollIntoView();
+            // document.getElementById(id).click();
+            // var x = window.scrollX+800, y = window.scrollY+800;
+            // console.log(x,y);
+            // document.getElementById(id).scrollTop;
+            // window.scrollTo(x, y);            
+            goplay('',id);
+        }
+
         // create tv list 
-        function tvlists(sqlstring){
+        function tvlists(sqlstring, callback){
             // console.log(sqlstring);
             const xhr = new XMLHttpRequest();
             xhr.open('GET', db_url, true);
@@ -154,8 +163,8 @@
                     var image = data[i][4];
 
                     if (i==0) { 
-                      firsturl = url;
-                      firstid = `m${i}`;
+                      initurl = url;
+                      initid = `m${i}`;
                     }
 
                     image = 'images/iptv/' + title + '.png';
@@ -171,13 +180,13 @@
 
                 document.getElementById('list').innerHTML = htmlString;
 
-                goplay(firsturl,firstid);
+                callback(initid);
                 
             };
             xhr.send();
         }
 
-        function tvchannels(groupName, m3u_url){
+        function tvchannels(groupName, m3u_url, callback){
             const xhr = new XMLHttpRequest();
             xhr.open('GET', m3u_url);
             xhr.onload = e => {
@@ -215,8 +224,8 @@
                                 channel = "1";
                                 url = line.trim();
                                 if (i<3) { 
-                                  firsturl = url;
-                                  firstid = `m${i}`;
+                                  initurl = url;
+                                  initid = `m${i}`;
                                 }
                             }
                         }
@@ -241,7 +250,8 @@
 
                 document.getElementById('list').innerHTML = htmlString;
 
-                goplay(firsturl,firstid);
+                callback(initid);
+                // goplay(initurl,initid);
 
             };
             xhr.send();
@@ -264,28 +274,28 @@
         if (urlParams["t"] == null){ var t = "0"; } else { var t = urlParams["t"];}
         if (t == "0"){
             var sqlstring = "select * from iptv_tw";
-            tvlists(sqlstring);
+            tvlists(sqlstring, initlist);
             document.getElementById('menu0').style.color ="orange";
         }
         if (t == "1"){
             var sqlstring = "select * from iptv_cn";
-            tvlists(sqlstring);
+            tvlists(sqlstring, initlist);
             document.getElementById('menu1').style.color ="orange";
         }
         if (t == "2"){
             // var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
             var sqlstring = "select * from iptv where url like 'https://pkj99.github.io/YTLive/%'";
-            tvlists(sqlstring);
+            tvlists(sqlstring, initlist);
             document.getElementById('menu2').style.color ="orange";
         }
         if (t == "3"){
             var sqlstring = "select * from iptv_news where catalog='台湾頻道'";
-            tvlists(sqlstring);
+            tvlists(sqlstring, initlist);
             document.getElementById('menu3').style.color ="orange";
         }
         if (t == "4"){
             var sqlstring = "select * from iptv_sports where catalog='台湾頻道'";
-            tvlists(sqlstring);
+            tvlists(sqlstring, initlist);
             document.getElementById('menu4').style.color ="orange";
         }
         if (t == "5"){
@@ -293,7 +303,7 @@
             // tvlists(sqlstring);
             var m3u_url = 'https://pkj99.github.io/demo/media/histartv.m3u';
             groupName = 'ALL';            
-            tvchannels(groupName, m3u_url);
+            tvchannels(groupName, m3u_url, initlist);
             document.getElementById('menu5').style.color ="orange";
         }
         if (t == "6"){
@@ -302,18 +312,18 @@
             // tvlists("select * from iptv where catalog = '歐飛頻道'");            
             var m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u';
             groupName = 'ALL';
-            tvchannels(groupName, m3u_url);
+            tvchannels(groupName, m3u_url, initlist);
             document.getElementById('menu6').style.color ="orange";   
         }         
         if (t == "7"){
             // var sqlstring = "select * from iptv where catalog='民視頻道' or hostname in ('pull-l3-cny.douyincdn.com','d2e1asnsl7br7b.cloudfront.net','fox-foxnewsnow-samsungus.amagi.tv') order by catalog desc";
             var sqlstring = "select * from iptv where catalog='民視頻道'";
-            tvlists(sqlstring);
+            tvlists(sqlstring, initlist);
             document.getElementById('menu7').style.color ="orange";
         }
         if (t == "9"){
             var sqlstring = "select pid,title,replace(url,'https://ythls.onrender.com','http://127.0.0.1:3000') as url,catalog,image,alive,netstat,speed,best,hostname,insert_time from iptv where catalog = 'Youtube頻道'";
-            tvlists(sqlstring);
+            tvlists(sqlstring, initlist);
         }
        
 
