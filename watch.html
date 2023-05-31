@@ -10,63 +10,20 @@
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   <link rel="apple-touch-icon" href="images/favicon.png" />  
 
-  <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="full-screen" content="yes">
   <meta name="browsermode" content="application">
   <meta name="x5-fullscreen" content="true">
-  <meta name="x5-page-mode" content="app"> -->
+  <meta name="x5-page-mode" content="app">
   
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  
-
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link href="css/all.min.css" rel="stylesheet" type="text/css"> -->
-
-  <!-- <link href="css/main.css" rel="stylesheet"> -->
-  <!-- <link href="css/osahan.css" rel="stylesheet"> -->
   <link href="css/iptv.css" rel="stylesheet">
-
-  <!-- <link href="css/owl.carousel.css" rel="stylesheet">
-  <link href="css/owl.theme.css" rel="stylesheet"> -->
-
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="js/owl.carousel.js"></script> -->
-  
   <script type="text/javascript" src='js/sql.js'></script>
-<!-- 
-  <style>
-      #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 280px }
-      /* .sidebar-toggled #wrapper #content-wrapper .container-fluid { padding: 2px 2px 2px 122px } */
-
-      @media (min-width: 768px){
-        .sidebar {
-          width: 280px!important;
-        }        
-        .sidebar .nav-item .nav-link{ 
-          padding: 2px 8px!important; 
-          width:280px!important;
-          font-size: 14px;
-        }
-      }
-
-      @media (max-width: 575.98px){
-        #wrapper #content-wrapper .container-fluid { padding: 0px 0px 0px 0px!important; }
-        .sidebar {
-          top: 300px!important;
-          width: 510px!important;
-        }
-        .sidebar .nav-item .nav-link{
-          /* padding: 8px 10px!important; */
-          margin-left: 60px;
-          width: 510px!important;
-          text-align: left;
-          font-size: 20px;
-        }
-      }
-  </style> -->
 
 </head>
 
@@ -75,9 +32,6 @@
 
     <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
       &nbsp;&nbsp;
-      <!-- <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
-        <i class="fas fa-bars"></i>
-      </button> &nbsp;&nbsp; -->
       <p style="text-align: center;">
         <a href=""><img style="float: left;" src="images/favicon.png"  alt="" height="40"></a></p>
       <div> &nbsp;&nbsp;
@@ -130,13 +84,13 @@
         }
 
         function initlist(id){
-            // document.getElementById(id).scrollIntoView();
+            document.getElementById(id).scrollIntoView();
             // document.getElementById(id).click();
             // var x = window.scrollX+800, y = window.scrollY+800;
             // console.log(x,y);
             // document.getElementById(id).scrollTop;
             // window.scrollTo(x, y);            
-            goplay('',id);
+            // goplay('',id);
         }
 
         // create tv list 
