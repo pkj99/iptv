@@ -51,8 +51,8 @@
       <div class="main_section">
 
         <div class="list_section">
-            <ul id="list" class="content_section">
-            </ul>
+            <div id="list" class="content_section">
+            </div>
         </div>        
 
         <div class="player_fixed_section">
@@ -73,6 +73,11 @@
         function goplay(url,id){
             // console.log(id);
             document.getElementById('tv')['src']="dpplayer.html?url="+url;
+            var s = document.getElementsByClassName('content_item');
+            for(var i = 0;i<s.length;i++){
+                s[i].style.color = "white";
+            }
+            
             document.getElementById('m'+id.toString()).style.color = "orange";
             document.getElementById('m'+(id-8).toString()).scrollIntoView();
         }
@@ -97,7 +102,7 @@
                 
                 let htmlString = '';
 
-                for (let i = 0; i < 4; i++) {
+                for (let i = 0; i < 5; i++) {
                     htmlString += `<a class="content_item" onclick="">&nbsp;</a>`;
                 }
 
@@ -137,7 +142,7 @@
                 var url_tvg, tvg_logo, tvg_name, group_title, title, url, info;
                 let htmlString = '';
 
-                for (let i = 0; i < 4; i++) {
+                for (let i = 0; i < 5; i++) {
                     htmlString += `<a class="content_item" onclick="">&nbsp;</a>`;
                 }
 
