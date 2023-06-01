@@ -4,8 +4,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Askbootstrap">
-  <meta name="author" content="PKJWeb">
-  <title>FREE IPTV Player</title>
+  <meta name="author" content="PKJ">
+  <title>myIPTV</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   <link rel="apple-touch-icon" href="images/favicon.png" />  
@@ -71,15 +71,14 @@
         var initurl, initid;
 
         function goplay(url,id){
-            console.log(id);
+            // console.log(id);
             document.getElementById('tv')['src']="dpplayer.html?url="+url;
-            document.getElementById(id).scrollIntoView();
-            // console.log(document.getElementById(id));
+            document.getElementById('m'+id.toString()).style.color = "orange";
+            document.getElementById('m'+(id-8).toString()).scrollIntoView();
         }
 
         function initlist(id){
             document.getElementById(id).click();
-            // console.log(id);
         }
 
         // create tv list 
@@ -99,7 +98,7 @@
                 let htmlString = '';
 
                 for (let i = 0; i < 4; i++) {
-                    htmlString += `<a class="content_item" href="#">&nbsp;</a>`;
+                    htmlString += `<a class="content_item" onclick="">&nbsp;</a>`;
                 }
 
                 if (typeof data[0] == "undefined" ) { data = [];} else { data = data[0].values; }
@@ -115,10 +114,8 @@
                     }
 
                     image = 'images/iptv/' + title + '.png';
-                    // htmlString += `<li class="nav-item">`;
                     htmlString += `<a id="m${i}" class="content_item" data-value="${url}"`;
-                    htmlString += ` href="#" onclick="javascript:goplay('${url}','m${i}');"><img src="${image}" width="110px" height="60px">&nbsp;&nbsp;${title}</a>`;
-                    // htmlString += `</li>`;
+                    htmlString += ` onclick="javascript:goplay('${url}','${i}');"><img src="${image}" width="110px" height="60px">&nbsp;&nbsp;<div class="text">${title}</div></a>`;
                 }
 
 
@@ -141,7 +138,7 @@
                 let htmlString = '';
 
                 for (let i = 0; i < 4; i++) {
-                    htmlString += `<a class="content_item" href="#">&nbsp;</a>`;
+                    htmlString += `<a class="content_item" onclick="">&nbsp;</a>`;
                 }
 
                 var lines = contents.split(/[\r\n]/);
@@ -182,11 +179,8 @@
                     if (channel == "1") {
                         // console.log(tvg_logo, tvg_name, group_title, title, url, groupName);
                         if (group_title == groupName || groupName == 'ALL'){
-
-                            // htmlString += `<li class="nav-item">`;
                             htmlString += `<a id="m${i}" class="content_item" data-value="${url}"`;
-                            htmlString += ` href="#" onclick="javascript:goplay('${url}','m${i}');"><img src="${tvg_logo}" width="110px" height="60px">&nbsp;&nbsp;${title}</a>`;
-                            // htmlString += `</li>`;
+                            htmlString += ` onclick="javascript:goplay('${url}','${i}');"><img src="${tvg_logo}" width="110px" height="60px">&nbsp;&nbsp;<div class="text">${title}</div></a>`;
                         }
                         channel = "0";
                     }
@@ -270,7 +264,7 @@
             tvlists(sqlstring, initlist);
         }
        
-
+        
   </script>
 
 </body>

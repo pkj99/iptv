@@ -13,13 +13,18 @@ body {
 
 a {
     color: white;
-    text-decoration: none!important
+    text-decoration: none!important;
+    cursor: pointer;
 }
 
 a:hover,h1,h2,h3,h4,h5,h6 {
     color: red
 }
 
+a:active {
+    color: orange;
+}
+ 
 
 .header_section {
     position: relative;
@@ -28,7 +33,7 @@ a:hover,h1,h2,h3,h4,h5,h6 {
 }
 
 
-
+/* for mobile */
 @media(max-width: 575.98px){
 
 .header_section .header {
@@ -335,7 +340,6 @@ a:hover,h1,h2,h3,h4,h5,h6 {
 }    
 
 
-
 .player_section {
     position: relative;
     background-color: #000000;
@@ -367,7 +371,7 @@ a:hover,h1,h2,h3,h4,h5,h6 {
 }
 
 
-
+/* for desktop */
 @media(min-width: 576px){
 
     .header_section .header {
@@ -676,8 +680,7 @@ a:hover,h1,h2,h3,h4,h5,h6 {
         text-overflow: ellipsis;
         white-space: nowrap;
     }    
-    
-    
+
     
     .player_section {
         position: relative;
@@ -707,5 +710,5 @@ a:hover,h1,h2,h3,h4,h5,h6 {
         border: none;
     }
     
-    }
+}
     
