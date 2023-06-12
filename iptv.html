@@ -19,6 +19,8 @@
   <meta name="x5-page-mode" content="app">
   
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- <link href="css/iptv.css" rel="stylesheet"> -->
   <link href="css/iptv.mobile.css" rel="stylesheet">
@@ -78,8 +80,13 @@
                 s[i].style.color = "white";
             }
             
+            if (id>4) { 
+                var j = id - 4 ;
+                document.getElementById('m'+j.toString()).scrollIntoView();
+            }
+
             document.getElementById('m'+id.toString()).style.color = "orange";
-            document.getElementById('m'+(id-8).toString()).scrollIntoView();
+            
         }
 
         function initlist(id){
@@ -102,7 +109,7 @@
                 
                 let htmlString = '';
 
-                for (let i = 0; i < 5; i++) {
+                for (let i = 0; i < 4; i++) {
                     htmlString += `<a class="content_item" onclick="">&nbsp;</a>`;
                 }
 
@@ -126,7 +133,10 @@
 
                 document.getElementById('list').innerHTML = htmlString;
 
-                callback(initid);
+                if( typeof callback === 'function' ){
+                    callback(initid);
+                }
+                
                 
             };
             xhr.send();
@@ -142,12 +152,13 @@
                 var url_tvg, tvg_logo, tvg_name, group_title, title, url, info;
                 let htmlString = '';
 
-                for (let i = 0; i < 5; i++) {
+                for (let i = 0; i < 4; i++) {
                     htmlString += `<a class="content_item" onclick="">&nbsp;</a>`;
                 }
 
                 var lines = contents.split(/[\r\n]/);
                 for (var i in lines){
+                    var j = (i / 2);
                     var line = lines[i];
                     if (/#EXTM3U/.test(line)) {
                         channel = "0";
@@ -184,8 +195,8 @@
                     if (channel == "1") {
                         // console.log(tvg_logo, tvg_name, group_title, title, url, groupName);
                         if (group_title == groupName || groupName == 'ALL'){
-                            htmlString += `<a id="m${i}" class="content_item" data-value="${url}"`;
-                            htmlString += ` onclick="javascript:goplay('${url}','${i}');"><img src="${tvg_logo}" width="110px" height="60px">&nbsp;&nbsp;<div class="text">${title}</div></a>`;
+                            htmlString += `<a id="m${j}" class="content_item" data-value="${url}"`;
+                            htmlString += ` onclick="javascript:goplay('${url}','${j}');"><img src="${tvg_logo}" width="110px" height="60px">&nbsp;&nbsp;<div class="text">${title}</div></a>`;
                         }
                         channel = "0";
                     }
@@ -193,7 +204,9 @@
 
                 document.getElementById('list').innerHTML = htmlString;
 
-                callback(initid);
+                if( typeof callback === 'function' ){
+                    callback(initid);
+                }
                 // goplay(initurl,initid);
 
             };
@@ -276,7 +289,11 @@
             tvchannels(groupName, m3u_url, initlist);
             document.getElementById('menu5').classList.add("focus");
         }       
-        
+        if (urlParams["m3u"] != null){ 
+            m3u_url = urlParams["m3u"]; 
+            groupName = 'ALL';            
+            tvchannels(groupName, m3u_url, initlist);
+        }        
   </script>
 
 </body>
