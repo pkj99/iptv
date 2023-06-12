@@ -222,7 +222,7 @@
         // tvchannels("select * from iptv_movies");
         // tvchannels2('電影頻道');
         tvchannels("select * from iptv where catalog = '星視界頻道'");
-        // m3u_url = 'https://pkj99.github.io/demo/media/histartv.m3u'; 
+        // m3u_url = 'https://pkj99.github.io/histar/tv.m3u'; 
         // tvchannels2('ALL');
         document.getElementById('menu5').classList.add("active");
     }
