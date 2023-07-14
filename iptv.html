@@ -39,13 +39,13 @@
                 <a href="" class="logo_section">
                     <img src="images/favicon2.png" style="width: 30px; margin-top: 0px; margin-right: 10px;">
                 </a>
-                <a class="topic_item" id="menu0" href="?t=0"><div class="text">台灣</div></a>
-                <a class="topic_item" id="menu1" href="?t=1"><div class="text">大陸</div></a>
+                <!-- <a class="topic_item" id="menu0" href="?t=0"><div class="text">台灣</div></a> -->
+                <!-- <a class="topic_item" id="menu1" href="?t=1"><div class="text">大陸</div></a> -->
                 <!-- <a class="topic_item" id="menu2" href="?t=2"><div class="text">YT</div></a> -->
-                <a class="topic_item" id="menu3" href="?t=3"><div class="text">新聞</div></a>
-                <a class="topic_item" id="menu4" href="?t=4"><div class="text">體育</div></a>
+                <!-- <a class="topic_item" id="menu3" href="?t=3"><div class="text">新聞</div></a> -->
+                <!-- <a class="topic_item" id="menu4" href="?t=4"><div class="text">體育</div></a> -->
                 <!-- <a class="topic_item" id="menu5" href="?t=5"><div class="text">星視界</div></a> -->
-                <a class="topic_item" id="menu6" href="?t=6"><div class="text">歐飛</div></a>
+                <!-- <a class="topic_item" id="menu6" href="?t=6"><div class="text">歐飛</div></a> -->
                 </nav>
             </header>
         </div>
@@ -227,7 +227,7 @@
                 urlParams[decode(match[1])] = decode(match[2]);
         })();
 
-        if (urlParams["t"] == null){ var t = "0"; } else { var t = urlParams["t"];}
+        if (urlParams["t"] == null){ var t = "6"; } else { var t = urlParams["t"];}
         if (t == "0"){
             var sqlstring = "select * from iptv_tw";
             tvlists(sqlstring, initlist);
