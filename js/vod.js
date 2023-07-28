@@ -203,8 +203,8 @@
         document.getElementById('menu1').classList.add("active");
     }
     if (t == "2"){
-        // tvchannels("select * from iptv where catalog = 'Youtube頻道'");
-        tvchannels2('Youtube頻道');
+        tvchannels("select * from iptv where catalog = 'Youtube頻道'");
+        // tvchannels2('Youtube頻道');
         document.getElementById('menu2').classList.add("active");
     }
     if (t == "3"){
@@ -221,7 +221,8 @@
     if (t == "5"){
         // tvchannels("select * from iptv_movies");
         // tvchannels2('電影頻道');
-        tvchannels("select * from iptv where catalog = '星視界頻道'");
+        // tvchannels("select * from iptv where catalog = '星視界頻道'");
+        tvchannels("select * from iptv where catalog = '百視通頻道'");
         // m3u_url = 'https://pkj99.github.io/histar/tv.m3u'; 
         // tvchannels2('ALL');
         document.getElementById('menu5').classList.add("active");
