@@ -36,7 +36,7 @@
         <div class="header_section">
             <header class="header">
                 <nav class="bottom_section">
-                <a href="" class="logo_section">
+                <a href="iptv.html" class="logo_section">
                     <img src="images/favicon2.png" style="width: 30px; margin-top: 0px; margin-right: 10px;">
                 </a>
                 <!-- <a class="topic_item" id="menu0" href="?t=0"><div class="text">台灣</div></a> -->
@@ -213,6 +213,77 @@
             xhr.send();
         }
 
+        function tvm3u(groupName, m3u_url, callback){
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', m3u_url);
+            xhr.onload = e => {
+
+                var contents = xhr.response;
+                var channel = "0";
+                var url_tvg, tvg_logo, tvg_name, group_title, title, url, info;
+                let htmlString = '';
+
+                for (let i = 0; i < 4; i++) {
+                    htmlString += `<a class="content_item" onclick="">&nbsp;</a>`;
+                }
+
+                var lines = contents.split(/[\r\n]/);
+                for (var i in lines){
+                    var j = (i / 2);
+                    var line = lines[i];
+                    if (/#EXTM3U/.test(line)) {
+                        channel = "0";
+                        if (/url-tvg/.test(line)){
+                            var keyVal = line.split(/ /)[1], url_tvg = keyVal.split(/[=]/)[1].replaceAll('\"','').trim();
+                        }
+                    } else {
+                        if (/#EXTINF/.test(line)) {
+                            channel = "0";
+                            title = line.split(/,/)[1].replaceAll('\"','').trim();
+                            info = line.split(/,/)[0];
+
+                            if (/tvg-logo/.test(info)){
+                                var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();                        
+                            }
+                            if (/tvg-name/.test(info)){
+                                var keyVal = info.split(/tvg-name/)[1], val2 = keyVal.split(/ /)[0], tvg_name = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                            }
+                            if (/group-title/.test(info)){
+                                var keyVal = info.split(/group-title/)[1], val2 = keyVal.split(/ /)[0], group_title = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                            }
+                        } else {
+                            if (line.trim() != ''){
+                                channel = "1";
+                                url = line.trim();
+                                if (i<3) { 
+                                  initurl = url;
+                                  initid = `m${i}`;
+                                }
+                            }
+                        }
+                    }
+                    // alert("channel="+channel);
+                    if (channel == "1") {
+                        // console.log(tvg_logo, tvg_name, group_title, title, url, groupName);
+                        if (group_title == groupName || groupName == 'ALL'){
+                            htmlString += `<a id="m${j}" class="content_item" data-value="${url}"`;
+                            htmlString += ` onclick="javascript:goplay('${url}','${j}');"><img src="${tvg_logo}" width="110px" height="160px">&nbsp;&nbsp;<div class="text">${title}</div></a>`;
+                        }
+                        channel = "0";
+                    }
+                }
+
+                document.getElementById('list').innerHTML = htmlString;
+
+                if( typeof callback === 'function' ){
+                    callback(initid);
+                }
+                // goplay(initurl,initid);
+
+            };
+            xhr.send();
+        }
+
 
         // get params
         (window.onpopstate = function () {
@@ -230,9 +301,9 @@
         if (urlParams["m3u"] != null){ 
             m3u_url = urlParams["m3u"]; 
             groupName = 'ALL';            
-            tvchannels(groupName, m3u_url, initlist);
+            tvm3u(groupName, m3u_url, initlist);
         }  
-                
+
         if (urlParams["t"] == null){ var t = "5"; } else { var t = urlParams["t"];}
         if (t == "0"){
             var sqlstring = "select * from iptv_tw";
