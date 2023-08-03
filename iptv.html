@@ -255,11 +255,11 @@
             document.getElementById('menu4').classList.add("focus");
         }
         if (t == "5"){
-            var sqlstring = "select * from iptv where catalog='星視界頻道'";
-            tvlists(sqlstring);
-            // var m3u_url = 'https://pkj99.github.io/histar/tv.m3u';
-            // groupName = 'ALL';            
-            // tvchannels(groupName, m3u_url, initlist);
+            // var sqlstring = "select * from iptv where catalog='星視界頻道'";
+            // tvlists(sqlstring);
+            var m3u_url = 'https://pkj99.github.io/demo/media/ofiitv.m3u';
+            groupName = 'ALL';
+            tvchannels(groupName, m3u_url, initlist);
             document.getElementById('menu5').classList.add("focus");
         }
         if (t == "6"){
