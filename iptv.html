@@ -227,7 +227,13 @@
                 urlParams[decode(match[1])] = decode(match[2]);
         })();
 
-        if (urlParams["t"] == null){ var t = "6"; } else { var t = urlParams["t"];}
+        if (urlParams["m3u"] != null){ 
+            m3u_url = urlParams["m3u"]; 
+            groupName = 'ALL';            
+            tvchannels(groupName, m3u_url, initlist);
+        }  
+                
+        if (urlParams["t"] == null){ var t = "5"; } else { var t = urlParams["t"];}
         if (t == "0"){
             var sqlstring = "select * from iptv_tw";
             tvlists(sqlstring, initlist);
@@ -282,18 +288,12 @@
             tvlists(sqlstring, initlist);
         }
         if (t == "10"){
-            // var sqlstring = "select * from iptv where catalog='星視界頻道'";
-            // tvlists(sqlstring);
-            var m3u_url = 'https://pkj99.github.io/histar/tv.m3u';
+            var m3u_url = 'https://pkj99.github.io/demo/media/bestv.m3u';
             groupName = 'ALL';            
             tvchannels(groupName, m3u_url, initlist);
             document.getElementById('menu5').classList.add("focus");
         }       
-        if (urlParams["m3u"] != null){ 
-            m3u_url = urlParams["m3u"]; 
-            groupName = 'ALL';            
-            tvchannels(groupName, m3u_url, initlist);
-        }        
+     
   </script>
 
 </body>
