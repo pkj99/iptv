@@ -222,9 +222,10 @@
         // tvchannels("select * from iptv_movies");
         // tvchannels2('電影頻道');
         // tvchannels("select * from iptv where catalog = '星視界頻道'");
-        tvchannels("select * from iptv where catalog = '百視通頻道'");
+        // tvchannels("select * from iptv where catalog = '百視通頻道'");
         // m3u_url = 'https://pkj99.github.io/histar/tv.m3u'; 
-        // tvchannels2('ALL');
+        m3u_url = 'https://raw.githubusercontent.com/pkj99/YTChannel/main/youtube.m3u';
+        tvchannels2('ALL');
         document.getElementById('menu5').classList.add("active");
     }
     if (t == "6"){
