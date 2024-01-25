@@ -299,12 +299,6 @@
                 urlParams[decode(match[1])] = decode(match[2]);
         })();
 
-        if (urlParams["m3u"] != null){ 
-            m3u_url = urlParams["m3u"]; 
-            groupName = 'ALL';            
-            tvm3u(groupName, m3u_url, initlist);
-        }  
-
         if (urlParams["t"] == null){ 
             if (document.body.clientWidth < 600) {
                 var t = "6"; 
@@ -372,7 +366,15 @@
             tvchannels(groupName, m3u_url, initlist);
             document.getElementById('menu5').classList.add("focus");
         }       
-     
+
+        if (urlParams["m3u"] != null){ 
+            m3u_url = urlParams["m3u"]; 
+            groupName = 'ALL';            
+            tvm3u(groupName, m3u_url, initlist);
+        }  
+
+        
+
   </script>
 
 </body>

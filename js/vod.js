@@ -245,5 +245,6 @@
 
     if (urlParams["m3u"] != null){ 
         m3u_url = urlParams["m3u"]; 
-        tvchannels2('ALL');        
+        tvchannels2('ALL');
     }
+
