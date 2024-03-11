@@ -159,10 +159,11 @@
                         htmlString += `data-original="${url}" `;
                         htmlString += `style="background-image: url('${tvg_logo}')"`;
                         htmlString += `</a>`;
+						htmlString += `<span class="pic-text text-right">${group_title}</span>`;
                         htmlString += `</div>`;
-                        // htmlString += `<div class="myui-vodlist__detail">`;
-                        // htmlString += `<h4 class="title text-overflow"><a href="${url}">${title}</a></h4>`;
-                        // htmlString += `</div>`;
+                        htmlString += `<div class="myui-vodlist__detail">`;
+                        htmlString += `<h4 class="title text-overflow"><a href="${url}">${title}</a></h4>`;
+                        htmlString += `</div>`;
                         htmlString += `</li>`;
                     }
                     channel = "0";
@@ -187,6 +188,13 @@
         while (match = search.exec(query))
             urlParams[decode(match[1])] = decode(match[2]);
     })();
+
+    if (urlParams["m3u"] != null){ 
+        m3u_url = urlParams["m3u"]; 
+        tvchannels2('ALL');
+        document.getElementById('menu7').classList.add("active");
+    } else {
+
 
     if (urlParams["t"] == null){ var t = "0"; } else { var t = urlParams["t"];}
     if (t == "0"){
@@ -243,8 +251,4 @@
         document.getElementById('menu7').classList.add("active");
     }
 
-    if (urlParams["m3u"] != null){ 
-        m3u_url = urlParams["m3u"]; 
-        tvchannels2('ALL');
-    }
-
+	}
