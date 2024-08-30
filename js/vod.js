@@ -89,8 +89,8 @@
                 image = 'images/iptv/' + title + '.png';
                 htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
                 htmlString += `<div class="myui-vodlist__box">`;
-                htmlString += `<a class="myui-vodlist__thumb lazyload" href="" onclick="window.location.href=${url}" `;
-                // htmlString += `<a class="myui-vodlist__thumb lazyload" href="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#${url}" `;
+                // htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
+                htmlString += `<a class="myui-vodlist__thumb lazyload" href="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#${url}" `;
                 htmlString += `title="${title}" `;
                 htmlString += `data-original="${url}" `;
                 htmlString += `style="background-image: url('${image}')"`;
@@ -155,7 +155,8 @@
                     if (group_title == groupName || groupName == 'ALL'){
                         htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
                         htmlString += `<div class="myui-vodlist__box">`;
-                        htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
+                        // htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
+                        htmlString += `<a class="myui-vodlist__thumb lazyload" href="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#${url}" `;
                         htmlString += `title="${title}" `;
                         htmlString += `data-original="${url}" `;
                         htmlString += `style="background-image: url('${tvg_logo}')"`;
