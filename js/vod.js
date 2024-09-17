@@ -252,5 +252,8 @@
         tvchannels2('ALL'); 
         document.getElementById('menu7').classList.add("active");
     }
-
+    if (t == "9"){
+        tvchannels("select * from iptv where hostname = '4gtv.mumi.rip'");
+        document.getElementById('menu9').classList.add("active");
+    }
 	}
