@@ -65,6 +65,9 @@
               <div style="position: relative; width: 100%; padding-top: calc(100% * 720 / 1280); ">
                 <iframe id='tv' src="" class="iframe_tv" width="100%" style="position: absolute; width: 100%; height: 100%; top: 0; left:0;" allowfullscreen>
                 </iframe>
+                <!-- <video class="iframe_tv" width="100%" style="position: absolute; width: 50%; height: 50%; top: 0; left:0;" controls>
+                    <source id='tv' src="" type="application/x-mpegURL">
+                </video> -->
               </div>
             </div>
           </div>
@@ -81,9 +84,11 @@
         var initurl, initid;
 
         function goplay(url,id){
-            document.getElementById('tv')['src']="dpplayer.html?url="+url;
+            document.getElementById('tv')['src']=url;
+            // document.getElementById('tv')['src']="dpplayer.html?url="+url;
             // document.getElementById('tv')['src']="chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#"+url;
             document.getElementById(id).scrollIntoView();
+            console.log(document.getElementById('tv')['src']);
         }
 
         function initlist(id){
