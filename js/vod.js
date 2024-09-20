@@ -253,7 +253,7 @@
         document.getElementById('menu7').classList.add("active");
     }
     if (t == "9"){
-        tvchannels("select * from iptv where hostname = '4gtv.mumi.rip'");
+        tvchannels("select * from iptv where catalog = '四季頻道'");
         document.getElementById('menu9').classList.add("active");
     }
 	}

@@ -17,7 +17,9 @@
   <meta name="browsermode" content="application">
   <meta name="x5-fullscreen" content="true">
   <meta name="x5-page-mode" content="app">
-  
+
+  <meta name="mobile-web-app-capable" content="yes">
+
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
@@ -356,16 +358,16 @@
             tvlists(sqlstring, initlist);
             document.getElementById('menu7').classList.add("focus");
         }
-        if (t == "9"){
-            var sqlstring = "select pid,title,replace(url,'https://ythls.onrender.com','http://127.0.0.1:3000') as url,catalog,image,alive,netstat,speed,best,hostname,insert_time from iptv where catalog = 'Youtube頻道'";
-            tvlists(sqlstring, initlist);
-        }
-        if (t == "10"){
-            var m3u_url = 'https://pkj99.github.io/demo/media/bestv.m3u';
-            groupName = 'ALL';            
-            tvchannels(groupName, m3u_url, initlist);
-            document.getElementById('menu5').classList.add("focus");
-        }       
+        // if (t == "9"){
+        //     var sqlstring = "select pid,title,replace(url,'https://ythls.onrender.com','http://127.0.0.1:3000') as url,catalog,image,alive,netstat,speed,best,hostname,insert_time from iptv where catalog = 'Youtube頻道'";
+        //     tvlists(sqlstring, initlist);
+        // }
+        // if (t == "10"){
+        //     var m3u_url = 'https://pkj99.github.io/demo/media/bestv.m3u';
+        //     groupName = 'ALL';            
+        //     tvchannels(groupName, m3u_url, initlist);
+        //     document.getElementById('menu5').classList.add("focus");
+        // }       
 
         if (urlParams["m3u"] != null){ 
             m3u_url = urlParams["m3u"]; 
