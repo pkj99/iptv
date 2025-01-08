@@ -43,7 +43,7 @@
                 </a>
                 <a class="topic_item" id="menu0" href="?t=0"><div class="text">台灣</div></a>
                 <a class="topic_item" id="menu1" href="?t=1"><div class="text">大陸</div></a>
-                <!-- <a class="topic_item" id="menu2" href="?t=2"><div class="text">YT</div></a> -->
+                <a class="topic_item" id="menu2" href="?t=2"><div class="text">香港</div></a>
                 <!-- <a class="topic_item" id="menu3" href="?t=3"><div class="text">新聞</div></a> -->
                 <!-- <a class="topic_item" id="menu4" href="?t=4"><div class="text">體育</div></a> -->
                 <!-- <a class="topic_item" id="menu5" href="?t=5"><div class="text">YT頻道</div></a> -->
@@ -319,8 +319,7 @@
             document.getElementById('menu1').classList.add("focus");
         }
         if (t == "2"){
-            // var sqlstring = "select * from iptv where catalog = 'Youtube頻道'";
-            var sqlstring = "select * from iptv where url like 'https://pkj99.github.io/YTLive/%'";
+            var sqlstring = "select * from iptv where catalog = '香港頻道'";
             tvlists(sqlstring, initlist);
             document.getElementById('menu2').classList.add("focus");
         }

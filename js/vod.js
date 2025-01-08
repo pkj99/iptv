@@ -213,7 +213,7 @@
         document.getElementById('menu1').classList.add("active");
     }
     if (t == "2"){
-        tvchannels("select * from iptv where catalog = 'Youtube頻道'");
+        tvchannels("select * from iptv where catalog = '香港頻道'");
         // tvchannels2('Youtube頻道');
         document.getElementById('menu2').classList.add("active");
     }
