@@ -200,15 +200,15 @@
 
     if (urlParams["t"] == null){ var t = "0"; } else { var t = urlParams["t"];}
     if (t == "0"){
-        // tvchannels("select * from iptv_tw");
-        m3u_url = 'https://pkj99.github.io/iptv/twtv.m3u';
-        tvchannels2('台湾頻道');
+        tvchannels("select * from iptv_tw");
+        // m3u_url = 'https://pkj99.github.io/iptv/twtv.m3u';
+        // tvchannels2('台湾頻道');
         document.getElementById('menu0').classList.add("active");
     }
     if (t == "1"){
-        // tvchannels("select * from iptv_cn");
-        m3u_url = 'https://pkj99.github.io/iptv/cntv.m3u';
-        tvchannels2('ALL');
+        tvchannels("select * from iptv_cn");
+        // m3u_url = 'https://pkj99.github.io/iptv/cntv.m3u';
+        // tvchannels2('ALL');
         document.getElementById('menu1').classList.add("active");
     }
     if (t == "2"){

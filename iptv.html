@@ -309,13 +309,13 @@
             }
         } else { var t = urlParams["t"];}
         if (t == "0"){
-            // tvlists( "select * from iptv_tw", initlist);
-            tvchannels('台湾頻道', 'https://pkj99.github.io/iptv/twtv.m3u', initlist);
+            tvlists( "select * from iptv_tw", initlist);
+            // tvchannels('台湾頻道', 'https://pkj99.github.io/iptv/twtv.m3u', initlist);
             document.getElementById('menu0').classList.add("focus");
         }
         if (t == "1"){
-            // tvlists( "select * from iptv_cn", initlist);
-            tvchannels('大陸頻道', 'https://pkj99.github.io/iptv/cntv.m3u', initlist);
+            tvlists( "select * from iptv_cn", initlist);
+            // tvchannels('大陸頻道', 'https://pkj99.github.io/iptv/cntv.m3u', initlist);
             document.getElementById('menu1').classList.add("focus");
         }
         if (t == "2"){
