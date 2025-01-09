@@ -150,22 +150,30 @@
                     }
                 }
                 // alert("channel="+channel);
+
+                if (tvg_logo == "" || tvg_logo == null){tvg_logo="https://pkj99.github.io/iptv/images/iptv2.png"};
+
                 if (channel == "1") {
                     // console.log(tvg_logo, tvg_name, group_title, title, url, groupName);
                     if (group_title == groupName || groupName == 'ALL'){
                         htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
                         htmlString += `<div class="myui-vodlist__box">`;
-                        // htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
                         htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
+                        // htmlString += `<a class="myui-vodlist__thumb lazyload" href="dpplayer.html?url=${url}" `;
                         htmlString += `title="${title}" `;
                         htmlString += `data-original="${url}" `;
                         htmlString += `style="background-image: url('${tvg_logo}')"`;
                         htmlString += `</a>`;
-						htmlString += `<span class="pic-text text-right">${group_title}</span>`;
+                        if (tvg_logo == "https://pkj99.github.io/iptv/images/iptv2.png"){
+                            // htmlString += `<span class="pic-text text-right">${group_title}</span>`;
+                            htmlString += `<span class="pic-text text-right">${title}</span>`;
+                        }
                         htmlString += `</div>`;
-                        htmlString += `<div class="myui-vodlist__detail">`;
-                        htmlString += `<h4 class="title text-overflow"><a href="${url}">${title}</a></h4>`;
-                        htmlString += `</div>`;
+                        // if (tvg_logo=="https://pkj99.github.io/iptv/images/iptv2.png"){
+                        //     htmlString += `<div class="myui-vodlist__detail">`;
+                        //     htmlString += `<h4 class="title text-overflow"><a href="${url}">${title}</a></h4>`;
+                        //     htmlString += `</div>`;
+                        // }
                         htmlString += `</li>`;
                     }
                     channel = "0";
@@ -202,7 +210,7 @@
     if (t == "0"){
         tvchannels("select * from iptv_tw");
         // m3u_url = 'https://pkj99.github.io/iptv/twtv.m3u';
-        // tvchannels2('台湾頻道');
+        // tvchannels2('台灣頻道');
         document.getElementById('menu0').classList.add("active");
     }
     if (t == "1"){
@@ -216,18 +224,21 @@
         document.getElementById('menu2').classList.add("active");
     }
     if (t == "3"){
-        tvchannels("select * from iptv_news where catalog='台湾頻道'");
+        // tvchannels("select * from iptv_news where catalog='台灣頻道'");
+        tvchannels("select * from iptv_news order by catalog");
         // tvchannels2('新聞頻道');
         document.getElementById('menu3').classList.add("active");
     }
     if (t == "4"){
-        tvchannels("select * from iptv_sports where catalog in ('台湾頻道','央视')");
+        // tvchannels("select * from iptv_sports where catalog in ('台灣頻道','央视')");
+        tvchannels("select * from iptv_sports order by catalog");
         // tvchannels2('體育頻道');
         document.getElementById('menu4').classList.add("active");
     }
     if (t == "5"){
-        m3u_url = 'https://pkj99.github.io/iptv/4gtv.m3u'; 
-        tvchannels2('四季頻道');
+        tvchannels("select * from iptv where catalog = '四季頻道'");
+        // m3u_url = 'https://pkj99.github.io/iptv/4gtv.m3u'; 
+        // tvchannels2('四季頻道');
         document.getElementById('menu5').classList.add("active");
     }
     if (t == "6"){
@@ -239,9 +250,5 @@
         m3u_url = 'https://iptv-org.github.io/iptv/languages/zho.m3u'; 
         tvchannels2('ALL'); 
         document.getElementById('menu7').classList.add("active");
-    }
-    if (t == "9"){
-        tvchannels("select * from iptv where catalog = '四季頻道'");
-        document.getElementById('menu9').classList.add("active");
     }
 	}
