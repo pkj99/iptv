@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover">
 <meta name="renderer" content="webkit">
 
-<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-touch-fullscreen" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="full-screen" content="yes">
@@ -24,12 +25,11 @@
 <meta name="keywords" content="Video Player">
 <meta name="referrer" content="same-origin">
 
-<meta name="mobile-web-app-capable" content="yes">
-
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
 <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
-<script src="js/hls.min.js"></script>
+<!-- <script src="js/hls.min.js"></script> -->
+<script src="js/hls.js"></script>
 <script src="js/DPlayer.min.js"></script>
 
 <style type="text/css">
@@ -64,7 +64,20 @@
 			while (match = search.exec(query))
 			urlParams[decode(match[1])] = decode(match[2]);
 		})();
-		if (urlParams["url"] == null){ var url = ""; } else { var url = urlParams["url"];}
+		if (urlParams["url"] == null){ 
+			var url = ""; 
+		} else { 
+			var url = urlParams["url"];
+			var params = "";
+			for (key in urlParams){
+				if (key != "url"){
+					params += "&" + key + "=" + urlParams[key];
+				}
+			}
+			url += params;
+		}
+		// alert(url);
+		console.log(url);
 
 	   	const dp = new DPlayer({
 		    container: document.getElementById('dplayer'),

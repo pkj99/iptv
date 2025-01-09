@@ -44,11 +44,10 @@
                 <a class="topic_item" id="menu0" href="?t=0"><div class="text">台灣</div></a>
                 <a class="topic_item" id="menu1" href="?t=1"><div class="text">大陸</div></a>
                 <a class="topic_item" id="menu2" href="?t=2"><div class="text">香港</div></a>
-                <!-- <a class="topic_item" id="menu3" href="?t=3"><div class="text">新聞</div></a> -->
+                <a class="topic_item" id="menu3" href="?t=3"><div class="text">四季</div></a>
                 <!-- <a class="topic_item" id="menu4" href="?t=4"><div class="text">體育</div></a> -->
                 <!-- <a class="topic_item" id="menu5" href="?t=5"><div class="text">YT頻道</div></a> -->
-                <!-- <a class="topic_item" id="menu6" href="?t=6"><div class="text">歐飛</div></a> -->
-                <!-- <a class="topic_item" id="menu6" href="https://pkj99.github.io/ofiii/vod/index.html?path="><div class="text">VOD</div></a> -->
+                <a class="topic_item" id="menu6" href="?t=6"><div class="text">其他</div></a>
                 </nav>
             </header>
         </div>
@@ -78,6 +77,7 @@
         function goplay(url,id){
             // console.log(id);
             document.getElementById('tv')['src']="dpplayer.html?url="+url;
+            // document.getElementById('tv')['src']="xplayer.html?url="+url;
             var s = document.getElementsByClassName('content_item');
             for(var i = 0;i<s.length;i++){
                 s[i].style.color = "white";
@@ -309,64 +309,36 @@
             }
         } else { var t = urlParams["t"];}
         if (t == "0"){
-            var sqlstring = "select * from iptv_tw";
-            tvlists(sqlstring, initlist);
+            // tvlists( "select * from iptv_tw", initlist);
+            tvchannels('台湾頻道', 'https://pkj99.github.io/iptv/twtv.m3u', initlist);
             document.getElementById('menu0').classList.add("focus");
         }
         if (t == "1"){
-            var sqlstring = "select * from iptv_cn";
-            tvlists(sqlstring, initlist);
+            // tvlists( "select * from iptv_cn", initlist);
+            tvchannels('大陸頻道', 'https://pkj99.github.io/iptv/cntv.m3u', initlist);
             document.getElementById('menu1').classList.add("focus");
         }
         if (t == "2"){
-            var sqlstring = "select * from iptv where catalog = '香港頻道'";
-            tvlists(sqlstring, initlist);
+            tvlists("select * from iptv where catalog = '香港頻道'", initlist);
             document.getElementById('menu2').classList.add("focus");
         }
         if (t == "3"){
-            var sqlstring = "select * from iptv_news where catalog='台湾頻道'";
-            tvlists(sqlstring, initlist);
+            // tvlists("select * from iptv_news where catalog='台湾頻道'", initlist);
+            tvchannels('四季頻道', 'https://pkj99.github.io/iptv/4gtv.m3u', initlist);            
             document.getElementById('menu3').classList.add("focus");
         }
         if (t == "4"){
-            var sqlstring = "select * from iptv_sports where catalog='台湾頻道'";
-            tvlists(sqlstring, initlist);
+            tvlists("select * from iptv_sports where catalog='台湾頻道'", initlist);
             document.getElementById('menu4').classList.add("focus");
         }
-        if (t == "5"){
-            // var sqlstring = "select * from iptv where catalog='星視界頻道'";
-            // tvlists(sqlstring);
-            // var m3u_url = 'https://pkj99.github.io/demo/media/ofiitv.m3u';
-            var m3u_url = 'https://raw.githubusercontent.com/pkj99/YTChannel/main/youtube.m3u';
-            groupName = 'ALL';
-            tvchannels(groupName, m3u_url, initlist);
-            document.getElementById('menu5').classList.add("focus");
-        }
         if (t == "6"){
-            // var sqlstring = "select * from iptv where catalog = '台湾頻道' and title not like '%体育%' and title not like '%新闻%' and title not like '%电影%' and title not like '%洋片%' and title not like '%HBO%'";
-            // tvlists(sqlstring);
-            // tvlists("select * from iptv where catalog = '歐飛頻道'");            
-            var m3u_url = 'https://pkj99.github.io/ofiii/tv.m3u';
-            groupName = 'ALL';
-            tvchannels(groupName, m3u_url, initlist);
+            tvchannels('其他頻道', 'https://pkj99.github.io/iptv/othertv.m3u', initlist);
             document.getElementById('menu6').classList.add("focus");
         }         
         if (t == "7"){
-            // var sqlstring = "select * from iptv where catalog='民視頻道' or hostname in ('pull-l3-cny.douyincdn.com','d2e1asnsl7br7b.cloudfront.net','fox-foxnewsnow-samsungus.amagi.tv') order by catalog desc";
-            var sqlstring = "select * from iptv where catalog='民視頻道'";
-            tvlists(sqlstring, initlist);
+            tvlists("select * from iptv where catalog='民視頻道'", initlist);
             document.getElementById('menu7').classList.add("focus");
         }
-        // if (t == "9"){
-        //     var sqlstring = "select pid,title,replace(url,'https://ythls.onrender.com','http://127.0.0.1:3000') as url,catalog,image,alive,netstat,speed,best,hostname,insert_time from iptv where catalog = 'Youtube頻道'";
-        //     tvlists(sqlstring, initlist);
-        // }
-        // if (t == "10"){
-        //     var m3u_url = 'https://pkj99.github.io/demo/media/bestv.m3u';
-        //     groupName = 'ALL';            
-        //     tvchannels(groupName, m3u_url, initlist);
-        //     document.getElementById('menu5').classList.add("focus");
-        // }       
 
         if (urlParams["m3u"] != null){ 
             m3u_url = urlParams["m3u"]; 
