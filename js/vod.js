@@ -3,7 +3,7 @@
     var db_url = 'https://pkj99.github.io/iptv/db/iptv.db';
     var pagecount;
     var urlParams;
-    var m3u_url = 'https://pkj99.github.io/demo/media/iptv.m3u';
+    var m3u_url = 'https://pkj99.github.io/iptv/twtv.m3u';
     
     // 收藏設定 Cookie 
   
@@ -89,8 +89,7 @@
                 image = 'images/iptv/' + title + '.png';
                 htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
                 htmlString += `<div class="myui-vodlist__box">`;
-                // htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
-                htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
+                htmlString += `<a class="myui-vodlist__thumb lazyload" target="_blank" href="${url}" `;
                 htmlString += `title="${title}" `;
                 htmlString += `data-original="${url}" `;
                 htmlString += `style="background-image: url('${image}')"`;
@@ -149,7 +148,6 @@
                         }
                     }
                 }
-                // alert("channel="+channel);
 
                 if (tvg_logo == "" || tvg_logo == null){tvg_logo="https://pkj99.github.io/iptv/images/iptv2.png"};
 
@@ -158,8 +156,7 @@
                     if (group_title == groupName || groupName == 'ALL'){
                         htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
                         htmlString += `<div class="myui-vodlist__box">`;
-                        htmlString += `<a class="myui-vodlist__thumb lazyload" href="${url}" `;
-                        // htmlString += `<a class="myui-vodlist__thumb lazyload" href="dpplayer.html?url=${url}" `;
+                        htmlString += `<a class="myui-vodlist__thumb lazyload" target="_blank" href="${url}" `;
                         htmlString += `title="${title}" `;
                         htmlString += `data-original="${url}" `;
                         htmlString += `style="background-image: url('${tvg_logo}')"`;
@@ -202,7 +199,7 @@
     if (urlParams["m3u"] != null){ 
         m3u_url = urlParams["m3u"]; 
         tvchannels2('ALL');
-        document.getElementById('menu7').classList.add("active");
+        // document.getElementById('menu7').classList.add("active");
     } else {
 
 
@@ -246,9 +243,9 @@
         tvchannels2('其他頻道');         
         document.getElementById('menu6').classList.add("active");
     }
-    if (t == "7"){
-        m3u_url = 'https://iptv-org.github.io/iptv/languages/zho.m3u'; 
-        tvchannels2('ALL'); 
-        document.getElementById('menu7').classList.add("active");
-    }
+    // if (t == "7"){
+    //     m3u_url = 'https://iptv-org.github.io/iptv/languages/zho.m3u'; 
+    //     tvchannels2('ALL'); 
+    //     document.getElementById('menu7').classList.add("active");
+    // }
 	}
