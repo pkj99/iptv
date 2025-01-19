@@ -1,0 +1,13 @@
+#EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"
+#EXTINF:-1 tvg-logo="https://pkj99.github.io/iptv/images/ftv/民視.png" tvg-name="民視" group-title="民視頻道",民視
+https://pkj99.github.io/iptv/ftv.html?ChannelName=FTV
+#EXTINF:-1 tvg-logo="https://pkj99.github.io/iptv/images/ftv/民視第一台.png" tvg-name="民視第一台" group-title="民視頻道",民視第一台
+https://pkj99.github.io/iptv/ftv.html?ChannelName=FMTV
+#EXTINF:-1 tvg-logo="https://pkj99.github.io/iptv/images/ftv/民視新聞台.png" tvg-name="民視新聞台" group-title="民視頻道",民視新聞台
+https://pkj99.github.io/iptv/ftv.html?ChannelName=FTVNews
+#EXTINF:-1 tvg-logo="https://pkj99.github.io/iptv/images/ftv/民視影劇台.png" tvg-name="民視影劇台" group-title="民視頻道",民視影劇台
+https://pkj99.github.io/iptv/ftv.html?ChannelName=FTVDrama
+#EXTINF:-1 tvg-logo="https://pkj99.github.io/iptv/images/ftv/民視綜藝台.png" tvg-name="民視綜藝台" group-title="民視頻道",民視綜藝台
+https://pkj99.github.io/iptv/ftv.html?ChannelName=FTVVariety
+#EXTINF:-1 tvg-logo="https://pkj99.github.io/iptv/images/ftv/民視旅遊台.png" tvg-name="民視旅遊台" group-title="民視頻道",民視旅遊台
+https://pkj99.github.io/iptv/ftv.html?ChannelName=FTVTravel
