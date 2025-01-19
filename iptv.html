@@ -43,8 +43,9 @@
                 </a>
                 <a class="topic_item" id="menu0" href="?t=0"><div class="text">台灣</div></a>
                 <a class="topic_item" id="menu1" href="?t=1"><div class="text">大陸</div></a>
-                <a class="topic_item" id="menu2" href="?t=2"><div class="text">香港</div></a>
+                <!-- <a class="topic_item" id="menu2" href="?t=2"><div class="text">香港</div></a> -->
                 <a class="topic_item" id="menu3" href="?t=3"><div class="text">四季</div></a>
+                <a class="topic_item" id="menu7" href="?t=7"><div class="text">民視</div></a>
                 <!-- <a class="topic_item" id="menu4" href="?t=4"><div class="text">體育</div></a> -->
                 <!-- <a class="topic_item" id="menu5" href="?t=5"><div class="text">YT頻道</div></a> -->
                 <a class="topic_item" id="menu6" href="?t=6"><div class="text">其他</div></a>
@@ -336,7 +337,8 @@
             document.getElementById('menu6').classList.add("focus");
         }         
         if (t == "7"){
-            tvlists("select * from iptv where catalog='民視頻道'", initlist);
+            // tvlists("select * from iptv where catalog='民視頻道'", initlist);
+            tvchannels('民視頻道', 'https://pkj99.github.io/iptv/ftv.m3u', initlist);
             document.getElementById('menu7').classList.add("focus");
         }
 
