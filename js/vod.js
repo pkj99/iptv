@@ -89,7 +89,7 @@
                 image = 'images/iptv/' + title + '.png';
                 htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
                 htmlString += `<div class="myui-vodlist__box">`;
-                htmlString += `<a class="myui-vodlist__thumb lazyload" target="_blank" href="${url}" `;
+                htmlString += `<a class="myui-vodlist__thumb lazyload" target="${target}" href="${url}" `;
                 htmlString += `title="${title}" `;
                 htmlString += `data-original="${url}" `;
                 htmlString += `style="background-image: url('${image}')"`;
@@ -156,7 +156,7 @@
                     if (group_title == groupName || groupName == 'ALL'){
                         htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
                         htmlString += `<div class="myui-vodlist__box">`;
-                        htmlString += `<a class="myui-vodlist__thumb lazyload" target="_blank" href="${url}" `;
+                        htmlString += `<a class="myui-vodlist__thumb lazyload" target="${target}" href="${url}" `;
                         htmlString += `title="${title}" `;
                         htmlString += `data-original="${url}" `;
                         htmlString += `style="background-image: url('${tvg_logo}')"`;
@@ -195,6 +195,13 @@
         while (match = search.exec(query))
             urlParams[decode(match[1])] = decode(match[2]);
     })();
+
+    if (document.body.clientWidth < 600) {
+        var target = ""; 
+    } else {
+        var target = "_blank"; 
+    }
+
 
     if (urlParams["m3u"] != null){ 
         m3u_url = urlParams["m3u"]; 
@@ -253,9 +260,4 @@
         tvchannels2('歐飛頻道');         
         document.getElementById('menu8').classList.add("active");
     }
-    // if (t == "7"){
-    //     m3u_url = 'https://iptv-org.github.io/iptv/languages/zho.m3u'; 
-    //     tvchannels2('ALL'); 
-    //     document.getElementById('menu7').classList.add("active");
-    // }
 	}
