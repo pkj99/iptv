@@ -933,9 +933,9 @@ a:active {
     
     .main_section {
         max-width: 1980px;
-        margin-left: auto;
+        /* margin-left: auto; */
         margin-right: auto;
-        margin-top: -140px;
+        margin-top: -120px;
         margin-bottom: 20px;
         display: -webkit-box;
         display: -webkit-flex;

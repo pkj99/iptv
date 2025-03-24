@@ -25,7 +25,7 @@ function chUrl(asset_id, media_type, callback)
     .then(data => {
         var j = JSON.parse(data);
         var Url = j.asset_urls;
-        location.href = Url;
+        location.href = 'dpplayer.html?url='+Url;
     });
 }
 

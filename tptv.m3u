@@ -82,3 +82,9 @@ https://iptv.vip-tptv.xyz/litv.php?id=4gtv-4gtv080
 https://iptv.vip-tptv.xyz/litv.php?id=4gtv-4gtv040
 #EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv066_tv.png" tvg-name="台视" group-title="TP頻道",台视
 https://iptv.vip-tptv.xyz/litv.php?id=4gtv-4gtv066
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn15_mobile.png" tvg-name="寰宇新闻台湾台" group-title="TP頻道",寰宇新闻台湾台
+https://iptv.vip-tptv.xyz/litv.php?id=litv-longturn15
+#EXTINF:-1 tvg-logo="https://i0.wp.com/img.isuper.tv/live-tv/gtv-live.jpg" tvg-name="八大综合台" group-title="TP頻道",八大综合台
+https://iptv.vip-tptv.xyz/litv.php?id=4gtv-4gtv039
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/龙华经典.png" tvg-name="龙华经典" group-title="TP頻道",龙华经典
+https://iptv.vip-tptv.xyz/litv.php?id=litv-longturn21
