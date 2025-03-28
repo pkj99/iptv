@@ -1,57 +1,4 @@
 台灣頻道,#genre#
-Love Nature,https://tv.iill.top/4gtv/139
-車迷 TV,https://tv.iill.top/4gtv/160
-幸福空間居家,https://tv.iill.top/4gtv/168
-三立綜合,https://tv.iill.top/4gtv/169
-東森購物 一,https://tv.iill.top/4gtv/173
-東森購物 二,https://tv.iill.top/4gtv/174
-LUXE TV,https://tv.iill.top/4gtv/175
-My Cinema Europe HD 我的歐洲電影,https://tv.iill.top/4gtv/176
-TV5MONDE Style,https://tv.iill.top/4gtv/178
-Rock Action,https://tv.iill.top/4gtv/180
-TechStorm,https://tv.iill.top/4gtv/181
-Pet Club TV,https://tv.iill.top/4gtv/182
-Nickelodeon,https://tv.iill.top/4gtv/185
-HITS 頻道,https://tv.iill.top/4gtv/186
-LiveABC 互動英語,https://tv.iill.top/4gtv/188
-經典電影,https://tv.iill.top/4gtv/201
-經典卡通,https://tv.iill.top/4gtv/202
-精選動漫,https://tv.iill.top/4gtv/204
-大愛電視,https://tv.iill.top/4gtv/209
-人間衛視,https://tv.iill.top/4gtv/210
-影迷數位紀實,https://tv.iill.top/4gtv/212
-MTV Live HD 音樂頻道,https://tv.iill.top/4gtv/213
-History 歷史頻道,https://tv.iill.top/4gtv/214
-CI 罪案偵查頻道,https://tv.iill.top/4gtv/215
-Lifetime 娛樂頻道,https://tv.iill.top/4gtv/217
-電影原聲 CMusic,https://tv.iill.top/4gtv/218
-Nick Jr. 兒童頻道,https://tv.iill.top/4gtv/219
-SBN 全球財經,https://tv.iill.top/4gtv/224
-CinemaWorld,https://tv.iill.top/4gtv/225
-DW德國之聲,https://tv.iill.top/4gtv/226
-三立新聞,https://tv.iill.top/4gtv/229
-大愛電視 2,https://tv.iill.top/4gtv/230
-MOMO 親子,https://tv.iill.top/4gtv/231
-CNBC Asia 財經,https://tv.iill.top/4gtv/235
-金光布袋戲,https://tv.iill.top/4gtv/236
-ELTA 生活旅遊,https://tv.iill.top/4gtv/237
-戲劇免費看 2,https://tv.iill.top/4gtv/244
-電影免費看 2,https://tv.iill.top/4gtv/245
-滾動力 Rollor,https://tv.iill.top/4gtv/249
-Global Trekker,https://tv.iill.top/4gtv/252
-兒童卡通,https://tv.iill.top/4gtv/269
-戲劇免費看 1,https://tv.iill.top/4gtv/270
-原住民族電視,https://tv.iill.top/4gtv/273
-Fun 探索娛樂,https://tv.iill.top/4gtv/274
-Rock Entertainment,https://tv.iill.top/4gtv/275
-時尚運動X,https://tv.iill.top/4gtv/277
-DreamWorks 夢工廠動畫,https://tv.iill.top/4gtv/282
-Bloomberg TV,https://tv.iill.top/4gtv/283
-TVBS 綜藝,https://tv.iill.top/4gtv/284
-TVBS 台劇,https://tv.iill.top/4gtv/285
-東森購物 四,https://tv.iill.top/4gtv/286
-東森購物 三,https://tv.iill.top/4gtv/287
-霹靂布袋戲,https://tv.iill.top/4gtv/301
 民視台灣,https://tv.iill.top/litv/4gtv-4gtv001
 民視,https://tv.iill.top/litv/4gtv-4gtv002
 民視第一,https://tv.iill.top/litv/4gtv-4gtv003
@@ -139,34 +86,63 @@ Smart 知識,https://tv.iill.top/litv/litv-longturn19
 ELTA生活英語,https://tv.iill.top/litv/litv-longturn20
 龍華經典,https://tv.iill.top/litv/litv-longturn21
 台灣戲劇,https://tv.iill.top/litv/litv-longturn22
-央視,#genre#
-CCTV 1 综合,https://tv.iill.top/live/cctv1
-CCTV 10 科教,https://tv.iill.top/live/cctv10
-CCTV 11 戏曲,https://tv.iill.top/live/cctv11
-CCTV 12 社会与法,https://tv.iill.top/live/cctv12
-CCTV 13 新闻,https://tv.iill.top/live/cctv13
-CCTV 14 少儿,https://tv.iill.top/live/cctv14
-CCTV 15 音乐,https://tv.iill.top/live/cctv15
-CCTV 17 农村农业,https://tv.iill.top/live/cctv17
-CCTV 2 财经,https://tv.iill.top/live/cctv2
-CCTV 3 综艺,https://tv.iill.top/live/cctv3
-CCTV 4 中文国际,https://tv.iill.top/live/cctv4
-CCTV 4 中文国际·欧洲,https://tv.iill.top/live/cctv4o
-CCTV 4 中文国际·美洲,https://tv.iill.top/live/cctv4m
-CCTV 5 体育,https://tv.iill.top/live/cctv5
-CCTV 5+ 体育赛事,https://tv.iill.top/live/cctv5p
-CCTV 6 电影,https://tv.iill.top/live/cctv6
-CCTV 7 国防军事,https://tv.iill.top/live/cctv7
-CCTV 8 电视剧,https://tv.iill.top/live/cctv8
-CCTV 9 纪录,https://tv.iill.top/live/cctv9
-衛視,#genre#
-东方卫视,https://tv.iill.top/migu/dfws
-广东卫视,https://tv.iill.top/migu/gdws
-江苏卫视,https://tv.iill.top/migu/jsws
-江西卫视,https://tv.iill.top/migu/jxws
-湖北卫视,https://tv.iill.top/migu/hubws
-澳門蓮花,https://tv.iill.top/mo/lhws
-陕西卫视,https://tv.iill.top/migu/sxws
+Love Nature,https://tv.iill.top/4gtv/139
+車迷 TV,https://tv.iill.top/4gtv/160
+幸福空間居家,https://tv.iill.top/4gtv/168
+三立綜合,https://tv.iill.top/4gtv/169
+東森購物 一,https://tv.iill.top/4gtv/173
+東森購物 二,https://tv.iill.top/4gtv/174
+LUXE TV,https://tv.iill.top/4gtv/175
+My Cinema Europe HD 我的歐洲電影,https://tv.iill.top/4gtv/176
+TV5MONDE Style,https://tv.iill.top/4gtv/178
+Rock Action,https://tv.iill.top/4gtv/180
+TechStorm,https://tv.iill.top/4gtv/181
+Pet Club TV,https://tv.iill.top/4gtv/182
+Nickelodeon,https://tv.iill.top/4gtv/185
+HITS 頻道,https://tv.iill.top/4gtv/186
+LiveABC 互動英語,https://tv.iill.top/4gtv/188
+經典電影,https://tv.iill.top/4gtv/201
+經典卡通,https://tv.iill.top/4gtv/202
+精選動漫,https://tv.iill.top/4gtv/204
+大愛電視,https://tv.iill.top/4gtv/209
+人間衛視,https://tv.iill.top/4gtv/210
+影迷數位紀實,https://tv.iill.top/4gtv/212
+MTV Live HD 音樂頻道,https://tv.iill.top/4gtv/213
+History 歷史頻道,https://tv.iill.top/4gtv/214
+CI 罪案偵查頻道,https://tv.iill.top/4gtv/215
+Lifetime 娛樂頻道,https://tv.iill.top/4gtv/217
+電影原聲 CMusic,https://tv.iill.top/4gtv/218
+Nick Jr. 兒童頻道,https://tv.iill.top/4gtv/219
+SBN 全球財經,https://tv.iill.top/4gtv/224
+CinemaWorld,https://tv.iill.top/4gtv/225
+DW德國之聲,https://tv.iill.top/4gtv/226
+三立新聞,https://tv.iill.top/4gtv/229
+大愛電視 2,https://tv.iill.top/4gtv/230
+MOMO 親子,https://tv.iill.top/4gtv/231
+CNBC Asia 財經,https://tv.iill.top/4gtv/235
+金光布袋戲,https://tv.iill.top/4gtv/236
+ELTA 生活旅遊,https://tv.iill.top/4gtv/237
+戲劇免費看 2,https://tv.iill.top/4gtv/244
+電影免費看 2,https://tv.iill.top/4gtv/245
+滾動力 Rollor,https://tv.iill.top/4gtv/249
+Global Trekker,https://tv.iill.top/4gtv/252
+兒童卡通,https://tv.iill.top/4gtv/269
+戲劇免費看 1,https://tv.iill.top/4gtv/270
+原住民族電視,https://tv.iill.top/4gtv/273
+Fun 探索娛樂,https://tv.iill.top/4gtv/274
+Rock Entertainment,https://tv.iill.top/4gtv/275
+時尚運動X,https://tv.iill.top/4gtv/277
+DreamWorks 夢工廠動畫,https://tv.iill.top/4gtv/282
+Bloomberg TV,https://tv.iill.top/4gtv/283
+TVBS 綜藝,https://tv.iill.top/4gtv/284
+TVBS 台劇,https://tv.iill.top/4gtv/285
+東森購物 四,https://tv.iill.top/4gtv/286
+東森購物 三,https://tv.iill.top/4gtv/287
+霹靂布袋戲,https://tv.iill.top/4gtv/301
+4K,#genre#
+Fashion 4K「时尚」,https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
+Loupe 4K「视觉」,https://d2dw21aq0j0l5c.cloudfront.net/playlist_3840x2160.m3u8
+Love Nature 4K「自然」,https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 新聞,#genre#
 三立新聞,https://tv.iill.top/4gtv/229
 中天新聞,https://tv.iill.top/litv/4gtv-4gtv009
