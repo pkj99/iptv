@@ -19,7 +19,6 @@ function chUrl(asset_id, media_type, callback)
     asset_id = decodeURIComponent(asset_id);
     asset_id = asset_id.replace("#","%23");
     url = `https://cdi.ofiii.com/ofiii_cdi/video/urls?device_type=pc&device_id=9fca4871-d629-4aec-8863-39b17527d67a&media_type=${media_type}&asset_id=${asset_id}`
-    // fetch(`https://cdi.ofiii.com/ofiii_cdi/video/urls?device_type=pc&device_id=7fca6872-d329-4fdx-2213-33b17517d67a&media_type=${media_type}&asset_id=${asset_id}`)
     fetch(url)
     .then(response => {
         if (response.ok) return response.text()
@@ -28,7 +27,8 @@ function chUrl(asset_id, media_type, callback)
     .then(data => {
         var j = JSON.parse(data);
         var Url = j.asset_urls[0];
-        location.href = 'dpplayer.html?url='+Url;
+        // location.href = 'dpplayer.html?url='+Url;
+        location.href = Url;
     });
 }
 
