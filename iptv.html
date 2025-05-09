@@ -20,7 +20,7 @@
 
   <meta name="mobile-web-app-capable" content="yes">
 
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
   <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -304,9 +304,9 @@
 
         if (urlParams["t"] == null){ 
             if (document.body.clientWidth < 600) {
-                var t = "2"; 
+                var t = "0"; 
             } else {
-                var t = "2"; 
+                var t = "0"; 
             }
         } else { var t = urlParams["t"];}
         
