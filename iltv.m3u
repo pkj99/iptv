@@ -345,3 +345,55 @@ https://tv.iill.top/litv/litv-ftv07
 https://tv.iill.top/litv/litv-ftv09
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv13_mobile.png" tvg-name="民视新闻台" group-title="民視",民視新聞
 https://tv.iill.top/litv/litv-ftv13
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV1综合" group-title="央視",CCTV 1 综合
+https://tv.iill.top/migu/cctv1
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV2财经" group-title="央視",CCTV 2 财经
+https://tv.iill.top/migu/cctv2
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV3综艺" group-title="央視",CCTV 3 综艺
+https://tv.iill.top/migu/cctv3
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV4中文国际·美洲" group-title="央視",CCTV 4 中文国际·美洲
+https://tv.iill.top/migu/cctv4m
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV4中文国际·欧洲" group-title="央視",CCTV 4 中文国际·欧洲
+https://tv.iill.top/migu/cctv4o
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV4中文国际" group-title="央視",CCTV 4 中文国际
+https://tv.iill.top/migu/cctv4
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV5体育" group-title="央視",CCTV 5 体育
+https://tv.iill.top/migu/cctv5
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV6电影" group-title="央視",CCTV 6 电影
+https://tv.iill.top/migu/cctv6
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV7国防军事" group-title="央視",CCTV 7 国防军事
+https://tv.iill.top/migu/cctv7
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV8电视剧" group-title="央視",CCTV 8 电视剧
+https://tv.iill.top/migu/cctv8
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV9纪录" group-title="央視",CCTV 9 纪录
+https://tv.iill.top/migu/cctv9
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV10科教" group-title="央視",CCTV 10 科教
+https://tv.iill.top/migu/cctv10
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV11戏曲" group-title="央視",CCTV 11 戏曲
+https://tv.iill.top/migu/cctv11
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV12社会与法" group-title="央視",CCTV 12 社会与法
+https://tv.iill.top/migu/cctv12
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV13新闻" group-title="央視",CCTV 13 新闻
+https://tv.iill.top/migu/cctv13
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV14少儿" group-title="央視",CCTV 14 少儿
+https://tv.iill.top/migu/cctv14
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV15音乐" group-title="央視",CCTV 15 音乐
+https://tv.iill.top/migu/cctv15
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV17农村农业" group-title="央視",CCTV 17 农村农业
+https://tv.iill.top/migu/cctv17
+#EXTINF:-1 tvg-logo="" tvg-name="CCTV5+体育赛事" group-title="央視",CCTV 5+ 体育赛事
+https://tv.iill.top/migu/cctv5p
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/东方卫视.png" tvg-name="东方卫视" group-title="衛視",东方卫视
+https://tv.iill.top/migu/dfws
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" tvg-name="广东卫视" group-title="衛視",广东卫视
+https://tv.iill.top/migu/gdws
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/江苏卫视.png" tvg-name="江苏卫视" group-title="衛視",江苏卫视
+https://tv.iill.top/migu/jsws
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/江西卫视.png" tvg-name="江西卫视" group-title="衛視",江西卫视
+https://tv.iill.top/migu/jxws
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/湖北卫视.png" tvg-name="湖北卫视" group-title="衛視",湖北卫视
+https://tv.iill.top/migu/hubws
+#EXTINF:-1 tvg-logo="" tvg-name="澳门莲花" group-title="衛視",澳門蓮花
+https://tv.iill.top/mo/lhws
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/陕西卫视.png" tvg-name="陕西卫视" group-title="衛視",陕西卫视
+https://tv.iill.top/migu/sxws
