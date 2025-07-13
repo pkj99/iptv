@@ -131,3 +131,9 @@ https://live.tvfix.org/live/chuangshi/index.m3u8
 https://live.tvfix.org/live/fashion/index.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="18赛马" group-title="其他頻道",18赛马
 https://live.tvfix.org/live/c18/4/v200000/index.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="RTHK31" group-title="其他頻道",RTHK31
+http://198.16.100.186:8278/rhk31_twn/playlist.m3u8?tid=MA6A6225600662256006&ct=19249&tsum=7b0adccccff4fded44e906e9d848ee35
+#EXTINF:-1 tvg-logo="" tvg-name="SKYNEWS" group-title="其他頻道",SKYNEWS
+http://198.16.100.186:8278/skynews_antik/playlist.m3u8?tid=MA0A3161061431610614&ct=19249&tsum=15f8cca00a8cc3a6d2a61519b7dfeb59
+#EXTINF:-1 tvg-logo="" tvg-name="ASIANET" group-title="其他頻道",ASIANET
+http://198.16.100.186:8278/asianet_raj/playlist.m3u8?tid=MB4B2450319024503190&ct=19254&tsum=ad3799bb18ad9ecf8dbd135dcf453f47

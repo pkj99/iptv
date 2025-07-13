@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="images/favicon2.png" type="image/x-icon" />
   <link rel="apple-touch-icon" href="images/favicon2.png" />  
 
-  <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="full-screen" content="yes">
@@ -20,7 +20,7 @@
 
   <meta name="mobile-web-app-capable" content="yes">
 
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
   <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -320,10 +320,10 @@
             // tvchannels('大陸頻道', 'https://pkj99.github.io/iptv/cntv.m3u', initlist);
             document.getElementById('menu1').classList.add("focus");
         }
-        // if (t == "2"){
-        //     tvlists("select * from iptv where catalog = 'TP頻道'", initlist);
-        //     document.getElementById('menu2').classList.add("focus");
-        // }
+        if (t == "2"){
+            tvlists("select * from iptv where hostname = 'smart.pendy.dpdns.org'", initlist);
+            document.getElementById('menu2').classList.add("focus");
+        }
         // if (t == "3"){
         //     // tvlists("select * from iptv_news where catalog='台湾頻道'", initlist);
         //     tvchannels('四季頻道', 'https://pkj99.github.io/iptv/4gtv.m3u', initlist);            
