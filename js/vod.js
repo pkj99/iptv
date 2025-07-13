@@ -182,6 +182,48 @@
     }
 
 
+    function tvchannels_xplayer(sqlstring){
+        // console.log(sqlstring);
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', db_url, true);
+        xhr.responseType = 'arraybuffer';
+
+        xhr.onload = e => {
+            const uInt8Array = new Uint8Array(xhr.response);
+            const db = new SQL.Database(uInt8Array);
+            
+            const contents = db.exec(sqlstring);
+            var data = JSON.parse(JSON.stringify(contents));
+            
+            let htmlString = '';
+
+            if (typeof data[0] == "undefined" ) { data = [];} else { data = data[0].values; }
+
+            for (var i = 0; i < data.length; i++) {
+                var title = data[i][1];
+                var url = data[i][2];
+                var image = data[i][4];
+                image = 'images/iptv/' + title + '.png';
+                htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
+                htmlString += `<div class="myui-vodlist__box">`;
+                htmlString += `<a class="myui-vodlist__thumb lazyload" target="${target}" href="xplayer.html?url=${url}" `;
+                htmlString += `title="${title}" `;
+                htmlString += `data-original="${url}" `;
+                htmlString += `style="background-image: url('${image}')"`;
+                htmlString += `</a>`;
+                htmlString += `</div>`;
+                // htmlString += `<div class="myui-vodlist__detail">`;
+                // htmlString += `<h4 class="title text-overflow"><a href="${url}">${title}</a></h4>`;
+                // htmlString += `</div>`;
+                htmlString += `</li>`;
+            }
+
+            document.getElementById('tvlist').innerHTML = htmlString;
+
+        };
+        xhr.send();
+    }
+
 
     // get params
     (window.onpopstate = function () {
@@ -224,7 +266,7 @@
         document.getElementById('menu1').classList.add("active");
     }
     if (t == "2"){
-        tvchannels("select * from iptv where hostname = 'smart.pendy.dpdns.org' and catalog = '台灣頻道'");
+        tvchannels_xplayer("select * from iptv where hostname = 'smart.pendy.dpdns.org' and catalog = '台灣頻道'");
         document.getElementById('menu2').classList.add("active");
     }
     if (t == "3"){
@@ -240,7 +282,8 @@
         document.getElementById('menu4').classList.add("active");
     }
     if (t == "5"){
-        tvchannels("select * from iptv where catalog = '四季頻道'");
+        tvchannels_xplayer("select * from iptv where hostname = 'smart.pendy.dpdns.org' and catalog in ('央视','卫视')");
+        // tvchannels("select * from iptv where catalog = '四季頻道'");
         // m3u_url = 'https://pkj99.github.io/iptv/4gtv.m3u'; 
         // tvchannels2('四季頻道');
         document.getElementById('menu5').classList.add("active");

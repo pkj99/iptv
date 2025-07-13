@@ -1,139 +1,63 @@
 #EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"
-#EXTINF:-1 tvg-logo="" tvg-name="华语电视3" group-title="其他頻道",华语电视3
-http://38.64.72.148:80/hls/modn/list/4003/chunklist1.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="华语电视" group-title="其他頻道",华语电视
-http://38.64.72.148:80/hls/modn/list/4003/chunklist0.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="TVBS_677" group-title="其他頻道",TVBS_677
 http://38.64.72.148:80/hls/modn/list/4005/chunklist1.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="ETIV_613" group-title="其他頻道",ETIV_613
 http://38.64.72.148:80/hls/modn/list/2015/chunklist1.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="" group-title="其他頻道",
-http://38.64.72.148:80/hls/modn/list/4013/chunklist0.m3u8?blog.ntnas.top
-#EXTINF:-1 tvg-logo="" tvg-name="DISCOVERYASIA" group-title="其他頻道",DISCOVERYASIA
-http://198.16.100.186:8278/discoverytwn_twn/playlist.m3u8?tid=MB1B4014431840144318&ct=19254&tsum=a72e8caa6986ef92c4d6cb743e22a78f
-#EXTINF:-1 tvg-logo="" tvg-name="MUSLIMTV" group-title="其他頻道",MUSLIMTV
-http://198.16.100.186:8278/MuslimTV/playlist.m3u8?tid=MC4C3088884830888848&ct=19249&tsum=d1cd20fb991a3bee32ccd5cc6c7838b1
-#EXTINF:-1 tvg-logo="" tvg-name="体育2" group-title="其他頻道",体育2
-http://198.16.100.186:8278/Assp2/playlist.m3u8?tid=ME1E4056565440565654&ct=19249&tsum=1bf59bebb8a43a859eae9f1b3759f844
-#EXTINF:-1 tvg-logo="" tvg-name="体育3" group-title="其他頻道",体育3
-http://198.16.100.186:8278/Assp3/playlist.m3u8?tid=MB4B2552451125524511&ct=19249&tsum=f6cb45a995e37dfc7c40d515f29924e4
-#EXTINF:-1 tvg-logo="" tvg-name="CBSNEWS" group-title="其他頻道",CBSNEWS
-http://198.16.100.186:8278/cbsn_glo/playlist.m3u8?tid=ME2E7003518970035189&ct=19225&tsum=c1cc67ff59df6d6f608a400760be0bda
-#EXTINF:-1 tvg-logo="" tvg-name="翡翠" group-title="其他頻道",翡翠
-http://198.16.100.186:8278/jade_twn/playlist.m3u8?tid=ME6E1330319113303191&ct=19225&tsum=d76985c4965fd63807e131035f66af09
-#EXTINF:-1 tvg-logo="" tvg-name="RTHK32" group-title="其他頻道",RTHK32
-http://198.16.100.186:8278/rhk32_twn/playlist.m3u8?tid=MDBD4704174447041744&ct=19249&tsum=763ebe53fc33677d02ebf83b4d558d33
-#EXTINF:-1 tvg-logo="" tvg-name="THRILL" group-title="其他頻道",THRILL
-http://198.16.100.186:8278/Thrill/playlist.m3u8?tid=MB8B6377453463774534&ct=19249&tsum=028c286ac4f8ee635f9e502bd1e2e2ab
-#EXTINF:-1 tvg-logo="" tvg-name="NETTV" group-title="其他頻道",NETTV
-http://198.16.100.186:8278/NetTV/playlist.m3u8?tid=MB0B1364823413648234&ct=19249&tsum=4109bb7ef2f8a60d80af6c88a23ce242
-#EXTINF:-1 tvg-logo="" tvg-name="TV2" group-title="其他頻道",TV2
-http://198.16.100.186:8278/TV2/playlist.m3u8?tid=MBFB5221296352212963&ct=19249&tsum=c67dd739f98d016c5553f838aad85446
-#EXTINF:-1 tvg-logo="" tvg-name="CBS" group-title="其他頻道",CBS
-http://198.16.100.186:8278/cbshd_glo/playlist.m3u8?tid=MA1A7337105773371057&ct=19254&tsum=89d432f03b1b50b68b7bace382dc13ac
-#EXTINF:-1 tvg-logo="" tvg-name="TVN" group-title="其他頻道",TVN
-http://198.16.100.186:8278/TVN/playlist.m3u8?tid=ME8E2207086222070862&ct=19249&tsum=b7f602e68174a03e917c7b354788bce9
-#EXTINF:-1 tvg-logo="" tvg-name="DISCOVERYWORLDTAMIL" group-title="其他頻道",DISCOVERYWORLDTAMIL
-http://198.16.100.186:8278/discoveryworldtam_raj/playlist.m3u8?tid=MCEC6115648861156488&ct=19254&tsum=37c93ae7da63829245608ed1857a0f97
 #EXTINF:-1 tvg-logo="" tvg-name="地理野生动物" group-title="其他頻道",地理野生动物
 http://198.16.100.186:8278/Natgeowild/playlist.m3u8?tid=MCEC8162047281620472&ct=19249&tsum=903a62e36d9cd6c67654b4e2ca6bcbd5
+#EXTINF:-1 tvg-logo="" tvg-name="SKYNEWS" group-title="其他頻道",SKYNEWS
+http://198.16.100.186:8278/skynews_antik/playlist.m3u8?tid=MA0A3161061431610614&ct=19249&tsum=15f8cca00a8cc3a6d2a61519b7dfeb59
+#EXTINF:-1 tvg-logo="" tvg-name="CBSNEWS" group-title="其他頻道",CBSNEWS
+http://198.16.100.186:8278/cbsn_glo/playlist.m3u8?tid=ME2E7003518970035189&ct=19225&tsum=c1cc67ff59df6d6f608a400760be0bda
+#EXTINF:-1 tvg-logo="" tvg-name="RTHK32" group-title="其他頻道",RTHK32
+http://198.16.100.186:8278/rhk32_twn/playlist.m3u8?tid=MDBD4704174447041744&ct=19249&tsum=763ebe53fc33677d02ebf83b4d558d33
+#EXTINF:-1 tvg-logo="" tvg-name="NETTV" group-title="其他頻道",NETTV
+http://198.16.100.186:8278/NetTV/playlist.m3u8?tid=MB0B1364823413648234&ct=19249&tsum=4109bb7ef2f8a60d80af6c88a23ce242
+#EXTINF:-1 tvg-logo="" tvg-name="VIUTV" group-title="其他頻道",VIUTV
+http://198.16.100.186:8278/viu1_twn/playlist.m3u8?tid=MF9F2344917423449174&ct=19254&tsum=3cb061ac749a32280d3b88c022a1403f
+#EXTINF:-1 tvg-logo="" tvg-name="TV2" group-title="其他頻道",TV2
+http://198.16.100.186:8278/TV2/playlist.m3u8?tid=MBFB5221296352212963&ct=19249&tsum=c67dd739f98d016c5553f838aad85446
+#EXTINF:-1 tvg-logo="" tvg-name="DISCOVERYWORLDTAMIL" group-title="其他頻道",DISCOVERYWORLDTAMIL
+http://198.16.100.186:8278/discoveryworldtam_raj/playlist.m3u8?tid=MCEC6115648861156488&ct=19254&tsum=37c93ae7da63829245608ed1857a0f97
 #EXTINF:-1 tvg-logo="" tvg-name="DISCOVERYKIDSTAMIL" group-title="其他頻道",DISCOVERYKIDSTAMIL
 http://198.16.100.186:8278/discoverykidtamil_raj/playlist.m3u8?tid=MC1C6666962666669626&ct=19254&tsum=5c7c203bde4f208923e38663dbbc3a4e
 #EXTINF:-1 tvg-logo="" tvg-name="CELESTIALMOVIES" group-title="其他頻道",CELESTIALMOVIES
 http://198.16.100.186:8278/Celestialindo/playlist.m3u8?tid=MA5A2795215627952156&ct=19254&tsum=5af1cfa380a0d40379beb469d60702ab
-#EXTINF:-1 tvg-logo="" tvg-name="STARVIJAYINDIA" group-title="其他頻道",STARVIJAYINDIA
-http://198.16.100.186:8278/starvijay_raj/playlist.m3u8?tid=MB0B3845002438450024&ct=19249&tsum=8a504d218e4ac85489e322b00289efcb
-#EXTINF:-1 tvg-logo="" tvg-name="PPTVTHAILAND1" group-title="其他頻道",PPTVTHAILAND1
-http://198.16.100.186:8278/pptv_pat/playlist.m3u8?tid=MC2C3662850236628502&ct=19249&tsum=efb951731b4d0d420dedc866c9fa789f
 #EXTINF:-1 tvg-logo="" tvg-name="NICKELODEON" group-title="其他頻道",NICKELODEON
 http://198.16.100.186:8278/Nickelodeon/playlist.m3u8?tid=MBBB9174743591747435&ct=19249&tsum=9901089db6361b9cafc0ab9de5612bee
-#EXTINF:-1 tvg-logo="" tvg-name="EYETV旅游" group-title="其他頻道",EYETV旅游
-http://198.16.100.186:8278/eyetvtravel_twn/playlist.m3u8?tid=MFDF5066608450666084&ct=19254&tsum=0bb4cbfc0d32bff89ab5b3a5352fcf94
-#EXTINF:-1 tvg-logo="" tvg-name="EYETV戏剧" group-title="其他頻道",EYETV戏剧
-http://198.16.100.186:8278/eyetvxiju_twn/playlist.m3u8?tid=ME3E6686724066867240&ct=19254&tsum=728fc49fcd53cd770381ffd87883b1d1
-#EXTINF:-1 tvg-logo="" tvg-name="NATGEOTAMIL" group-title="其他頻道",NATGEOTAMIL
-http://198.16.100.186:8278/natgeotamil_raj/playlist.m3u8?tid=MC8C8508198685081986&ct=19249&tsum=211a7c56c1dd113e10eae565520483d0
 #EXTINF:-1 tvg-logo="" tvg-name="NEWS18TAMIL" group-title="其他頻道",NEWS18TAMIL
 http://198.16.100.186:8278/news18tamil_raj/playlist.m3u8?tid=MFEF4476053744760537&ct=19249&tsum=730185304475c7836b81f97985cea296
-#EXTINF:-1 tvg-logo="" tvg-name="DISCOVERY" group-title="其他頻道",DISCOVERY
-http://198.16.100.186:8278/discoveryhd_twn/playlist.m3u8?tid=MF6F9560989795609897&ct=19254&tsum=5c76a2419ab5b56e7202248db95be60e
-#EXTINF:-1 tvg-logo="" tvg-name="VASANTHAM" group-title="其他頻道",VASANTHAM
-http://198.16.100.186:8278/Vasantham/playlist.m3u8?tid=MA4A6452258764522587&ct=19249&tsum=56d66d64d5fcb76b5fb2749126a582e1
+#EXTINF:-1 tvg-logo="" tvg-name="NATGEOTAMIL" group-title="其他頻道",NATGEOTAMIL
+http://198.16.100.186:8278/natgeotamil_raj/playlist.m3u8?tid=MC8C8508198685081986&ct=19249&tsum=211a7c56c1dd113e10eae565520483d0
+#EXTINF:-1 tvg-logo="" tvg-name="EYETV戏剧" group-title="其他頻道",EYETV戏剧
+http://198.16.100.186:8278/eyetvxiju_twn/playlist.m3u8?tid=ME3E6686724066867240&ct=19254&tsum=728fc49fcd53cd770381ffd87883b1d1
 #EXTINF:-1 tvg-logo="" tvg-name="RTMSPORTS" group-title="其他頻道",RTMSPORTS
 http://198.16.100.186:8278/Rtmsport/playlist.m3u8?tid=MF8F1702154217021542&ct=19249&tsum=e027d4717db55d11df07ebe27f5eb3a5
-#EXTINF:-1 tvg-logo="" tvg-name="STARVIJAY" group-title="其他頻道",STARVIJAY
-http://198.16.100.186:8278/Starvijay/playlist.m3u8?tid=MD7D7021074070210740&ct=19249&tsum=d469d61675c45cea051a8c286daa751b
-#EXTINF:-1 tvg-logo="" tvg-name="CHANNEL8" group-title="其他頻道",CHANNEL8
-http://198.16.100.186:8278/TV8/playlist.m3u8?tid=MDFD8437455184374551&ct=19225&tsum=ea08ca3d3651a75f499af2fc429eee35
+#EXTINF:-1 tvg-logo="" tvg-name="MUSLIMTV" group-title="其他頻道",MUSLIMTV
+http://198.16.100.186:8278/MuslimTV/playlist.m3u8?tid=MC4C3088884830888848&ct=19249&tsum=d1cd20fb991a3bee32ccd5cc6c7838b1
 #EXTINF:-1 tvg-logo="" tvg-name="MAKKALTV" group-title="其他頻道",MAKKALTV
 http://198.16.100.186:8278/Makkaltv/playlist.m3u8?tid=MCCC2831040628310406&ct=19249&tsum=f5996da95064e8472a743fd60a183318
+#EXTINF:-1 tvg-logo="" tvg-name="ARIRANG" group-title="其他頻道",ARIRANG
+http://198.16.100.186:8278/arirang_twn/playlist.m3u8?tid=MF5F3988861839888618&ct=19249&tsum=781d490a6abe9f48f5b93e211cbe0307
+#EXTINF:-1 tvg-logo="" tvg-name="ASIANET" group-title="其他頻道",ASIANET
+http://198.16.100.186:8278/asianet_raj/playlist.m3u8?tid=MB4B2450319024503190&ct=19254&tsum=ad3799bb18ad9ecf8dbd135dcf453f47
+#EXTINF:-1 tvg-logo="" tvg-name="体育3" group-title="其他頻道",体育3
+http://198.16.100.186:8278/Assp3/playlist.m3u8?tid=MB4B2552451125524511&ct=19249&tsum=f6cb45a995e37dfc7c40d515f29924e4
 #EXTINF:-1 tvg-logo="" tvg-name="TAWAFTV" group-title="其他頻道",TAWAFTV
 http://198.16.100.186:8278/TawafTV/playlist.m3u8?tid=MBCB5614836656148366&ct=19249&tsum=36b068ac8156d98ace6adfe2f490ff3f
 #EXTINF:-1 tvg-logo="" tvg-name="TRANSTV" group-title="其他頻道",TRANSTV
 http://198.16.100.186:8278/Transtv/playlist.m3u8?tid=MCFC2537709525377095&ct=19249&tsum=dcb22c095fc52f971f7dea381f456a43
-#EXTINF:-1 tvg-logo="" tvg-name="ARIRANG" group-title="其他頻道",ARIRANG
-http://198.16.100.186:8278/arirang_twn/playlist.m3u8?tid=MF5F3988861839888618&ct=19249&tsum=781d490a6abe9f48f5b93e211cbe0307
 #EXTINF:-1 tvg-logo="" tvg-name="METROTV" group-title="其他頻道",METROTV
 http://198.16.100.186:8278/metrotv_eko/playlist.m3u8?tid=MF8F5976470059764700&ct=19249&tsum=480db4ba88eb5616ddfdd41839efb81b
-#EXTINF:-1 tvg-logo="" tvg-name="NATION" group-title="其他頻道",NATION
-http://198.16.100.186:8278/nation_pat/playlist.m3u8?tid=MB1B9139560291395602&ct=19249&tsum=ce6f7c87a3c920df0d5212ee4b98ba18
-#EXTINF:-1 tvg-logo="" tvg-name="TRANS7" group-title="其他頻道",TRANS7
-http://198.16.100.186:8278/Trans7_eko/playlist.m3u8?tid=MABA8459856784598567&ct=19249&tsum=355af3a5c5bdf35204c638fb2076d199
-#EXTINF:-1 tvg-logo="" tvg-name="MIAOMI" group-title="其他頻道",MIAOMI
-http://198.16.100.186:8278/MiaoMi/playlist.m3u8?tid=MD3D6451573464515734&ct=19249&tsum=a88d7f5e564622f588e26dbb3743d86b
-#EXTINF:-1 tvg-logo="" tvg-name="NICKJR" group-title="其他頻道",NICKJR
-http://198.16.100.186:8278/Nickjr/playlist.m3u8?tid=MFCF1347936613479366&ct=19249&tsum=547e162f9338962a46e76507dbf7d1e4
-#EXTINF:-1 tvg-logo="" tvg-name="PICKTV" group-title="其他頻道",PICKTV
-http://198.16.100.186:8278/picktv_antik/playlist.m3u8?tid=MB5B4434522744345227&ct=19249&tsum=b97fd4168586dc65fbe4ac3cd28d8240
-#EXTINF:-1 tvg-logo="" tvg-name="SUNNAH" group-title="其他頻道",SUNNAH
-http://198.16.100.186:8278/sunnah_mido/playlist.m3u8?tid=MA3A8891710288917102&ct=19249&tsum=a43fbbc6ed6e843b1711624a239c14d1
-#EXTINF:-1 tvg-logo="" tvg-name="OASIS" group-title="其他頻道",OASIS
-http://198.16.100.186:8278/Oasis/playlist.m3u8?tid=MABA2020629120206291&ct=19249&tsum=46be05252007b1efaae28ae3ab4cc7bb
-#EXTINF:-1 tvg-logo="" tvg-name="QURAN" group-title="其他頻道",QURAN
-http://198.16.100.186:8278/quran_mido/playlist.m3u8?tid=MDBD3234169932341699&ct=19249&tsum=9ab67cfe5792350388a7777b56fa3108
-#EXTINF:-1 tvg-logo="" tvg-name="PRIMA" group-title="其他頻道",PRIMA
-http://198.16.100.186:8278/Prima/playlist.m3u8?tid=MDCD7525162675251626&ct=19249&tsum=baa42cb947105579e476ec0c5b71043d
-#EXTINF:-1 tvg-logo="" tvg-name="SURIA" group-title="其他頻道",SURIA
-http://198.16.100.186:8278/Suria/playlist.m3u8?tid=ME9E4011239440112394&ct=19249&tsum=2c7a84f4f2d92bc03275abeaa450c417
-#EXTINF:-1 tvg-logo="" tvg-name="AWANI" group-title="其他頻道",AWANI
-http://198.16.100.186:8278/Awani/playlist.m3u8?tid=MB3B5555835155558351&ct=19225&tsum=148341f2ac3dfc57fd8bb8b2f6e4d190
-#EXTINF:-1 tvg-logo="" tvg-name="TNN24" group-title="其他頻道",TNN24
-http://198.16.100.186:8278/tnn24_pat/playlist.m3u8?tid=MA1A4244094842440948&ct=19249&tsum=0913ba2ca4190c831479ae37a7517664
-#EXTINF:-1 tvg-logo="" tvg-name="ITV1" group-title="其他頻道",ITV1
-http://198.16.100.186:8278/itv1_antik/playlist.m3u8?tid=MA7A3116345831163458&ct=19254&tsum=fe64dc99ba95f220bea2a2a29319b065
-#EXTINF:-1 tvg-logo="" tvg-name="RCTI" group-title="其他頻道",RCTI
-http://198.16.100.186:8278/Rcti/playlist.m3u8?tid=MC2C8104265481042654&ct=19249&tsum=a03f74405124dc54a0e467a91f2afe8d
 #EXTINF:-1 tvg-logo="" tvg-name="CBSN" group-title="其他頻道",CBSN
 http://198.16.100.186:8278/cbsn_glo/playlist.m3u8?tid=MAFA1197236411972364&ct=19254&tsum=c1429b2e5bd7d3312b628e1c35b2e803
-#EXTINF:-1 tvg-logo="" tvg-name="CINE" group-title="其他頻道",CINE
-http://198.16.100.186:8278/cinemax_twn/playlist.m3u8?tid=MF6F1142326311423263&ct=19254&tsum=716939f2b6d75d0bb83a4c780e00dbd3
 #EXTINF:-1 tvg-logo="" tvg-name="TVMU" group-title="其他頻道",TVMU
 http://198.16.100.186:8278/TVMU_eko/playlist.m3u8?tid=MFDF7570582975705829&ct=19249&tsum=5c6fe52ffe5b5cea936a79344042abef
-#EXTINF:-1 tvg-logo="" tvg-name="TV8" group-title="其他頻道",TV8
-http://198.16.100.186:8278/TV8/playlist.m3u8?tid=MBEB4776352347763523&ct=19249&tsum=3c51d752772cb0de53609d6df785438f
-#EXTINF:-1 tvg-logo="" tvg-name="SCM" group-title="其他頻道",SCM
-http://198.16.100.186:8278/Weishimovie/playlist.m3u8?tid=MEEE4802495448024954&ct=19249&tsum=1731f56127d23a79a645f2d7d958dec7
+#EXTINF:-1 tvg-logo="" tvg-name="CBS" group-title="其他頻道",CBS
+http://198.16.100.186:8278/cbshd_glo/playlist.m3u8?tid=MA1A7337105773371057&ct=19254&tsum=89d432f03b1b50b68b7bace382dc13ac
+#EXTINF:-1 tvg-logo="" tvg-name="TVN" group-title="其他頻道",TVN
+http://198.16.100.186:8278/TVN/playlist.m3u8?tid=ME8E2207086222070862&ct=19249&tsum=b7f602e68174a03e917c7b354788bce9
 #EXTINF:-1 tvg-logo="" tvg-name="ONE" group-title="其他頻道",ONE
 http://198.16.100.186:8278/One/playlist.m3u8?tid=MC4C3559816135598161&ct=19249&tsum=dce7930990cd11c5385de1298a06c226
-#EXTINF:-1 tvg-logo="" tvg-name="TV1" group-title="其他頻道",TV1
-http://198.16.100.186:8278/TV1/playlist.m3u8?tid=MC7C8155208481552084&ct=19249&tsum=298dc1db831fd77434f364d0fc12793f
 #EXTINF:-1 tvg-logo="" tvg-name="TV3" group-title="其他頻道",TV3
 http://198.16.100.186:8278/TV3/playlist.m3u8?tid=MBAB6337539663375396&ct=19249&tsum=d654aed09f7731acae9bc6b5fafeec6d
-#EXTINF:-1 tvg-logo="" tvg-name="TV9" group-title="其他頻道",TV9
-http://198.16.100.186:8278/TV9/playlist.m3u8?tid=MC8C4966804449668044&ct=19249&tsum=8dae6f565fe19a1d8909d2f6b04ae2b7
-#EXTINF:-1 tvg-logo="" tvg-name="无线新闻台" group-title="其他頻道",无线新闻台
-https://live.tvfix.org/live/inews/index.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="﻿翡翠台" group-title="其他頻道",﻿翡翠台
-https://live.tvfix.org/live/jade/index.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="创世频道" group-title="其他頻道",创世频道
-https://live.tvfix.org/live/chuangshi/index.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="FashionBox" group-title="其他頻道",FashionBox
-https://live.tvfix.org/live/fashion/index.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="18赛马" group-title="其他頻道",18赛马
-https://live.tvfix.org/live/c18/4/v200000/index.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="RTHK31" group-title="其他頻道",RTHK31
-http://198.16.100.186:8278/rhk31_twn/playlist.m3u8?tid=MA6A6225600662256006&ct=19249&tsum=7b0adccccff4fded44e906e9d848ee35
-#EXTINF:-1 tvg-logo="" tvg-name="SKYNEWS" group-title="其他頻道",SKYNEWS
-http://198.16.100.186:8278/skynews_antik/playlist.m3u8?tid=MA0A3161061431610614&ct=19249&tsum=15f8cca00a8cc3a6d2a61519b7dfeb59
-#EXTINF:-1 tvg-logo="" tvg-name="ASIANET" group-title="其他頻道",ASIANET
-http://198.16.100.186:8278/asianet_raj/playlist.m3u8?tid=MB4B2450319024503190&ct=19254&tsum=ad3799bb18ad9ecf8dbd135dcf453f47
