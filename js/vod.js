@@ -224,7 +224,7 @@
         document.getElementById('menu1').classList.add("active");
     }
     if (t == "2"){
-        tvchannels("select * from iptv where hostname = 'smart.pendy.dpdns.org'");
+        tvchannels("select * from iptv where hostname = 'smart.pendy.dpdns.org' and catalog = '台灣頻道'");
         document.getElementById('menu2').classList.add("active");
     }
     if (t == "3"){
