@@ -11,7 +11,7 @@ https://smart.pendy.dpdns.org/Smart.php?id=discoverytwn_twn
 https://smart.pendy.dpdns.org/Smart.php?id=discoverykidtamil_raj
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Discovery.png" tvg-name="DiscoveryWorld" group-title="台灣頻道",DiscoveryWorld
 https://smart.pendy.dpdns.org/Smart.php?id=discoveryworldtam_raj
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBOSignature.png" tvg-name="HBOSignature" group-title="台灣頻道",HBOSignature
+#EXTINF:-1 tvg-logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch114_170_122" tvg-name="HBOSignature" group-title="台灣頻道",HBOSignature
 https://smart.pendy.dpdns.org/Smart.php?id=Hbosignature
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live026_mobile.png" tvg-name="History 历史频道" group-title="台灣頻道",History 历史频道
 https://smart.pendy.dpdns.org/Smart.php?id=historytam_raj
@@ -55,7 +55,7 @@ https://smart.pendy.dpdns.org/Smart.php?id=ctizhonghe
 https://smart.pendy.dpdns.org/Smart.php?id=zhongshinews_twn
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/亚洲美食频道.png" tvg-name="亚洲美食频道" group-title="台灣頻道",亚洲美食频道
 https://smart.pendy.dpdns.org/Smart.php?id=afc_twn
-#EXTINF:-1 tvg-logo="https://d3ifppxyz9sa2s.cloudfront.net/media/img/2023-04-12/180c68238e13b1ec44170a87f848cbd5.png" tvg-name="八大娱乐台" group-title="台灣頻道",八大娱乐台
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/八大娱乐台.png" tvg-name="八大娱乐台" group-title="台灣頻道",八大娱乐台
 https://smart.pendy.dpdns.org/Smart.php?id=badaentertain
 #EXTINF:-1 tvg-logo="https://i0.wp.com/img.isuper.tv/live-tv/gtv-drama-live.jpg" tvg-name="八大戏剧台" group-title="台灣頻道",八大戏剧台
 https://smart.pendy.dpdns.org/Smart.php?id=badadrama
@@ -79,9 +79,9 @@ https://smart.pendy.dpdns.org/Smart.php?id=bosisport1_twn
 https://smart.pendy.dpdns.org/Smart.php?id=bosisport2_twn
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn06_mobile.png" tvg-name="博斯高球2台" group-title="台灣頻道",博斯高球2台
 https://smart.pendy.dpdns.org/Smart.php?id=bosigolf2_twn
-#EXTINF:-1 tvg-logo="https://d3ifppxyz9sa2s.cloudfront.net/media/img/2023-05-15/0374fe1183ef54f1dafe344868ee255a.png" tvg-name="卫视中文台" group-title="台灣頻道",卫视中文台
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/卫视中文台.png" tvg-name="卫视中文台" group-title="台灣頻道",卫视中文台
 https://smart.pendy.dpdns.org/Smart.php?id=weishichinese_twn
-#EXTINF:-1 tvg-logo="https://d3ifppxyz9sa2s.cloudfront.net/media/img/2023-05-15/8526f4e3db31a2a64ba90680462d5664.png" tvg-name="卫视电影台" group-title="台灣頻道",卫视电影台
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/卫视电影台.png" tvg-name="卫视电影台" group-title="台灣頻道",卫视电影台
 https://smart.pendy.dpdns.org/Smart.php?id=weishimovie_twn
 #EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv066_tv.png" tvg-name="台视" group-title="台灣頻道",台视
 https://smart.pendy.dpdns.org/Smart.php?id=ttv_taiwan

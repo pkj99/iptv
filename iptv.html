@@ -306,7 +306,7 @@
             if (document.body.clientWidth < 600) {
                 var t = "0"; 
             } else {
-                var t = "0"; 
+                var t = "2"; 
             }
         } else { var t = urlParams["t"];}
         
@@ -324,11 +324,12 @@
             tvlists("select * from iptv where hostname = 'smart.pendy.dpdns.org' and catalog = '台灣頻道'", initlist);
             document.getElementById('menu2').classList.add("focus");
         }
-        // if (t == "3"){
-        //     // tvlists("select * from iptv_news where catalog='台湾頻道'", initlist);
-        //     tvchannels('四季頻道', 'https://pkj99.github.io/iptv/4gtv.m3u', initlist);            
-        //     document.getElementById('menu3').classList.add("focus");
-        // }
+        if (t == "3"){
+            tvlists("select * from iptv where hostname = 'smart.pendy.dpdns.org'", initlist);
+            // tvlists("select * from iptv_news where catalog='台湾頻道'", initlist);
+            // tvchannels('四季頻道', 'https://pkj99.github.io/iptv/4gtv.m3u', initlist);            
+            document.getElementById('menu3').classList.add("focus");
+        }
         if (t == "4"){
             tvlists("select * from iptv_sports where catalog='台湾頻道'", initlist);
             document.getElementById('menu4').classList.add("focus");
