@@ -5,11 +5,11 @@ https://smart.pendy.dpdns.org/Smart.php?id=Bbcnews
 https://smart.pendy.dpdns.org/Smart.php?id=dw_twn
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Discovery.png" tvg-name="Discovery" group-title="台灣頻道",Discovery
 https://smart.pendy.dpdns.org/Smart.php?id=discoveryhd_twn
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f0/Discovery-asia.png" tvg-name="DiscoveryAsia" group-title="台灣頻道",DiscoveryAsia
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/Discovery-Asia.png" tvg-name="DiscoveryAsia" group-title="台灣頻道",DiscoveryAsia
 https://smart.pendy.dpdns.org/Smart.php?id=discoverytwn_twn
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Discovery.png" tvg-name="DiscoveryKids" group-title="台灣頻道",DiscoveryKids
 https://smart.pendy.dpdns.org/Smart.php?id=discoverykidtamil_raj
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Discovery.png" tvg-name="DiscoveryWorld" group-title="台灣頻道",DiscoveryWorld
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/DiscoveryHD.png" tvg-name="DiscoveryWorld" group-title="台灣頻道",DiscoveryWorld
 https://smart.pendy.dpdns.org/Smart.php?id=discoveryworldtam_raj
 #EXTINF:-1 tvg-logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch114_170_122" tvg-name="HBOSignature" group-title="台灣頻道",HBOSignature
 https://smart.pendy.dpdns.org/Smart.php?id=Hbosignature
