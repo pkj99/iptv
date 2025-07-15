@@ -157,7 +157,7 @@ https://smart.pendy.dpdns.org/Smart.php?id=cctv8hd
 https://smart.pendy.dpdns.org/Smart.php?id=cctv9hd
 #EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/东方卫视.png" tvg-name="东方卫视" group-title="卫视",东方卫视
 https://smart.pendy.dpdns.org/Smart.php?id=dongfangweishi_twn
-#EXTINF:-1 tvg-logo="" tvg-name="凤凰卫视" group-title="卫视",凤凰卫视
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/凤凰卫视.png" tvg-name="凤凰卫视" group-title="卫视",凤凰卫视
 https://smart.pendy.dpdns.org/Smart.php?id=phoenixtv_hd
 #EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/北京卫视.png" tvg-name="北京卫视" group-title="卫视",北京卫视
 https://smart.pendy.dpdns.org/Smart.php?id=beijing
