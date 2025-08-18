@@ -1,0 +1,173 @@
+#EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"
+#EXTINF:-1 tvg-logo="" tvg-name="TVBS_677" group-title="其他頻道",TVBS_677
+http://38.64.72.148:80/hls/modn/list/4005/chunklist1.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="ETIV_613" group-title="其他頻道",ETIV_613
+http://38.64.72.148:80/hls/modn/list/2015/chunklist1.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="其他頻道",
+http://38.64.72.148:80/hls/modn/list/4013/chunklist0.m3u8?blog.ntnas.top
+#EXTINF:-1 tvg-logo="" tvg-name="欢喜台  （Hua Hee Tai）" group-title="其他頻道",欢喜台  （Hua Hee Tai）
+https://smart.pendy.dpdns.org/Smart.php?id=Huahee
+#EXTINF:-1 tvg-logo="" tvg-name="华丽台  （Wah Lai Toi）" group-title="其他頻道",华丽台  （Wah Lai Toi）
+https://smart.pendy.dpdns.org/Smart.php?id=Wlt
+#EXTINF:-1 tvg-logo="" tvg-name="TVBS 欢乐台 （备份）" group-title="其他頻道",TVBS 欢乐台 （备份）
+https://smart.pendy.dpdns.org/Smart.php?id=tvbshuanle_twn
+#EXTINF:-1 tvg-logo="" tvg-name="NHKBSプレミア Premium" group-title="其他頻道",NHKBSプレミア Premium
+https://smart.pendy.dpdns.org/Smart.php?id=nhkpremium_japan
+#EXTINF:-1 tvg-logo="" tvg-name="テレビ东京 Tokyo TV" group-title="其他頻道",テレビ东京 Tokyo TV
+https://smart.pendy.dpdns.org/Smart.php?id=tokyotv_japan
+#EXTINF:-1 tvg-logo="" tvg-name="テレビ朝日 Asahi TV" group-title="其他頻道",テレビ朝日 Asahi TV
+https://smart.pendy.dpdns.org/Smart.php?id=asahitv_japan
+#EXTINF:-1 tvg-logo="" tvg-name="Astro Premier League 2" group-title="其他頻道",Astro Premier League 2
+https://smart.pendy.dpdns.org/Smart.php?id=go_assp2
+#EXTINF:-1 tvg-logo="" tvg-name="Astro Premier League 1" group-title="其他頻道",Astro Premier League 1
+https://smart.pendy.dpdns.org/Smart.php?id=go_assp1
+#EXTINF:-1 tvg-logo="" tvg-name="TVB 星河台 Xing He" group-title="其他頻道",TVB 星河台 Xing He
+https://smart.pendy.dpdns.org/Smart.php?id=Xinhe
+#EXTINF:-1 tvg-logo="" tvg-name="Skysports Main Event" group-title="其他頻道",Skysports Main Event
+https://smart.pendy.dpdns.org/Smart.php?id=tiankongmain
+#EXTINF:-1 tvg-logo="" tvg-name="TVBS News 新闻台" group-title="其他頻道",TVBS News 新闻台
+https://smart.pendy.dpdns.org/Smart.php?id=tvbs_n
+#EXTINF:-1 tvg-logo="" tvg-name="Celestial Movies" group-title="其他頻道",Celestial Movies
+https://smart.pendy.dpdns.org/Smart.php?id=Celestialindo
+#EXTINF:-1 tvg-logo="" tvg-name="Celestial Classic" group-title="其他頻道",Celestial Classic
+https://smart.pendy.dpdns.org/Smart.php?id=Celestial2
+#EXTINF:-1 tvg-logo="" tvg-name="Astro Sports Plus" group-title="其他頻道",Astro Sports Plus
+https://smart.pendy.dpdns.org/Smart.php?id=go_sportsplus
+#EXTINF:-1 tvg-logo="" tvg-name="Paramount Network" group-title="其他頻道",Paramount Network
+https://smart.pendy.dpdns.org/Smart.php?id=Paramountnetwork
+#EXTINF:-1 tvg-logo="" tvg-name="MeWatch Vasantham" group-title="其他頻道",MeWatch Vasantham
+https://smart.pendy.dpdns.org/Smart.php?id=Mewatch_Vasantham
+#EXTINF:-1 tvg-logo="" tvg-name="CNN International" group-title="其他頻道",CNN International
+https://smart.pendy.dpdns.org/Smart.php?id=Cnn
+#EXTINF:-1 tvg-logo="" tvg-name="Natgeo Wild Tamil" group-title="其他頻道",Natgeo Wild Tamil
+https://smart.pendy.dpdns.org/Smart.php?id=natgeowildtamil_raj
+#EXTINF:-1 tvg-logo="" tvg-name="阿里郎 Arirang" group-title="其他頻道",阿里郎 Arirang
+https://smart.pendy.dpdns.org/Smart.php?id=arirang_twn
+#EXTINF:-1 tvg-logo="" tvg-name="Lifestyle&Fashion" group-title="其他頻道",Lifestyle&Fashion
+https://smart.pendy.dpdns.org/Smart.php?id=Lifestyle
+#EXTINF:-1 tvg-logo="" tvg-name="TVB Entertainment" group-title="其他頻道",TVB Entertainment
+https://smart.pendy.dpdns.org/Smart.php?id=Tvbentertainment
+#EXTINF:-1 tvg-logo="" tvg-name="Astro Badminton 1" group-title="其他頻道",Astro Badminton 1
+https://smart.pendy.dpdns.org/Smart.php?id=go_badminton1
+#EXTINF:-1 tvg-logo="" tvg-name="Astro Badminton 2" group-title="其他頻道",Astro Badminton 2
+https://smart.pendy.dpdns.org/Smart.php?id=go_badminton2
+#EXTINF:-1 tvg-logo="" tvg-name="Skysports Cricket" group-title="其他頻道",Skysports Cricket
+https://smart.pendy.dpdns.org/Smart.php?id=tiankongcricket
+#EXTINF:-1 tvg-logo="" tvg-name="BSフジ BS Fuji" group-title="其他頻道",BSフジ BS Fuji
+https://smart.pendy.dpdns.org/Smart.php?id=bsfuji_japan
+#EXTINF:-1 tvg-logo="" tvg-name="翡翠台 backup" group-title="其他頻道",翡翠台 backup
+https://smart.pendy.dpdns.org/Smart.php?id=Jade_xue
+#EXTINF:-1 tvg-logo="" tvg-name="AlQuran AlKareem" group-title="其他頻道",AlQuran AlKareem
+https://smart.pendy.dpdns.org/Smart.php?id=AlQuran
+#EXTINF:-1 tvg-logo="" tvg-name="Astro Grandstand" group-title="其他頻道",Astro Grandstand
+https://smart.pendy.dpdns.org/Smart.php?id=go_assp3
+#EXTINF:-1 tvg-logo="" tvg-name="Hollywood Movies" group-title="其他頻道",Hollywood Movies
+https://smart.pendy.dpdns.org/Smart.php?id=hollywoodmovies_twn
+#EXTINF:-1 tvg-logo="" tvg-name="Cartoon Network" group-title="其他頻道",Cartoon Network
+https://smart.pendy.dpdns.org/Smart.php?id=Cn
+#EXTINF:-1 tvg-logo="" tvg-name="爱奇艺 iQiyi" group-title="其他頻道",爱奇艺 iQiyi
+https://smart.pendy.dpdns.org/Smart.php?id=Qiyi
+#EXTINF:-1 tvg-logo="" tvg-name="PPTV Thailand1" group-title="其他頻道",PPTV Thailand1
+https://smart.pendy.dpdns.org/Smart.php?id=pptv_pat
+#EXTINF:-1 tvg-logo="" tvg-name="Foodnetwork Hd" group-title="其他頻道",Foodnetwork Hd
+https://smart.pendy.dpdns.org/Smart.php?id=Foodnetwork
+#EXTINF:-1 tvg-logo="" tvg-name="Astro Football" group-title="其他頻道",Astro Football
+https://smart.pendy.dpdns.org/Smart.php?id=go_assp4
+#EXTINF:-1 tvg-logo="" tvg-name="NatGeo_Wild" group-title="其他頻道",NatGeo_Wild
+https://smart.pendy.dpdns.org/Smart.php?id=natgeowild_twn
+#EXTINF:-1 tvg-logo="" tvg-name="Bloomberg News" group-title="其他頻道",Bloomberg News
+https://smart.pendy.dpdns.org/Smart.php?id=bloomberg_twn
+#EXTINF:-1 tvg-logo="" tvg-name="Astro Vaanavil" group-title="其他頻道",Astro Vaanavil
+https://smart.pendy.dpdns.org/Smart.php?id=Vaanavil
+#EXTINF:-1 tvg-logo="" tvg-name="Astro W-Sports" group-title="其他頻道",Astro W-Sports
+https://smart.pendy.dpdns.org/Smart.php?id=go_assp5
+#EXTINF:-1 tvg-logo="" tvg-name="Prima backup 2" group-title="其他頻道",Prima backup 2
+https://smart.pendy.dpdns.org/Smart.php?id=AAprima
+#EXTINF:-1 tvg-logo="" tvg-name="Skysports News" group-title="其他頻道",Skysports News
+https://smart.pendy.dpdns.org/Smart.php?id=tiankongnews
+#EXTINF:-1 tvg-logo="" tvg-name="NatGeo Wild" group-title="其他頻道",NatGeo Wild
+https://smart.pendy.dpdns.org/Smart.php?id=Natgeowild
+#EXTINF:-1 tvg-logo="" tvg-name="Star Movies" group-title="其他頻道",Star Movies
+https://smart.pendy.dpdns.org/Smart.php?id=starmovies_raj
+#EXTINF:-1 tvg-logo="" tvg-name="Mecca Live" group-title="其他頻道",Mecca Live
+https://smart.pendy.dpdns.org/Smart.php?id=quran_mido
+#EXTINF:-1 tvg-logo="" tvg-name="Supersports 4" group-title="其他頻道",Supersports 4
+https://smart.pendy.dpdns.org/Smart.php?id=Assp4
+#EXTINF:-1 tvg-logo="" tvg-name="Skysports EPL" group-title="其他頻道",Skysports EPL
+https://smart.pendy.dpdns.org/Smart.php?id=tiankongepl
+#EXTINF:-1 tvg-logo="" tvg-name="TVRI National" group-title="其他頻道",TVRI National
+https://smart.pendy.dpdns.org/Smart.php?id=TVRI
+#EXTINF:-1 tvg-logo="" tvg-name="News 18 Tamil" group-title="其他頻道",News 18 Tamil
+https://smart.pendy.dpdns.org/Smart.php?id=news18tamil_raj
+#EXTINF:-1 tvg-logo="" tvg-name="Supersports 3" group-title="其他頻道",Supersports 3
+https://smart.pendy.dpdns.org/Smart.php?id=Assp3
+#EXTINF:-1 tvg-logo="" tvg-name="Astro Sunlife" group-title="其他頻道",Astro Sunlife
+https://smart.pendy.dpdns.org/Smart.php?id=Sunlife
+#EXTINF:-1 tvg-logo="" tvg-name="Supersports 2" group-title="其他頻道",Supersports 2
+https://smart.pendy.dpdns.org/Smart.php?id=Assp2
+#EXTINF:-1 tvg-logo="" tvg-name="Supersports 1" group-title="其他頻道",Supersports 1
+https://smart.pendy.dpdns.org/Smart.php?id=Assp1
+#EXTINF:-1 tvg-logo="" tvg-name="Rugby Pass TV" group-title="其他頻道",Rugby Pass TV
+https://smart.pendy.dpdns.org/Smart.php?id=Rugbypasstv
+#EXTINF:-1 tvg-logo="" tvg-name="Zee Cinema" group-title="其他頻道",Zee Cinema
+https://smart.pendy.dpdns.org/Smart.php?id=Zeecinemahd
+#EXTINF:-1 tvg-logo="" tvg-name="Movies Now" group-title="其他頻道",Movies Now
+https://smart.pendy.dpdns.org/Smart.php?id=moviesnow_raj
+#EXTINF:-1 tvg-logo="" tvg-name="RTM Sports" group-title="其他頻道",RTM Sports
+https://smart.pendy.dpdns.org/Smart.php?id=Rtmsport
+#EXTINF:-1 tvg-logo="" tvg-name="Skysports Mix" group-title="其他頻道",Skysports Mix
+https://smart.pendy.dpdns.org/Smart.php?id=tiankongmix
+#EXTINF:-1 tvg-logo="" tvg-name="Animal_Planet" group-title="其他頻道",Animal_Planet
+https://smart.pendy.dpdns.org/Smart.php?id=animalplanet_twn
+#EXTINF:-1 tvg-logo="" tvg-name="MeWatch Suria" group-title="其他頻道",MeWatch Suria
+https://smart.pendy.dpdns.org/Smart.php?id=Mewatch_Suria
+#EXTINF:-1 tvg-logo="" tvg-name="Danang TV2" group-title="其他頻道",Danang TV2
+https://smart.pendy.dpdns.org/Smart.php?id=viet_danangtv2
+#EXTINF:-1 tvg-logo="" tvg-name="Astro Cricket" group-title="其他頻道",Astro Cricket
+https://smart.pendy.dpdns.org/Smart.php?id=Acricket
+#EXTINF:-1 tvg-logo="" tvg-name="TNT Sports 4" group-title="其他頻道",TNT Sports 4
+https://smart.pendy.dpdns.org/Smart.php?id=tntsport4
+#EXTINF:-1 tvg-logo="" tvg-name="龙详时代" group-title="其他頻道",龙详时代
+https://smart.pendy.dpdns.org/Smart.php?id=lungxiangtime_twn
+#EXTINF:-1 tvg-logo="" tvg-name="Astrol Kplus" group-title="其他頻道",Astrol Kplus
+https://smart.pendy.dpdns.org/Smart.php?id=Kplus
+#EXTINF:-1 tvg-logo="" tvg-name="Vision Prime" group-title="其他頻道",Vision Prime
+https://smart.pendy.dpdns.org/Smart.php?id=VisionPrime
+#EXTINF:-1 tvg-logo="" tvg-name="Sun TV India" group-title="其他頻道",Sun TV India
+https://smart.pendy.dpdns.org/Smart.php?id=suntv_raj
+#EXTINF:-1 tvg-logo="" tvg-name="Colors Tamil" group-title="其他頻道",Colors Tamil
+https://smart.pendy.dpdns.org/Smart.php?id=Colorstam
+#EXTINF:-1 tvg-logo="" tvg-name="Citra backup" group-title="其他頻道",Citra backup
+https://smart.pendy.dpdns.org/Smart.php?id=AAcitra1
+#EXTINF:-1 tvg-logo="" tvg-name="Prima backup" group-title="其他頻道",Prima backup
+https://smart.pendy.dpdns.org/Smart.php?id=AAprima1
+#EXTINF:-1 tvg-logo="" tvg-name="NatGeo Tamil" group-title="其他頻道",NatGeo Tamil
+https://smart.pendy.dpdns.org/Smart.php?id=natgeotamil_raj
+#EXTINF:-1 tvg-logo="" tvg-name="MeWatch Ch U" group-title="其他頻道",MeWatch Ch U
+https://smart.pendy.dpdns.org/Smart.php?id=Mewatch_chU
+#EXTINF:-1 tvg-logo="" tvg-name="MeWatch Ch 5" group-title="其他頻道",MeWatch Ch 5
+https://smart.pendy.dpdns.org/Smart.php?id=Mewatch_ch5
+#EXTINF:-1 tvg-logo="" tvg-name="Tnt Sports 1" group-title="其他頻道",Tnt Sports 1
+https://smart.pendy.dpdns.org/Smart.php?id=6fac0aaead
+#EXTINF:-1 tvg-logo="" tvg-name="KBS World 24" group-title="其他頻道",KBS World 24
+https://smart.pendy.dpdns.org/Smart.php?id=kbsworld24_korea
+#EXTINF:-1 tvg-logo="" tvg-name="Skysports F1" group-title="其他頻道",Skysports F1
+https://smart.pendy.dpdns.org/Smart.php?id=tiankongf1
+#EXTINF:-1 tvg-logo="" tvg-name="NHK-総合-2" group-title="其他頻道",NHK-総合-2
+https://smart.pendy.dpdns.org/Smart.php?id=nhkg_japan
+#EXTINF:-1 tvg-logo="" tvg-name="TNT Sports 3" group-title="其他頻道",TNT Sports 3
+https://smart.pendy.dpdns.org/Smart.php?id=5fea4d73db
+#EXTINF:-1 tvg-logo="" tvg-name="Discovery Tamil" group-title="其他頻道",Discovery Tamil
+https://smart.pendy.dpdns.org/Smart.php?id=discoverytamil_raj
+#EXTINF:-1 tvg-logo="" tvg-name="LISTENONSPOTIFY" group-title="其他頻道",LISTENONSPOTIFY
+http://61.221.215.25:8800/hls/58/index.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="中华小当家" group-title="其他頻道",中华小当家
+http://61.221.215.25:8800/hls/40/index.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="利加隆" group-title="其他頻道",利加隆
+http://61.221.215.25:8800/hls/57/index.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="nhkworld" group-title="其他頻道",nhkworld
+http://61.221.215.25:8800/hls/51/index.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="49号" group-title="其他頻道",49号
+http://61.221.215.25:8800/hls/49/index.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="Dbox" group-title="其他頻道",Dbox
+http://61.221.215.25:8800/hls/54/index.m3u8
