@@ -289,17 +289,17 @@
         document.getElementById('menu5').classList.add("active");
     }
     if (t == "6"){
-        m3u_url = 'https://pkj99.github.io/iptv/othertv.m3u'; 
+        m3u_url = 'https://pkj99.github.io/iptv/m3u/othertv.m3u'; 
         tvchannels2('其他頻道');         
         document.getElementById('menu6').classList.add("active");
     }
     if (t == "7"){
-        m3u_url = 'https://pkj99.github.io/iptv/ftv.m3u'; 
+        m3u_url = 'https://pkj99.github.io/iptv/m3u/ftv.m3u'; 
         tvchannels2('民視頻道');         
         document.getElementById('menu7').classList.add("active");
     }
     if (t == "8"){
-        m3u_url = 'https://pkj99.github.io/iptv/ofiii.m3u'; 
+        m3u_url = 'https://pkj99.github.io/iptv/m3u/ofiii.m3u'; 
         tvchannels2('歐飛頻道');         
         document.getElementById('menu8').classList.add("active");
     }
