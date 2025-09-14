@@ -1,9 +1,9 @@
 
     let pagename = window.location.pathname.split('/').slice(-1);
-    var db_url = 'https://pkj99.github.io/iptv/db/iptv.db';
+    var db_url = './db/iptv.db';
     var pagecount;
     var urlParams;
-    var m3u_url = 'https://pkj99.github.io/iptv/twtv.m3u';
+    var m3u_url = './m3u/twtv.m3u';
     
     // 收藏設定 Cookie 
   
@@ -225,6 +225,75 @@
     }
 
 
+
+    function tvchannels2_xplayer(groupName){
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', m3u_url);
+        xhr.onload = e => {
+
+            var contents = xhr.response;
+            var channel = "0";
+            var url_tvg, tvg_logo, tvg_name, group_title, title, url, info;
+            let htmlString = '';
+
+            var lines = contents.split(/[\r\n]/);
+            for (var i in lines){
+                var line = lines[i];
+                if (/#EXTM3U/.test(line)) {
+                    channel = "0";
+                    if (/url-tvg/.test(line)){
+                        var keyVal = line.split(/ /)[1], url_tvg = keyVal.split(/[=]/)[1].replaceAll('\"','').trim();
+                    }
+                } else {
+                    if (/#EXTINF/.test(line)) {
+                        channel = "0";
+                        title = line.split(/,/)[1].replaceAll('\"','').trim();
+                        info = line.split(/,/)[0];
+
+                        if (/tvg-logo/.test(info)){
+                            var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();                        
+                        }
+                        if (/tvg-name/.test(info)){
+                            var keyVal = info.split(/tvg-name/)[1], val2 = keyVal.split(/ /)[0], tvg_name = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                        }
+                        if (/group-title/.test(info)){
+                            var keyVal = info.split(/group-title/)[1], val2 = keyVal.split(/ /)[0], group_title = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                        }
+                    } else {
+                        if (line.trim() != ''){
+                            channel = "1";
+                            url = line.trim();
+                        }
+                    }
+                }
+
+                if (tvg_logo == "" || tvg_logo == null){tvg_logo="https://pkj99.github.io/iptv/images/iptv2.png"};
+
+                if (channel == "1") {
+                    if (group_title == groupName || groupName == 'ALL'){
+                        htmlString += `<li class="col-lg-8 col-md-8 col-sm-5 col-xs-3">`;
+                        htmlString += `<div class="myui-vodlist__box">`;
+                        htmlString += `<a class="myui-vodlist__thumb lazyload" target="${target}" href="xplayer.html?url=${url}" `;
+                        htmlString += `title="${title}" `;
+                        htmlString += `data-original="${url}" `;
+                        htmlString += `style="background-image: url('${tvg_logo}')"`;
+                        htmlString += `</a>`;
+                        if (tvg_logo == "https://pkj99.github.io/iptv/images/iptv2.png"){
+                            htmlString += `<span class="pic-text text-right">${title}</span>`;
+                        }
+                        htmlString += `</div>`;
+                        htmlString += `</li>`;
+                    }
+                    channel = "0";
+                }
+            }
+            document.getElementById('tvlist').innerHTML = htmlString;
+        };
+        xhr.send();
+    }
+
+
+
     // get params
     (window.onpopstate = function () {
         var match,
@@ -254,19 +323,22 @@
 
     if (urlParams["t"] == null){ var t = "0"; } else { var t = urlParams["t"];}
     if (t == "0"){
-        tvchannels("select * from iptv_tw");
-        // m3u_url = 'https://pkj99.github.io/iptv/twtv.m3u';
-        // tvchannels2('台灣頻道');
+        // tvchannels("select * from iptv_tw");
+        // m3u_url = 'https://pkj99.github.io/iptv/m3u/twtv.m3u';
+        m3u_url = './m3u/twtv.m3u';
+        tvchannels2('台灣頻道');
         document.getElementById('menu0').classList.add("active");
     }
     if (t == "1"){
-        tvchannels("select * from iptv_cn");
-        // m3u_url = 'https://pkj99.github.io/iptv/cntv.m3u';
-        // tvchannels2('ALL');
+        // tvchannels("select * from iptv_cn");
+        m3u_url = './m3u/cntv.m3u';
+        tvchannels2('ALL');
         document.getElementById('menu1').classList.add("active");
     }
     if (t == "2"){
-        tvchannels_xplayer("select * from iptv where hostname = 'smart.pendy.dpdns.org' and catalog = '台灣頻道'");
+        // tvchannels_xplayer("select * from iptv where hostname = 'smart.pendy.dpdns.org' and catalog = '台灣頻道'");
+        m3u_url = './m3u/smarttv.m3u';
+        tvchannels2_xplayer('SMART頻道');
         document.getElementById('menu2').classList.add("active");
     }
     if (t == "3"){
@@ -282,24 +354,24 @@
         document.getElementById('menu4').classList.add("active");
     }
     if (t == "5"){
-        tvchannels_xplayer("select * from iptv where hostname = 'smart.pendy.dpdns.org' and catalog in ('央视','卫视')");
+        // tvchannels_xplayer("select * from iptv where hostname = 'smart.pendy.dpdns.org' and catalog in ('央视','卫视')");
         // tvchannels("select * from iptv where catalog = '四季頻道'");
-        // m3u_url = 'https://pkj99.github.io/iptv/4gtv.m3u'; 
-        // tvchannels2('四季頻道');
+        m3u_url = './m3u/local-4gtv.m3u'; 
+        tvchannels2('四季頻道');
         document.getElementById('menu5').classList.add("active");
     }
     if (t == "6"){
-        m3u_url = 'https://pkj99.github.io/iptv/m3u/othertv.m3u'; 
+        m3u_url = './m3u/othertv.m3u'; 
         tvchannels2('其他頻道');         
         document.getElementById('menu6').classList.add("active");
     }
     if (t == "7"){
-        m3u_url = 'https://pkj99.github.io/iptv/m3u/ftv.m3u'; 
+        m3u_url = './m3u/ftv.m3u'; 
         tvchannels2('民視頻道');         
         document.getElementById('menu7').classList.add("active");
     }
     if (t == "8"){
-        m3u_url = 'https://pkj99.github.io/iptv/m3u/ofiii.m3u'; 
+        m3u_url = './m3u/ofiiitv.m3u'; 
         tvchannels2('歐飛頻道');         
         document.getElementById('menu8').classList.add("active");
     }

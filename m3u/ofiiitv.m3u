@@ -1,0 +1,57 @@
+#EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv009_mobile.png" tvg-name="中天新闻台" group-title="歐飛頻道",中天新闻台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv009
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv040_mobile.png" tvg-name="中视" group-title="歐飛頻道",中视
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv040
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv041_mobile.png" tvg-name="华视" group-title="歐飛頻道",华视
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv041
+#EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png" tvg-name="台视新闻台" group-title="歐飛頻道",台视新闻台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv051
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv052_mobile.png" tvg-name="华视新闻" group-title="歐飛頻道",华视新闻
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv052
+#EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv066_tv.png" tvg-name="台视" group-title="歐飛頻道",台视
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv066
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv074_mobile.png" tvg-name="中视新闻" group-title="歐飛頻道",中视新闻
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv074
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv084_mobile_0204.png" tvg-name="国会频道1" group-title="歐飛頻道",国会频道1
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv084
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv085_mobile_0204.png" tvg-name="国会频道2" group-title="歐飛頻道",国会频道2
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv085
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live047_mobile.png" tvg-name="东森购物一台" group-title="歐飛頻道",东森购物一台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv102
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live046_mobile.png" tvg-name="东森购物二台" group-title="歐飛頻道",东森购物二台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv103
+#EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv104_tv.png" tvg-name="第1商业台" group-title="歐飛頻道",第1商业台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv104
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live089_mobile.png" tvg-name="三立新闻台" group-title="歐飛頻道",三立新闻台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=iNEWS
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv16_mobile.png" tvg-name="好消息" group-title="歐飛頻道",好消息
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-ftv16
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv17_mobile.png" tvg-name="好消息2台" group-title="歐飛頻道",好消息2台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-ftv17
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV9.png" tvg-name="龙华动画" group-title="歐飛頻道",龙华动画
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn01
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV1.png" tvg-name="龙华电影" group-title="歐飛頻道",龙华电影
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn03
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV5.png" tvg-name="龙华日韩台" group-title="歐飛頻道",龙华日韩台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn11
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV6.png" tvg-name="龙华偶像" group-title="歐飛頻道",龙华偶像
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn12
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn14_mobile.png" tvg-name="寰宇新闻" group-title="歐飛頻道",寰宇新闻
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn14
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn15_mobile.png" tvg-name="寰宇新闻台湾台" group-title="歐飛頻道",寰宇新闻台湾台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn15
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn17_mobile.png" tvg-name="亚洲旅游" group-title="歐飛頻道",亚洲旅游
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn17
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV4.png" tvg-name="龙华戏剧" group-title="歐飛頻道",龙华戏剧
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn18
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/smarttv.png" tvg-name="Smart知识台" group-title="歐飛頻道",Smart知识台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn19
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn20_mobile.png" tvg-name="ELTV生活英语台" group-title="歐飛頻道",ELTV生活英语台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn20
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/龙华经典.png" tvg-name="龙华经典" group-title="歐飛頻道",龙华经典
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn21
+#EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_litv-longturn22_tv.png" tvg-name="台湾戏剧台" group-title="歐飛頻道",台湾戏剧台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn22
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/寰宇财经.png" tvg-name="寰宇财经" group-title="歐飛頻道",寰宇财经
+https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-longturn23
