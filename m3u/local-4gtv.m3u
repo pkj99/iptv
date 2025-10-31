@@ -67,6 +67,8 @@ http://192.168.1.249:5050/4gtv-4gtv057/index.m3u8
 http://192.168.1.249:5050/4gtv-4gtv058/index.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/classical.png" tvg-name="CLASSICA古典乐" group-title="四季頻道",CLASSICA古典乐
 http://192.168.1.249:5050/4gtv-4gtv059/index.m3u8
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv059_mobile.png" tvg-name="CLASSICA 古典乐" group-title="四季頻道",CLASSICA 古典乐
+http://192.168.1.249:5050/4gtv-4gtv059/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv061_mobile.png" tvg-name="靖天电影台" group-title="四季頻道",靖天电影台
 http://192.168.1.249:5050/4gtv-4gtv061/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv062_mobile.png" tvg-name="靖天育乐台" group-title="四季頻道",靖天育乐台
@@ -129,6 +131,8 @@ http://192.168.1.249:5050/4gtv-4gtv155/index.m3u8
 http://192.168.1.249:5050/4gtv-4gtv155/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn15_mobile.png" tvg-name="寰宇新闻台湾台" group-title="四季頻道",寰宇新闻台湾台
 http://192.168.1.249:5050/4gtv-4gtv156/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/寰宇财经.png" tvg-name="寰宇财经" group-title="四季頻道",寰宇财经
+http://192.168.1.249:5050/4gtv-4gtv158/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv007_mobile.png" tvg-name="大爱一台" group-title="四季頻道",大爱一台
 http://192.168.1.249:5050/4gtv-live007/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live008_mobile.png" tvg-name="人间卫视" group-title="四季頻道",人间卫视
@@ -136,6 +140,8 @@ http://192.168.1.249:5050/4gtv-live008/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/pc/logo_4gtv_4gtv-live010_pc.png" tvg-name="戏剧免费看1台" group-title="四季頻道",戏剧免费看1台
 http://192.168.1.249:5050/4gtv-live010/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live011_mobile.png" tvg-name="fun探索娱乐台" group-title="四季頻道",fun探索娱乐台
+http://192.168.1.249:5050/4gtv-live011/index.m3u8
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live011_mobile.png" tvg-name="FUN 4K探索娱乐" group-title="四季頻道",FUN 4K探索娱乐
 http://192.168.1.249:5050/4gtv-live011/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live012_mobile.png" tvg-name="滚动力rollor" group-title="四季頻道",滚动力rollor
 http://192.168.1.249:5050/4gtv-live012/index.m3u8
@@ -197,6 +203,8 @@ http://192.168.1.249:5050/4gtv-live105/index.m3u8
 http://192.168.1.249:5050/4gtv-live106/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live107.png" tvg-name="MOMO亲子台" group-title="四季頻道",MOMO亲子台
 http://192.168.1.249:5050/4gtv-live107/index.m3u8
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live110_mobile.png" tvg-name="Pet Club TV" group-title="四季頻道",Pet Club TV
+http://192.168.1.249:5050/4gtv-live110/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live112_mobile.png" tvg-name="Global Trekker" group-title="四季頻道",Global Trekker
 http://192.168.1.249:5050/4gtv-live112/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live120_mobile.png" tvg-name="爱尔达综合" group-title="四季頻道",爱尔达综合
@@ -219,6 +227,8 @@ http://192.168.1.249:5050/4gtv-live145/index.m3u8
 http://192.168.1.249:5050/4gtv-live146/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv10_mobile.png" tvg-name="半岛国际新闻台" group-title="四季頻道",半岛国际新闻台
 http://192.168.1.249:5050/4gtv-live157/index.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/MyCinema.png" tvg-name="欧洲光影" group-title="四季頻道",欧洲光影
+http://192.168.1.249:5050/4gtv-live157/index.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/NHKWorld.png" tvg-name="NHK 新闻资讯台" group-title="四季頻道",NHK 新闻资讯台
 http://192.168.1.249:5050/4gtv-live168/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live201_mobile.png" tvg-name="车迷 TV" group-title="四季頻道",车迷 TV
@@ -231,6 +241,8 @@ http://192.168.1.249:5050/4gtv-live207/index.m3u8
 http://192.168.1.249:5050/4gtv-live208/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live620_mobile.png" tvg-name="HITS频道" group-title="四季頻道",HITS频道
 http://192.168.1.249:5050/4gtv-live620/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HITS.png" tvg-name="HITS" group-title="四季頻道",HITS
+http://192.168.1.249:5050/4gtv-live620/index.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/VOATV.png" tvg-name="VOA美国之音" group-title="四季頻道",VOA美国之音
 http://192.168.1.249:5050/litv-ftv03/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv07_mobile.png" tvg-name="民视旅游台" group-title="四季頻道",民视旅游台
@@ -238,6 +250,8 @@ http://192.168.1.249:5050/litv-ftv07/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv09_mobile.png" tvg-name="民视影剧台" group-title="四季頻道",民视影剧台
 http://192.168.1.249:5050/litv-ftv09/index.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/MyCinema.png" tvg-name="欧洲光影" group-title="四季頻道",欧洲光影
+http://192.168.1.249:5050/litv-ftv10/index.m3u8
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv10_mobile.png" tvg-name="半岛国际新闻台" group-title="四季頻道",半岛国际新闻台
 http://192.168.1.249:5050/litv-ftv10/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv13_mobile.png" tvg-name="民视新闻台" group-title="四季頻道",民视新闻台
 http://192.168.1.249:5050/litv-ftv13/index.m3u8

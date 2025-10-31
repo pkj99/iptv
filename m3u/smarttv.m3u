@@ -71,9 +71,9 @@ https://smart.pendy.dpdns.org/Smart.php?id=videolandmovie
 https://smart.pendy.dpdns.org/Smart.php?id=Hbosignature
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBOFamily.png" tvg-name="HBOFamily" group-title="SMART頻道",HBOFamily
 https://smart.pendy.dpdns.org/Smart.php?id=Hbofamily
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBOHD.png" tvg-name="HBO" group-title="SMART頻道",HBO
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBO.png" tvg-name="HBO" group-title="SMART頻道",HBO
 https://smart.pendy.dpdns.org/Smart.php?id=Hbo
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBOHD.png" tvg-name="HBO" group-title="SMART頻道",HBO
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBO.png" tvg-name="HBO" group-title="SMART頻道",HBO
 https://smart.pendy.dpdns.org/Smart.php?id=Hbo
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBOHits.png" tvg-name="HBOHits" group-title="SMART頻道",HBOHits
 https://smart.pendy.dpdns.org/Smart.php?id=Hbohitshd
