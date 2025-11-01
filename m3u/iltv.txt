@@ -177,9 +177,9 @@ TVBS 新聞,https://tv.iill.top/litv/4gtv-4gtv072
 CCTV 1 综合,https://tv.iill.top/migu-1/cctv1
 CCTV 2 财经,https://tv.iill.top/migu-1/cctv2
 CCTV 3 综艺,https://tv.iill.top/migu-1/cctv3
+CCTV 4 中文国际·美洲,https://tv.iill.top/migu-1/cctv4m
 CCTV 4 中文国际,https://tv.iill.top/migu-1/cctv4
 CCTV 4 中文国际·欧洲,https://tv.iill.top/migu-1/cctv4o
-CCTV 4 中文国际·美洲,https://tv.iill.top/migu-1/cctv4m
 CCTV 5 体育,https://tv.iill.top/migu-1/cctv5
 CCTV 6 电影,https://tv.iill.top/migu-1/cctv6
 CCTV 7 国防军事,https://tv.iill.top/migu-1/cctv7

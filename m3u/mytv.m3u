@@ -347,12 +347,12 @@ https://tv.iill.top/migu-1/cctv1
 https://tv.iill.top/migu-1/cctv2
 #EXTINF:-1 tvg-logo="https://epg.iill.top/logo/CCTV3.png" tvg-name="CCTV3综艺" group-title="央視",CCTV 3 综艺
 https://tv.iill.top/migu-1/cctv3
+#EXTINF:-1 tvg-logo="https://epg.iill.top/logo/CCTV4美洲.png" tvg-name="CCTV4中文国际·美洲" group-title="央視",CCTV 4 中文国际·美洲
+https://tv.iill.top/migu-1/cctv4m
 #EXTINF:-1 tvg-logo="https://epg.iill.top/logo/CCTV4.png" tvg-name="CCTV4中文国际" group-title="央視",CCTV 4 中文国际
 https://tv.iill.top/migu-1/cctv4
 #EXTINF:-1 tvg-logo="https://epg.iill.top/logo/CCTV4欧洲.png" tvg-name="CCTV4中文国际·欧洲" group-title="央視",CCTV 4 中文国际·欧洲
 https://tv.iill.top/migu-1/cctv4o
-#EXTINF:-1 tvg-logo="https://epg.iill.top/logo/CCTV4美洲.png" tvg-name="CCTV4中文国际·美洲" group-title="央視",CCTV 4 中文国际·美洲
-https://tv.iill.top/migu-1/cctv4m
 #EXTINF:-1 tvg-logo="https://epg.iill.top/logo/CCTV5.png" tvg-name="CCTV5体育" group-title="央視",CCTV 5 体育
 https://tv.iill.top/migu-1/cctv5
 #EXTINF:-1 tvg-logo="https://epg.iill.top/logo/CCTV6.png" tvg-name="CCTV6电影" group-title="央視",CCTV 6 电影
