@@ -1,0 +1,27 @@
+import requests
+import os
+import sys
+
+windows = False
+if 'win' in sys.platform:
+    windows = True
+
+def grab(url):
+    response = requests.get(url, timeout=15).text
+    if '&token=' in response:
+        start = response.find('&token=') + 7
+        end = start + 64
+    return f"{response[start : end]}"
+
+token=grab('https://tv.iill.top/m3u/Gather')
+print(token)
+with open('iltv_template.m3u','r',encoding='utf-8') as f:
+    txt = f.read().replace('&token=key','&token='+str(token))
+    with open('../m3u/iltv.m3u','w',encoding='utf-8') as g:
+        g.write(txt)
+
+with open('iltv_template.txt','r',encoding='utf-8') as f:
+    txt = f.read().replace('&token=key','&token='+str(token))
+    with open('../m3u/iltv.txt','w',encoding='utf-8') as g:
+        g.write(txt)
+
