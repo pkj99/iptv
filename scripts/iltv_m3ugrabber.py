@@ -33,3 +33,5 @@ with open('iltv_template.txt','r',encoding='utf-8') as f:
     with open('../m3u/iltv.txt','w',encoding='utf-8') as g:
         g.write(txt)
 
+if 'temp.txt' in os.listdir():
+    os.system('rm temp.txt')
