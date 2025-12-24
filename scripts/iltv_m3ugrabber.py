@@ -7,10 +7,18 @@ if 'win' in sys.platform:
     windows = True
 
 def grab(url):
+    start = 0
+    end = 64
     response = requests.get(url, timeout=15).text
     if '&token=' in response:
         start = response.find('&token=') + 7
         end = start + 64
+    else:
+        os.system(f'curl "{url}" > temp.txt')
+        response = ''.join(open('temp.txt').readlines())
+        if '&token=' in response:
+            start = response.find('&token=') + 7
+            end = start + 64
     return f"{response[start : end]}"
 
 token=grab('https://tv.iill.top/m3u/Gather')
