@@ -24,10 +24,10 @@ def grab(url):
             start = response.find('&token=') + 7
             end = start + 64
         else:
-            os.system(f'wget -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" "{url}" -O temp.txt')
+            os.system(f'wget --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" "{url}" -O temp.txt')
             response = ''.join(open('temp.txt').readlines())
             if '&token=' in response:
-                print('curl get token ...')
+                print('wget get token ...')
                 start = response.find('&token=') + 7
                 end = start + 64            
     return f"{response[start : end]}"
