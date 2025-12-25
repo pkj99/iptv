@@ -8,7 +8,7 @@ if 'win' in sys.platform:
 
 def grab(url):
     start = 0
-    end = 64
+    end = 1000
     response = requests.get(url, timeout=15).text
     if '&token=' in response:
         start = response.find('&token=') + 7
