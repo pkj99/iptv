@@ -32,7 +32,16 @@ def grab(url):
                 # end = start + 64            
     return f"{response[start : end]}"
 
-token=grab('https://tv.iill.top/m3u/Gather')
+def getToken():
+    response = ''.join(open('temp.txt').readlines())
+    if '&token=' in response:
+        print('curl get token ...')
+        start = response.find('&token=') + 7
+        end = start + 64
+    return f"{response[start : end]}"
+
+# token=grab('https://tv.iill.top/m3u/Gather')
+token=getToken()
 print(token)
 with open('scripts/iltv_template.m3u','r',encoding='utf-8') as f:
     txt = f.read().replace('&token=key','&token='+str(token))
