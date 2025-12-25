@@ -49,4 +49,4 @@ with open('iltv_template.txt','r',encoding='utf-8') as f:
         g.write(txt)
 
 if 'temp.txt' in os.listdir():
-    os.system('rm temp.txt')
+    os.system('del /F temp.txt')
