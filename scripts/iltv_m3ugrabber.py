@@ -1,12 +1,12 @@
 import requests
 import os
-import sys
+# import sys
 
 HEADERS={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"}
 
-windows = False
-if 'win' in sys.platform:
-    windows = True
+# windows = False
+# if 'win' in sys.platform:
+    # windows = True
 
 def grab(url):
     start = 0
@@ -23,13 +23,13 @@ def grab(url):
             print('curl get token ...')
             start = response.find('&token=') + 7
             end = start + 64
-        else:
-            os.system(f'wget --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" "{url}" -O temp.txt')
-            response = ''.join(open('temp.txt').readlines())
-            if '&token=' in response:
-                print('wget get token ...')
-                start = response.find('&token=') + 7
-                end = start + 64            
+        # else:
+            # os.system(f'wget --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" "{url}" -O temp.txt')
+            # response = ''.join(open('temp.txt').readlines())
+            # if '&token=' in response:
+                # print('wget get token ...')
+                # start = response.find('&token=') + 7
+                # end = start + 64            
     return f"{response[start : end]}"
 
 token=grab('https://tv.iill.top/m3u/Gather')

@@ -1,688 +1,688 @@
 台灣頻道,#genre#
-民視台灣,https://tv.iill.top/litv/4gtv-4gtv001&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視,https://tv.iill.top/litv/4gtv-4gtv002&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視第一,https://tv.iill.top/litv/4gtv-4gtv003&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視綜藝,https://tv.iill.top/litv/4gtv-4gtv004&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-豬哥亮歌廳秀,https://tv.iill.top/litv/4gtv-4gtv006&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-中天新聞,https://tv.iill.top/litv/4gtv-4gtv009&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-非凡新聞,https://tv.iill.top/litv/4gtv-4gtv010&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-影迷數位電影,https://tv.iill.top/litv/4gtv-4gtv011&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-視納華仁紀實頻道,https://tv.iill.top/litv/4gtv-4gtv013&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-時尚運動X,https://tv.iill.top/litv/4gtv-4gtv014&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-韓國娛樂台 KMTV,https://tv.iill.top/litv/4gtv-4gtv016&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-AMC 最愛電影,https://tv.iill.top/litv/4gtv-4gtv017&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-達文西頻道,https://tv.iill.top/litv/4gtv-4gtv018&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-八大精彩,https://tv.iill.top/litv/4gtv-4gtv034&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-八大綜藝,https://tv.iill.top/litv/4gtv-4gtv039&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-中視,https://tv.iill.top/litv/4gtv-4gtv040&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-華視,https://tv.iill.top/litv/4gtv-4gtv041&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-公視戲劇,https://tv.iill.top/litv/4gtv-4gtv042&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-客家電視,https://tv.iill.top/litv/4gtv-4gtv043&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖天卡通,https://tv.iill.top/litv/4gtv-4gtv044&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖洋戲劇,https://tv.iill.top/litv/4gtv-4gtv045&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖天綜合,https://tv.iill.top/litv/4gtv-4gtv046&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖天日本,https://tv.iill.top/litv/4gtv-4gtv047&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-非凡商業,https://tv.iill.top/litv/4gtv-4gtv048&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-采昌影劇,https://tv.iill.top/litv/4gtv-4gtv049&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-台視新聞,https://tv.iill.top/litv/4gtv-4gtv051&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-華視新聞,https://tv.iill.top/litv/4gtv-4gtv052&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Ginx TV 電競頻道,https://tv.iill.top/litv/4gtv-4gtv053&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖天歡樂,https://tv.iill.top/litv/4gtv-4gtv054&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖天映畫,https://tv.iill.top/litv/4gtv-4gtv055&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-台視財經,https://tv.iill.top/litv/4gtv-4gtv056&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖洋卡通,https://tv.iill.top/litv/4gtv-4gtv057&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖天戲劇,https://tv.iill.top/litv/4gtv-4gtv058&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Classica 古典樂,https://tv.iill.top/litv/4gtv-4gtv059&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖天電影,https://tv.iill.top/litv/4gtv-4gtv061&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖天育樂,https://tv.iill.top/litv/4gtv-4gtv062&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖天國際,https://tv.iill.top/litv/4gtv-4gtv063&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-中視菁采,https://tv.iill.top/litv/4gtv-4gtv064&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-靖天資訊,https://tv.iill.top/litv/4gtv-4gtv065&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-台視,https://tv.iill.top/litv/4gtv-4gtv066&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-TVBS 精采,https://tv.iill.top/litv/4gtv-4gtv067&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-TVBS 歡樂,https://tv.iill.top/litv/4gtv-4gtv068&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-愛爾達娛樂,https://tv.iill.top/litv/4gtv-4gtv070&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-TVBS 新聞,https://tv.iill.top/litv/4gtv-4gtv072&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-TVBS,https://tv.iill.top/litv/4gtv-4gtv073&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-中視新聞,https://tv.iill.top/litv/4gtv-4gtv074&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-鏡電視新聞,https://tv.iill.top/litv/4gtv-4gtv075&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-亞洲旅遊,https://tv.iill.top/litv/4gtv-4gtv076&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Trace Sports,https://tv.iill.top/litv/4gtv-4gtv077&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Arirang TV,https://tv.iill.top/litv/4gtv-4gtv079&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-中視經典,https://tv.iill.top/litv/4gtv-4gtv080&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Trace Urban,https://tv.iill.top/litv/4gtv-4gtv082&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Mezzo Live,https://tv.iill.top/litv/4gtv-4gtv083&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-國會頻道 1,https://tv.iill.top/litv/4gtv-4gtv084&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-國會頻道 2,https://tv.iill.top/litv/4gtv-4gtv085&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-智林體育,https://tv.iill.top/litv/4gtv-4gtv101&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-第1商業,https://tv.iill.top/litv/4gtv-4gtv104&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-中天亞洲,https://tv.iill.top/litv/4gtv-4gtv109&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Pet Club TV,https://tv.iill.top/litv/4gtv-4gtv110&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-東森新聞,https://tv.iill.top/litv/4gtv-4gtv152&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-東森財經,https://tv.iill.top/litv/4gtv-4gtv153&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-寰宇新聞台灣,https://tv.iill.top/litv/4gtv-4gtv156&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-寰宇財經,https://tv.iill.top/litv/4gtv-4gtv158&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-VOA 美國之音,https://tv.iill.top/litv/litv-ftv03&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視旅遊,https://tv.iill.top/litv/litv-ftv07&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視影劇,https://tv.iill.top/litv/litv-ftv09&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-MCE 我的歐洲電影,https://tv.iill.top/litv/litv-ftv10&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視新聞,https://tv.iill.top/litv/litv-ftv13&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-影迷數位紀實,https://tv.iill.top/litv/litv-ftv15&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-好消息,https://tv.iill.top/litv/litv-ftv16&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-好消息 2,https://tv.iill.top/litv/litv-ftv17&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-龍華卡通,https://tv.iill.top/litv/litv-longturn01&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-龍華洋片,https://tv.iill.top/litv/litv-longturn02&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-龍華電影,https://tv.iill.top/litv/litv-longturn03&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯魅力,https://tv.iill.top/litv/litv-longturn04&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯高球 一,https://tv.iill.top/litv/litv-longturn05&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯高球 二,https://tv.iill.top/litv/litv-longturn06&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯運動 一,https://tv.iill.top/litv/litv-longturn07&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯運動 二,https://tv.iill.top/litv/litv-longturn08&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯網球,https://tv.iill.top/litv/litv-longturn09&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯無限 一,https://tv.iill.top/litv/litv-longturn10&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-龍華日韓,https://tv.iill.top/litv/litv-longturn11&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-龍華偶像,https://tv.iill.top/litv/litv-longturn12&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯無限 二,https://tv.iill.top/litv/litv-longturn13&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-寰宇新聞,https://tv.iill.top/litv/litv-longturn14&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-龍華戲劇,https://tv.iill.top/litv/litv-longturn18&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Smart 知識,https://tv.iill.top/litv/litv-longturn19&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-ELTA生活英語,https://tv.iill.top/litv/litv-longturn20&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-龍華經典,https://tv.iill.top/litv/litv-longturn21&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-台灣戲劇,https://tv.iill.top/litv/litv-longturn22&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-大愛電視,https://tv.iill.top/4gtv/4gtv-live007&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-人間衛視,https://tv.iill.top/4gtv/4gtv-live008&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-戲劇免費看,https://tv.iill.top/4gtv/4gtv-live010&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Fun 探索娛樂,https://tv.iill.top/4gtv/4gtv-live011&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-滾動力 Rollor,https://tv.iill.top/4gtv/4gtv-live012&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-原住民族電視,https://tv.iill.top/4gtv/4gtv-live014&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-DreamWorks 夢工廠動畫,https://tv.iill.top/4gtv/4gtv-live017&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-經典電影,https://tv.iill.top/4gtv/4gtv-live021&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-經典卡通,https://tv.iill.top/4gtv/4gtv-live022&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-精選動漫,https://tv.iill.top/4gtv/4gtv-live024&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-MTV Live HD 音樂頻道,https://tv.iill.top/4gtv/4gtv-live025&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-History 歷史頻道,https://tv.iill.top/4gtv/4gtv-live026&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-CI 罪案偵查頻道,https://tv.iill.top/4gtv/4gtv-live027&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Lifetime 娛樂頻道,https://tv.iill.top/4gtv/4gtv-live029&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-LiveABC 互動英語,https://tv.iill.top/4gtv/4gtv-live030&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-電影原聲 CMusic,https://tv.iill.top/4gtv/4gtv-live031&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Nick Jr. 兒童頻道,https://tv.iill.top/4gtv/4gtv-live032&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-東森購物 二,https://tv.iill.top/4gtv/4gtv-live046&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-東森購物 一,https://tv.iill.top/4gtv/4gtv-live047&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-東森購物 三,https://tv.iill.top/4gtv/4gtv-live048&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-東森購物 四,https://tv.iill.top/4gtv/4gtv-live049&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-新唐人亞太,https://tv.iill.top/4gtv/4gtv-live050&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Bloomberg TV,https://tv.iill.top/4gtv/4gtv-live059&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-SBN 全球財經,https://tv.iill.top/4gtv/4gtv-live060&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-CinemaWorld,https://tv.iill.top/4gtv/4gtv-live069&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-DW德國之聲,https://tv.iill.top/4gtv/4gtv-live071&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Rock Entertainment,https://tv.iill.top/4gtv/4gtv-live080&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-TVBS 綜藝,https://tv.iill.top/4gtv/4gtv-live087&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-TVBS 台劇,https://tv.iill.top/4gtv/4gtv-live088&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-三立新聞iNEWS,https://tv.iill.top/4gtv/4gtv-live089&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-INULTRA,https://tv.iill.top/4gtv/4gtv-live096&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Nickelodeon,https://tv.iill.top/4gtv/4gtv-live105&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-大愛電視 2,https://tv.iill.top/4gtv/4gtv-live106&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-MOMO 親子,https://tv.iill.top/4gtv/4gtv-live107&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Global Trekker 探索世界,https://tv.iill.top/4gtv/4gtv-live112&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-愛爾達生活旅遊,https://tv.iill.top/4gtv/4gtv-live120&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-LUXE TV,https://tv.iill.top/4gtv/4gtv-live121&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-TV5MONDE Style 生活時尚,https://tv.iill.top/4gtv/4gtv-live122&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-MagellanTV (麥哲倫頻道),https://tv.iill.top/4gtv/4gtv-live123&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-CNBC Asia 財經,https://tv.iill.top/4gtv/4gtv-live130&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Rock Action,https://tv.iill.top/4gtv/4gtv-live138&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-金光布袋戲,https://tv.iill.top/4gtv/4gtv-live144&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-霹靂布袋戲,https://tv.iill.top/4gtv/4gtv-live145&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-FRANCE24,https://tv.iill.top/4gtv/4gtv-live146&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-半島國際新聞,https://tv.iill.top/4gtv/4gtv-live157&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-NHK 新聞資訊,https://tv.iill.top/4gtv/4gtv-live168&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-車迷 TV,https://tv.iill.top/4gtv/4gtv-live201&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-幸福空間居家,https://tv.iill.top/4gtv/4gtv-live206&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-三立綜合,https://tv.iill.top/4gtv/4gtv-live207&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-Love Nature,https://tv.iill.top/4gtv/4gtv-live208&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-HITS 頻道,https://tv.iill.top/4gtv/4gtv-live620&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
+民視台灣,https://tv.iill.top/litv/4gtv-4gtv001&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視,https://tv.iill.top/litv/4gtv-4gtv002&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視第一,https://tv.iill.top/litv/4gtv-4gtv003&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視綜藝,https://tv.iill.top/litv/4gtv-4gtv004&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+豬哥亮歌廳秀,https://tv.iill.top/litv/4gtv-4gtv006&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+中天新聞,https://tv.iill.top/litv/4gtv-4gtv009&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+非凡新聞,https://tv.iill.top/litv/4gtv-4gtv010&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+影迷數位電影,https://tv.iill.top/litv/4gtv-4gtv011&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+視納華仁紀實頻道,https://tv.iill.top/litv/4gtv-4gtv013&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+時尚運動X,https://tv.iill.top/litv/4gtv-4gtv014&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+韓國娛樂台 KMTV,https://tv.iill.top/litv/4gtv-4gtv016&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+AMC 最愛電影,https://tv.iill.top/litv/4gtv-4gtv017&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+達文西頻道,https://tv.iill.top/litv/4gtv-4gtv018&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+八大精彩,https://tv.iill.top/litv/4gtv-4gtv034&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+八大綜藝,https://tv.iill.top/litv/4gtv-4gtv039&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+中視,https://tv.iill.top/litv/4gtv-4gtv040&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+華視,https://tv.iill.top/litv/4gtv-4gtv041&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+公視戲劇,https://tv.iill.top/litv/4gtv-4gtv042&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+客家電視,https://tv.iill.top/litv/4gtv-4gtv043&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖天卡通,https://tv.iill.top/litv/4gtv-4gtv044&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖洋戲劇,https://tv.iill.top/litv/4gtv-4gtv045&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖天綜合,https://tv.iill.top/litv/4gtv-4gtv046&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖天日本,https://tv.iill.top/litv/4gtv-4gtv047&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+非凡商業,https://tv.iill.top/litv/4gtv-4gtv048&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+采昌影劇,https://tv.iill.top/litv/4gtv-4gtv049&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+台視新聞,https://tv.iill.top/litv/4gtv-4gtv051&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+華視新聞,https://tv.iill.top/litv/4gtv-4gtv052&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Ginx TV 電競頻道,https://tv.iill.top/litv/4gtv-4gtv053&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖天歡樂,https://tv.iill.top/litv/4gtv-4gtv054&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖天映畫,https://tv.iill.top/litv/4gtv-4gtv055&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+台視財經,https://tv.iill.top/litv/4gtv-4gtv056&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖洋卡通,https://tv.iill.top/litv/4gtv-4gtv057&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖天戲劇,https://tv.iill.top/litv/4gtv-4gtv058&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Classica 古典樂,https://tv.iill.top/litv/4gtv-4gtv059&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖天電影,https://tv.iill.top/litv/4gtv-4gtv061&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖天育樂,https://tv.iill.top/litv/4gtv-4gtv062&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖天國際,https://tv.iill.top/litv/4gtv-4gtv063&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+中視菁采,https://tv.iill.top/litv/4gtv-4gtv064&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+靖天資訊,https://tv.iill.top/litv/4gtv-4gtv065&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+台視,https://tv.iill.top/litv/4gtv-4gtv066&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+TVBS 精采,https://tv.iill.top/litv/4gtv-4gtv067&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+TVBS 歡樂,https://tv.iill.top/litv/4gtv-4gtv068&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+愛爾達娛樂,https://tv.iill.top/litv/4gtv-4gtv070&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+TVBS 新聞,https://tv.iill.top/litv/4gtv-4gtv072&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+TVBS,https://tv.iill.top/litv/4gtv-4gtv073&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+中視新聞,https://tv.iill.top/litv/4gtv-4gtv074&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+鏡電視新聞,https://tv.iill.top/litv/4gtv-4gtv075&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+亞洲旅遊,https://tv.iill.top/litv/4gtv-4gtv076&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Trace Sports,https://tv.iill.top/litv/4gtv-4gtv077&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Arirang TV,https://tv.iill.top/litv/4gtv-4gtv079&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+中視經典,https://tv.iill.top/litv/4gtv-4gtv080&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Trace Urban,https://tv.iill.top/litv/4gtv-4gtv082&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Mezzo Live,https://tv.iill.top/litv/4gtv-4gtv083&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+國會頻道 1,https://tv.iill.top/litv/4gtv-4gtv084&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+國會頻道 2,https://tv.iill.top/litv/4gtv-4gtv085&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+智林體育,https://tv.iill.top/litv/4gtv-4gtv101&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+第1商業,https://tv.iill.top/litv/4gtv-4gtv104&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+中天亞洲,https://tv.iill.top/litv/4gtv-4gtv109&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Pet Club TV,https://tv.iill.top/litv/4gtv-4gtv110&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+東森新聞,https://tv.iill.top/litv/4gtv-4gtv152&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+東森財經,https://tv.iill.top/litv/4gtv-4gtv153&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+寰宇新聞台灣,https://tv.iill.top/litv/4gtv-4gtv156&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+寰宇財經,https://tv.iill.top/litv/4gtv-4gtv158&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+VOA 美國之音,https://tv.iill.top/litv/litv-ftv03&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視旅遊,https://tv.iill.top/litv/litv-ftv07&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視影劇,https://tv.iill.top/litv/litv-ftv09&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+MCE 我的歐洲電影,https://tv.iill.top/litv/litv-ftv10&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視新聞,https://tv.iill.top/litv/litv-ftv13&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+影迷數位紀實,https://tv.iill.top/litv/litv-ftv15&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+好消息,https://tv.iill.top/litv/litv-ftv16&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+好消息 2,https://tv.iill.top/litv/litv-ftv17&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+龍華卡通,https://tv.iill.top/litv/litv-longturn01&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+龍華洋片,https://tv.iill.top/litv/litv-longturn02&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+龍華電影,https://tv.iill.top/litv/litv-longturn03&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯魅力,https://tv.iill.top/litv/litv-longturn04&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯高球 一,https://tv.iill.top/litv/litv-longturn05&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯高球 二,https://tv.iill.top/litv/litv-longturn06&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯運動 一,https://tv.iill.top/litv/litv-longturn07&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯運動 二,https://tv.iill.top/litv/litv-longturn08&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯網球,https://tv.iill.top/litv/litv-longturn09&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯無限 一,https://tv.iill.top/litv/litv-longturn10&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+龍華日韓,https://tv.iill.top/litv/litv-longturn11&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+龍華偶像,https://tv.iill.top/litv/litv-longturn12&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯無限 二,https://tv.iill.top/litv/litv-longturn13&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+寰宇新聞,https://tv.iill.top/litv/litv-longturn14&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+龍華戲劇,https://tv.iill.top/litv/litv-longturn18&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Smart 知識,https://tv.iill.top/litv/litv-longturn19&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+ELTA生活英語,https://tv.iill.top/litv/litv-longturn20&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+龍華經典,https://tv.iill.top/litv/litv-longturn21&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+台灣戲劇,https://tv.iill.top/litv/litv-longturn22&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+大愛電視,https://tv.iill.top/4gtv/4gtv-live007&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+人間衛視,https://tv.iill.top/4gtv/4gtv-live008&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+戲劇免費看,https://tv.iill.top/4gtv/4gtv-live010&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Fun 探索娛樂,https://tv.iill.top/4gtv/4gtv-live011&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+滾動力 Rollor,https://tv.iill.top/4gtv/4gtv-live012&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+原住民族電視,https://tv.iill.top/4gtv/4gtv-live014&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+DreamWorks 夢工廠動畫,https://tv.iill.top/4gtv/4gtv-live017&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+經典電影,https://tv.iill.top/4gtv/4gtv-live021&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+經典卡通,https://tv.iill.top/4gtv/4gtv-live022&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+精選動漫,https://tv.iill.top/4gtv/4gtv-live024&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+MTV Live HD 音樂頻道,https://tv.iill.top/4gtv/4gtv-live025&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+History 歷史頻道,https://tv.iill.top/4gtv/4gtv-live026&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+CI 罪案偵查頻道,https://tv.iill.top/4gtv/4gtv-live027&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Lifetime 娛樂頻道,https://tv.iill.top/4gtv/4gtv-live029&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+LiveABC 互動英語,https://tv.iill.top/4gtv/4gtv-live030&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+電影原聲 CMusic,https://tv.iill.top/4gtv/4gtv-live031&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Nick Jr. 兒童頻道,https://tv.iill.top/4gtv/4gtv-live032&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+東森購物 二,https://tv.iill.top/4gtv/4gtv-live046&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+東森購物 一,https://tv.iill.top/4gtv/4gtv-live047&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+東森購物 三,https://tv.iill.top/4gtv/4gtv-live048&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+東森購物 四,https://tv.iill.top/4gtv/4gtv-live049&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+新唐人亞太,https://tv.iill.top/4gtv/4gtv-live050&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Bloomberg TV,https://tv.iill.top/4gtv/4gtv-live059&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+SBN 全球財經,https://tv.iill.top/4gtv/4gtv-live060&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+CinemaWorld,https://tv.iill.top/4gtv/4gtv-live069&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+DW德國之聲,https://tv.iill.top/4gtv/4gtv-live071&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Rock Entertainment,https://tv.iill.top/4gtv/4gtv-live080&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+TVBS 綜藝,https://tv.iill.top/4gtv/4gtv-live087&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+TVBS 台劇,https://tv.iill.top/4gtv/4gtv-live088&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+三立新聞iNEWS,https://tv.iill.top/4gtv/4gtv-live089&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+INULTRA,https://tv.iill.top/4gtv/4gtv-live096&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Nickelodeon,https://tv.iill.top/4gtv/4gtv-live105&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+大愛電視 2,https://tv.iill.top/4gtv/4gtv-live106&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+MOMO 親子,https://tv.iill.top/4gtv/4gtv-live107&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Global Trekker 探索世界,https://tv.iill.top/4gtv/4gtv-live112&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+愛爾達生活旅遊,https://tv.iill.top/4gtv/4gtv-live120&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+LUXE TV,https://tv.iill.top/4gtv/4gtv-live121&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+TV5MONDE Style 生活時尚,https://tv.iill.top/4gtv/4gtv-live122&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+MagellanTV (麥哲倫頻道),https://tv.iill.top/4gtv/4gtv-live123&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+CNBC Asia 財經,https://tv.iill.top/4gtv/4gtv-live130&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Rock Action,https://tv.iill.top/4gtv/4gtv-live138&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+金光布袋戲,https://tv.iill.top/4gtv/4gtv-live144&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+霹靂布袋戲,https://tv.iill.top/4gtv/4gtv-live145&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+FRANCE24,https://tv.iill.top/4gtv/4gtv-live146&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+半島國際新聞,https://tv.iill.top/4gtv/4gtv-live157&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+NHK 新聞資訊,https://tv.iill.top/4gtv/4gtv-live168&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+車迷 TV,https://tv.iill.top/4gtv/4gtv-live201&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+幸福空間居家,https://tv.iill.top/4gtv/4gtv-live206&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+三立綜合,https://tv.iill.top/4gtv/4gtv-live207&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+Love Nature,https://tv.iill.top/4gtv/4gtv-live208&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+HITS 頻道,https://tv.iill.top/4gtv/4gtv-live620&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
 新聞,#genre#
-三立新聞iNEWS,https://tv.iill.top/4gtv/4gtv-live089&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-半島國際新聞,https://tv.iill.top/4gtv/4gtv-live157&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-NHK 新聞資訊,https://tv.iill.top/4gtv/4gtv-live168&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-中天新聞,https://tv.iill.top/litv/4gtv-4gtv009&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-非凡新聞,https://tv.iill.top/litv/4gtv-4gtv010&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-台視新聞,https://tv.iill.top/litv/4gtv-4gtv051&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-華視新聞,https://tv.iill.top/litv/4gtv-4gtv052&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-TVBS 新聞,https://tv.iill.top/litv/4gtv-4gtv072&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-中視新聞,https://tv.iill.top/litv/4gtv-4gtv074&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-鏡電視新聞,https://tv.iill.top/litv/4gtv-4gtv075&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-東森新聞,https://tv.iill.top/litv/4gtv-4gtv152&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-寰宇新聞台灣,https://tv.iill.top/litv/4gtv-4gtv156&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視新聞,https://tv.iill.top/litv/litv-ftv13&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-寰宇新聞,https://tv.iill.top/litv/litv-longturn14&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
+三立新聞iNEWS,https://tv.iill.top/4gtv/4gtv-live089&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+半島國際新聞,https://tv.iill.top/4gtv/4gtv-live157&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+NHK 新聞資訊,https://tv.iill.top/4gtv/4gtv-live168&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+中天新聞,https://tv.iill.top/litv/4gtv-4gtv009&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+非凡新聞,https://tv.iill.top/litv/4gtv-4gtv010&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+台視新聞,https://tv.iill.top/litv/4gtv-4gtv051&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+華視新聞,https://tv.iill.top/litv/4gtv-4gtv052&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+TVBS 新聞,https://tv.iill.top/litv/4gtv-4gtv072&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+中視新聞,https://tv.iill.top/litv/4gtv-4gtv074&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+鏡電視新聞,https://tv.iill.top/litv/4gtv-4gtv075&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+東森新聞,https://tv.iill.top/litv/4gtv-4gtv152&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+寰宇新聞台灣,https://tv.iill.top/litv/4gtv-4gtv156&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視新聞,https://tv.iill.top/litv/litv-ftv13&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+寰宇新聞,https://tv.iill.top/litv/litv-longturn14&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
 運動,#genre#
-智林體育,https://tv.iill.top/litv/4gtv-4gtv101&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯魅力,https://tv.iill.top/litv/litv-longturn04&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯高球 一,https://tv.iill.top/litv/litv-longturn05&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯高球 二,https://tv.iill.top/litv/litv-longturn06&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯運動 一,https://tv.iill.top/litv/litv-longturn07&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯運動 二,https://tv.iill.top/litv/litv-longturn08&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯網球,https://tv.iill.top/litv/litv-longturn09&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯無限 一,https://tv.iill.top/litv/litv-longturn10&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-博斯無限 二,https://tv.iill.top/litv/litv-longturn13&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
+智林體育,https://tv.iill.top/litv/4gtv-4gtv101&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯魅力,https://tv.iill.top/litv/litv-longturn04&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯高球 一,https://tv.iill.top/litv/litv-longturn05&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯高球 二,https://tv.iill.top/litv/litv-longturn06&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯運動 一,https://tv.iill.top/litv/litv-longturn07&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯運動 二,https://tv.iill.top/litv/litv-longturn08&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯網球,https://tv.iill.top/litv/litv-longturn09&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯無限 一,https://tv.iill.top/litv/litv-longturn10&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+博斯無限 二,https://tv.iill.top/litv/litv-longturn13&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
 民視,#genre#
-民視台灣,https://tv.iill.top/litv/4gtv-4gtv001&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視,https://tv.iill.top/litv/4gtv-4gtv002&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視第一,https://tv.iill.top/litv/4gtv-4gtv003&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視綜藝,https://tv.iill.top/litv/4gtv-4gtv004&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視旅遊,https://tv.iill.top/litv/litv-ftv07&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視影劇,https://tv.iill.top/litv/litv-ftv09&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
-民視新聞,https://tv.iill.top/litv/litv-ftv13&token=<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UT
+民視台灣,https://tv.iill.top/litv/4gtv-4gtv001&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視,https://tv.iill.top/litv/4gtv-4gtv002&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視第一,https://tv.iill.top/litv/4gtv-4gtv003&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視綜藝,https://tv.iill.top/litv/4gtv-4gtv004&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視旅遊,https://tv.iill.top/litv/litv-ftv07&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視影劇,https://tv.iill.top/litv/litv-ftv09&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
+民視新聞,https://tv.iill.top/litv/litv-ftv13&token=<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>
