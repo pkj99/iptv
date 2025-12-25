@@ -2,7 +2,7 @@ name: iltv_m3ugrabber.py
 
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */4 * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,12 +24,12 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run iltv_m3ugrabber.py
-        run: python iltv_m3ugrabber.py
+        run: python scripts/iltv_m3ugrabber.py
 
       - name : Upload artifact
         uses: actions/upload-artifact@master
         with:
-          name: channel m3u
+          name: iltv.m3u and iltv.txt
           path: .
 
       - name: commit files

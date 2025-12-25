@@ -2,6 +2,8 @@ import requests
 import os
 import sys
 
+HEADERS={"User-Agent": "okhttp/4.12.0"}
+
 windows = False
 if 'win' in sys.platform:
     windows = True
@@ -9,12 +11,12 @@ if 'win' in sys.platform:
 def grab(url):
     start = 0
     end = 1000
-    response = requests.get(url, timeout=15).text
+    response = requests.get(url, headers=HEADERS, timeout=15).text
     if '&token=' in response:
         start = response.find('&token=') + 7
         end = start + 64
     else:
-        os.system(f'curl "{url}" > temp.txt')
+        os.system(f'curl --header "User-Agent: okhttp" "{url}" > temp.txt')
         response = ''.join(open('temp.txt').readlines())
         if '&token=' in response:
             start = response.find('&token=') + 7
