@@ -1,13 +1,7 @@
 {
-    "update_time": "2026-01-04 13:07:16",
+    "update_time": "2026-01-04",
     "channels": {
         "新聞": [
-            {
-                "id": "HhHZgpLynH0",
-                "title": "三立LIVE新聞",
-                "thumbnail": "https://i.ytimg.com/vi/HhHZgpLynH0/hqdefault.jpg",
-                "channel": "三立LIVE新聞"
-            },
             {
                 "id": "m_dhMSvUCIc",
                 "title": "TVBS NEWS",
@@ -27,16 +21,16 @@
                 "channel": "民視新聞網 Formosa TV News network"
             },
             {
-                "id": "QsGswQvRmtU",
-                "title": "三立LIVE新聞",
-                "thumbnail": "https://i.ytimg.com/vi/QsGswQvRmtU/hqdefault.jpg",
-                "channel": "三立LIVE新聞"
-            },
-            {
                 "id": "w87VGpgd90U",
                 "title": "寰宇新聞 頻道",
                 "thumbnail": "https://i.ytimg.com/vi/w87VGpgd90U/hqdefault.jpg",
                 "channel": "寰宇新聞 頻道"
+            },
+            {
+                "id": "QsGswQvRmtU",
+                "title": "三立LIVE新聞",
+                "thumbnail": "https://i.ytimg.com/vi/QsGswQvRmtU/hqdefault.jpg",
+                "channel": "三立LIVE新聞"
             },
             {
                 "id": "V1p33hqPrUk",
@@ -79,6 +73,12 @@
                 "title": "鏡新聞",
                 "thumbnail": "https://i.ytimg.com/vi/5n0y6b0Q25o/hqdefault.jpg",
                 "channel": "鏡新聞"
+            },
+            {
+                "id": "1I2iq41Akmo",
+                "title": "57東森財經新聞",
+                "thumbnail": "https://i.ytimg.com/vi/1I2iq41Akmo/hqdefault.jpg",
+                "channel": "57東森財經新聞"
             }
         ],
         "電視劇": [
@@ -95,16 +95,16 @@
                 "channel": "GTV DRAMA 八大劇樂部"
             },
             {
-                "id": "eHe-Sf016R0",
-                "title": "【去有風的地方-李現、劉亦菲】-24小時LIVE馬拉松 火熱全劇播出",
-                "thumbnail": "https://i.ytimg.com/vi/eHe-Sf016R0/hqdefault.jpg",
-                "channel": "愛爾達影劇台"
-            },
-            {
                 "id": "yUkO-BXnUjQ",
                 "title": "【24H直播】十里桃林三生約，三世情緣永相隨 【三生三世十里桃花】 24小時不間斷直播 #經典戲劇看中視",
                 "thumbnail": "https://i.ytimg.com/vi/yUkO-BXnUjQ/hqdefault.jpg",
                 "channel": "中視經典戲劇"
+            },
+            {
+                "id": "eHe-Sf016R0",
+                "title": "【去有風的地方-李現、劉亦菲】-24小時LIVE馬拉松 火熱全劇播出",
+                "thumbnail": "https://i.ytimg.com/vi/eHe-Sf016R0/hqdefault.jpg",
+                "channel": "愛爾達影劇台"
             },
             {
                 "id": "Gso0c_oMO8g",
@@ -131,28 +131,10 @@
                 "channel": "GTV DRAMA English"
             },
             {
-                "id": "032kEdR9Lic",
-                "title": "#新兵日記 & #特戰英雄 Rookies' Diary  高清修復版‧民視戲劇馬拉松",
-                "thumbnail": "https://i.ytimg.com/vi/032kEdR9Lic/hqdefault.jpg",
+                "id": "rTcTVZBZtYs",
+                "title": "#藍色水玲瓏‧民視戲劇馬拉松",
+                "thumbnail": "https://i.ytimg.com/vi/rTcTVZBZtYs/hqdefault.jpg",
                 "channel": "民視戲劇館 Formosa TV Dramas"
-            },
-            {
-                "id": "UJgN7q6jpns",
-                "title": "【LIVE】《飢餓遊戲》點閱人氣榜｜孫協志 王仁甫 許孟哲 蔡黃汝 峮峮｜完整版馬拉松直播｜ Hunger Games 24 Hours Live｜",
-                "thumbnail": "https://i.ytimg.com/vi/UJgN7q6jpns/hqdefault.jpg",
-                "channel": "飢餓遊戲Hunger Games"
-            },
-            {
-                "id": "v8MUGB4vst8",
-                "title": "豬哥會社 Chu Ke-Liang's Return 24H馬拉松不間斷直播[客服網址：discord.gg/DNuE7AZ]",
-                "thumbnail": "https://i.ytimg.com/vi/v8MUGB4vst8/hqdefault.jpg",
-                "channel": "豬哥會社"
-            },
-            {
-                "id": "vBKRubBhQU8",
-                "title": "《烈火如歌》24小時馬拉松直播｜周渝民 / 迪麗熱巴 / 張彬彬 / 劉芮麟｜The Flame's Daughter▸ GTV DRAMA 八大劇樂部",
-                "thumbnail": "https://i.ytimg.com/vi/vBKRubBhQU8/hqdefault.jpg",
-                "channel": "GTV DRAMA 八大劇樂部"
             },
             {
                 "id": "qJMFuMRLee4",
@@ -161,28 +143,16 @@
                 "channel": "民視戲劇館 Formosa TV Dramas"
             },
             {
-                "id": "TXKWbIPgD_8",
-                "title": "#廉政英雄 Justice Heroes‧民視戲劇馬拉松",
-                "thumbnail": "https://i.ytimg.com/vi/TXKWbIPgD_8/hqdefault.jpg",
-                "channel": "民視戲劇館 Formosa TV Dramas"
-            },
-            {
-                "id": "rTcTVZBZtYs",
-                "title": "#藍色水玲瓏‧民視戲劇馬拉松",
-                "thumbnail": "https://i.ytimg.com/vi/rTcTVZBZtYs/hqdefault.jpg",
-                "channel": "民視戲劇館 Formosa TV Dramas"
-            },
-            {
-                "id": "mRCXonM5ru8",
-                "title": "2026新年快樂🎇《中華一番！》每天不間斷 馬拉松直播🍜｜Muse木棉花 闔家歡 免費看",
-                "thumbnail": "https://i.ytimg.com/vi/mRCXonM5ru8/hqdefault.jpg",
-                "channel": "Muse木棉花-闔家歡"
-            },
-            {
                 "id": "uPLdwjHlf58",
                 "title": "《都挺好》全集24h不间断直播✨#姚晨 走出重男轻女的家庭独自打拼，#倪大红 作天作地花式折腾儿女，众星云集演绎“中国式”家庭！（姚晨、倪大红、郭京飞 领衔主演）",
                 "thumbnail": "https://i.ytimg.com/vi/uPLdwjHlf58/hqdefault.jpg",
                 "channel": "影视剧汇踪"
+            },
+            {
+                "id": "032kEdR9Lic",
+                "title": "#新兵日記 & #特戰英雄 Rookies' Diary  高清修復版‧民視戲劇馬拉松",
+                "thumbnail": "https://i.ytimg.com/vi/032kEdR9Lic/hqdefault.jpg",
+                "channel": "民視戲劇館 Formosa TV Dramas"
             },
             {
                 "id": "ESCvRS78MBk",
@@ -191,10 +161,34 @@
                 "channel": "愛爾達綜合台"
             },
             {
+                "id": "TXKWbIPgD_8",
+                "title": "#廉政英雄 Justice Heroes‧民視戲劇馬拉松",
+                "thumbnail": "https://i.ytimg.com/vi/TXKWbIPgD_8/hqdefault.jpg",
+                "channel": "民視戲劇館 Formosa TV Dramas"
+            },
+            {
                 "id": "ADDSmXoPDY8",
                 "title": "【LIVE】《萬秀豬王》24小時直播馬拉松不間斷 |TaiwanCTV variety show HD24h live|台湾CTVバラエティ番組 HD24h ライブ@ctvent_classic​",
                 "thumbnail": "https://i.ytimg.com/vi/ADDSmXoPDY8/hqdefault.jpg",
                 "channel": "中視經典綜藝"
+            },
+            {
+                "id": "vBKRubBhQU8",
+                "title": "《烈火如歌》24小時馬拉松直播｜周渝民 / 迪麗熱巴 / 張彬彬 / 劉芮麟｜The Flame's Daughter▸ GTV DRAMA 八大劇樂部",
+                "thumbnail": "https://i.ytimg.com/vi/vBKRubBhQU8/hqdefault.jpg",
+                "channel": "GTV DRAMA 八大劇樂部"
+            },
+            {
+                "id": "mRCXonM5ru8",
+                "title": "2026新年快樂🎇《中華一番！》每天不間斷 馬拉松直播🍜｜Muse木棉花 闔家歡 免費看",
+                "thumbnail": "https://i.ytimg.com/vi/mRCXonM5ru8/hqdefault.jpg",
+                "channel": "Muse木棉花-闔家歡"
+            },
+            {
+                "id": "DAVfn4Sp8xw",
+                "title": "2026新年快樂🎇《葬送的芙莉蓮》馬拉松直播~✨《葬送的芙莉蓮特展》台北站！預售票熱售中 🔥詳情請見資訊欄🔍｜Muse木棉花",
+                "thumbnail": "https://i.ytimg.com/vi/DAVfn4Sp8xw/hqdefault.jpg",
+                "channel": "Muse木棉花-TW"
             },
             {
                 "id": "g-DBPSuNArA",
@@ -209,16 +203,16 @@
                 "channel": "Muse木棉花-闔家歡"
             },
             {
-                "id": "sEeB5deB2MQ",
-                "title": "🔴香蜜沉沉燼如霜✨｜24小時不斷電直播 Ashes of Love 24 Hours Live｜楊紫 鄧倫 羅雲熙",
-                "thumbnail": "https://i.ytimg.com/vi/sEeB5deB2MQ/hqdefault.jpg",
-                "channel": "中天快點看劇"
-            },
-            {
                 "id": "OhA_G0s9pqw",
                 "title": "《現代嘉慶君EP1-EP60》 24H不間斷 馬拉松直播｜24hrs Non-Stop｜豬哥亮、陳亞蘭、呂雪鳳",
                 "thumbnail": "https://i.ytimg.com/vi/OhA_G0s9pqw/hqdefault.jpg",
                 "channel": "華視綜藝頻道"
+            },
+            {
+                "id": "sEeB5deB2MQ",
+                "title": "🔴香蜜沉沉燼如霜✨｜24小時不斷電直播 Ashes of Love 24 Hours Live｜楊紫 鄧倫 羅雲熙",
+                "thumbnail": "https://i.ytimg.com/vi/sEeB5deB2MQ/hqdefault.jpg",
+                "channel": "中天快點看劇"
             },
             {
                 "id": "OyTd6lXP32Y",
@@ -227,22 +221,10 @@
                 "channel": "愛爾達綜合台"
             },
             {
-                "id": "gFWrFns27CI",
-                "title": "24h马拉松直播🏃‍♂️【ENG SUB】《雍正王朝The Era of Emperor Yongzheng》九子夺嫡 💥皇家的权谋之术【CCTV电视剧直播】",
-                "thumbnail": "https://i.ytimg.com/vi/gFWrFns27CI/hqdefault.jpg",
-                "channel": "CCTV电视剧"
-            },
-            {
-                "id": "ih93UlH3Q_k",
-                "title": "🔴愛情魔髮師│魔法師開播20年 在我心裡 最愛的就是你 │24H不間斷直播│24hrs Non-Stop│明道 曾之喬 王少偉 祝釩剛 黃玉榮│The Magicians of Love",
-                "thumbnail": "https://i.ytimg.com/vi/ih93UlH3Q_k/hqdefault.jpg",
-                "channel": "三立華劇 SET Drama"
-            },
-            {
-                "id": "Pp4zaahCN24",
-                "title": "24h马拉松直播🏃‍♂️【中英双语全集🔥】《武林外传My Own Swordsman》另类喜剧 戏说江湖 【CCTV电视剧直播】",
-                "thumbnail": "https://i.ytimg.com/vi/Pp4zaahCN24/hqdefault.jpg",
-                "channel": "CCTV电视剧"
+                "id": "yzdKYRUCdxQ",
+                "title": "【意難忘】  重現#阿叔 前世 與忘不了的情人 24H馬拉松LIVE  | 經典劇 | 王識賢 李興文 李李仁 張鳳書 韓瑜  | 四季線上",
+                "thumbnail": "https://i.ytimg.com/vi/yzdKYRUCdxQ/hqdefault.jpg",
+                "channel": "四季線上4gTV"
             }
         ],
         "綜藝": [
@@ -265,6 +247,12 @@
                 "channel": "中視經典綜藝"
             },
             {
+                "id": "cimbpAZUjzw",
+                "title": "🔴東森綜合2台頻道 24 小時直播｜EBC Variety Shows 24h live｜台湾EBCバラエティ番組24 時間オンライン放送｜대만 버라이어티 쇼 생방송",
+                "thumbnail": "https://i.ytimg.com/vi/cimbpAZUjzw/hqdefault.jpg",
+                "channel": "東森綜合台"
+            },
+            {
                 "id": "UZsu7BO3VCY",
                 "title": "🔴綜藝大熱門猜歌王直播！不間斷猜不停讓你第一集看到最新集數！｜24H不間斷直播｜24 hours Non-Stop｜吳宗憲 LULU 陳漢典｜Hot Door Night",
                 "thumbnail": "https://i.ytimg.com/vi/UZsu7BO3VCY/hqdefault.jpg",
@@ -277,16 +265,22 @@
                 "channel": "飢餓遊戲Hunger Games"
             },
             {
+                "id": "9gx5EIyHmsw",
+                "title": "【綜藝一級棒】24小時歡樂不停播✨",
+                "thumbnail": "https://i.ytimg.com/vi/9gx5EIyHmsw/hqdefault.jpg",
+                "channel": "綜藝一級棒"
+            },
+            {
+                "id": "OhA_G0s9pqw",
+                "title": "《現代嘉慶君EP1-EP60》 24H不間斷 馬拉松直播｜24hrs Non-Stop｜豬哥亮、陳亞蘭、呂雪鳳",
+                "thumbnail": "https://i.ytimg.com/vi/OhA_G0s9pqw/hqdefault.jpg",
+                "channel": "華視綜藝頻道"
+            },
+            {
                 "id": "v8MUGB4vst8",
                 "title": "豬哥會社 Chu Ke-Liang's Return 24H馬拉松不間斷直播[客服網址：discord.gg/DNuE7AZ]",
                 "thumbnail": "https://i.ytimg.com/vi/v8MUGB4vst8/hqdefault.jpg",
                 "channel": "豬哥會社"
-            },
-            {
-                "id": "cimbpAZUjzw",
-                "title": "🔴東森綜合2台頻道 24 小時直播｜EBC Variety Shows 24h live｜台湾EBCバラエティ番組24 時間オンライン放送｜대만 버라이어티 쇼 생방송",
-                "thumbnail": "https://i.ytimg.com/vi/cimbpAZUjzw/hqdefault.jpg",
-                "channel": "東森綜合台"
             },
             {
                 "id": "3bAc9rGxNPg",
@@ -299,18 +293,6 @@
                 "title": "🔴【台灣龍捲風】甘～安～捏～高清版本24小時不間斷直播 台灣吵架第一品牌出爐 懷念金句挖○哩企系｜三立電視 (EP1-320)",
                 "thumbnail": "https://i.ytimg.com/vi/LywmGVSqUxg/hqdefault.jpg",
                 "channel": "三立電視 SET TV"
-            },
-            {
-                "id": "OhA_G0s9pqw",
-                "title": "《現代嘉慶君EP1-EP60》 24H不間斷 馬拉松直播｜24hrs Non-Stop｜豬哥亮、陳亞蘭、呂雪鳳",
-                "thumbnail": "https://i.ytimg.com/vi/OhA_G0s9pqw/hqdefault.jpg",
-                "channel": "華視綜藝頻道"
-            },
-            {
-                "id": "9gx5EIyHmsw",
-                "title": "【綜藝一級棒】24小時歡樂不停播✨",
-                "thumbnail": "https://i.ytimg.com/vi/9gx5EIyHmsw/hqdefault.jpg",
-                "channel": "綜藝一級棒"
             },
             {
                 "id": "UJgN7q6jpns",
@@ -333,16 +315,16 @@
                 "channel": "STEEZYASFUCK"
             },
             {
+                "id": "7NOSDKb0HlU",
+                "title": "lofi hip hop radio - beats to study/relax to 🐾",
+                "thumbnail": "https://i.ytimg.com/vi/7NOSDKb0HlU/hqdefault.jpg",
+                "channel": "Chillhop Music"
+            },
+            {
                 "id": "blAFxjhg62k",
                 "title": "❄️ Coffee Shop Radio  - 24/7 Chill Lo-Fi & Jazzy Beats",
                 "thumbnail": "https://i.ytimg.com/vi/blAFxjhg62k/hqdefault.jpg",
                 "channel": "STEEZYASFUCK"
-            },
-            {
-                "id": "yf5NOyy1SXU",
-                "title": "Soft Lofi Room 🎧 Chill Vibes for Peaceful Study & Relaxation",
-                "thumbnail": "https://i.ytimg.com/vi/yf5NOyy1SXU/hqdefault.jpg",
-                "channel": "Lofi Tone Art"
             },
             {
                 "id": "XDsI3UBl7ug",
@@ -351,70 +333,16 @@
                 "channel": "APM Music Café"
             },
             {
-                "id": "7NOSDKb0HlU",
-                "title": "lofi hip hop radio - beats to study/relax to 🐾",
-                "thumbnail": "https://i.ytimg.com/vi/7NOSDKb0HlU/hqdefault.jpg",
-                "channel": "Chillhop Music"
-            },
-            {
-                "id": "R4jvhTed_gM",
-                "title": "Live | Lofi Room 🎧 calming beats to relax/study to | 2026.01.03",
-                "thumbnail": "https://i.ytimg.com/vi/R4jvhTed_gM/hqdefault.jpg",
-                "channel": "Myour Music"
-            },
-            {
-                "id": "FWjZ0x2M8og",
-                "title": "lofi hip hop radio 😴 sad & sleepy beats",
-                "thumbnail": "https://i.ytimg.com/vi/FWjZ0x2M8og/hqdefault.jpg",
-                "channel": "the bootleg boy"
-            },
-            {
                 "id": "5yx6BWlEVcY",
                 "title": "Chillhop Radio - jazzy & lofi hip hop beats 🐾",
                 "thumbnail": "https://i.ytimg.com/vi/5yx6BWlEVcY/hqdefault.jpg",
                 "channel": "Chillhop Music"
             },
             {
-                "id": "vY4KiwatogU",
-                "title": "Chilling Lofi Morning ☕ Winter Lofi Beats Make Your Day Better ❄️ Lofi Hip Hop to Work, Relax",
-                "thumbnail": "https://i.ytimg.com/vi/vY4KiwatogU/hqdefault.jpg",
-                "channel": "Little Lofi Cute"
-            },
-            {
-                "id": "vrB9wC6quaU",
-                "title": "Chill out lofi music 🍀 lofi hip hop mix makes you feel positive ~ Rainy Lofi vibes for a calm night",
-                "thumbnail": "https://i.ytimg.com/vi/vrB9wC6quaU/hqdefault.jpg",
-                "channel": "Lofi on the Rooftop"
-            },
-            {
-                "id": "TfWotiyXGfI",
-                "title": "1990s Lofi City 🌂A Cozy Balcony Between Two Times 🎼 Lofi Rain Playlist",
-                "thumbnail": "https://i.ytimg.com/vi/TfWotiyXGfI/hqdefault.jpg",
-                "channel": "Retro-Rhythm"
-            },
-            {
-                "id": "TfmECBzmOn4",
-                "title": "Lofi Hip Hop Radio 🍉 Relaxing Beats to Study, Sleep, Chill to 24/7",
-                "thumbnail": "https://i.ytimg.com/vi/TfmECBzmOn4/hqdefault.jpg",
-                "channel": "Lofi Fruits"
-            },
-            {
-                "id": "4Q9jq-tdOoE",
-                "title": "Peaceful Lofi Coffee in 90's Tokyo Street 🌆 Rainy Lofi Hip Hop Mix 🌧️ Lofi Beats To Study/ Chill",
-                "thumbnail": "https://i.ytimg.com/vi/4Q9jq-tdOoE/hqdefault.jpg",
-                "channel": "Lofi on the Rooftop"
-            },
-            {
-                "id": "20046_vi1vA",
-                "title": "Warm Autumn 🍂 Lofi Cofee 24/7 to Deep focus on relax, work ☕ Energy Positive [ Lofi Hip Hop ]",
-                "thumbnail": "https://i.ytimg.com/vi/20046_vi1vA/hqdefault.jpg",
-                "channel": "Healing Me"
-            },
-            {
-                "id": "erUTqlcsDJI",
-                "title": "LO:FI",
-                "thumbnail": "https://i.ytimg.com/vi/erUTqlcsDJI/hqdefault.jpg",
-                "channel": "InYourChill"
+                "id": "R4jvhTed_gM",
+                "title": "Live | Lofi Room 🎧 calming beats to relax/study to | 2026.01.04",
+                "thumbnail": "https://i.ytimg.com/vi/R4jvhTed_gM/hqdefault.jpg",
+                "channel": "Myour Music"
             },
             {
                 "id": "i6WzngxTnBA",
@@ -423,37 +351,37 @@
                 "channel": "Chillhop Music"
             },
             {
-                "id": "dw_Bx0e0lis",
-                "title": "Honey Coffee ☕ Sweet Day with Lofi Cafe in Forest 🍯 Lofi Hip Hop for relax, work, study 24/7",
-                "thumbnail": "https://i.ytimg.com/vi/dw_Bx0e0lis/hqdefault.jpg",
-                "channel": "Healing Me"
+                "id": "TfWotiyXGfI",
+                "title": "1990s Lofi City 🌂A Cozy Balcony Between Two Times 🎼 Lofi Rain Playlist",
+                "thumbnail": "https://i.ytimg.com/vi/TfWotiyXGfI/hqdefault.jpg",
+                "channel": "Retro-Rhythm"
             },
             {
-                "id": "edn7FurOFxM",
-                "title": "Summer Lofi Chill ☀️ Ocean Coffee for Relaxing Morning 🌊 Lofi Hip Hop / Beats to relax/chill/study",
-                "thumbnail": "https://i.ytimg.com/vi/edn7FurOFxM/hqdefault.jpg",
+                "id": "vrB9wC6quaU",
+                "title": "Chill out lofi music 🍀 lofi hip hop mix makes you feel positive ~ Rainy Lofi vibes for a calm night",
+                "thumbnail": "https://i.ytimg.com/vi/vrB9wC6quaU/hqdefault.jpg",
+                "channel": "Lofi on the Rooftop"
+            },
+            {
+                "id": "vY4KiwatogU",
+                "title": "Chilling Lofi Morning ☕ Winter Lofi Beats Make Your Day Better ❄️ Lofi Hip Hop to Work, Relax",
+                "thumbnail": "https://i.ytimg.com/vi/vY4KiwatogU/hqdefault.jpg",
                 "channel": "Little Lofi Cute"
             },
             {
-                "id": "6Jsnem7i848",
-                "title": "24/7 Beats Only Instrumental Hip-Hop - Jazzhop, Lo-Fi Jazz, Chillhop, Boom Bap",
-                "thumbnail": "https://i.ytimg.com/vi/6Jsnem7i848/hqdefault.jpg",
-                "channel": "Sphere of Hip-Hop"
+                "id": "yf5NOyy1SXU",
+                "title": "Soft Lofi Room 🎧 Chill Vibes for Peaceful Study & Relaxation",
+                "thumbnail": "https://i.ytimg.com/vi/yf5NOyy1SXU/hqdefault.jpg",
+                "channel": "Lofi Tone Art"
+            },
+            {
+                "id": "nLMJmXqMaLo",
+                "title": "late night cafe radio - jazzy beats to chill/relax to 🎧",
+                "thumbnail": "https://i.ytimg.com/vi/nLMJmXqMaLo/hqdefault.jpg",
+                "channel": "STEEZYASFUCK"
             }
         ],
         "運動": [
-            {
-                "id": "3zUykaHkFaQ",
-                "title": "🔴WARRIORS vs UTAH JAZZ │ NBA Regular Season 2025-26 - Basketball Play-By-Play Reaction & Scoreboard",
-                "thumbnail": "https://i.ytimg.com/vi/3zUykaHkFaQ/hqdefault.jpg",
-                "channel": "Sports Manda"
-            },
-            {
-                "id": "woj26w3yphw",
-                "title": "🔴 LIVE: The Japanese Bruce Lee of Boxing – Naoya Inoue 井上尚弥",
-                "thumbnail": "https://i.ytimg.com/vi/woj26w3yphw/hqdefault.jpg",
-                "channel": "Boxing Mates"
-            },
             {
                 "id": "MiJIODpKngw",
                 "title": "LIVE: talkSPORT 24/7 🚨",
@@ -461,10 +389,10 @@
                 "channel": "talkSPORT"
             },
             {
-                "id": "w9ZaqxvTTxw",
-                "title": "Australia vs England, 5th Test, The Ashes Live, - Live Cricket Score, AUS vs ENG Live Match Today",
-                "thumbnail": "https://i.ytimg.com/vi/w9ZaqxvTTxw/hqdefault.jpg",
-                "channel": "Daily SPORTS Speaks"
+                "id": "woj26w3yphw",
+                "title": "🔴 LIVE: The Japanese Bruce Lee of Boxing – Naoya Inoue 井上尚弥",
+                "thumbnail": "https://i.ytimg.com/vi/woj26w3yphw/hqdefault.jpg",
+                "channel": "Boxing Mates"
             }
         ],
         "即時影像": [
@@ -475,22 +403,10 @@
                 "channel": "Amazing Taitung 台東就醬玩"
             },
             {
-                "id": "DcJCvEyjWqU",
-                "title": "🔴等雪來！台灣高山下雪實況 24H LIVE ❄️ 合歡山/太平山/玉山 即時影像 🎧 BGM 背景音樂 💖 舒緩神經的音樂-古典鋼琴 🅣ⓅⓅ45",
-                "thumbnail": "https://i.ytimg.com/vi/DcJCvEyjWqU/hqdefault.jpg",
-                "channel": "禿鷹 Music"
-            },
-            {
-                "id": "z_fY1pj1VBw",
-                "title": "【Taipei 4k Live Cam】Overlooking Taipei at the top of Xiangshan｜Taipei 101 | Taiwan | Taipei Webcam",
-                "thumbnail": "https://i.ytimg.com/vi/z_fY1pj1VBw/hqdefault.jpg",
-                "channel": "Taipei Travel Live Cam  台北觀光即時影像 "
-            },
-            {
-                "id": "2lVMTs_Fj0M",
-                "title": "[Live][01] 合歡山武嶺亭即時影像 Wuling Hehuanshan Taiwan #武嶺 #合歡山武嶺亭",
-                "thumbnail": "https://i.ytimg.com/vi/2lVMTs_Fj0M/hqdefault.jpg",
-                "channel": "台灣即時影像監視器"
+                "id": "BnPoNatG-HE",
+                "title": "高雄蓮池潭4K即時影像 Kaohsiung Lianchihtan (Lotus Pond)  4K Live Camera",
+                "thumbnail": "https://i.ytimg.com/vi/BnPoNatG-HE/hqdefault.jpg",
+                "channel": "高雄旅遊網"
             },
             {
                 "id": "Ndo_8RuefH4",
@@ -499,10 +415,22 @@
                 "channel": "Taipei Travel Live Cam  台北觀光即時影像 "
             },
             {
-                "id": "BnPoNatG-HE",
-                "title": "高雄蓮池潭4K即時影像 Kaohsiung Lianchihtan (Lotus Pond)  4K Live Camera",
-                "thumbnail": "https://i.ytimg.com/vi/BnPoNatG-HE/hqdefault.jpg",
-                "channel": "高雄旅遊網"
+                "id": "TY4qQElcUrA",
+                "title": "【4K】台東華源曙光觀景台即時影像 Taitung Huayuan Live Camera",
+                "thumbnail": "https://i.ytimg.com/vi/TY4qQElcUrA/hqdefault.jpg",
+                "channel": "Amazing Taitung 台東就醬玩"
+            },
+            {
+                "id": "2lVMTs_Fj0M",
+                "title": "[Live][01] 合歡山武嶺亭即時影像 Wuling Hehuanshan Taiwan #武嶺 #合歡山武嶺亭",
+                "thumbnail": "https://i.ytimg.com/vi/2lVMTs_Fj0M/hqdefault.jpg",
+                "channel": "台灣即時影像監視器"
+            },
+            {
+                "id": "z_fY1pj1VBw",
+                "title": "【Taipei 4k Live Cam】Overlooking Taipei at the top of Xiangshan｜Taipei 101 | Taiwan | Taipei Webcam",
+                "thumbnail": "https://i.ytimg.com/vi/z_fY1pj1VBw/hqdefault.jpg",
+                "channel": "Taipei Travel Live Cam  台北觀光即時影像 "
             },
             {
                 "id": "XUWjAsajKXg",
@@ -511,16 +439,10 @@
                 "channel": "遊桃園 Taoyuan Travel"
             },
             {
-                "id": "C03Itx8iSC0",
-                "title": "【4K Live Camera】Shoushan Lovers' Viewing Platform 4K Live Camera in Kaohsiung, Taiwan",
-                "thumbnail": "https://i.ytimg.com/vi/C03Itx8iSC0/hqdefault.jpg",
-                "channel": "高雄旅遊網"
-            },
-            {
-                "id": "TY4qQElcUrA",
-                "title": "【4K】台東華源曙光觀景台即時影像 Taitung Huayuan Live Camera",
-                "thumbnail": "https://i.ytimg.com/vi/TY4qQElcUrA/hqdefault.jpg",
-                "channel": "Amazing Taitung 台東就醬玩"
+                "id": "DcJCvEyjWqU",
+                "title": "🔴等雪來！台灣高山下雪實況 24H LIVE ❄️ 合歡山/太平山/玉山 即時影像 🎧 BGM 背景音樂 💖 舒緩神經的音樂-古典鋼琴 🅣ⓅⓅ45",
+                "thumbnail": "https://i.ytimg.com/vi/DcJCvEyjWqU/hqdefault.jpg",
+                "channel": "禿鷹 Music"
             },
             {
                 "id": "wWEnxWA7nnY",
@@ -547,16 +469,16 @@
                 "channel": "ervnsa"
             },
             {
+                "id": "C03Itx8iSC0",
+                "title": "【4K Live Camera】Shoushan Lovers' Viewing Platform 4K Live Camera in Kaohsiung, Taiwan",
+                "thumbnail": "https://i.ytimg.com/vi/C03Itx8iSC0/hqdefault.jpg",
+                "channel": "高雄旅遊網"
+            },
+            {
                 "id": "6E8cXiy0sxM",
                 "title": "【LIVE】松柏嶺受天宮│廟埕即時影像│LIVE CAMERA│ライブカメラ│臺灣玄天上帝進香中心│TAIWAN",
                 "thumbnail": "https://i.ytimg.com/vi/6E8cXiy0sxM/hqdefault.jpg",
                 "channel": "松柏嶺受天宮"
-            },
-            {
-                "id": "LSkq-wHMxQY",
-                "title": "【4K】台東南橫埡口即時影像 Taitung Southern Cross-Island Yakou Live Camera",
-                "thumbnail": "https://i.ytimg.com/vi/LSkq-wHMxQY/hqdefault.jpg",
-                "channel": "Amazing Taitung 台東就醬玩"
             },
             {
                 "id": "0LhI0vhBUfg",
@@ -571,6 +493,12 @@
                 "channel": "紅樹林有線電視"
             },
             {
+                "id": "LSkq-wHMxQY",
+                "title": "【4K】台東南橫埡口即時影像 Taitung Southern Cross-Island Yakou Live Camera",
+                "thumbnail": "https://i.ytimg.com/vi/LSkq-wHMxQY/hqdefault.jpg",
+                "channel": "Amazing Taitung 台東就醬玩"
+            },
+            {
                 "id": "NA1hVcVgv74",
                 "title": "【Live】石榴火車站 360 4K全景即時影像｜Shiliu Station #360看見台灣",
                 "thumbnail": "https://i.ytimg.com/vi/NA1hVcVgv74/hqdefault.jpg",
@@ -583,10 +511,10 @@
                 "channel": "Taoyuan Airport"
             },
             {
-                "id": "RzwHRRUPccU",
-                "title": "🔴24H Live Nostalgic Melodies Live from Jiufen Old Street》24/7, BGM R&B & Soul #九份老街 #九份 🅐Ⓙ143",
-                "thumbnail": "https://i.ytimg.com/vi/RzwHRRUPccU/hqdefault.jpg",
-                "channel": "禿鷹 Music"
+                "id": "ZdqHgQwvZOw",
+                "title": "【4K Live Cam】Jinzun | Explore East Coast of Taiwan",
+                "thumbnail": "https://i.ytimg.com/vi/ZdqHgQwvZOw/hqdefault.jpg",
+                "channel": "東部海岸國家風景區管理處"
             },
             {
                 "id": "oxM2E0SBITA",
@@ -598,6 +526,12 @@
                 "id": "ub7uQGCfqhs",
                 "title": "Ⓤ-01-🔴Live-屏東縣 重要路口 即時影像-Pingtung County, Taiwan  24H》24/7天氣、車流人流 背景音樂：BGM Jazz & Blues 爵士和藍調 🅨ⒷⒿ149",
                 "thumbnail": "https://i.ytimg.com/vi/ub7uQGCfqhs/hqdefault.jpg",
+                "channel": "禿鷹 Music"
+            },
+            {
+                "id": "RzwHRRUPccU",
+                "title": "🔴24H Live Nostalgic Melodies Live from Jiufen Old Street》24/7, BGM R&B & Soul #九份老街 #九份 🅐Ⓙ143",
+                "thumbnail": "https://i.ytimg.com/vi/RzwHRRUPccU/hqdefault.jpg",
                 "channel": "禿鷹 Music"
             },
             {
