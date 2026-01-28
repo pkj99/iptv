@@ -87,7 +87,7 @@ http://192.168.1.249:5050/4gtv-4gtv067/index.m3u8
 http://192.168.1.249:5050/4gtv-4gtv068/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv070_mobile.png" tvg-name="爱尔达娱乐台" group-title="四季頻道",爱尔达娱乐台
 http://192.168.1.249:5050/4gtv-4gtv070/index.m3u8
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv073_mobile.png" tvg-name="TVBS" group-title="四季頻道",TVBS
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_media-live073_mobile.png" tvg-name="TVBS" group-title="四季頻道",TVBS
 http://192.168.1.249:5050/4gtv-4gtv073/index.m3u8
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv074_mobile.png" tvg-name="中视新闻" group-title="四季頻道",中视新闻
 http://192.168.1.249:5050/4gtv-4gtv074/index.m3u8
@@ -293,7 +293,7 @@ http://192.168.1.249:5050/litv-longturn14/index.m3u8
 http://192.168.1.249:5050/litv-longturn18/index.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/smarttv.png" tvg-name="Smart知识台" group-title="四季頻道",Smart知识台
 http://192.168.1.249:5050/litv-longturn19/index.m3u8
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn20_mobile.png" tvg-name="ELTV生活英语台" group-title="四季頻道",ELTV生活英语台
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn20_mobile.webp" tvg-name="ELTV生活英语台" group-title="四季頻道",ELTV生活英语台
 http://192.168.1.249:5050/litv-longturn20/index.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/龙华经典.png" tvg-name="龙华经典" group-title="四季頻道",龙华经典
 http://192.168.1.249:5050/litv-longturn21/index.m3u8

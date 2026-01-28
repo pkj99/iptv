@@ -71,15 +71,15 @@ https://smart.pendy.dpdns.org/Smart.php?id=videolandmovie
 https://smart.pendy.dpdns.org/Smart.php?id=Hbosignature
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBOFamily.png" tvg-name="HBOFamily" group-title="SMART頻道",HBOFamily
 https://smart.pendy.dpdns.org/Smart.php?id=Hbofamily
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBO.png" tvg-name="HBO" group-title="SMART頻道",HBO
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBOHD.png" tvg-name="HBO" group-title="SMART頻道",HBO
 https://smart.pendy.dpdns.org/Smart.php?id=Hbo
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBO.png" tvg-name="HBO" group-title="SMART頻道",HBO
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBOHD.png" tvg-name="HBO" group-title="SMART頻道",HBO
 https://smart.pendy.dpdns.org/Smart.php?id=Hbo
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HBOHits.png" tvg-name="HBOHits" group-title="SMART頻道",HBOHits
 https://smart.pendy.dpdns.org/Smart.php?id=Hbohitshd
 #EXTINF:-1 tvg-logo="https://emovie.ebc.net.tw/upload/emovie/img/logoes/pc_logo.png" tvg-name="东森洋片台" group-title="SMART頻道",东森洋片台
 https://smart.pendy.dpdns.org/Smart.php?id=ettvwestern
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv073_mobile.png" tvg-name="TVBS" group-title="SMART頻道",TVBS
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_media-live073_mobile.png" tvg-name="TVBS" group-title="SMART頻道",TVBS
 https://smart.pendy.dpdns.org/Smart.php?id=tvbs
 #EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/vod_channel/logo_3069_ofiii36_tv_20230920.png" tvg-name="中天亚洲台" group-title="SMART頻道",中天亚洲台
 https://smart.pendy.dpdns.org/Smart.php?id=ctiasia_twn
