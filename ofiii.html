@@ -9,9 +9,6 @@
     <script src="js/channels.js"></script>
 </head>
 <body>
-
-    <video id="video" controls src=""></video>
-    
     <div id="ch"></div>
 
 <script>
@@ -29,10 +26,9 @@ function chUrl(asset_id, media_type, callback)
     .then(data => {
         var j = JSON.parse(data);
         var Url = j.asset_urls[0];
-        console.log(Url);
-        document.getElementById("video").src = Url;
+        // console.log(Url);
         // location.href = 'dpplayer.html?url='+Url;
-        // location.href = Url;
+        location.href = Url;
     });
 }
 
@@ -56,26 +52,26 @@ if (urlParams["asset_id"] != null && urlParams["content_type"] != null) {
     chUrl(urlParams["asset_id"], urlParams["content_type"]);  
 }
 
-let htmlString = '';
-for (var i = 0; i < data.length; i++) {
-    var ch = data[i];
-    var title = ch.title;
-    var id = ch.id;
-    var content_type = ch.content_type;
-    var image = ch.image;
-    var vod = ch.vod;
-    var seq = ch.seq;
-    var asset_id = ''
-    if (content_type == 'channel'){
-        asset_id = `${id}`;
-        htmlString += `<a href="ofiii.html?asset_id=${asset_id}&content_type=${content_type}"><img src="${image}"></a>\n`;
-    } else {
-        seq = seq.toString().padStart(6, "0") + 'M001';
-        asset_id = `${id}%23${vod}-${seq}`;
-        htmlString += `<a href="ofiii.html?asset_id=${asset_id}&content_type=${content_type}"><img src="${image}">${title}</a>\n`;
-    }
-}
-document.getElementById('ch').innerHTML = htmlString;
+// let htmlString = '';
+// for (var i = 0; i < data.length; i++) {
+//     var ch = data[i];
+//     var title = ch.title;
+//     var id = ch.id;
+//     var content_type = ch.content_type;
+//     var image = ch.image;
+//     var vod = ch.vod;
+//     var seq = ch.seq;
+//     var asset_id = ''
+//     if (content_type == 'channel'){
+//         asset_id = `${id}`;
+//         htmlString += `<a href="ofiii.html?asset_id=${asset_id}&content_type=${content_type}"><img src="${image}"></a>\n`;
+//     } else {
+//         seq = seq.toString().padStart(6, "0") + 'M001';
+//         asset_id = `${id}%23${vod}-${seq}`;
+//         htmlString += `<a href="ofiii.html?asset_id=${asset_id}&content_type=${content_type}"><img src="${image}">${title}</a>\n`;
+//     }
+// }
+// document.getElementById('ch').innerHTML = htmlString;
 
 </script>
 

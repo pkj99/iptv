@@ -311,8 +311,7 @@
     if (document.body.clientWidth < 600) {
         var target = ""; 
     } else {
-        var target = ""; 
-        // var target = "_blank"; 
+        var target = "_blank"; 
     }
 
 

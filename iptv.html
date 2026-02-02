@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="zh-TW">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
 
   <meta name="mobile-web-app-capable" content="yes">
 
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
   <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -79,18 +79,49 @@
             for(var i = 0;i<s.length;i++){
                 s[i].style.color = "white";
             }
-            
             if (id>4) { 
                 var j = id - 4 ;
                 document.getElementById('m'+j.toString()).scrollIntoView();
             }
-
             document.getElementById('m'+id.toString()).style.color = "orange";
-            
         }
 
+        function ofiiiplay(url,id){
+            url = url.replace('https://pkj99.github.io/iptv/ofiii.html?asset_id=','https://cdi.ofiii.com/ofiii_cdi/video/urls?device_type=pc&device_id=9fca4871-d629-4aec-8863-39b17527d67a&media_type=channel&asset_id=');
+            fetch(url)
+            .then(response => {
+                if (response.ok) return response.text()        
+                throw new Error('Network response was not ok.')
+            })
+            .then(data => {
+                var j = JSON.parse(data);
+                var Url = j.asset_urls[0];
+                document.getElementById('tv')['src']="xplayer.html?url="+Url;
+            });
+
+
+            // document.getElementById('tv')['src']="dpplayer.html?url="+url;
+            document.getElementById('tv')['src']="xplayer.html?url="+url;
+            var s = document.getElementsByClassName('content_item');
+            for(var i = 0;i<s.length;i++){
+                s[i].style.color = "white";
+            }
+            if (id>4) { 
+                var j = id - 4 ;
+                document.getElementById('m'+j.toString()).scrollIntoView();
+            }
+            document.getElementById('m'+id.toString()).style.color = "orange";
+        }
+
+
+
         function initlist(id){
-            document.getElementById('m1').click();
+            menu_item1 = document.getElementById('m1');
+            if (menu_item1 !== null) menu_item1.click()
+            menu_item2 = document.getElementById('m2');
+            if (menu_item2 !== null) menu_item2.click()
+
+            // document.getElementById(id).click();
         }
 
         // create tv list 
@@ -283,6 +314,75 @@
             xhr.send();
         }
 
+        function ofiiim3u(groupName, m3u_url, callback){
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', m3u_url);
+            xhr.onload = e => {
+
+                var contents = xhr.response;
+                var channel = "0";
+                var url_tvg, tvg_logo, tvg_name, group_title, title, url, info;
+                let htmlString = '';
+
+                for (let i = 0; i < 4; i++) {
+                    htmlString += `<a class="content_item" onclick="">&nbsp;</a>`;
+                }
+                var lines = contents.split(/[\r\n]/);
+                for (var i in lines){
+                    var j = (i /2) ;
+                    var line = lines[i];
+                    if (line.trim() != ''){
+
+                        if (/#EXTM3U/.test(line)) {
+                            channel = "0";
+                            if (/url-tvg/.test(line)){
+                                var keyVal = line.split(/ /)[1], url_tvg = keyVal.split(/[=]/)[1].replaceAll('\"','').trim();
+                            }
+                        } else {
+                            if (/#EXTINF/.test(line)) {
+                                channel = "0";
+                                title = line.split(/,/)[1].replaceAll('\"','').trim();
+                                info = line.split(/,/)[0];
+
+                                if (/tvg-logo/.test(info)){
+                                    var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                                    tvg_logo =  tvg_logo.replaceAll('https://logo.catvod.com','./images/iptv');                       
+                                }
+                                if (/tvg-name/.test(info)){
+                                    var keyVal = info.split(/tvg-name/)[1], val2 = keyVal.split(/ /)[0], tvg_name = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                                }
+                                if (/group-title/.test(info)){
+                                    var keyVal = info.split(/group-title/)[1], val2 = keyVal.split(/ /)[0], group_title = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                                }
+                            } else {
+                                channel = "1";
+                                url = line.trim();
+                                if (i<3) { 
+                                    initurl = url;
+                                    initid = `m${i}`;
+                                }
+                            }
+                        }
+                        if (channel == "1") {
+                            // console.log(tvg_logo, tvg_name, group_title, title, url, groupName,'\n');
+                            if (group_title == groupName || groupName == 'ALL'){
+                                htmlString += `<a id="m${j}" class="content_item" data-value="${url}"`;
+                                htmlString += ` onclick="javascript:ofiiiplay('${url}','${j}');"><img src="${tvg_logo}" width="110px" height="60px">&nbsp;&nbsp;<div class="text">${title}</div></a>`;
+                            }
+                            channel = "0";
+                        }
+                    }
+                }
+                document.getElementById('list').innerHTML = htmlString;
+
+                if( typeof callback === 'function' ){
+                    callback(initid);
+                }
+                // goplay(initurl,initid);
+
+            };
+            xhr.send();
+        }
 
         // get params
         (window.onpopstate = function () {
@@ -352,7 +452,7 @@
         if (t == "8"){
             // tvlists("select * from iptv where catalog='民視頻道'", initlist);
             // tvchannels('歐飛頻道', './m3u/ofiii.m3u', initlist);
-            tvm3u('歐飛頻道', './m3u/ofiiitv.m3u', initlist);
+            ofiiim3u('歐飛頻道', './m3u/ofiiitv.m3u', initlist('m2'));
             document.getElementById('menu8').classList.add("focus");
         }
         if (t == "9"){
