@@ -133,7 +133,8 @@
                         info = line.split(/,/)[0];
 
                         if (/tvg-logo/.test(info)){
-                            var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();                        
+                            var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                            tvg_logo =  tvg_logo.replaceAll('https://logo.catvod.com','./images/iptv');
                         }
                         if (/tvg-name/.test(info)){
                             var keyVal = info.split(/tvg-name/)[1], val2 = keyVal.split(/ /)[0], tvg_name = val2.split(/[=]/)[1].replaceAll('\"','').trim();
@@ -310,7 +311,8 @@
     if (document.body.clientWidth < 600) {
         var target = ""; 
     } else {
-        var target = "_blank"; 
+        var target = ""; 
+        // var target = "_blank"; 
     }
 
 
@@ -331,7 +333,8 @@
     }
     if (t == "1"){
         // tvchannels("select * from iptv_cn");
-        m3u_url = './m3u/cntv.m3u';
+        // m3u_url = './m3u/cntv.m3u';
+        m3u_url = 'https://iptv.catvod.com/tv.m3u';        
         tvchannels2('ALL');
         document.getElementById('menu1').classList.add("active");
     }
