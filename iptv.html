@@ -43,14 +43,8 @@
                 </a>
                 <a class="topic_item" id="menu0" href="?t=0"><div class="text">台灣</div></a>
                 <a class="topic_item" id="menu1" href="?t=1"><div class="text">大陸</div></a>
-                <!-- <a class="topic_item" id="menu2" href="?t=2"><div class="text">SMART</div></a> -->
                 <a class="topic_item" id="menu3" href="?t=3"><div class="text">四季</div></a>
-                <!-- <a class="topic_item" id="menu7" href="?t=7"><div class="text">民視</div></a> -->
-                <!-- <a class="topic_item" id="menu4" href="?t=4"><div class="text">體育</div></a> -->
-                <!-- <a class="topic_item" id="menu5" href="?t=5"><div class="text">YT頻道</div></a> -->
-                <!-- <a class="topic_item" id="menu6" href="?t=6"><div class="text">其他</div></a> -->
                 <a class="topic_item" id="menu8" href="?t=8"><div class="text">歐飛</div></a>
-                <!-- <a class="topic_item" id="menu9" href="?t=9"><div class="text">468</div></a> -->
                 </nav>
             </header>
         </div>
@@ -80,7 +74,7 @@
         function goplay(url,id){
             // console.log(id);
             // document.getElementById('tv')['src']="dpplayer.html?url="+url;
-            document.getElementById('tv')['src']="xplayer.html?url="+url;
+            document.getElementById('tv')['src']="xplayer.html?url="+url.replaceAll('http://','https://');
             var s = document.getElementsByClassName('content_item');
             for(var i = 0;i<s.length;i++){
                 s[i].style.color = "white";
@@ -250,7 +244,8 @@
                                 info = line.split(/,/)[0];
 
                                 if (/tvg-logo/.test(info)){
-                                    var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();                        
+                                    var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();
+                                    tvg_logo =  tvg_logo.replaceAll('https://logo.catvod.com','./images/iptv')                       
                                 }
                                 if (/tvg-name/.test(info)){
                                     var keyVal = info.split(/tvg-name/)[1], val2 = keyVal.split(/ /)[0], tvg_name = val2.split(/[=]/)[1].replaceAll('\"','').trim();
@@ -319,7 +314,8 @@
         if (t == "1"){
             // tvlists( "select * from iptv_cn", initlist);
             // tvchannels('大陸頻道', './m3u/cntv.m3u', initlist);
-            tvm3u('ALL', './m3u/cntv.m3u', initlist);
+            // tvm3u('ALL', './m3u/cntv.m3u', initlist);
+            tvm3u('ALL', 'https://iptv.catvod.com/tv.m3u', initlist);
             document.getElementById('menu1').classList.add("focus");
         }
         if (t == "2"){
@@ -366,9 +362,7 @@
             document.getElementById('menu9').classList.add("focus");
         }
         if (urlParams["m3u"] != null){ 
-            m3u_url = urlParams["m3u"]; 
-            groupName = 'ALL';            
-            tvm3u(groupName, m3u_url, initlist);
+            tvm3u('ALL', urlParams["m3u"], initlist);
         }  
 
         
