@@ -58,8 +58,8 @@
 
         <div class="player_fixed_section">
           <div class="player_section">
-                <iframe id='tv' src="" loading="lazy" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" class="player_iframe"> </iframe>
-                <!-- <iframe id='tv' src="" loading="lazy" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" allow="autoplay" class="player_iframe"> </iframe> -->
+                <!-- <iframe id='tv' src="" loading="lazy" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" class="player_iframe"> </iframe> -->
+                <iframe id='tv' src="" loading="lazy" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" allow="autoplay" class="player_iframe"> </iframe>
           </div>
         </div>
 
@@ -116,10 +116,12 @@
 
 
         function initlist(id){
-            menu_item1 = document.getElementById('m1');
+            var menu_item1 = document.getElementById('m1');
             if (menu_item1 !== null) menu_item1.click()
-            menu_item2 = document.getElementById('m2');
-            if (menu_item2 !== null) menu_item2.click()
+            else {
+                var menu_item2 = document.getElementById('m2');
+                if (menu_item2 !== null) menu_item2.click()
+            }
 
             // document.getElementById(id).click();
         }
