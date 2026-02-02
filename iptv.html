@@ -20,7 +20,7 @@
 
   <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -74,7 +74,7 @@
         function goplay(url,id){
             // console.log(id);
             // document.getElementById('tv')['src']="dpplayer.html?url="+url;
-            document.getElementById('tv')['src']="xplayer.html?url="+url.replaceAll('http://','https://');
+            document.getElementById('tv')['src']="xplayer.html?url="+url;
             var s = document.getElementsByClassName('content_item');
             for(var i = 0;i<s.length;i++){
                 s[i].style.color = "white";
@@ -245,7 +245,7 @@
 
                                 if (/tvg-logo/.test(info)){
                                     var keyVal = info.split(/tvg-logo/)[1], val2 = keyVal.split(/ /)[0], tvg_logo = val2.split(/[=]/)[1].replaceAll('\"','').trim();
-                                    tvg_logo =  tvg_logo.replaceAll('https://logo.catvod.com','./images/iptv')                       
+                                    tvg_logo =  tvg_logo.replaceAll('https://logo.catvod.com','./images/iptv');                       
                                 }
                                 if (/tvg-name/.test(info)){
                                     var keyVal = info.split(/tvg-name/)[1], val2 = keyVal.split(/ /)[0], tvg_name = val2.split(/[=]/)[1].replaceAll('\"','').trim();
