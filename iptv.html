@@ -30,6 +30,28 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src='js/sql.js'></script>
 
+<style>
+        .player-container {
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            position: relative;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        #tv {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+        }
+</style>
+
+
 </head>
 
 <body id="page-top">
@@ -50,16 +72,21 @@
         </div>
   
       <div class="main_section">
-
         <div class="list_section">
             <div id="list" class="content_section">
             </div>
         </div>        
 
+        <!-- <div class="video-container">
+            <video id="tv" controls playsinline autoplay src=""></video>
+        </div> -->
+
         <div class="player_fixed_section">
+            <video id="tv" controls playsinline autoplay src=""></video>
+
           <div class="player_section">
-                <!-- <iframe id='tv' src="" loading="lazy" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" class="player_iframe"> </iframe> -->
-                <!-- <iframe id='tv' src="" loading="lazy" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" allow="autoplay" class="player_iframe"> </iframe> -->
+                <!-- <iframe id='tv' src="" loading="lazy" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" class="player_iframe"> </iframe>
+                <iframe id='tv' src="" loading="lazy" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" allow="autoplay" class="player_iframe"> </iframe> -->
                 <iframe id='tv' src="" loading="lazy" allow="autoplay" class="player_iframe"> </iframe>
           </div>
         </div>
@@ -98,6 +125,7 @@
                 var j = JSON.parse(data);
                 var Url = j.asset_urls[0];
                 document.getElementById('tv')['src']="xplayer.html?url="+Url;
+                // document.getElementById('tv')['src']=Url;
             });
 
 

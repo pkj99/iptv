@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Stream | 橫向滑動電視</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        :root {
+            --bg-main: #010204;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --accent: #00f2ff;
+            --text-main: #ffffff;
+            --border: #1f2937;
+        }
+
+        body, html {
+            margin: 0; padding: 0; height: 100%;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* 影片播放區 - 始終置頂 */
+        #video-zone {
+            flex: 1;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+            outline: none;
+        }
+
+        /* 下方控制台 */
+        .control-panel {
+            background: #0a0c10;
+            border-top: 1px solid var(--border);
+            padding-bottom: 20px;
+        }
+
+        /* 來源切換按鈕 */
+        .source-selector {
+            display: flex;
+            padding: 15px;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: #8b949e;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .btn.active {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(0, 242, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+        }
+
+        /* 頻道清單 - 橫向滑動 */
+        #playlist {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 0 20px;
+            gap: 15px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            /* 隱藏捲軸 */
+            scrollbar-width: none; 
+            -ms-overflow-style: none;
+        }
+
+        #playlist::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* 頻道卡片樣式 */
+        .channel-card {
+            flex: 0 0 160px; /* 固定寬度 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 10px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            text-align: center;
+        }
+
+        .channel-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .channel-card.active {
+            border-color: var(--accent);
+            background: rgba(0, 242, 255, 0.1);
+        }
+
+        .channel-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin-bottom: 12px;
+            background: transparent;
+        }
+
+        .channel-name {
+            font-size: 0.85rem;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #cbd5e1;
+        }
+
+        /* 電腦版調整：讓影片區與列表比例平衡 */
+        @media (min-width: 769px) {
+            #video-zone { flex: 3; }
+            .control-panel { flex: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <section id="video-zone">
+        <video id="tv-player" controls playsinline></video>
+    </section>
+
+    <section class="control-panel">
+        <div class="source-selector">
+            <button class="btn active" onclick="switchM3U('./m3u/twtv.m3u', this)">台灣頻道</button>
+            <button class="btn" onclick="switchM3U('./m3u/othertv.m3u', this)">其他頻道</button>
+        </div>
+
+        <div id="playlist">
+            </div>
+    </section>
+</div>
+
+<script>
+    const video = document.getElementById('tv-player');
+    const playlist = document.getElementById('playlist');
+    const DEF_IMG = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23444'%3E%3Cpath d='M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm-9 14c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z'/%3E%3C/svg%3E";
+    let hls = null;
+
+    async function switchM3U(file, btn) {
+        document.querySelectorAll('.btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        await renderPlaylist(file);
+    }
+
+    function parse(data) {
+        const items = [];
+        const lines = data.split('\n');
+        let current = null;
+
+        lines.forEach(line => {
+            line = line.trim();
+            if (line.startsWith('#EXTINF:')) {
+                const logo = line.match(/tvg-logo="([^"]*)"/)?.[1] || DEF_IMG;
+                const name = line.split(',').pop();
+                current = { name, logo };
+            } else if (line.startsWith('http') && current) {
+                current.url = line;
+                items.push(current);
+                current = null;
+            }
+        });
+        return items;
+    }
+
+    async function renderPlaylist(file) {
+        playlist.innerHTML = '';
+        try {
+            const res = await fetch(file);
+            const text = await res.text();
+            const channels = parse(text);
+
+            channels.forEach((ch, index) => {
+                const card = document.createElement('div');
+                card.className = 'channel-card';
+                card.innerHTML = `
+                    <img class="channel-logo" src="${ch.logo}" onerror="this.src='${DEF_IMG}'">
+                    <div class="channel-name">${ch.name}</div>
+                `;
+                card.onclick = () => play(ch.url, card);
+                playlist.appendChild(card);
+
+                // 自動播放第一筆項目 
+                if (index === 0) play(ch.url, card);
+            });
+        } catch (e) {
+            playlist.innerHTML = '<div style="padding:20px;">載入失敗</div>';
+        }
+    }
+
+    function play(url, el) {
+        document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
+        el.classList.add('active');
+        // 滾動讓選中的卡片居中
+        el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+
+        if (Hls.isSupported()) {
+            if (hls) hls.destroy();
+            hls = new Hls();
+            hls.loadSource(url);
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = url;
+            video.play();
+        }
+    }
+
+    // 初始化
+    renderPlaylist('./m3u/twtv.m3u');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4gTV 線上播放機</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.css">
+
+    <!-- HLS.js -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1rem;
+            font-family: Arial, sans-serif;
+        }
+
+        .player-container {
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            position: relative;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        #videoPlayer {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .video-container:hover .controls {
+            opacity: 1;
+        }
+
+        .playlist-info {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .channel-list {
+            max-height: 660px;
+            overflow-y: auto;
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 0.5rem;
+        }
+
+        .channel-item {
+            padding: 0.75rem;
+            border-bottom: 1px solid #444;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+
+        .channel-item:hover {
+            background-color: #3a3a3a;
+        }
+
+        .channel-item.active {
+            background-color: #4a76b8;
+        }
+
+        .channel-logo {
+            max-width: 100px;
+            max-height: 30px;
+            width: auto;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .channel-info {
+            flex: 1;
+        }
+
+        .channel-name {
+            font-weight: bold;
+            margin-bottom: 2px;
+            font-size: 1.1rem;
+        }
+
+        .channel-group {
+            font-size: 0.85rem;
+            color: #ccc;
+            margin-top: 4px;
+        }
+
+        .loading-indicator {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .btn-player {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .btn-player:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+            width: 120px;
+        }
+
+        .search-box {
+            margin-bottom: 1rem;
+        }
+
+        .channel-count-badge {
+            background-color: #6c757d;
+            border-radius: 12px;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .protocol-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            z-index: 10;
+        }
+
+        .brightness-control {
+            display: flex;
+            align-items: center;
+            width: 130px;
+            margin-left: 10px;
+        }
+
+        .brightness-slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 5px;
+            border-radius: 5px;
+            background: #ddd;
+            outline: none;
+        }
+
+        .brightness-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #ffcc00;
+            cursor: pointer;
+            box-shadow: 0 0 5px rgba(255, 204, 0, 0.7);
+        }
+
+        .brightness-slider::-moz-range-thumb {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #ffcc00;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 0 5px rgba(255, 204, 0, 0.7);
+        }
+
+        .brightness-icon {
+            color: #ffcc00;
+            font-size: 1.2rem;
+            filter: drop-shadow(0 0 3px rgba(255, 204, 0, 0.5));
+        }
+
+        .status-indicator {
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .status-loading {
+            background: #ffc107;
+            color: #000;
+        }
+
+        .status-ready {
+            background: #198754;
+            color: white;
+        }
+
+        .status-error {
+            background: #dc3545;
+            color: white;
+        }
+
+        .playing-info {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .channel-details {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .channel-details-logo {
+            width: 60px;
+            height: 40px;
+            object-fit: contain;
+            margin-right: 1rem;
+            border-radius: 4px;
+        }
+
+        .channel-details-info {
+            flex: 1;
+        }
+
+        .channel-details-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .channel-details-group {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .channel-group-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: #3a3a3a;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+
+        .channel-group-btn:hover {
+            background: #4a4a4a;
+        }
+
+        .channel-group-btn.active {
+            background: #4a76b8;
+        }
+
+        .channel-group-content {
+            display: none;
+            margin-bottom: 0.5rem;
+        }
+
+        .channel-group-content.show {
+            display: block;
+        }
+
+        .channel-group-count {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.75rem;
+        }
+
+        .channel-group-icon {
+            transition: transform 0.3s;
+        }
+
+        .channel-group-btn.active .channel-group-icon {
+            transform: rotate(90deg);
+        }
+
+        /* 自動播放控制 */
+        .auto-play-control {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .auto-play-label {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* 下一集信息 */
+        .next-episode-info {
+            margin-top: 0.5rem;
+            padding: 0.75rem;
+            background: rgba(74, 118, 184, 0.2);
+            border-radius: 8px;
+            border-left: 3px solid #4a76b8;
+        }
+
+        .next-episode-title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .next-episode-time {
+            font-size: 0.8rem;
+            color: #ccc;
+        }
+
+        /* 倒計時指示器 */
+        .countdown-indicator {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            z-index: 10;
+            display: none;
+        }
+
+        /* 直播頻道標記 */
+        .live-badge {
+            background: #dc3545;
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+        }
+
+        .vod-badge {
+            background: #198754;
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+        }
+
+        /* 頻道類型選擇器 */
+        .channel-type-selector {
+            margin-bottom: 1rem;
+        }
+
+        .channel-type-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: #3a3a3a;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+
+        .channel-type-btn.active {
+            background: #4a76b8;
+        }
+
+        .channel-type-btn:hover {
+            background: #4a4a4a;
+        }
+
+        .channel-type-count {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.75rem;
+        }
+
+        /* 點播節目分組 - 更新樣式 */
+        .vod-program-group {
+            margin-bottom: 1rem;
+        }
+
+        .vod-program-title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            background: rgba(255, 204, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        /* 點播頻道分組按鈕 */
+        .vod-group-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: #3a3a3a;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+
+        .vod-group-btn:hover {
+            background: #4a4a4a;
+        }
+
+        .vod-group-btn.active {
+            background: #198754;
+        }
+
+        .vod-group-content {
+            display: none;
+            margin-bottom: 0.5rem;
+        }
+
+        .vod-group-content.show {
+            display: block;
+        }
+
+        .vod-group-count {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.75rem;
+        }
+
+        .vod-group-icon {
+            transition: transform 0.3s;
+        }
+
+        .vod-group-btn.active .vod-group-icon {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="player-container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="text-center mb-0">4gTV 線上播放機</h2>
+            <!-- <a href="/config/mappings" class="btn btn-outline-light"><i class="bi bi-arrow-left"></i> 返回</a> -->
+        </div>
+
+        <div class="playlist-info" hidden>
+            <div class="row align-items-center mb-3">
+                <div class="col-md-12">
+                    <div class="playlist-selector">
+                        <label for="playlistSelect" class="form-label text-white">選擇播放模式:</label>
+                        <select id="playlistSelect" class="form-select bg-dark text-white">
+                            <option value="normal_mode">一般模式</option>
+                            <option value="proxy_mode">代理模式</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- 視頻播放區域 -->
+            <div class="col-md-8">
+                <div class="video-container">
+                    <div class="protocol-indicator" id="protocolIndicator"
+                        style="background-color: rgba(220, 53, 69, 0.8);" hidden>HTTP</div>
+                    <div class="countdown-indicator" id="countdownIndicator" style="display: none;">
+                        <i class="bi bi-clock"></i> 下一集: <span id="countdownText">5</span>秒
+                    </div>
+                    <video id="videoPlayer" controls="" playsinline=""
+                        src="http://192.168.1.249:5050/4gtv-live080/index.m3u8?token=Xdj8fjAcmf4AkQYnShedFfPcafzWjmG0sU1he0zXU3Wvn22PO6QnNRwNNw1etbhy"></video>
+                    <div class="loading-indicator" id="loadingIndicator" style="display: none;">
+                        <div class="spinner-border text-primary" role="status"><span
+                                class="visually-hidden">載入中...</span></div>
+                        <p class="mt-2">正在載入頻道...</p>
+                    </div>
+                    <div class="controls" hidden>
+                        <button class="btn-player" id="playPauseBtn" title="暫停"><i class="bi bi-pause-fill"
+                                id="playIcon"></i></button>
+                        <div class="volume-control">
+                            <button class="btn-player me-2" id="muteBtn" title="調整音量"><i class="bi bi-volume-up-fill"
+                                    id="volumeIcon"></i></button>
+                            <input type="range" id="volumeSlider" class="form-range" min="0" max="1" step="0.1"
+                                value="1">
+                        </div>
+                        <div class="brightness-control">
+                            <button class="btn-player me-2" id="brightnessBtn" title="調整亮度"><i
+                                    class="bi bi-brightness-high-fill brightness-icon" id="brightnessIcon"></i></button>
+                            <input type="range" id="brightnessSlider" class="brightness-slider" min="0" max="2"
+                                step="0.1" value="1">
+                        </div>
+                        <div class="flex-grow-1 mx-3"><input type="range" id="progressBar" class="form-range" min="0"
+                                max="100" value="0"></div>
+                        <button class="btn-player" id="fullscreenBtn" title="全螢幕"><i
+                                class="bi bi-arrows-fullscreen"></i></button>
+                    </div>
+                </div>
+
+                <!-- 狀態指示器 -->
+                <div id="statusIndicator" class="status-indicator status-ready"><i class="bi bi-check-circle"></i> 正在播放:
+                    ROCK Entertainment</div>
+
+                <!-- 目前播放頻道資訊 -->
+                <div class="playing-info" id="playingInfo" style="display: block;">
+                    <div class="channel-details">
+                        <img id="currentChannelLogo" class="channel-details-logo"
+                            src="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ROCKEntertainment.png"
+                            alt="頻道Logo" style="display: block;">
+                        <div class="channel-details-info">
+                            <div class="channel-details-name" id="currentChannelName">ROCK Entertainment</div>
+                            <div class="channel-details-group" id="currentChannelGroup">電影戲劇</div>
+                        </div>
+                    </div>
+
+                    <!-- 新增：自動播放控制 -->
+                    <div class="auto-play-control">
+                        <input type="checkbox" id="autoPlayNext" checked="">
+                        <label for="autoPlayNext" class="auto-play-label">自動播放下一集</label>
+                    </div>
+
+                    <!-- 新增：下一集信息 -->
+                    <div class="next-episode-info" id="nextEpisodeInfo" style="display: block;">
+                        <div class="next-episode-title" id="nextEpisodeTitle">下一集: GagaOOLala 精選LGBTQ+好劇</div>
+                        <div class="next-episode-time" id="nextEpisodeTime">目前節目結束後自動播放</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 頻道清單 -->
+            <div class="col-md-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="mb-0">頻道清單 <span id="channelCount" class="badge bg-primary ms-2">230</span></h5>
+                </div>
+
+                <!-- 搜尋框 -->
+                <div class="search-box mb-3">
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="form-control bg-dark text-white"
+                            placeholder="搜尋頻道...">
+                        <button class="btn btn-primary" onclick="searchChannels()"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+
+                <!-- 頻道類型選擇器 -->
+                <div class="channel-type-selector">
+                    <button class="channel-type-btn active" id="liveChannelsBtn" onclick="switchChannelType('live')">
+                        <span>📺 直播頻道</span>
+                        <span class="channel-type-count" id="liveChannelCount">230</span>
+                    </button>
+                    <button class="channel-type-btn" id="vodChannelsBtn" onclick="switchChannelType('vod')">
+                        <span>🎬 點播頻道</span>
+                        <span class="channel-type-count" id="vodChannelCount">0</span>
+                    </button>
+                </div>
+
+                <div class="channel-list" id="channelList">
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="4gtv.js"></script> -->
+
+    <script>
+        let hls = null;
+        let currentChannels = [];
+        let liveChannels = [];
+        let vodChannels = [];
+        let filteredLiveChannels = [];
+        let filteredVodChannels = [];
+        let currentPlaylist = '';
+        let currentBrightness = 1;
+        let currentProtocol = 'https';
+        let originalUrl = '';
+        let fallbackAttempted = false;
+        let expandedGroups = new Set();
+        let expandedVodGroups = new Set();
+        let currentChannelIndex = -1;
+        let currentChannelGroup = '';
+        let autoPlayNext = true;
+        let countdownTimer = null;
+        let countdownSeconds = 5;
+        let currentChannelType = 'live'; // 'live' 或 'vod'
+
+        // 播放清單顯示名稱映射
+        const playlistDisplayNames = {
+            'normal_mode': '一般模式',
+            'proxy_mode': '代理模式'
+        };
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function () {
+            // 獲取DOM元素
+            const video = document.getElementById('videoPlayer');
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const playIcon = document.getElementById('playIcon');
+            const muteBtn = document.getElementById('muteBtn');
+            const volumeIcon = document.getElementById('volumeIcon');
+            const volumeSlider = document.getElementById('volumeSlider');
+            const progressBar = document.getElementById('progressBar');
+            const fullscreenBtn = document.getElementById('fullscreenBtn');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const brightnessBtn = document.getElementById('brightnessBtn');
+            const brightnessIcon = document.getElementById('brightnessIcon');
+            const brightnessSlider = document.getElementById('brightnessSlider');
+            const protocolIndicator = document.getElementById('protocolIndicator');
+            const autoPlayCheckbox = document.getElementById('autoPlayNext');
+
+            // 載入播放清單選項
+            loadPlaylistOptions();
+
+            // 綁定播放清單選擇事件
+            document.getElementById('playlistSelect').addEventListener('change', function () {
+                loadPlaylist(this.value);
+            });
+
+            // 綁定搜尋輸入事件
+            document.getElementById('searchInput').addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    searchChannels();
+                }
+            });
+
+            // 自動播放設置
+            autoPlayCheckbox.addEventListener('change', function () {
+                autoPlayNext = this.checked;
+                if (!autoPlayNext) {
+                    clearCountdown();
+                }
+            });
+
+            // 播放/暫停按鈕
+            playPauseBtn.addEventListener('click', function () {
+                if (video.paused) {
+                    video.play();
+                    playIcon.className = 'bi bi-pause-fill';
+                } else {
+                    video.pause();
+                    playIcon.className = 'bi bi-play-fill';
+                }
+            });
+
+            // 視頻播放狀態更新
+            video.addEventListener('play', function () {
+                playIcon.className = 'bi bi-pause-fill';
+            });
+
+            video.addEventListener('pause', function () {
+                playIcon.className = 'bi bi-play-fill';
+            });
+
+            // 視頻結束事件 - 觸發自動播放下一集
+            video.addEventListener('ended', function () {
+                if (autoPlayNext) {
+                    startCountdown();
+                }
+            });
+
+            // 視頻時間更新事件 - 檢查是否接近結束
+            video.addEventListener('timeupdate', function () {
+                if (autoPlayNext && !video.paused && video.duration) {
+                    const timeRemaining = video.duration - video.currentTime;
+                    // 在最後20秒顯示倒數計時
+                    if (timeRemaining <= 20 && timeRemaining > 0) {
+                        showCountdown(Math.ceil(timeRemaining));
+                    } else {
+                        hideCountdown();
+                    }
+                }
+            });
+
+            // 靜音按鈕
+            muteBtn.addEventListener('click', function () {
+                video.muted = !video.muted;
+                volumeIcon.className = video.muted ? 'bi bi-volume-mute-fill' : 'bi bi-volume-up-fill';
+                volumeSlider.value = video.muted ? 0 : video.volume;
+            });
+
+            // 音量滑塊
+            volumeSlider.addEventListener('input', function () {
+                video.volume = this.value;
+                video.muted = (this.value === 0);
+                volumeIcon.className = this.value === 0 ? 'bi bi-volume-mute-fill' : 'bi bi-volume-up-fill';
+            });
+
+            // 進度條
+            video.addEventListener('timeupdate', function () {
+                const value = (100 / video.duration) * video.currentTime;
+                progressBar.value = value;
+            });
+
+            progressBar.addEventListener('input', function () {
+                const time = video.duration * (this.value / 100);
+                video.currentTime = time;
+            });
+
+            // 全螢幕按鈕
+            fullscreenBtn.addEventListener('click', function () {
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.webkitRequestFullscreen) {
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) {
+                    video.msRequestFullscreen();
+                }
+            });
+
+            // 更新亮度
+            function updateBrightness(value) {
+                currentBrightness = value;
+                video.style.filter = `brightness(${value})`;
+
+                // 更新亮度圖示
+                if (value <= 0.5) {
+                    brightnessIcon.className = 'bi bi-brightness-low-fill brightness-icon';
+                } else if (value <= 1) {
+                    brightnessIcon.className = 'bi bi-brightness-medium-fill brightness-icon';
+                } else {
+                    brightnessIcon.className = 'bi bi-brightness-high-fill brightness-icon';
+                }
+            }
+
+            // 亮度按鈕點擊事件 - 重置亮度
+            brightnessBtn.addEventListener('click', function () {
+                brightnessSlider.value = 1;
+                updateBrightness(1);
+            });
+
+            // 亮度滑塊事件
+            brightnessSlider.addEventListener('input', function () {
+                updateBrightness(parseFloat(this.value));
+            });
+
+            // 全螢幕時滾動切換頻道
+            document.addEventListener('fullscreenchange', function () {
+                if (document.fullscreenElement) {
+                    document.addEventListener('wheel', handleWheelInFullscreen);
+                } else {
+                    document.removeEventListener('wheel', handleWheelInFullscreen);
+                }
+            });
+
+            function handleWheelInFullscreen(event) {
+                if (document.fullscreenElement) {
+                    event.preventDefault();
+
+                    if (event.deltaY > 0) {
+                        playNextChannel();
+                    } else if (event.deltaY < 0) {
+                        playPreviousChannel();
+                    }
+                }
+            }
+
+            // 檢查流覽器是否原生支援HLS
+            if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.addEventListener('loadedmetadata', function () {
+                    loadingIndicator.style.display = 'none';
+                });
+            } else if (!Hls.isSupported()) {
+                alert('您的流覽器不支援HLS播放，請使用Chrome、Firefox、Safari或Edge等現代流覽器。');
+            }
+        });
+
+        // 更新目前播放資訊
+        function updateCurrentPlayingInfo(name, group, logo) {
+            const playingInfo = document.getElementById('playingInfo');
+            const channelName = document.getElementById('currentChannelName');
+            const channelGroup = document.getElementById('currentChannelGroup');
+            const channelLogo = document.getElementById('currentChannelLogo');
+
+            channelName.textContent = name;
+            channelGroup.textContent = group || '未分組';
+
+            if (logo) {
+                channelLogo.src = logo;
+                channelLogo.style.display = 'block';
+            } else {
+                channelLogo.style.display = 'none';
+            }
+
+            playingInfo.style.display = 'block';
+
+            // 更新目前頻道組資訊
+            currentChannelGroup = group;
+
+            // 更新下一集資訊
+            updateNextEpisodeInfo();
+        }
+
+        // 更新協議指示器
+        function updateProtocolIndicator(protocol) {
+            const protocolIndicator = document.getElementById('protocolIndicator');
+            currentProtocol = protocol;
+            protocolIndicator.textContent = protocol.toUpperCase();
+
+            if (protocol === 'https') {
+                protocolIndicator.style.backgroundColor = 'rgba(40, 167, 69, 0.8)';
+            } else {
+                protocolIndicator.style.backgroundColor = 'rgba(220, 53, 69, 0.8)';
+            }
+        }
+
+        // 載入播放清單選項
+        function loadPlaylistOptions() {
+
+            const select = document.getElementById('playlistSelect');
+            select.innerHTML = '';
+
+            // 兩個選項：一般模式和代理模式
+            const options = [
+                { value: 'normal_mode', text: '一般模式' },
+                { value: 'proxy_mode', text: '代理模式' }
+            ];
+
+            options.forEach(opt => {
+                const option = document.createElement('option');
+                option.value = opt.value;
+                option.textContent = opt.text;
+                select.appendChild(option);
+            });
+
+            // 預設載入一般模式
+            if (options.length > 0) {
+                loadPlaylist(options[0].value);
+            }
+        }
+
+        // 載入播放清單
+        async function loadPlaylist(filename) {
+            if (currentPlaylist === filename) return;
+
+            currentPlaylist = filename;
+            updateStatus('loading', '載入播放清單中...');
+
+            try {
+                // // 使用相對路徑
+                // const response = await fetch(`http://192.168.1.249:5050/api/playlist-content?filename=${encodeURIComponent(filename)}`);
+                const response = await fetch(`js/4gtv.json`);
+                const data = await response.json();
+
+                if (data.error) {
+                    updateStatus('error', `載入失敗: ${data.error}`);
+                    return;
+                }
+
+                currentChannels = data.channels;
+
+                // 分離直播頻道和點播頻道
+                separateLiveAndVodChannels();
+
+                // 更新頻道計數
+                updateChannelCounts();
+
+                // 渲染當前選擇的頻道類型
+                renderCurrentChannelList();
+                updateStatus('ready', `已載入 ${currentChannels.length} 個頻道`);
+
+            } catch (error) {
+                updateStatus('error', `載入失敗: ${error.message}`);
+            }
+        }
+
+        // 分離直播頻道和點播頻道
+        function separateLiveAndVodChannels() {
+            liveChannels = currentChannels.filter(channel => isLiveChannel(channel));
+            vodChannels = currentChannels.filter(channel => isOfiiiVodChannel(channel));
+
+            filteredLiveChannels = [...liveChannels];
+            filteredVodChannels = [...vodChannels];
+
+            // 調試：輸出頻道分類
+            console.log("直播頻道:", liveChannels.length);
+            console.log("點播頻道:", vodChannels.length);
+        }
+
+        // 更新頻道計數
+        function updateChannelCounts() {
+            document.getElementById('channelCount').textContent = currentChannels.length;
+            document.getElementById('liveChannelCount').textContent = liveChannels.length;
+            document.getElementById('vodChannelCount').textContent = vodChannels.length;
+        }
+
+        // 切換頻道類型
+        function switchChannelType(type) {
+            currentChannelType = type;
+
+            // 更新按鈕狀態
+            document.getElementById('liveChannelsBtn').classList.toggle('active', type === 'live');
+            document.getElementById('vodChannelsBtn').classList.toggle('active', type === 'vod');
+
+            // 渲染對應的頻道清單
+            renderCurrentChannelList();
+        }
+
+        // 渲染當前選擇的頻道清單
+        function renderCurrentChannelList() {
+            if (currentChannelType === 'live') {
+                renderLiveChannels();
+            } else {
+                renderVodChannels();
+            }
+        }
+
+        // 渲染直播頻道
+        function renderLiveChannels() {
+            const channelList = document.getElementById('channelList');
+
+            if (filteredLiveChannels.length === 0) {
+                channelList.innerHTML = `<div class="text-center text-muted"><i class="bi bi-exclamation-circle"></i><br>沒有找到直播頻道</div>`;
+                return;
+            }
+
+            // 建立分組映射
+            const groupMap = new Map();
+
+            filteredLiveChannels.forEach((channel, index) => {
+                const normalizedGroup = channel.group ? channel.group.trim() : '未分組';
+                const displayGroup = channel.group || '未分組';
+
+                if (!groupMap.has(normalizedGroup)) {
+                    groupMap.set(normalizedGroup, {
+                        displayName: displayGroup,
+                        channels: []
+                    });
+                }
+
+                groupMap.get(normalizedGroup).channels.push({
+                    ...channel,
+                    originalIndex: index
+                });
+            });
+
+            // 將分組轉換為陣列並排序
+            const sortedGroups = Array.from(groupMap.entries()).sort((a, b) => {
+                if (a[0] === '未分組') return 1;
+                if (b[0] === '未分組') return -1;
+                return a[0].localeCompare(b[0], 'zh-Hans');
+            });
+
+            let html = '';
+
+            sortedGroups.forEach(([normalizedGroup, groupData]) => {
+                const displayGroup = groupData.displayName;
+                const channelCount = groupData.channels.length;
+                const isExpanded = expandedGroups.has(normalizedGroup);
+
+                // 分組按鈕
+                html += `<button class="channel-group-btn ${isExpanded ? 'active' : ''}" data-group="${normalizedGroup}">
+                    <span>${displayGroup}</span>
+                    <div class="d-flex align-items-center">
+                        <span class="channel-group-count me-2">${channelCount}</span>
+                        <i class="bi bi-chevron-right channel-group-icon"></i>
+                    </div>
+                </button>
+                <div class="channel-group-content ${isExpanded ? 'show' : ''}" id="group-${normalizedGroup}">`;
+
+                // 顯示該分組下的所有頻道
+                groupData.channels.forEach(channel => {
+                    const logoHtml = channel.logo ?
+                        `<img src="${channel.logo}" alt="${channel.name}" class="channel-logo" onerror="this.style.display='none'">` :
+                        `<div class="channel-logo" style="width: 40px; height: 40px; border-radius: 4px; margin-right: 0.75rem; background: #555; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #ccc;"><i class="bi bi-tv"></i></div>`;
+
+                    html += `<div class="channel-item" onclick="playChannel('${channel.url}', '${channel.name.replace(/'/g, "\\'")}', '${channel.group.replace(/'/g, "\\'")}', '${channel.logo || ''}', '${channel.tvgId || ''}', ${channel.originalIndex}, 'live')">
+                        ${logoHtml}
+                        <div class="channel-info">
+                            <div class="channel-name">${channel.name} <span class="live-badge">直播</span></div>
+                            <div class="channel-group">${channel.group}</div>
+                        </div>
+                    </div>`;
+                });
+
+                html += `</div>`;
+            });
+
+            channelList.innerHTML = html;
+
+            // 添加分組按鈕點擊事件
+            document.querySelectorAll('.channel-group-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const group = this.getAttribute('data-group');
+                    toggleGroup(group);
+                });
+            });
+        }
+
+        // 渲染點播頻道
+        function renderVodChannels() {
+            const channelList = document.getElementById('channelList');
+
+            if (filteredVodChannels.length === 0) {
+                channelList.innerHTML = `<div class="text-center text-muted"><i class="bi bi-exclamation-circle"></i><br>沒有找到點播頻道</div>`;
+                return;
+            }
+
+            // 建立分組映射 - 使用頻道的 group 屬性進行分組
+            const groupMap = new Map();
+
+            filteredVodChannels.forEach((channel, index) => {
+                const normalizedGroup = channel.group ? channel.group.trim() : '未分組';
+                const displayGroup = channel.group || '未分組';
+
+                if (!groupMap.has(normalizedGroup)) {
+                    groupMap.set(normalizedGroup, {
+                        displayName: displayGroup,
+                        channels: []
+                    });
+                }
+
+                groupMap.get(normalizedGroup).channels.push({
+                    ...channel,
+                    originalIndex: index
+                });
+            });
+
+            // 將分組轉換為陣列並排序
+            const sortedGroups = Array.from(groupMap.entries()).sort((a, b) => {
+                if (a[0] === '未分組') return 1;
+                if (b[0] === '未分組') return -1;
+                return a[0].localeCompare(b[0], 'zh-Hans');
+            });
+
+            let html = '';
+
+            sortedGroups.forEach(([normalizedGroup, groupData]) => {
+                const displayGroup = groupData.displayName;
+                const channelCount = groupData.channels.length;
+                const isExpanded = expandedVodGroups.has(normalizedGroup);
+
+                // 分組按鈕
+                html += `<button class="vod-group-btn ${isExpanded ? 'active' : ''}" data-group="${normalizedGroup}">
+                    <span>${displayGroup}</span>
+                    <div class="d-flex align-items-center">
+                        <span class="vod-group-count me-2">${channelCount}</span>
+                        <i class="bi bi-chevron-right vod-group-icon"></i>
+                    </div>
+                </button>
+                <div class="vod-group-content ${isExpanded ? 'show' : ''}" id="vod-group-${normalizedGroup}">`;
+
+                // 顯示該分組下的所有頻道
+                groupData.channels.forEach(channel => {
+                    const logoHtml = channel.logo ?
+                        `<img src="${channel.logo}" alt="${channel.name}" class="channel-logo" onerror="this.style.display='none'">` :
+                        `<div class="channel-logo" style="width: 40px; height: 40px; border-radius: 4px; margin-right: 0.75rem; background: #555; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #ccc;"><i class="bi bi-tv"></i></div>`;
+
+                    html += `<div class="channel-item" onclick="playChannel('${channel.url}', '${channel.name.replace(/'/g, "\\'")}', '${channel.group.replace(/'/g, "\\'")}', '${channel.logo || ''}', '${channel.tvgId || ''}', ${channel.originalIndex}, 'vod')">
+                        ${logoHtml}
+                        <div class="channel-info">
+                            <div class="channel-name">${channel.name} <span class="vod-badge">點播</span></div>
+                            <div class="channel-group">${channel.group}</div>
+                        </div>
+                    </div>`;
+                });
+
+                html += `</div>`;
+            });
+
+            channelList.innerHTML = html;
+
+            // 添加分組按鈕點擊事件
+            document.querySelectorAll('.vod-group-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const group = this.getAttribute('data-group');
+                    toggleVodGroup(group);
+                });
+            });
+        }
+
+        // 判斷是否為直播頻道
+        function isLiveChannel(channel) {
+            // 直播頻道通常不包含 episode_id 參數
+            return !channel.url.includes('episode_id') &&
+                !channel.name.includes('點播') &&
+                !channel.name.includes('VOD') &&
+                !channel.name.includes('ofiii') &&
+                (!channel.group || !channel.group.includes('點播'));
+        }
+
+        // 判斷是否為ofiii點播頻道
+        function isOfiiiVodChannel(channel) {
+            // ofiii點播頻道通常包含 episode_id 參數
+            return channel.url.includes('episode_id') ||
+                channel.name.includes('點播') ||
+                channel.name.includes('VOD') ||
+                channel.name.includes('ofiii') ||
+                (channel.group && channel.group.includes('點播'));
+        }
+
+        // 切換分組展開/收起
+        function toggleGroup(group) {
+            const content = document.getElementById(`group-${group}`);
+            const button = document.querySelector(`.channel-group-btn[data-group="${group}"]`);
+
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                button.classList.remove('active');
+                expandedGroups.delete(group);
+            } else {
+                content.classList.add('show');
+                button.classList.add('active');
+                expandedGroups.add(group);
+            }
+        }
+
+        // 切換點播分組展開/收起
+        function toggleVodGroup(group) {
+            const content = document.getElementById(`vod-group-${group}`);
+            const button = document.querySelector(`.vod-group-btn[data-group="${group}"]`);
+
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                button.classList.remove('active');
+                expandedVodGroups.delete(group);
+            } else {
+                content.classList.add('show');
+                button.classList.add('active');
+                expandedVodGroups.add(group);
+            }
+        }
+
+        // 播放頻道
+        function playChannel(url, name, group, logo, tvgId, index, channelType) {
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            loadingIndicator.style.display = 'block';
+            fallbackAttempted = false;
+
+            // 儲存原始URL
+            originalUrl = url;
+
+            const video = document.getElementById('videoPlayer');
+
+            // 停止之前的播放
+            if (hls) {
+                hls.destroy();
+            }
+
+            // 重置視頻
+            video.pause();
+            video.currentTime = 0;
+
+            // 更新目前頻道資訊
+            updateStatus('loading', `正在載入: ${name}`);
+
+            // 清除倒數計時
+            clearCountdown();
+
+            // 更新目前頻道索引
+            currentChannelIndex = index;
+
+            // 優先使用HTTPS
+            const httpsUrl = ensureHttps(url);
+            console.log('播放頻道:', name, 'HTTPS URL:', httpsUrl);
+
+            // 設置協議指示器
+            updateProtocolIndicator('https');
+
+            // 更新目前播放資訊
+            updateCurrentPlayingInfo(name, group, logo);
+
+            // 高亮目前選擇的頻道
+            document.querySelectorAll('.channel-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // 找到對應的頻道專案並高亮
+            const channelItems = document.querySelectorAll('.channel-item');
+            for (let i = 0; i < channelItems.length; i++) {
+                if (channelItems[i].getAttribute('onclick').includes(url)) {
+                    channelItems[i].classList.add('active');
+                    break;
+                }
+            }
+
+            // 檢查流覽器是否原生支援HLS
+            if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                // Safari等原生支持HLS的流覽器
+                video.src = httpsUrl;
+                video.addEventListener('loadedmetadata', function () {
+                    updateStatus('ready', `正在播放: ${name}`);
+                    loadingIndicator.style.display = 'none';
+                    video.play().catch(e => {
+                        updateStatus('error', `播放失敗: ${e.message}`);
+                    });
+                });
+
+                video.addEventListener('error', function () {
+                    if (currentProtocol === 'https' && !fallbackAttempted) {
+                        console.log('HTTPS failed, switching to HTTP (native HLS)...');
+                        fallbackAttempted = true;
+                        const httpUrl = ensureHttp(originalUrl);
+                        updateProtocolIndicator('http');
+                        video.src = httpUrl;
+                        video.load();
+                    } else {
+                        updateStatus('error', '播放失敗');
+                        loadingIndicator.style.display = 'none';
+                    }
+                });
+            } else if (Hls.isSupported()) {
+                // 使用HLS.js支持HLS
+                hls = new Hls({
+                    enableWorker: false,
+                    lowLatencyMode: true,
+                    backBufferLength: 90,
+                    maxMaxBufferLength: 600
+                });
+
+                hls.loadSource(httpsUrl);
+                hls.attachMedia(video);
+
+                hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+                    console.log('HLS.js media attached');
+                });
+
+                hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+                    console.log('Manifest parsed, found ' + data.levels.length + ' quality levels');
+                    updateStatus('ready', `正在播放: ${name}`);
+                    loadingIndicator.style.display = 'none';
+                    fallbackAttempted = false;
+
+                    video.play().catch(e => {
+                        console.log('Autoplay prevented:', e);
+                    });
+                });
+
+                hls.on(Hls.Events.ERROR, function (event, data) {
+                    console.error('HLS error:', data);
+
+                    if (data.fatal && currentProtocol === 'https' && !fallbackAttempted) {
+                        switch (data.type) {
+                            case Hls.ErrorTypes.NETWORK_ERROR:
+                            case Hls.ErrorTypes.MEDIA_ERROR:
+                                console.log('HTTPS failed, switching to HTTP...');
+                                fallbackAttempted = true;
+                                const httpUrl = ensureHttp(originalUrl);
+                                updateProtocolIndicator('http');
+                                hls.loadSource(httpUrl);
+                                hls.startLoad();
+                                break;
+                            default:
+                                console.log('Unrecoverable error');
+                                loadingIndicator.style.display = 'none';
+                                updateStatus('error', '無法恢復的錯誤');
+                                break;
+                        }
+                    } else if (data.fatal) {
+                        switch (data.type) {
+                            case Hls.ErrorTypes.NETWORK_ERROR:
+                                updateStatus('error', '網路錯誤，正在嘗試重新連接...');
+                                hls.startLoad();
+                                break;
+                            case Hls.ErrorTypes.MEDIA_ERROR:
+                                updateStatus('error', '媒體錯誤，正在嘗試恢復...');
+                                hls.recoverMediaError();
+                                break;
+                            default:
+                                updateStatus('error', '無法恢復的錯誤，請重新載入');
+                                hls.destroy();
+                                loadingIndicator.style.display = 'none';
+                                break;
+                        }
+                    }
+                });
+            } else {
+                updateStatus('error', '您的流覽器不支援HLS播放');
+                loadingIndicator.style.display = 'none';
+            }
+        }
+
+        // 更新下一集資訊
+        function updateNextEpisodeInfo() {
+            const nextEpisodeInfo = document.getElementById('nextEpisodeInfo');
+            const nextEpisodeTitle = document.getElementById('nextEpisodeTitle');
+            const nextEpisodeTime = document.getElementById('nextEpisodeTime');
+
+            // 尋找同一分組中的下一個頻道
+            const nextChannel = findNextChannelInGroup();
+
+            if (nextChannel) {
+                nextEpisodeTitle.textContent = `下一集: ${nextChannel.name}`;
+                nextEpisodeTime.textContent = '目前節目結束後自動播放';
+                nextEpisodeInfo.style.display = 'block';
+            } else {
+                nextEpisodeInfo.style.display = 'none';
+            }
+        }
+
+        // 尋找同一分組中的下一個頻道
+        function findNextChannelInGroup() {
+            if (currentChannelIndex === -1 || !currentChannelGroup) return null;
+
+            // 根據當前頻道類型選擇頻道清單
+            const currentChannelsList = currentChannelType === 'live' ? filteredLiveChannels : filteredVodChannels;
+
+            // 找到同一分組的所有頻道
+            const groupChannels = currentChannelsList.filter(channel => channel.group === currentChannelGroup);
+
+            if (groupChannels.length <= 1) return null;
+
+            // 找到目前頻道在分組中的位置
+            const currentChannel = currentChannelsList[currentChannelIndex];
+            const currentIndexInGroup = groupChannels.findIndex(ch => ch.url === currentChannel.url);
+
+            if (currentIndexInGroup === -1 || currentIndexInGroup >= groupChannels.length - 1) return null;
+
+            // 返回下一個頻道
+            return groupChannels[currentIndexInGroup + 1];
+        }
+
+        // 開始倒數計時
+        function startCountdown() {
+            clearCountdown();
+
+            const nextChannel = findNextChannelInGroup();
+            if (!nextChannel) return;
+
+            countdownSeconds = 5;
+            updateCountdownDisplay();
+
+            countdownTimer = setInterval(() => {
+                countdownSeconds--;
+                updateCountdownDisplay();
+
+                if (countdownSeconds <= 0) {
+                    clearCountdown();
+                    playNextChannelInGroup();
+                }
+            }, 1000);
+        }
+
+        // 更新倒數計時顯示
+        function updateCountdownDisplay() {
+            const countdownIndicator = document.getElementById('countdownIndicator');
+            const countdownText = document.getElementById('countdownText');
+
+            countdownText.textContent = countdownSeconds;
+            countdownIndicator.style.display = 'block';
+        }
+
+        // 顯示倒數計時（在視頻接近結束時）
+        function showCountdown(seconds) {
+            const countdownIndicator = document.getElementById('countdownIndicator');
+            const countdownText = document.getElementById('countdownText');
+
+            countdownText.textContent = seconds;
+            countdownIndicator.style.display = 'block';
+        }
+
+        // 隱藏倒數計時
+        function hideCountdown() {
+            const countdownIndicator = document.getElementById('countdownIndicator');
+            countdownIndicator.style.display = 'none';
+        }
+
+        // 清除倒數計時
+        function clearCountdown() {
+            if (countdownTimer) {
+                clearInterval(countdownTimer);
+                countdownTimer = null;
+            }
+            hideCountdown();
+        }
+
+        // 播放同一分組中的下一個頻道
+        function playNextChannelInGroup() {
+            const nextChannel = findNextChannelInGroup();
+            if (!nextChannel) return;
+
+            // 根據當前頻道類型選擇頻道清單
+            const currentChannelsList = currentChannelType === 'live' ? filteredLiveChannels : filteredVodChannels;
+
+            // 找到下一個頻道在完整清單中的索引
+            const nextIndex = currentChannelsList.findIndex(ch => ch.url === nextChannel.url);
+            if (nextIndex === -1) return;
+
+            playChannel(
+                nextChannel.url,
+                nextChannel.name,
+                nextChannel.group,
+                nextChannel.logo,
+                nextChannel.tvgId,
+                nextIndex,
+                currentChannelType
+            );
+        }
+
+        // 切換到上一個頻道
+        function playPreviousChannel() {
+            // 根據當前頻道類型選擇頻道清單
+            const currentChannelsList = currentChannelType === 'live' ? filteredLiveChannels : filteredVodChannels;
+
+            if (currentChannelsList.length === 0) return;
+
+            const activeChannel = document.querySelector('.channel-item.active');
+            if (!activeChannel) return;
+
+            const currentIndex = Array.from(document.querySelectorAll('.channel-item')).indexOf(activeChannel);
+            let prevIndex = currentIndex - 1;
+            if (prevIndex < 0) prevIndex = currentChannelsList.length - 1;
+
+            const channel = currentChannelsList[prevIndex];
+            playChannel(channel.url, channel.name, channel.group, channel.logo, channel.tvgId, prevIndex, currentChannelType);
+        }
+
+        // 切換到下一個頻道
+        function playNextChannel() {
+            // 根據當前頻道類型選擇頻道清單
+            const currentChannelsList = currentChannelType === 'live' ? filteredLiveChannels : filteredVodChannels;
+
+            if (currentChannelsList.length === 0) return;
+
+            const activeChannel = document.querySelector('.channel-item.active');
+            if (!activeChannel) return;
+
+            const currentIndex = Array.from(document.querySelectorAll('.channel-item')).indexOf(activeChannel);
+            let nextIndex = currentIndex + 1;
+            if (nextIndex >= currentChannelsList.length) nextIndex = 0;
+
+            const channel = currentChannelsList[nextIndex];
+            playChannel(channel.url, channel.name, channel.group, channel.logo, channel.tvgId, nextIndex, currentChannelType);
+        }
+
+        // 搜尋頻道
+        function searchChannels() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+
+            if (!searchTerm) {
+                filteredLiveChannels = [...liveChannels];
+                filteredVodChannels = [...vodChannels];
+            } else {
+                filteredLiveChannels = liveChannels.filter(channel =>
+                    channel.name.toLowerCase().includes(searchTerm) ||
+                    (channel.group && channel.group.toLowerCase().includes(searchTerm)) ||
+                    (channel.tvgId && channel.tvgId.toLowerCase().includes(searchTerm))
+                );
+
+                filteredVodChannels = vodChannels.filter(channel =>
+                    channel.name.toLowerCase().includes(searchTerm) ||
+                    (channel.group && channel.group.toLowerCase().includes(searchTerm)) ||
+                    (channel.tvgId && channel.tvgId.toLowerCase().includes(searchTerm))
+                );
+            }
+
+            renderCurrentChannelList();
+        }
+
+        // 更新狀態指示器
+        function updateStatus(type, message) {
+            const indicator = document.getElementById('statusIndicator');
+            indicator.className = 'status-indicator';
+
+            switch (type) {
+                case 'loading':
+                    indicator.classList.add('status-loading');
+                    indicator.innerHTML = `<i class="bi bi-arrow-repeat spinner-border spinner-border-sm"></i> ${message}`;
+                    break;
+                case 'ready':
+                    indicator.classList.add('status-ready');
+                    indicator.innerHTML = `<i class="bi bi-check-circle"></i> ${message}`;
+                    break;
+                case 'error':
+                    indicator.classList.add('status-error');
+                    indicator.innerHTML = `<i class="bi bi-exclamation-triangle"></i> ${message}`;
+                    break;
+            }
+        }
+
+        // 將HTTP URL轉換為HTTPS URL
+        function ensureHttps(url) {
+            if (url && url.startsWith('http://')) {
+                return url.replace('http://', 'https://');
+            }
+            return url;
+        }
+
+        // 將HTTPS URL轉換為HTTP URL
+        function ensureHttp(url) {
+            if (url && url.startsWith('https://')) {
+                return url.replace('https://', 'http://');
+            }
+            return url;
+        }
+
+        // 錯誤處理
+        window.addEventListener('error', function (e) {
+            console.error('Global error:', e.error);
+        });
+    </script>
+
+</body>
+
+</html>
+

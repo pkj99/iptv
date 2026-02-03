@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Stream</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />      
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        :root {
+            --bg-main: #020408;
+            --panel-bg: rgba(13, 17, 23, 0.95);
+            --accent: #00f2ff;
+            --text-main: #f0f6fc;
+            --border-color: #30363d;
+        }
+
+        body, html {
+            margin: 0; padding: 0; height: 100%;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            overflow: hidden;
+        }
+
+        .app-wrapper {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* 側邊導航欄 */
+        #sidebar {
+            width: 320px;
+            background: var(--panel-bg);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+        }
+
+        .nav-header {
+            padding: 25px 20px;
+            text-align: center;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border-color);
+            font-size: 1.2rem;
+        }
+
+        /* 來源切換按鈕 */
+        .source-bar {
+            display: flex;
+            padding: 10px;
+            gap: 10px;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .source-btn {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            background: transparent;
+            color: #8b949e;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .source-btn.active {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(0, 242, 255, 0.05);
+        }
+
+        /* 播放清單（取消捲軸視覺） */
+        #playlist {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+            /* 隱藏捲軸 - Firefox */
+            scrollbar-width: none; 
+            /* 隱藏捲軸 - IE/Edge */
+            -ms-overflow-style: none; 
+        }
+
+        /* 隱藏捲軸 - Chrome/Safari */
+        #playlist::-webkit-scrollbar {
+            display: none;
+        }
+
+        .channel-card {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid transparent;
+        }
+
+        .channel-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .channel-card.active {
+            background: rgba(0, 242, 255, 0.1);
+            border-color: rgba(0, 242, 255, 0.3);
+        }
+
+        .channel-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-right: 15px;
+            background: transparent; /* 圖標背景透明 */
+            filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+        }
+
+        .channel-name {
+            font-size: 1.0rem;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* 主播放區 */
+        #player-zone {
+            flex: 1;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* 手機版適配 */
+        @media (max-width: 768px) {
+            .app-wrapper { flex-direction: column; }
+            #player-zone { height: 35vh; order: -1; } /* 影片置頂 */
+            #sidebar { width: 100%; height: 65vh; border-right: none; }
+            .nav-header { padding: 15px; font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-wrapper">
+    <aside id="sidebar">
+        <div class="nav-header">CYBER STREAM</div>
+        
+        <div class="source-bar">
+            <button class="source-btn active" onclick="changeSource('./m3u/twtv.m3u', this)">台灣頻道</button>
+            <button class="source-btn" onclick="changeSource('./m3u/ofiiitv.m3u', this)">歐飛頻道</button>
+            <button class="source-btn" onclick="changeSource('./m3u/ftv.m3u', this)">民視頻道</button>
+            <!-- <button class="source-btn" onclick="changeSource('./m3u/othertv.m3u', this)">其他頻道</button> -->
+            <button class="source-btn" onclick="changeSource('https://iptv.catvod.com/tv.m3u', this)">CATVOD</button>
+        </div>
+
+        <div id="playlist">
+            </div>
+    </aside>
+
+    <main id="player-zone">
+        <video id="main-video" controls playsinline></video>
+    </main>
+</div>
+
+<script>
+    const video = document.getElementById('main-video');
+    const playlistContainer = document.getElementById('playlist');
+    // 預設圖標：使用 Base64 SVG 確保不依賴外部連結
+    const DEFAULT_LOGO = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23555'%3E%3Cpath d='M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z'/%3E%3C/svg%3E";
+    let hlsInstance = null;
+
+    async function changeSource(file, btn) {
+        document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        await fetchAndRender(file);
+    }
+
+    function parseM3U(content) {
+        const lines = content.split('\n');
+        const list = [];
+        let tempObj = null;
+
+        lines.forEach(line => {
+            line = line.trim();
+            if (line.startsWith('#EXTINF:')) {
+                const title = line.split(',').pop();
+                const logoMatch = line.match(/tvg-logo="([^"]*)"/);
+                tempObj = {
+                    name: title,
+                    logo: (logoMatch && logoMatch[1]) ? logoMatch[1] : DEFAULT_LOGO
+                };
+            } else if (line.startsWith('http')) {
+                if (tempObj) {
+                    tempObj.url = line;
+                    list.push(tempObj);
+                    tempObj = null;
+                }
+            }
+        });
+        return list;
+    }
+
+    async function fetchAndRender(url) {
+        playlistContainer.innerHTML = '';
+        try {
+            const res = await fetch(url);
+            const data = await res.text();
+            const channels = parseM3U(data);
+            // console.log(url,channels);
+
+            channels.forEach(ch => {
+                const item = document.createElement('div');
+                item.className = 'channel-card';
+                item.innerHTML = `
+                    <img class="channel-logo" src="${ch.logo}" onerror="this.src='${DEFAULT_LOGO}'">
+                    <div class="channel-name">${ch.name}</div>
+                `;
+                item.onclick = () => startPlay(ch.url, item);
+                playlistContainer.appendChild(item);
+            });
+
+        } catch (err) {
+            playlistContainer.innerHTML = '<div style="text-align:center;padding:20px;color:#f85149;">載入失敗</div>';
+        }
+    }
+
+    function startPlay(url, el) {
+
+        if (url.includes('ofiii.html')){
+            ofiiiPlay(url, el)
+        } else if (url.includes('ftv.html')) {
+            ftvPlay(url, el)
+        } else if (url.includes('catvod')) {
+            catPlay(url, el)
+        } else {
+
+        document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
+        el.classList.add('active');
+
+        if (Hls.isSupported()) {
+            if (hlsInstance) hlsInstance.destroy();
+            hlsInstance = new Hls();
+            hlsInstance.loadSource(url);
+            hlsInstance.attachMedia(video);
+            hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = url;
+            video.play();
+        }
+
+        }
+    }
+
+    function ofiiiPlay(url, el) {
+        document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
+        el.classList.add('active');
+
+        url = url.replace('https://pkj99.github.io/iptv/ofiii.html?asset_id=','https://cdi.ofiii.com/ofiii_cdi/video/urls?device_type=pc&device_id=9fca4871-d629-4aec-8863-39b17527d67a&media_type=channel&asset_id=');
+        fetch(url)
+        .then(response => {
+            if (response.ok) return response.text()        
+            throw new Error('Network response was not ok.')
+        })
+        .then(data => {
+            var j = JSON.parse(data);
+            url = j.asset_urls[0];
+
+            if (Hls.isSupported()) {
+                if (hlsInstance) hlsInstance.destroy();
+                hlsInstance = new Hls();
+                hlsInstance.loadSource(url);
+                hlsInstance.attachMedia(video);
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = url;
+                video.play();
+            }
+        });
+    }
+
+    function ftvPlay(url, el) {
+        document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
+        el.classList.add('active');
+
+        var Headers = {
+            method: 'GET',
+            authority: 'app301.4gtv.tv',
+            headers: {
+                "Content-Type":"application/json",
+                "Accept": "application/json",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                "Referer":"https://embed.4gtv.tv/"
+            }
+        }
+
+        url = url.replace('https://pkj99.github.io/iptv/ftv.html?ChannelId=','https://app301.4gtv.tv/Data/GetChannelURL_Mozai.ashx?callback=channelname&Type=LIVE&HostURL=https://www.ftv.com.tw/&_=1770090857974&ChannelId=');
+
+        fetch(url, Headers)
+        // fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`, Headers)
+        .then(response => {
+            if (response.ok) return response.text()        
+            throw new Error('Network response was not ok.')
+        })
+        .then(data => {
+            // var contents = data;
+            // console.log(contents)
+            // var jsonData = contents.substring(contents.indexOf("(") + 1, contents.lastIndexOf(")"));
+            // var j = JSON.parse(jsonData);
+            // var url = j.VideoURL;
+
+            var j = JSON.parse(data);
+            url = j.VideoURL;
+
+            if (Hls.isSupported()) {
+                if (hlsInstance) hlsInstance.destroy();
+                hlsInstance = new Hls();
+                hlsInstance.loadSource(url);
+                hlsInstance.attachMedia(video);
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = url;
+                video.play();
+            }
+        });
+    }
+    
+    function catPlay(url, el) {
+        document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
+        el.classList.add('active');
+
+        fetch(url)
+        .then(response => {
+            if (response.ok) return response.text()        
+            throw new Error('Network response was not ok.')
+        })
+        .then(data => {
+            if (data.redirectUrl) {
+                url = data.redirectUrl;
+
+                if (Hls.isSupported()) {
+                    if (hlsInstance) hlsInstance.destroy();
+                    hlsInstance = new Hls();
+                    hlsInstance.loadSource(url);
+                    hlsInstance.attachMedia(video);
+                    hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                    video.src = url;
+                    video.play();
+                }
+            }
+        });
+    }
+
+
+    // 初始啟動
+    fetchAndRender('./m3u/twtv.m3u');
+</script>
+
+</body>
+</html>

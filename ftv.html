@@ -9,12 +9,21 @@
 </head>
 <body>
 
-    <a target="_blank" href="ftv.html?ChannelName=FTV"><img src="images/ftv/民視.png"></a>
+    <!-- <a target="_blank" href="ftv.html?ChannelName=FTV"><img src="images/ftv/民視.png"></a>
     <a target="_blank" href="ftv.html?ChannelName=FMTV"><img src="images/ftv/民視第一台.png"></a>
     <a target="_blank" href="ftv.html?ChannelName=FTVNews"><img src="images/ftv/民視新聞台.png"></a>
     <a target="_blank" href="ftv.html?ChannelName=FTVDrama"><img src="images/ftv/民視影劇台.png"></a>
     <a target="_blank" href="ftv.html?ChannelName=FTVVariety"><img src="images/ftv/民視綜藝台.png"></a>
-    <a target="_blank" href="ftv.html?ChannelName=FTVTravel"><img src="images/ftv/民視旅遊台.png"></a>
+    <a target="_blank" href="ftv.html?ChannelName=FTVTravel"><img src="images/ftv/民視旅遊台.png"></a> -->
+
+    <a target="_blank" href="ftv.html?ChannelId=4gtv-4gtv002"><img src="images/ftv/民視.png"></a>
+    <a target="_blank" href="ftv.html?ChannelId=4gtv-4gtv003"><img src="images/ftv/民視第一台.png"></a>
+    <a target="_blank" href="ftv.html?ChannelId=4gtv-4gtv001"><img src="images/ftv/民視台灣台.png"></a>
+    <a target="_blank" href="ftv.html?ChannelId=litv-ftv13"><img src="images/ftv/民視新聞台.png"></a>
+    <a target="_blank" href="ftv.html?ChannelId=litv-ftv09"><img src="images/ftv/民視影劇台.png"></a>
+    <a target="_blank" href="ftv.html?ChannelId=4gtv-4gtv004"><img src="images/ftv/民視綜藝台.png"></a>
+    <a target="_blank" href="ftv.html?ChannelId=litv-ftv07"><img src="images/ftv/民視旅遊台.png"></a>
+
 
 <script>
 function ajaxUrl(ChannelName, callback)
@@ -30,7 +39,8 @@ function ajaxUrl(ChannelName, callback)
         }
     }
 
-    fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent('https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName='+ChannelName)}`, Headers)
+    // fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent('https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName='+ChannelName)}`, Headers)
+    fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent('https://app301.4gtv.tv/Data/GetChannelURL_Mozai.ashx?callback=channelname&Type=LIVE&HostURL=https://www.ftv.com.tw/&_=1770090857974&ChannelId='+ChannelId)}`, Headers)
     .then(response => {
         if (response.ok) return response.text()
         throw new Error('Network response was not ok.')
@@ -60,9 +70,14 @@ function ajaxUrl(ChannelName, callback)
         urlParams[decode(match[1])] = decode(match[2]);
 })();
 
-if (urlParams["ChannelName"] != null) { 
-    ChannelName = urlParams["ChannelName"];
-    ajaxUrl(ChannelName);
+// if (urlParams["ChannelName"] != null) { 
+//     ChannelName = urlParams["ChannelName"];
+//     ajaxUrl(ChannelName);
+// }
+
+if (urlParams["ChannelId"] != null) { 
+    ChannelId = urlParams["ChannelId"];
+    ajaxUrl(ChannelId);
 }
 
 </script>
