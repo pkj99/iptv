@@ -1,15 +1,15 @@
 #EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"
-#EXTINF:-1 tvg-logo="https://www.ftv.com.tw/images/Ch_01.png" tvg-name="民视" group-title="民視頻道",民视
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv002_mobile.png" tvg-name="民视" group-title="民視頻道",民视
 https://pkj99.github.io/iptv/ftv.html?ChannelId=4gtv-4gtv002
-#EXTINF:-1 tvg-logo="https://www.ftv.com.tw/images/Ch_02.png" tvg-name="民视第一台" group-title="民視頻道",民视第一台
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv003_mobile.png" tvg-name="民视第一台" group-title="民視頻道",民视第一台
 https://pkj99.github.io/iptv/ftv.html?ChannelId=4gtv-4gtv003
-#EXTINF:-1 tvg-logo="https://www.ftv.com.tw/images/Ch_03.png" tvg-name="民视台湾台" group-title="民視頻道",民视台湾台
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv001_mobile.png" tvg-name="民视台湾台" group-title="民視頻道",民视台湾台
 https://pkj99.github.io/iptv/ftv.html?ChannelId=4gtv-4gtv001
-#EXTINF:-1 tvg-logo="https://www.ftv.com.tw/images/Ch_04.png" tvg-name="民视新闻台" group-title="民視頻道",民视新闻台
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv13_mobile.png" tvg-name="民视新闻台" group-title="民視頻道",民视新闻台
 https://pkj99.github.io/iptv/ftv.html?ChannelId=litv-ftv13
-#EXTINF:-1 tvg-logo="https://www.ftv.com.tw/images/Ch_05.png" tvg-name="民视影剧台" group-title="民視頻道",民视影剧台
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv09_mobile.png" tvg-name="民视影剧台" group-title="民視頻道",民视影剧台
 https://pkj99.github.io/iptv/ftv.html?ChannelId=litv-ftv09
-#EXTINF:-1 tvg-logo="https://www.ftv.com.tw/images/Ch_06.png" tvg-name="民视综艺台" group-title="民視頻道",民视综艺台
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv004_mobile.png" tvg-name="民视综艺台" group-title="民視頻道",民视综艺台
 https://pkj99.github.io/iptv/ftv.html?ChannelId=4gtv-4gtv004
-#EXTINF:-1 tvg-logo="https://www.ftv.com.tw/images/Ch_07.png" tvg-name="民视旅游台" group-title="民視頻道",民视旅游台
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv07_mobile.png" tvg-name="民视旅游台" group-title="民視頻道",民视旅游台
 https://pkj99.github.io/iptv/ftv.html?ChannelId=litv-ftv07

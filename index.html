@@ -165,7 +165,7 @@
         
         <div class="source-bar">
             <button class="source-btn" onclick="changeSource('./m3u/twtv.m3u', this)">台灣</button>
-            <button class="source-btn active" onclick="changeSource('./m3u/ofiiitv.m3u', this)">歐飛</button>
+            <button class="source-btn active" onclick="changeSource('./m3u/ofiii.m3u', this)">歐飛</button>
             <button class="source-btn" onclick="changeSource('./m3u/ftv.m3u', this)">民視</button>
             <button class="source-btn" onclick="changeSource('./m3u/othertv.m3u', this)">其他</button>
             <!-- <button class="source-btn" onclick="changeSource('./m3u/local-4gtv.m3u', this)">其他</button> -->
@@ -365,6 +365,7 @@
     
     function catPlay(url, el) {
 
+        video.pause();
         window.open(url,'videoWindow');
 
         document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
@@ -394,7 +395,7 @@
 
 
     // 初始啟動
-    fetchAndRender('./m3u/ofiiitv.m3u');
+    fetchAndRender('./m3u/ofiii.m3u');
 </script>
 
 </body>
