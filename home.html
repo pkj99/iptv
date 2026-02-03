@@ -6,7 +6,11 @@
     <title>Cyber Stream</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/favicon.png" />      
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <style>
         :root {
@@ -160,11 +164,11 @@
         <div class="nav-header">CYBER STREAM</div>
         
         <div class="source-bar">
-            <button class="source-btn active" onclick="changeSource('./m3u/twtv.m3u', this)">台灣頻道</button>
-            <button class="source-btn" onclick="changeSource('./m3u/ofiiitv.m3u', this)">歐飛頻道</button>
-            <button class="source-btn" onclick="changeSource('./m3u/ftv.m3u', this)">民視頻道</button>
+            <button class="source-btn active" onclick="changeSource('./m3u/twtv.m3u', this)">台灣</button>
+            <button class="source-btn" onclick="changeSource('./m3u/ofiiitv.m3u', this)">歐飛</button>
+            <button class="source-btn" onclick="changeSource('./m3u/ftv.m3u', this)">民視</button>
             <!-- <button class="source-btn" onclick="changeSource('./m3u/othertv.m3u', this)">其他頻道</button> -->
-            <button class="source-btn" onclick="changeSource('https://iptv.catvod.com/tv.m3u', this)">CATVOD</button>
+            <button class="source-btn" onclick="changeSource('https://iptv.catvod.com/tv.m3u', this)">CAT</button>
         </div>
 
         <div id="playlist">
@@ -309,21 +313,19 @@
 
         url = url.replace('https://pkj99.github.io/iptv/ftv.html?ChannelId=','https://app301.4gtv.tv/Data/GetChannelURL_Mozai.ashx?callback=channelname&Type=LIVE&HostURL=https://www.ftv.com.tw/&_=1770090857974&ChannelId=');
 
-        fetch(url, Headers)
-        // fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`, Headers)
+        // fetch(url, Headers)
+        fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`, Headers)
         .then(response => {
             if (response.ok) return response.text()        
             throw new Error('Network response was not ok.')
         })
         .then(data => {
-            // var contents = data;
-            // console.log(contents)
-            // var jsonData = contents.substring(contents.indexOf("(") + 1, contents.lastIndexOf(")"));
-            // var j = JSON.parse(jsonData);
-            // var url = j.VideoURL;
+            var jsonData = data.substring(data.indexOf("(") + 1, data.lastIndexOf(")"));
+            var j = JSON.parse(jsonData);
+            var url = j.VideoURL;
 
-            var j = JSON.parse(data);
-            url = j.VideoURL;
+            // var j = JSON.parse(data);
+            // url = j.VideoURL;
 
             if (Hls.isSupported()) {
                 if (hlsInstance) hlsInstance.destroy();
