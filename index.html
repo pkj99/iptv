@@ -168,7 +168,7 @@
             <button class="source-btn active" onclick="changeSource('./m3u/ofiii.m3u', this)">歐飛</button>
             <!-- <button class="source-btn" onclick="changeSource('./m3u/ftv.m3u', this)">民視</button> -->
             <!-- <button class="source-btn" onclick="changeSource('./m3u/486tv.m3u', this)">486</button> -->
-            <button class="source-btn" onclick="changeSource('./m3u/othertv.m3u', this)">其他</button>
+            <!-- <button class="source-btn" onclick="changeSource('./m3u/othertv.m3u', this)">其他</button> -->
             <!-- <button class="source-btn" onclick="changeSource('./m3u/local-4gtv.m3u', this)">四季L</button> -->
             <!-- <button class="source-btn" onclick="changeSource('https://iptv.catvod.com/tv.m3u', this)">CAT</button> -->
             <!-- <button class="source-btn" onclick="changeSource('https://t.freetv.fun/m3u/taiwan_original.m3u', this)">FreeTV</button> -->
@@ -263,14 +263,12 @@
     }
 
     function startPlay(url, el) {
-
+        console.log(url);
         if (url.includes('ofiii.html')){
             ofiiiPlay(url, el)
         } else if (url.includes('ftv.html')) {
             ftvPlay(url, el)
         } else if (url.includes('catvod')) {
-            catPlay(url, el)
-        } else if (url.includes('http://')) {
             catPlay(url, el)
         // } else if (url.includes('4666888')) {
         //     ftvPlay(url, el)
