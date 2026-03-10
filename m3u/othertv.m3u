@@ -15,3 +15,15 @@ http://61.221.215.25:8800/hls/51/index.m3u8
 http://61.221.215.25:8800/hls/49/index.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="Dbox" group-title="其他頻道",Dbox
 http://61.221.215.25:8800/hls/54/index.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="无线新闻台" group-title="其他頻道",无线新闻台
+http://74.91.26.218:82/live/inews.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="NOW星影台" group-title="其他頻道",NOW星影台
+http://74.91.26.218:82/live/nowxy.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="TVB Plus" group-title="其他頻道",TVB Plus
+http://74.91.26.218:82/live/j2.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="TVB千禧经典台" group-title="其他頻道",TVB千禧经典台
+http://74.91.26.218:82/live/tvbjd.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="NOW爆谷台" group-title="其他頻道",NOW爆谷台
+http://74.91.26.218:82/live/nowbg.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="TVB星河" group-title="其他頻道",TVB星河
+http://74.91.26.218:82/live/tvbxh.m3u8

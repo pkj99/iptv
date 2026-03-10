@@ -1,31 +1,129 @@
 #EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_media-live072_mobile.png" tvg-name="TVBS新闻台" group-title="4666888",TVBS新闻台
+#EXTINF:-1 tvg-logo="" tvg-name="SPOTV2" group-title="4666888",SPOTV2
+http://iptv.4666888.xyz/iptv2A.php?id=1
+#EXTINF:-1 tvg-logo="" tvg-name="中央四台" group-title="4666888",中央四台
+http://iptv.4666888.xyz/iptv2A.php?id=10
+#EXTINF:-1 tvg-logo="" tvg-name="中央十三台" group-title="4666888",中央十三台
+http://iptv.4666888.xyz/iptv2A.php?id=11
+#EXTINF:-1 tvg-logo="" tvg-name="中央十四台" group-title="4666888",中央十四台
+http://iptv.4666888.xyz/iptv2A.php?id=12
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/湖南卫视.png" tvg-name="湖南卫视" group-title="4666888",湖南卫视
+http://iptv.4666888.xyz/iptv2A.php?id=13
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/浙江卫视.png" tvg-name="浙江卫视" group-title="4666888",浙江卫视
+http://iptv.4666888.xyz/iptv2A.php?id=14
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/江苏卫视.png" tvg-name="江苏卫视" group-title="4666888",江苏卫视
+http://iptv.4666888.xyz/iptv2A.php?id=15
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/山西卫视.png" tvg-name="山西卫视" group-title="4666888",山西卫视
+http://iptv.4666888.xyz/iptv2A.php?id=16
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/青海卫视.png" tvg-name="青海卫视" group-title="4666888",青海卫视
+http://iptv.4666888.xyz/iptv2A.php?id=17
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" tvg-name="广东卫视" group-title="4666888",广东卫视
+http://iptv.4666888.xyz/iptv2A.php?id=18
+#EXTINF:-1 tvg-logo="" tvg-name="广东珠江" group-title="4666888",广东珠江
+http://iptv.4666888.xyz/iptv2A.php?id=19
+#EXTINF:-1 tvg-logo="" tvg-name="SPOTV1" group-title="4666888",SPOTV1
+http://iptv.4666888.xyz/iptv2A.php?id=2
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/广东体育.png" tvg-name="广东体育" group-title="4666888",广东体育
+http://iptv.4666888.xyz/iptv2A.php?id=20
+#EXTINF:-1 tvg-logo="" tvg-name="爱奇艺  http://62.210.125.183:8168/smtFYTV.php?id=Qiyi" group-title="4666888",爱奇艺  http://62.210.125.183:8168/smtFYTV.php?id=Qiyi
+http://iptv.4666888.xyz/iptv2A.php?id=21
+#EXTINF:-1 tvg-logo="" tvg-name="TVB千禧经典" group-title="4666888",TVB千禧经典
+http://iptv.4666888.xyz/iptv2A.php?id=22
+#EXTINF:-1 tvg-logo="" tvg-name="RTHK31" group-title="4666888",RTHK31
+http://iptv.4666888.xyz/iptv2A.php?id=23
+#EXTINF:-1 tvg-logo="" tvg-name="MYTV_SUPER华语剧" group-title="4666888",MYTV_SUPER华语剧
+http://iptv.4666888.xyz/iptv2A.php?id=24
+#EXTINF:-1 tvg-logo="" tvg-name="TVB1" group-title="4666888",TVB1
+http://iptv.4666888.xyz/iptv2A.php?id=25
+#EXTINF:-1 tvg-logo="" tvg-name="TVBJ1" group-title="4666888",TVBJ1
+http://iptv.4666888.xyz/iptv2A.php?id=26
+#EXTINF:-1 tvg-logo="" tvg-name="凤凰中文(SMT)" group-title="4666888",凤凰中文(SMT)
+http://iptv.4666888.xyz/iptv2A.php?id=27
+#EXTINF:-1 tvg-logo="" tvg-name="TVB明珠" group-title="4666888",TVB明珠
+http://iptv.4666888.xyz/iptv2A.php?id=29
+#EXTINF:-1 tvg-logo="" tvg-name="BT Sports 3" group-title="4666888",BT Sports 3
+http://iptv.4666888.xyz/iptv2A.php?id=3
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/美亚电影台.png" tvg-name="美亚电影台" group-title="4666888",美亚电影台
+http://iptv.4666888.xyz/iptv2A.php?id=30
+#EXTINF:-1 tvg-logo="" tvg-name="SUPER奖门人" group-title="4666888",SUPER奖门人
+http://iptv.4666888.xyz/iptv2A.php?id=31
+#EXTINF:-1 tvg-logo="" tvg-name="MYTV_SUPER黄金翡翠" group-title="4666888",MYTV_SUPER黄金翡翠
+http://iptv.4666888.xyz/iptv2A.php?id=32
+#EXTINF:-1 tvg-logo="" tvg-name="TVB翡翠剧集" group-title="4666888",TVB翡翠剧集
+http://iptv.4666888.xyz/iptv2A.php?id=33
+#EXTINF:-1 tvg-logo="" tvg-name="TVB黄金华剧" group-title="4666888",TVB黄金华剧
+http://iptv.4666888.xyz/iptv2A.php?id=34
+#EXTINF:-1 tvg-logo="" tvg-name="HOY77" group-title="4666888",HOY77
+http://iptv.4666888.xyz/iptv2A.php?id=35
+#EXTINF:-1 tvg-logo="" tvg-name="TVB娱乐新闻" group-title="4666888",TVB娱乐新闻
+http://iptv.4666888.xyz/iptv2A.php?id=36
+#EXTINF:-1 tvg-logo="" tvg-name="华艺中文" group-title="4666888",华艺中文
+http://iptv.4666888.xyz/iptv2A.php?id=37
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live144_mobile.png" tvg-name="金光布袋戏" group-title="4666888",金光布袋戏
+http://iptv.4666888.xyz/iptv2A.php?id=38
+#EXTINF:-1 tvg-logo="" tvg-name="Duck TV儿童卡通" group-title="4666888",Duck TV儿童卡通
+http://iptv.4666888.xyz/iptv2A.php?id=39
+#EXTINF:-1 tvg-logo="" tvg-name="astro-Football" group-title="4666888",astro-Football
+http://iptv.4666888.xyz/iptv2A.php?id=4
+#EXTINF:-1 tvg-logo="" tvg-name="DreamWorks梦工场动漫" group-title="4666888",DreamWorks梦工场动漫
+http://iptv.4666888.xyz/iptv2A.php?id=40
+#EXTINF:-1 tvg-logo="" tvg-name="澳视澳门" group-title="4666888",澳视澳门
+http://iptv.4666888.xyz/iptv2A.php?id=41
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv045_mobile.png" tvg-name="靖洋戏剧台" group-title="4666888",靖洋戏剧台
+http://iptv.4666888.xyz/iptv2A.php?id=42
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv072_mobile.png" tvg-name="TVBS新闻台" group-title="4666888",TVBS新闻台
 http://iptv.4666888.xyz/iptv2A.php?id=43
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/非凡新闻台.png" tvg-name="非凡新闻台" group-title="4666888",非凡新闻台
-http://iptv.4666888.xyz/iptv2A.php?id=44
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV1.png" tvg-name="龙华电影" group-title="4666888",龙华电影
 http://iptv.4666888.xyz/iptv2A.php?id=45
-#EXTINF:-1 tvg-logo="https://emovie.ebc.net.tw/upload/emovie/img/logoes/pc_logo.png" tvg-name="东森洋片台" group-title="4666888",东森洋片台
-http://iptv.4666888.xyz/iptv2A.php?id=45
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv004_mobile.png" tvg-name="民视综艺台" group-title="4666888",民视综艺台
+http://iptv.4666888.xyz/iptv2A.php?id=46
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live086_mobile.png" tvg-name="TVBS精采台" group-title="4666888",TVBS精采台
 http://iptv.4666888.xyz/iptv2A.php?id=47
 #EXTINF:-1 tvg-logo="https://etmovie.ebc.net.tw/upload/etmovie/img/logoes/pc_logo.png" tvg-name="东森电影台" group-title="4666888",东森电影台
 http://iptv.4666888.xyz/iptv2A.php?id=48
-#EXTINF:-1 tvg-logo="https://d3ifppxyz9sa2s.cloudfront.net/media/img/2023-05-15/82ceb1a252ff880a28437eb96faf9346.png" tvg-name="ELTA综合" group-title="4666888",ELTA综合
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live107.png" tvg-name="MOMO亲子台" group-title="4666888",MOMO亲子台
 http://iptv.4666888.xyz/iptv2A.php?id=49
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live120_mobile.png" tvg-name="爱尔达综合" group-title="4666888",爱尔达综合
-http://iptv.4666888.xyz/iptv2A.php?id=49
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv101_mobile.png" tvg-name="智林体育台" group-title="4666888",智林体育台
+http://iptv.4666888.xyz/iptv2A.php?id=5
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/live138_mobile.png" tvg-name="ROCK Entertainment" group-title="4666888",ROCK Entertainment
+http://iptv.4666888.xyz/iptv2A.php?id=50
+#EXTINF:-1 tvg-logo="" tvg-name="id51" group-title="4666888",id51
+http://iptv.4666888.xyz/iptv2A.php?id=51
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/台视综合台.png" tvg-name="台视综合台" group-title="4666888",台视综合台
 http://iptv.4666888.xyz/iptv2A.php?id=51
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv080_mobile.png" tvg-name="中视经典" group-title="4666888",中视经典
+#EXTINF:-1 tvg-logo="" tvg-name="八度空间" group-title="4666888",八度空间
+http://iptv.4666888.xyz/iptv2A.php?id=52
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv09_mobile.png" tvg-name="民视影剧台" group-title="4666888",民视影剧台
+http://iptv.4666888.xyz/iptv2A.php?id=53
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/纬来电影台.png" tvg-name="纬来电影台" group-title="4666888",纬来电影台
 http://iptv.4666888.xyz/iptv2A.php?id=54
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv002_mobile.png" tvg-name="民视" group-title="4666888",民视
+http://iptv.4666888.xyz/iptv2A.php?id=55
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv061_mobile.png" tvg-name="靖天电影台" group-title="4666888",靖天电影台
 http://iptv.4666888.xyz/iptv2A.php?id=56
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/博斯运动一台.png" tvg-name="博斯运动一台" group-title="4666888",博斯运动一台
+#EXTINF:-1 tvg-logo="" tvg-name="SUPER金曲" group-title="4666888",SUPER金曲
+http://iptv.4666888.xyz/iptv2A.php?id=57
+#EXTINF:-1 tvg-logo="https://ettv.ebc.net.tw/upload/ettv/img/logoes/pc_logo.png" tvg-name="东森综合台" group-title="4666888",东森综合台
+http://iptv.4666888.xyz/iptv2A.php?id=58
+#EXTINF:-1 tvg-logo="" tvg-name="恐怖电影" group-title="4666888",恐怖电影
+http://iptv.4666888.xyz/iptv2A.php?id=59
+#EXTINF:-1 tvg-logo="" tvg-name="日本体育1" group-title="4666888",日本体育1
 http://iptv.4666888.xyz/iptv2A.php?id=6
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_TVBS台劇台_mobile-.png" tvg-name="TVBS台剧台" group-title="4666888",TVBS台剧台
-http://iptv.4666888.xyz/iptv2A.php?id=TVBS台剧
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv009_mobile.png" tvg-name="中天新闻台" group-title="4666888",中天新闻台
-http://iptv.4666888.xyz/iptv2A.php?id=中天新闻
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/纬来戏剧台.png" tvg-name="纬来戏剧台" group-title="4666888",纬来戏剧台
-http://iptv.4666888.xyz/iptv2A.php?id=纬来戏剧
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/龙华洋片.png" tvg-name="龙华洋片" group-title="4666888",龙华洋片
+http://iptv.4666888.xyz/iptv2A.php?id=60
+#EXTINF:-1 tvg-logo="" tvg-name="中国电影" group-title="4666888",中国电影
+http://iptv.4666888.xyz/iptv2A.php?id=61
+#EXTINF:-1 tvg-logo="" tvg-name="skyTennis+" group-title="4666888",skyTennis+
+http://iptv.4666888.xyz/iptv2A.php?id=62
+#EXTINF:-1 tvg-logo="" tvg-name="韩流美食料理秀" group-title="4666888",韩流美食料理秀
+http://iptv.4666888.xyz/iptv2A.php?id=63
+#EXTINF:-1 tvg-logo="" tvg-name="娱乐百分百" group-title="4666888",娱乐百分百
+http://iptv.4666888.xyz/iptv2A.php?id=64
+#EXTINF:-1 tvg-logo="" tvg-name="综艺大赢家" group-title="4666888",综艺大赢家
+http://iptv.4666888.xyz/iptv2A.php?id=65
+#EXTINF:-1 tvg-logo="" tvg-name="中央一台 http://193.apihs.store/cctv.php?id=cctv1hd" group-title="4666888",中央一台 http://193.apihs.store/cctv.php?id=cctv1hd
+http://iptv.4666888.xyz/iptv2A.php?id=7
+#EXTINF:-1 tvg-logo="" tvg-name="中央二台" group-title="4666888",中央二台
+http://iptv.4666888.xyz/iptv2A.php?id=8
+#EXTINF:-1 tvg-logo="" tvg-name="中央三台" group-title="4666888",中央三台
+http://iptv.4666888.xyz/iptv2A.php?id=9
