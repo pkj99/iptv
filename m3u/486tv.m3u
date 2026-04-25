@@ -73,11 +73,15 @@ http://iptv.4666888.xyz/iptv2A.php?id=41
 http://iptv.4666888.xyz/iptv2A.php?id=42
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_media-live072_mobile.png" tvg-name="TVBS新闻台" group-title="4666888",TVBS新闻台
 http://iptv.4666888.xyz/iptv2A.php?id=43
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/非凡新闻台.png" tvg-name="非凡新闻台" group-title="4666888",非凡新闻台
+http://iptv.4666888.xyz/iptv2A.php?id=44
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV1.png" tvg-name="龙华电影" group-title="4666888",龙华电影
 http://iptv.4666888.xyz/iptv2A.php?id=45
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv004_mobile.png" tvg-name="民视综艺台" group-title="4666888",民视综艺台
 http://iptv.4666888.xyz/iptv2A.php?id=46
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live086_mobile.png" tvg-name="TVBS精采台" group-title="4666888",TVBS精采台
+http://iptv.4666888.xyz/iptv2A.php?id=47
+#EXTINF:-1 tvg-logo="" tvg-name="TVBS精彩" group-title="4666888",TVBS精彩
 http://iptv.4666888.xyz/iptv2A.php?id=47
 #EXTINF:-1 tvg-logo="https://etmovie.ebc.net.tw/upload/etmovie/img/logoes/pc_logo.png" tvg-name="东森电影台" group-title="4666888",东森电影台
 http://iptv.4666888.xyz/iptv2A.php?id=48

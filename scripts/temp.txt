@@ -10,8 +10,10 @@ https://epg.iill.top/v/301.mp4
 #EXTINF:-1 tvg-id="免费订阅" tvg-name="免费订阅" tvg-logo="https://epg-1.iill.top/logo/温馨提示.png" group-title="•溫馨「提示」",建議使用：請保持 个人觀看 請勿頻繁切換
 https://epg-1.iill.top/v/301.mp4
 
-#EXTINF:-1 tvg-id="HBO HD" tvg-name="HBO HD" tvg-logo="https://epg.iill.top/logo/HBO.png" group-title="•測試「Relay」",HBO「回看/12H」
+#EXTINF:-1 tvg-id="HBO HD" tvg-name="HBO HD" tvg-logo="https://epg.iill.top/logo/HBO.png" group-title="•測試「Relay」",HBO「回看/6H」
 https://hls.iill.top/test/HBO/index.m3u8
+#EXTINF:-1 tvg-id="緯來體育台" tvg-name="緯來體育台" tvg-logo="https://epg.iill.top/logo/緯來體育.png" group-title="•測試「Relay」",緯來體育「回看/24H」
+https://v.iill.top/test/VL-Sports/index.m3u8
 
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://epg.iill.top/logo/CCTV1.png" group-title="•央視「Relay」",CCTV 1 綜合「Relay」
 https://v.iill.top/api/CCTV1/index.m3u8
@@ -79,9 +81,9 @@ https://tv.iill.top/phenix/fhzx
 #EXTINF:-1 tvg-id="鳳凰衛視香港台" tvg-name="鳳凰衛視香港台" tvg-logo="https://epg.iill.top/logo/凤凰香港.png" http-user-agent="FengWatch/5.4.14" group-title="•港澳「限制」",鳳凰衛視·香港「回看」
 https://tv.iill.top/phenix/fhhk
 #EXTINF:-1 tvg-id="商業電台 雷霆881" tvg-name="商業電台 雷霆881" tvg-logo="https://epg.iill.top/logo/雷霆881.png" group-title="•港澳「限制」",雷霆881「电台」
-https://rd.167.de5.net/radio/881hd/chunks.m3u8
+http://rd.167.de5.net/radio/881hd/chunks.m3u8
 #EXTINF:-1 tvg-id="商業電台 叱咤903" tvg-name="商業電台 叱咤903" tvg-logo="https://epg.iill.top/logo/叱咤903.png" group-title="•港澳「限制」",叱咤903「电台」
-https://rd.167.de5.net/radio/903hd/chunks.m3u8
+http://rd.167.de5.net/radio/903hd/chunks.m3u8
 #EXTINF:-1 tvg-id="Now新聞台" tvg-name="Now新聞台" tvg-logo="https://epg.iill.top/logo/Now新聞台.png" group-title="•港澳「限制」",Now新聞台
 https://t.ttvb.eu.org/tvb/now-332/index.m3u8
 #EXTINF:-1 tvg-id="Now財經台" tvg-name="Now財經台" tvg-logo="https://epg.iill.top/logo/Now財經台.png" group-title="•港澳「限制」",Now財經台
@@ -131,8 +133,8 @@ https://live5.tdm.com.mo/ch6/hd_ch6.live/playlist.m3u8
 
 #EXTINF:-1 tvg-id="博斯運動一台" tvg-name="博斯運動一台" tvg-logo="https://epg-1.iill.top/logo/博斯運動一台.png" http-user-agent="okhttp/1.9.89" group-title="•台湾「限制」", 博斯運動 一「CatchPlay」
 https://hls.iill.top/api/Sports-Network/index.m3u8
-#EXTINF:-1 tvg-id="博斯運動二台" tvg-name="博斯運動二台" tvg-logo="https://epg-1.iill.top/logo/博斯運動二台.png" http-user-agent="okhttp/1.9.89" group-title="•台湾「限制」", 博斯運動 二「CatchPlay」
-https://hls.iill.top/api/Football-Channel/index.m3u8
+#EXTINF:-1 tvg-id="博斯運動二台" tvg-name="博斯運動二台" tvg-logo="https://epg-1.iill.top/logo/博斯運動二台.png" http-user-agent="okhttp/1.9.89" group-title="•台湾「限制」", 博斯運動 二「FainTV」
+https://v.iill.top/tw/Football-Channel/index.m3u8
 #EXTINF:-1 tvg-id="博斯無限台" tvg-name="博斯無限台" tvg-logo="https://epg-1.iill.top/logo/博斯無限台.png" http-user-agent="okhttp/1.9.89" group-title="•台湾「限制」", 博斯無限 一「FainTV」
 https://v.iill.top/tw/Unlimited-Channel/index.m3u8
 #EXTINF:-1 tvg-id="博斯無限二台" tvg-name="博斯無限二台" tvg-logo="https://epg-1.iill.top/logo/博斯無限二台.png" http-user-agent="okhttp/1.9.89" group-title="•台湾「限制」", 博斯無限 二「FainTV」
@@ -513,7 +515,7 @@ https://hls.iill.top/api/BBC-Lifestyle/index.m3u8
 #EXTINF:-1 tvg-id="Discovery HD" tvg-name="Discovery HD" tvg-logo="https://epg.iill.top/logo/Discovery-Channel.png" group-title="•綜合「Relay」",Discovery
 https://hls.iill.top/api/Discovery/index.m3u8
 #EXTINF:-1 tvg-id="HBO HD" tvg-name="HBO HD" tvg-logo="https://epg.iill.top/logo/HBO.png" group-title="•綜合「Relay」",HBO
-https://hls.iill.top/test/HBO/index.m3u8
+https://hls.iill.top/api/HBO/index.m3u8
 #EXTINF:-1 tvg-id="HBO Hits HD" tvg-name="HBO Hits HD" tvg-logo="https://epg.iill.top/logo/HBO-Hits.png" group-title="•綜合「Relay」",HBO Hits
 https://hls.iill.top/api/HBO-Hits/index.m3u8
 #EXTINF:-1 tvg-id="HBO Family HD" tvg-name="HBO Family HD" tvg-logo="https://epg.iill.top/logo/HBO-Family.png" group-title="•綜合「Relay」",HBO Family

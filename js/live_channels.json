@@ -1,916 +1,1084 @@
 {
-    "update_time": "2026-03-23 11:57:07",
+    "update_time": "2026-04-24 12:47:36",
     "channels": {
         "新聞": [
             {
-                "id": "xL0ch83RAK8",
-                "title": "台視新聞台HD 24 小時線上直播｜TAIWAN TTV NEWS HD (Live)｜台湾のTTV ニュースHD (生放送)｜대만 뉴스 라이브 2026-03-23 11:52",
-                "thumbnail": "https://i.ytimg.com/vi/xL0ch83RAK8/hqdefault.jpg",
-                "channel": "台視新聞 TTV NEWS"
-            },
-            {
                 "id": "m_dhMSvUCIc",
-                "title": "🔴 LIVE：TVBS NEWS網路獨家新聞24小時直播 Taiwan News 24hr 台湾世界中のニュースを24時間配信中 대만24시간뉴스채널 55台 2026-03-23 11:52",
+                "title": "🔴 LIVE：TVBS NEWS網路獨家新聞24小時直播 Taiwan News 24hr 台湾世界中のニュースを24時間配信中 대만24시간뉴스채널 55台 2026-04-24 12:42",
                 "thumbnail": "https://i.ytimg.com/vi/m_dhMSvUCIc/hqdefault.jpg",
                 "channel": "TVBS NEWS"
             },
             {
                 "id": "V1p33hqPrUk",
-                "title": "🔴東森新聞 51 頻道 24 小時直播｜Taiwan EBC 24h live news｜台湾 EBC ニュース24 時間オンライン放送｜대만 뉴스 생방송 2026-03-23 11:52",
+                "title": "🔴東森新聞 51 頻道 24 小時直播｜Taiwan EBC 24h live news｜台湾 EBC ニュース24 時間オンライン放送｜대만 뉴스 생방송 2026-04-24 12:42",
                 "thumbnail": "https://i.ytimg.com/vi/V1p33hqPrUk/hqdefault.jpg",
                 "channel": "Taiwan EBC News"
             },
             {
                 "id": "ylYJSBUgaMA",
-                "title": "🟢LIVE 民視新聞24小時直播  FTV 新聞直播｜Taiwan News Live｜台湾ニュース Live｜대만 뉴스 방송 Live @FTV_News 2026-03-23 11:52",
+                "title": "🟢LIVE 民視新聞24小時直播  FTV 新聞直播｜Taiwan News Live｜台湾ニュース Live｜대만 뉴스 방송 Live @FTV_News 2026-04-24 12:42",
                 "thumbnail": "https://i.ytimg.com/vi/ylYJSBUgaMA/hqdefault.jpg",
                 "channel": "民視新聞網 Formosa TV News network"
             },
             {
                 "id": "TCnaIE_SAtM",
-                "title": "中視新聞LIVE直播頻道24小時線上直播｜Taiwan CTV news HD 24h live news |台湾のCTV ニュースHD 대만 24시간 뉴스채널  | (生放送) 2026-03-23 11:53",
+                "title": "中視新聞LIVE直播頻道24小時線上直播｜Taiwan CTV news HD 24h live news |台湾のCTV ニュースHD 대만 24시간 뉴스채널  | (生放送) 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/TCnaIE_SAtM/hqdefault.jpg",
                 "channel": "中視新聞 HD直播頻道｜Taiwan CTV news HD Live"
             },
             {
                 "id": "vr3XyVCR4T0",
-                "title": "【#中天新聞不斷電直播Live】 CTI中天新聞24小時HD新聞直播 │ CTITV Taiwan News HD Live｜台湾のHDニュース放送｜ 대만 HD 뉴스 방송@中天電視CtiTv 2026-03-23 11:52",
+                "title": "【#中天新聞不斷電直播Live】 CTI中天新聞24小時HD新聞直播 │ CTITV Taiwan News HD Live｜台湾のHDニュース放送｜ 대만 HD 뉴스 방송@中天電視CtiTv 2026-04-24 12:42",
                 "thumbnail": "https://i.ytimg.com/vi/vr3XyVCR4T0/hqdefault.jpg",
                 "channel": "中天電視"
             },
             {
                 "id": "wM0g8EoUZ_E",
-                "title": "#LIVE: 華視新聞直播 CH52 | Taiwan CTS News | 台湾のニュースを24時間配信 | 대만 24시간 뉴스채널 | 24小時 線上看 LIVE新聞【On Air】 2026-03-23 11:53",
+                "title": "#LIVE: 華視新聞直播 CH52 | Taiwan CTS News | 台湾のニュースを24時間配信 | 대만 24시간 뉴스채널 | 24小時 線上看 LIVE新聞【On Air】 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/wM0g8EoUZ_E/hqdefault.jpg",
                 "channel": "華視新聞 CH52"
             },
             {
+                "id": "6IquAgfvYmc",
+                "title": "寰宇新聞24小時線上直播｜GlobalNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中 ｜대만 뉴스 생방송 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/6IquAgfvYmc/hqdefault.jpg",
+                "channel": "寰宇新聞 頻道"
+            },
+            {
                 "id": "1I2iq41Akmo",
-                "title": "EBC 東森財經新聞24小時線上直播｜Taiwan EBC Financial News｜台湾 EBC 金融ニュース｜대만 뉴스 생방송 2026-03-23 11:53",
+                "title": "EBC 東森財經新聞24小時線上直播｜Taiwan EBC Financial News｜台湾 EBC 金融ニュース｜대만 뉴스 생방송 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/1I2iq41Akmo/hqdefault.jpg",
                 "channel": "57東森財經新聞"
             },
             {
                 "id": "5n0y6b0Q25o",
-                "title": "鏡新聞 線上看 24小時 新聞直播｜mnews Taiwan News 24H Live｜台湾のニュース24時間オンライン放送 2026-03-23 11:53",
+                "title": "鏡新聞 線上看 24小時 新聞直播｜mnews Taiwan News 24H Live｜台湾のニュース24時間オンライン放送 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/5n0y6b0Q25o/hqdefault.jpg",
                 "channel": "鏡新聞"
             },
             {
                 "id": "QsGswQvRmtU",
-                "title": "🔴三立新聞 24hrs 直播｜ LIVE：國際焦點、地震氣象｜Taiwan News 24/7 LIVE｜台湾 ニュース｜대만 뉴스 2026-03-23 11:52",
+                "title": "雙鋒面接力與「短延時豪雨」🔴三立新聞 24小時直播 LIVE 三立+｜SET+  24/7  LIVE news│台湾 SET+ 24hrs ニュースオンライン放送│대만 채널 SET+ 뉴스 생방송 2026-04-24 12:42",
                 "thumbnail": "https://i.ytimg.com/vi/QsGswQvRmtU/hqdefault.jpg",
                 "channel": "Taiwan SETNEWS Live  Channel"
             },
             {
                 "id": "w87VGpgd90U",
-                "title": "寰宇新聞台灣台 24小時直播｜TaiwanNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中  @globalnewstw 2026-03-23 11:52",
+                "title": "寰宇新聞台灣台 24小時直播｜TaiwanNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中  @globalnewstw 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/w87VGpgd90U/hqdefault.jpg",
                 "channel": "寰宇新聞 頻道"
             },
             {
-                "id": "5SH3FDMyMzg",
-                "title": "寰宇新聞台 24小時線上直播｜GlobalNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中 ｜대만 뉴스 생방송 2026-03-23 11:52",
-                "thumbnail": "https://i.ytimg.com/vi/5SH3FDMyMzg/hqdefault.jpg",
-                "channel": "寰宇全視界"
-            },
-            {
                 "id": "MaTO_CAzqJA",
-                "title": "台視新聞台HD 24 小時線上直播｜TAIWAN TTV NEWS HD (Live)｜台湾のTTV ニュースHD (生放送)｜대만 뉴스 라이브 2026-03-23 11:52",
+                "title": "台視新聞台HD 24 小時線上直播｜TAIWAN TTV NEWS HD (Live)｜台湾のTTV ニュースHD (生放送)｜대만 뉴스 라이브 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/MaTO_CAzqJA/hqdefault.jpg",
                 "channel": "TTV LIVE 台視直播"
             },
             {
                 "id": "yAUQQ0DhPxI",
-                "title": "寰宇新聞財經台 24小時線上直播｜GlobalNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中 ｜대만 뉴스 생방송 2026-03-23 11:52",
+                "title": "寰宇新聞財經台 24小時線上直播｜GlobalNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中 ｜대만 뉴스 생방송 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/yAUQQ0DhPxI/hqdefault.jpg",
                 "channel": "寰宇財經新聞"
+            },
+            {
+                "id": "LqIMxdJiztU",
+                "title": "寰宇新聞台 24小時線上直播｜GlobalNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中 ｜대만 뉴스 생방송 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/LqIMxdJiztU/hqdefault.jpg",
+                "channel": "寰宇全視界"
             }
         ],
         "電視劇": [
             {
                 "id": "032kEdR9Lic",
-                "title": "#新兵日記 & #特戰英雄 Rookies' Diary  高清修復版‧民視戲劇馬拉松 2026-03-23 11:53",
+                "title": "#新兵日記 & #特戰英雄 Rookies' Diary  高清修復版‧民視戲劇馬拉松 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/032kEdR9Lic/hqdefault.jpg",
                 "channel": "民視戲劇館 Formosa TV Dramas"
             },
             {
                 "id": "rTcTVZBZtYs",
-                "title": "#藍色水玲瓏‧民視戲劇馬拉松 2026-03-23 11:53",
+                "title": "#藍色水玲瓏‧民視戲劇馬拉松 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/rTcTVZBZtYs/hqdefault.jpg",
                 "channel": "民視戲劇館 Formosa TV Dramas"
             },
             {
                 "id": "GjXBXz5dl6E",
-                "title": "【親戚不計較】陪你鬥嘴鼓 | 24H不斷電馬拉松LIVE | 卓勝利 李王羅 潘麗麗 沛小嵐 | 四季線上 2026-03-23 11:53",
+                "title": "【親戚不計較】陪你鬥嘴鼓 | 24H不斷電馬拉松LIVE | 卓勝利 李王羅 潘麗麗 沛小嵐 | 四季線上 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/GjXBXz5dl6E/hqdefault.jpg",
                 "channel": "四季線上4gTV"
             },
             {
-                "id": "UVouDle2jHc",
-                "title": "《獵人HUNTER×HUNTER》馬拉松直播 ✨《HUNTER×HUNTER獵人快閃店》 3/20-5/17 就在松山文創園區🔥｜Muse木棉花 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/UVouDle2jHc/hqdefault.jpg",
-                "channel": "Muse木棉花-TW"
-            },
-            {
-                "id": "6lKL5znyZkc",
-                "title": "《It Started With A Kiss》+《They Kiss Again》 24 hours non stop😘｜惡作劇之吻馬拉松直播｜GTV DRAMA English 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/6lKL5znyZkc/hqdefault.jpg",
-                "channel": "GTV DRAMA English"
-            },
-            {
                 "id": "ENnjj7jQ23g",
-                "title": "《蠟筆小新TV版》馬拉松直播🖍️｜每週一至五 18:00~19:20 直播休息，一起在台視看小新｜Muse木棉花 闔家歡 免費看 2026-03-23 11:53",
+                "title": "《蠟筆小新TV版》馬拉松直播🖍️｜每週一至五 18:00~19:20 直播休息，一起在台視看小新｜Muse木棉花 闔家歡 免費看 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/ENnjj7jQ23g/hqdefault.jpg",
                 "channel": "Muse木棉花-闔家歡"
             },
             {
+                "id": "6lKL5znyZkc",
+                "title": "《It Started With A Kiss》+《They Kiss Again》 24 hours non stop😘｜惡作劇之吻馬拉松直播｜GTV DRAMA English 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/6lKL5znyZkc/hqdefault.jpg",
+                "channel": "GTV DRAMA English"
+            },
+            {
+                "id": "TXKWbIPgD_8",
+                "title": "#廉政英雄 Justice Heroes‧民視戲劇馬拉松 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/TXKWbIPgD_8/hqdefault.jpg",
+                "channel": "民視戲劇館 Formosa TV Dramas"
+            },
+            {
                 "id": "v1ZmBzh9pxs",
-                "title": "《葬送的芙莉蓮》馬拉松直播✨《葬送的芙莉蓮 第二季》🌠 1/16(五)起，每週五23:00後各大平台陸續更新！｜Muse木棉花 2026-03-23 11:53",
+                "title": "《葬送的芙莉蓮》馬拉松直播✨｜膽大黨路跑 2026 正式公開🛸！詳情請見資訊欄🔍｜Muse木棉花 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/v1ZmBzh9pxs/hqdefault.jpg",
                 "channel": "Muse木棉花-TW"
             },
             {
-                "id": "WVwP298MU7I",
-                "title": "🔴 LIVE: Harry Potter ⚡️ | Complete Series Compilation Stream | Warner Bros. Entertainment 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/WVwP298MU7I/hqdefault.jpg",
-                "channel": "Warner Bros. Entertainment"
-            },
-            {
                 "id": "e1gbvCkwxFE",
-                "title": "《我們這一家》🍢馬拉松直播｜《海螺小姐》 週一至週五19:00，敬請鎖定MOMO親子台🌸｜Muse木棉花 闔家歡 免費看 2026-03-23 11:53",
+                "title": "《我們這一家》🍢馬拉松直播｜《海螺小姐》 週一至週五19:00，敬請鎖定MOMO親子台🌸｜Muse木棉花 闔家歡 免費看 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/e1gbvCkwxFE/hqdefault.jpg",
                 "channel": "Muse木棉花-闔家歡"
             },
             {
-                "id": "HKDuzWlyGts",
-                "title": "《終極四大時空》24HR馬拉松直播🔥Party time!! 24 hours non-stop🔥  @KOONERETURN 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/HKDuzWlyGts/hqdefault.jpg",
-                "channel": "終極系列"
-            },
-            {
-                "id": "tBYG62NeTdU",
-                "title": "《蠟筆小新劇場版系列》馬拉松直播🖍️｜《海螺小姐》 週一至週五19:00，敬請鎖定MOMO親子台🌸｜Muse木棉花 闔家歡 免費看 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/tBYG62NeTdU/hqdefault.jpg",
-                "channel": "Muse木棉花-闔家歡"
-            },
-            {
-                "id": "7syefcmbpFE",
-                "title": "【金庸經典-射鵰三部曲之三】倚天屠龍記LIVE爆肝直播-曾舜晞、陳鈺琪、祝緒丹、林雨申、周海媚、曹曦月、黑子、宗峰岩、楊明娜｜The Heaven Sword and the Dragon Saber 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/7syefcmbpFE/hqdefault.jpg",
-                "channel": "愛爾達綜合台"
-            },
-            {
-                "id": "yUkO-BXnUjQ",
-                "title": "【24H直播】十里桃林三生約，三世情緣永相隨 【三生三世十里桃花】 24小時不間斷直播 #經典戲劇看中視 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/yUkO-BXnUjQ/hqdefault.jpg",
-                "channel": "中視經典戲劇"
-            },
-            {
                 "id": "dgnnYeyqbRU",
-                "title": "《知否知否應是綠肥紅瘦》24小時不間斷馬拉松直播｜GTV DRAMA 八大劇樂部 2026-03-23 11:53",
+                "title": "《知否知否應是綠肥紅瘦》24小時不間斷馬拉松直播｜GTV DRAMA 八大劇樂部 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/dgnnYeyqbRU/hqdefault.jpg",
                 "channel": "GTV DRAMA 八大劇樂部"
             },
             {
-                "id": "Jn8ulwzkehE",
-                "title": "《羋月傳》24小時馬拉松直播✨孫儷、劉濤、黃軒、方中信｜GTV DRAMA 八大劇樂部 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/Jn8ulwzkehE/hqdefault.jpg",
-                "channel": "GTV DRAMA 八大劇樂部"
-            },
-            {
-                "id": "eHe-Sf016R0",
-                "title": "【去有風的地方-李現、劉亦菲】-24小時LIVE馬拉松 火熱全劇播出 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/eHe-Sf016R0/hqdefault.jpg",
-                "channel": "愛爾達影劇台"
-            },
-            {
-                "id": "mRCXonM5ru8",
-                "title": "《中華一番！》每天不間斷 馬拉松直播🍜｜《海螺小姐》 週一至週五19:00，敬請鎖定MOMO親子台🌸｜Muse木棉花 闔家歡 免費看 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/mRCXonM5ru8/hqdefault.jpg",
-                "channel": "Muse木棉花-闔家歡"
-            },
-            {
                 "id": "18ypxNBbMYY",
-                "title": "《琅琊榜》24小時馬拉松直播｜胡歌 劉濤 王凱 靳東 黃維德 吳磊｜GTV DRAMA 八大劇樂部 2026-03-23 11:53",
+                "title": "《琅琊榜》24小時馬拉松直播｜胡歌 劉濤 王凱 靳東 黃維德 吳磊｜GTV DRAMA 八大劇樂部 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/18ypxNBbMYY/hqdefault.jpg",
                 "channel": "GTV DRAMA 八大劇樂部"
             },
             {
-                "id": "BLag8MOBUg8",
-                "title": "【中文配音】《真珠美人魚 S1-S2》歡唱馬拉松🎤 陪你從早唱到晚｜回歸線娛樂 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/BLag8MOBUg8/hqdefault.jpg",
-                "channel": "回歸線娛樂"
-            },
-            {
-                "id": "uehKhWmttVE",
-                "title": "🔴【綜藝玩很大】憲哥 KID 坤達 小鬼 把不可能變可能！讓我們找出那無法被超越的感動！｜ 24小時不間斷直播 Mr.Player 24 Hours Live｜ミスター・プレイヤー｜미스터 플레이어 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/uehKhWmttVE/hqdefault.jpg",
-                "channel": "綜藝玩很大 Mr.Player"
-            },
-            {
-                "id": "k0uJVhYX12Y",
-                "title": "【怪奇聊天室】57怪奇物語頻道24小時線上直播｜Taiwan StrangerThings 24h live program｜精選合集 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/k0uJVhYX12Y/hqdefault.jpg",
-                "channel": "57怪奇物語"
-            },
-            {
-                "id": "uPLdwjHlf58",
-                "title": "《都挺好》全集24h不间断直播✨#姚晨 走出重男轻女的家庭独自打拼，#倪大红 作天作地花式折腾儿女，众星云集演绎“中国式”家庭！（姚晨、倪大红、郭京飞 领衔主演） 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/uPLdwjHlf58/hqdefault.jpg",
-                "channel": "影视剧汇踪"
+                "id": "HKDuzWlyGts",
+                "title": "《終極四大時空》24HR馬拉松直播🔥Party time!! 24 hours non-stop🔥  @KOONERETURN 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/HKDuzWlyGts/hqdefault.jpg",
+                "channel": "終極系列"
             },
             {
                 "id": "TtKcKKFMjQw",
-                "title": "2026年人強馬壯，馬躍檀溪《三國》24小時全劇直播｜于和偉｜陳建斌｜何潤東｜林心如  @龍華電視 2026-03-23 11:53",
+                "title": "亂世出英雄《三國》24小時全劇直播｜于和偉｜陳建斌｜何潤東｜林心如  @龍華電視 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/TtKcKKFMjQw/hqdefault.jpg",
                 "channel": "龍華電視"
             },
             {
-                "id": "Nfwr1WBXt9I",
-                "title": "【飛龍在天】 24H飛上天馬拉松LIVE | 經典劇 | 江宏恩 黃少祺 賈靜雯 張鳳書 黃維德 | 四季線上 FASTTV 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/Nfwr1WBXt9I/hqdefault.jpg",
-                "channel": "四季線上4gTV"
-            },
-            {
-                "id": "OhA_G0s9pqw",
-                "title": "《現代嘉慶君EP1-EP60》 24H不間斷 馬拉松直播｜24hrs Non-Stop｜豬哥亮、陳亞蘭、呂雪鳳 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/OhA_G0s9pqw/hqdefault.jpg",
-                "channel": "華視綜藝頻道"
-            },
-            {
-                "id": "ESCvRS78MBk",
-                "title": "宿命愛情【九重紫LIVE】24小時直播-孟子義、李昀銳 主演｜Blossom 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/ESCvRS78MBk/hqdefault.jpg",
+                "id": "7syefcmbpFE",
+                "title": "【金庸經典-射鵰三部曲之三】倚天屠龍記LIVE爆肝直播-曾舜晞、陳鈺琪、祝緒丹、林雨申、周海媚、曹曦月、黑子、宗峰岩、楊明娜｜The Heaven Sword and the Dragon Saber 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/7syefcmbpFE/hqdefault.jpg",
                 "channel": "愛爾達綜合台"
             },
             {
-                "id": "cbFb2RC1ruI",
-                "title": "《進擊的巨人S1-S4 (完結篇)》馬拉松直播🏇🔥｜Muse木棉花｜《劇場版「進擊的巨人」完結篇THE LAST ATTACK》2026.01.23 地鳴再啟！復活重映！ 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/cbFb2RC1ruI/hqdefault.jpg",
-                "channel": "Muse木棉花-TW"
+                "id": "mRCXonM5ru8",
+                "title": "《中華一番！》每天不間斷 馬拉松直播🍜｜《海螺小姐》 週一至週五19:00，敬請鎖定MOMO親子台🌸｜Muse木棉花 闔家歡 免費看 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/mRCXonM5ru8/hqdefault.jpg",
+                "channel": "Muse木棉花-闔家歡"
             },
             {
-                "id": "iKcDemaGLlU",
-                "title": "2026年不再心猿意馬，唯你馬首是瞻《軍師聯盟+虎嘯龍吟》24小時全劇直播｜吳秀波｜劉濤｜李晨｜于和偉｜張鈞甯｜@龍華電視 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/iKcDemaGLlU/hqdefault.jpg",
-                "channel": "龍華電視"
+                "id": "eHe-Sf016R0",
+                "title": "【去有風的地方-李現、劉亦菲】-24小時LIVE馬拉松 火熱全劇播出 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/eHe-Sf016R0/hqdefault.jpg",
+                "channel": "愛爾達影劇台"
             },
             {
-                "id": "sEeB5deB2MQ",
-                "title": "🔴香蜜沉沉燼如霜✨｜24小時不斷電直播 Ashes of Love 24 Hours Live｜楊紫 鄧倫 羅雲熙 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/sEeB5deB2MQ/hqdefault.jpg",
-                "channel": "中天快點看劇"
+                "id": "BLag8MOBUg8",
+                "title": "【中文配音】《真珠美人魚 S1-S2》歡唱馬拉松🎤 陪你從早唱到晚｜回歸線娛樂 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/BLag8MOBUg8/hqdefault.jpg",
+                "channel": "回歸線娛樂"
             },
             {
-                "id": "Og7aPWJ2ZRQ",
-                "title": "【LIVE全集】巷亲相爱💡感受邻里温情✨家好月圆🏠承载两代人的成长《小巷人家 Romance In The Alley》【正午阳光官方频道】 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/Og7aPWJ2ZRQ/hqdefault.jpg",
-                "channel": "正午阳光官方频道"
+                "id": "k0uJVhYX12Y",
+                "title": "【怪奇聊天室】57怪奇物語頻道24小時線上直播｜Taiwan StrangerThings 24h live program｜精選合集 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/k0uJVhYX12Y/hqdefault.jpg",
+                "channel": "57怪奇物語"
             },
             {
                 "id": "wO0nqg5qcak",
-                "title": "《鑽石王牌 S1-S2-act2》馬拉松直播⚾ 2026年四月新番《鑽石王牌act2 第二季》播出時間與平台請持續關注木棉花社群！｜Muse木棉花 2026-03-23 11:53",
+                "title": "《鑽石王牌 S1-S2-act2》馬拉松直播~4/24 17:00⚾ 2026年四月新番《鑽石王牌act2 第二季》播出時間與平台請持續關注木棉花社群！｜Muse木棉花 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/wO0nqg5qcak/hqdefault.jpg",
                 "channel": "Muse木棉花-TW"
             },
             {
-                "id": "7PrYe8ykEjY",
-                "title": "【台灣靈異事件 LIVE】24 小時不斷電 一起追劇來辦案 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/7PrYe8ykEjY/hqdefault.jpg",
-                "channel": "華視戲劇頻道"
+                "id": "iKcDemaGLlU",
+                "title": "後三國英雄對弈史詩《軍師聯盟+虎嘯龍吟》24小時全劇直播｜吳秀波｜劉濤｜李晨｜于和偉｜張鈞甯｜@龍華電視 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/iKcDemaGLlU/hqdefault.jpg",
+                "channel": "龍華電視"
+            },
+            {
+                "id": "OhA_G0s9pqw",
+                "title": "《現代嘉慶君EP1-EP60》 24H不間斷 馬拉松直播｜24hrs Non-Stop｜豬哥亮、陳亞蘭、呂雪鳳 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/OhA_G0s9pqw/hqdefault.jpg",
+                "channel": "華視綜藝頻道"
             },
             {
                 "id": "GXPtTXCTXAs",
-                "title": "🔴【犀利人妻】 不被愛的才是第三者！可是瑞凡，我回不去了🍛｜隋棠 溫昇豪 朱芯儀 宥勝｜24小時直播 The Fierce Wife 24 Hours Live｜Vidol 2026-03-23 11:53",
+                "title": "🔴【犀利人妻】 不被愛的才是第三者！可是瑞凡，我回不去了🍛｜隋棠 溫昇豪 朱芯儀 宥勝｜24小時直播 The Fierce Wife 24 Hours Live｜Vidol 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/GXPtTXCTXAs/hqdefault.jpg",
                 "channel": "Vidol TV"
             },
             {
                 "id": "Q8z09zd6c4s",
-                "title": "🔴【下一站，幸福】 原來 愛情從來沒有離開過只是我記得 你忘了｜吳建豪 安以軒 許瑋甯 吳慷仁｜24小時直播  24 Hours Live｜Vidol 2026-03-23 11:53",
+                "title": "🔴【下一站，幸福】 原來 愛情從來沒有離開過只是我記得 你忘了｜吳建豪 安以軒 許瑋甯 吳慷仁｜24小時直播  24 Hours Live｜Vidol 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/Q8z09zd6c4s/hqdefault.jpg",
                 "channel": "Vidol TV"
             },
             {
-                "id": "yzdKYRUCdxQ",
-                "title": "【意難忘】  重現#阿叔 前世 與忘不了的情人 24H馬拉松LIVE  | 經典劇 | 王識賢 李興文 李李仁 張鳳書 韓瑜  | 四季線上 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/yzdKYRUCdxQ/hqdefault.jpg",
-                "channel": "四季線上4gTV"
+                "id": "ESCvRS78MBk",
+                "title": "宿命愛情【九重紫LIVE】24小時直播-孟子義、李昀銳 主演｜Blossom 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/ESCvRS78MBk/hqdefault.jpg",
+                "channel": "愛爾達綜合台"
+            },
+            {
+                "id": "B74dPMDRRjo",
+                "title": "《步步驚心》24小時馬拉松直播｜劉詩詩/吳奇隆/鄭嘉穎/袁弘/林更新/葉祖新｜GTV DRAMA 八大劇樂部 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/B74dPMDRRjo/hqdefault.jpg",
+                "channel": "GTV DRAMA 八大劇樂部"
+            },
+            {
+                "id": "gnDok9gtopw",
+                "title": "《新哆啦A夢》🔵馬拉松直播 ｜《海螺小姐》 週一至週五19:00，敬請鎖定MOMO親子台🌸｜Muse木棉花 闔家歡 免費看 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/gnDok9gtopw/hqdefault.jpg",
+                "channel": "Muse木棉花-闔家歡"
+            },
+            {
+                "id": "sEeB5deB2MQ",
+                "title": "🔴香蜜沉沉燼如霜✨｜24小時不斷電直播 Ashes of Love 24 Hours Live｜楊紫 鄧倫 羅雲熙 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/sEeB5deB2MQ/hqdefault.jpg",
+                "channel": "中天快點看劇"
+            },
+            {
+                "id": "7PrYe8ykEjY",
+                "title": "【台灣靈異事件 LIVE】24 小時不斷電 一起追劇來辦案 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/7PrYe8ykEjY/hqdefault.jpg",
+                "channel": "華視戲劇頻道"
+            },
+            {
+                "id": "9e7p4F7myy8",
+                "title": "嘻嘻哈哈过新年🧨二十年弹指一挥间 小郭 祝你自由🥂24h马拉松直播🏃‍♂️【中英双语全集🔥】《武林外传My Own Swordsman》另类喜剧 戏说江湖 【CCTV电视剧直播】 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/9e7p4F7myy8/hqdefault.jpg",
+                "channel": "CCTV电视剧"
+            },
+            {
+                "id": "KZyk0WrarUQ",
+                "title": "《86-不存在的戰區- 》馬拉松直播🕊 膽大黨路跑 2026 正式公開🛸！詳情請見資訊欄🔍｜Muse木棉花 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/KZyk0WrarUQ/hqdefault.jpg",
+                "channel": "Muse木棉花-TW"
             },
             {
                 "id": "LifgWpNjkdI",
-                "title": "🔴那年最浪漫的紫色回憶回來了！💜│薰衣草│24H不間斷直播│24hrs Non-Stop 2026-03-23 11:53",
+                "title": "🔴青春暴走無極限！一看就停不下來 │櫻野3+1│24H不間斷直播│24hrs Non-Stop 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/LifgWpNjkdI/hqdefault.jpg",
                 "channel": "三立華劇 SET Drama"
             },
             {
-                "id": "pEYrYno2uWc",
-                "title": "《齊天大聖孫悟空》24小時馬拉松直播🐵張衛健/林志穎/謝霆鋒/徐懷鈺/蔡卓妍/阿嬌/大S/許志安/鄭秀文｜GTV DRAMA 八大劇樂部 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/pEYrYno2uWc/hqdefault.jpg",
-                "channel": "GTV DRAMA 八大劇樂部"
+                "id": "DFqBPb7EW5g",
+                "title": "豬哥亮回來啦!! #豬哥亮 24H豬哥秀直播馬拉松   | 四季線上 FastTV 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/DFqBPb7EW5g/hqdefault.jpg",
+                "channel": "四季線上4gTV"
+            },
+            {
+                "id": "XNO0vjTNhzo",
+                "title": "骏马奔腾展新篇🐎24h马拉松直播🏃‍♂️三国英雄集结！权谋与忠义的较量！《三国演义》直播 带你领略英雄传奇！【CCTV电视剧直播】 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/XNO0vjTNhzo/hqdefault.jpg",
+                "channel": "CCTV电视剧"
             },
             {
                 "id": "PP5bsVCPiMA",
-                "title": "🔴2026還在看！仲天騏 夏之星回來啦！│放羊的星星│24H不間斷直播│24hrs Non-Stop 2026-03-23 11:53",
+                "title": "🔴上班族一定懂！這部根本職場生存教科書 │三明治女孩的逆襲│24H不間斷直播│24hrs Non-Stop 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/PP5bsVCPiMA/hqdefault.jpg",
                 "channel": "三立華劇 SET Drama"
             },
             {
+                "id": "Qq-uMi_1Rzk",
+                "title": "【包青天 LIVE】全劇24小時不斷電 一起跟包公辦案!! 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/Qq-uMi_1Rzk/hqdefault.jpg",
+                "channel": "華視戲劇頻道"
+            },
+            {
+                "id": "0z4IHU4g-1M",
+                "title": "24h马拉松直播🏃‍♂️【ENG SUB】《雍正王朝The Era of Emperor Yongzheng》九子夺嫡 💥皇家的权谋之术【CCTV电视剧直播】 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/0z4IHU4g-1M/hqdefault.jpg",
+                "channel": "CCTV电视剧"
+            },
+            {
+                "id": "Zn_nwouK0pQ",
+                "title": "【24H直播】《光陰的故事》全集馬拉松📺 回到自強一村🏠找回眷村歲月最純真的感動！ 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/Zn_nwouK0pQ/hqdefault.jpg",
+                "channel": "中視經典戲劇"
+            },
+            {
+                "id": "CUmdyNBtuCw",
+                "title": "【夜市人生】24H馬拉松夜市營業中 | 張晨光 陳美鳳 蕭大陸 | 四季線上 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/CUmdyNBtuCw/hqdefault.jpg",
+                "channel": "四季線上4gTV"
+            },
+            {
                 "id": "I9rg5z8qXZQ",
-                "title": "🔥 一口氣追完《康熙帝國》！24H 皇權修羅場｜權力、謀略、帝王心術一次看完 🔥 2026-03-23 11:53",
+                "title": "🔥 一口氣追完《康熙帝國》！24H 皇權修羅場｜權力、謀略、帝王心術一次看完 🔥 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/I9rg5z8qXZQ/hqdefault.jpg",
                 "channel": "Videoland Max-TV"
             },
             {
-                "id": "VYXlTMBd4y8",
-                "title": "24h 马拉松直播🏃‍♀️【潜伏 全集】高清不卡｜孙红雷和姚晨假扮夫妻，演绎一曲险象环生的谍战情缘 ｜百纳独播剧场 2026-03-23 11:53",
-                "thumbnail": "https://i.ytimg.com/vi/VYXlTMBd4y8/hqdefault.jpg",
-                "channel": "百纳经典独播剧场"
+                "id": "iT7RicpCeic",
+                "title": "24h马拉松直播🏃‍♂️【ENG SUB】《康熙王朝Kangxi Dynasty》千古一帝💥康熙帝的传奇一生【CCTV电视剧直播】 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/iT7RicpCeic/hqdefault.jpg",
+                "channel": "CCTV电视剧"
             },
             {
                 "id": "gCGC21-URwA",
-                "title": "24H 马拉松直播🏃【汉武大帝】 高清修复（未删减无静音版）｜戏骨云集，神仙打架！陈宝国、焦晃、归亚蕾同台，演绎教科级演技，每个角色都有独特的魅力，堪称必看经典！ 2026-03-23 11:53",
+                "title": "24H 马拉松直播🏃【汉武大帝】 高清修复（未删减无静音版）｜戏骨云集，神仙打架！陈宝国、焦晃、归亚蕾同台，演绎教科级演技，每个角色都有独特的魅力，堪称必看经典！ 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/gCGC21-URwA/hqdefault.jpg",
                 "channel": "百纳经典独播剧场"
             }
         ],
         "綜藝": [
             {
-                "id": "C6gYqSHLRw4",
-                "title": "公共電視 13頻道 網路直播 PTS Live 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/C6gYqSHLRw4/hqdefault.jpg",
-                "channel": "公視 網路直播頻道"
+                "id": "032kEdR9Lic",
+                "title": "#新兵日記 & #特戰英雄 Rookies' Diary  高清修復版‧民視戲劇馬拉松 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/032kEdR9Lic/hqdefault.jpg",
+                "channel": "民視戲劇館 Formosa TV Dramas"
             },
             {
-                "id": "7j92Myu2wzg",
-                "title": "【正在直播：CCTV中文国际（亚洲）】全球新闻热点、时事点评、深度报道、纪录片、电视剧等 | LIVE NOW 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/7j92Myu2wzg/hqdefault.jpg",
-                "channel": "LIVE NOW"
+                "id": "rTcTVZBZtYs",
+                "title": "#藍色水玲瓏‧民視戲劇馬拉松 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/rTcTVZBZtYs/hqdefault.jpg",
+                "channel": "民視戲劇館 Formosa TV Dramas"
             },
             {
                 "id": "ADDSmXoPDY8",
-                "title": "【🔴24H直播】豬哥亮＆陳亞蘭《萬秀豬王》爆笑劇場🤣 24小時直播馬拉松不間斷 #豬哥亮 #陳亞蘭 #呂雪鳳 #LIVE @ctvent_classic 2026-03-23 11:54",
+                "title": "【🔴24H直播】豬哥亮＆陳亞蘭《萬秀豬王》爆笑劇場🤣 24小時直播馬拉松不間斷 #豬哥亮 #陳亞蘭 #呂雪鳳 #LIVE @ctvent_classic 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/ADDSmXoPDY8/hqdefault.jpg",
                 "channel": "中視經典綜藝"
             },
             {
                 "id": "GjXBXz5dl6E",
-                "title": "【親戚不計較】陪你鬥嘴鼓 | 24H不斷電馬拉松LIVE | 卓勝利 李王羅 潘麗麗 沛小嵐 | 四季線上 2026-03-23 11:54",
+                "title": "【親戚不計較】陪你鬥嘴鼓 | 24H不斷電馬拉松LIVE | 卓勝利 李王羅 潘麗麗 沛小嵐 | 四季線上 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/GjXBXz5dl6E/hqdefault.jpg",
                 "channel": "四季線上4gTV"
             },
             {
+                "id": "ENnjj7jQ23g",
+                "title": "《蠟筆小新TV版》馬拉松直播🖍️｜每週一至五 18:00~19:20 直播休息，一起在台視看小新｜Muse木棉花 闔家歡 免費看 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/ENnjj7jQ23g/hqdefault.jpg",
+                "channel": "Muse木棉花-闔家歡"
+            },
+            {
+                "id": "6lKL5znyZkc",
+                "title": "《It Started With A Kiss》+《They Kiss Again》 24 hours non stop😘｜惡作劇之吻馬拉松直播｜GTV DRAMA English 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/6lKL5znyZkc/hqdefault.jpg",
+                "channel": "GTV DRAMA English"
+            },
+            {
+                "id": "TXKWbIPgD_8",
+                "title": "#廉政英雄 Justice Heroes‧民視戲劇馬拉松 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/TXKWbIPgD_8/hqdefault.jpg",
+                "channel": "民視戲劇館 Formosa TV Dramas"
+            },
+            {
+                "id": "v1ZmBzh9pxs",
+                "title": "《葬送的芙莉蓮》馬拉松直播✨｜膽大黨路跑 2026 正式公開🛸！詳情請見資訊欄🔍｜Muse木棉花 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/v1ZmBzh9pxs/hqdefault.jpg",
+                "channel": "Muse木棉花-TW"
+            },
+            {
+                "id": "e1gbvCkwxFE",
+                "title": "《我們這一家》🍢馬拉松直播｜《海螺小姐》 週一至週五19:00，敬請鎖定MOMO親子台🌸｜Muse木棉花 闔家歡 免費看 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/e1gbvCkwxFE/hqdefault.jpg",
+                "channel": "Muse木棉花-闔家歡"
+            },
+            {
+                "id": "dgnnYeyqbRU",
+                "title": "《知否知否應是綠肥紅瘦》24小時不間斷馬拉松直播｜GTV DRAMA 八大劇樂部 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/dgnnYeyqbRU/hqdefault.jpg",
+                "channel": "GTV DRAMA 八大劇樂部"
+            },
+            {
+                "id": "18ypxNBbMYY",
+                "title": "《琅琊榜》24小時馬拉松直播｜胡歌 劉濤 王凱 靳東 黃維德 吳磊｜GTV DRAMA 八大劇樂部 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/18ypxNBbMYY/hqdefault.jpg",
+                "channel": "GTV DRAMA 八大劇樂部"
+            },
+            {
+                "id": "HKDuzWlyGts",
+                "title": "《終極四大時空》24HR馬拉松直播🔥Party time!! 24 hours non-stop🔥  @KOONERETURN 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/HKDuzWlyGts/hqdefault.jpg",
+                "channel": "終極系列"
+            },
+            {
+                "id": "TtKcKKFMjQw",
+                "title": "亂世出英雄《三國》24小時全劇直播｜于和偉｜陳建斌｜何潤東｜林心如  @龍華電視 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/TtKcKKFMjQw/hqdefault.jpg",
+                "channel": "龍華電視"
+            },
+            {
+                "id": "7syefcmbpFE",
+                "title": "【金庸經典-射鵰三部曲之三】倚天屠龍記LIVE爆肝直播-曾舜晞、陳鈺琪、祝緒丹、林雨申、周海媚、曹曦月、黑子、宗峰岩、楊明娜｜The Heaven Sword and the Dragon Saber 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/7syefcmbpFE/hqdefault.jpg",
+                "channel": "愛爾達綜合台"
+            },
+            {
+                "id": "0ePhPlTJbGo",
+                "title": "《天才衝衝衝完整集數#552 -#564》  24H不間斷 馬拉松直播｜24hrs Non-Stop｜曾國城 徐乃麟 張文綺 徐凱希 #live 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/0ePhPlTJbGo/hqdefault.jpg",
+                "channel": "華視綜藝頻道"
+            },
+            {
+                "id": "mRCXonM5ru8",
+                "title": "《中華一番！》每天不間斷 馬拉松直播🍜｜《海螺小姐》 週一至週五19:00，敬請鎖定MOMO親子台🌸｜Muse木棉花 闔家歡 免費看 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/mRCXonM5ru8/hqdefault.jpg",
+                "channel": "Muse木棉花-闔家歡"
+            },
+            {
                 "id": "v8MUGB4vst8",
-                "title": "豬哥會社 Chu Ke-Liang's Return 24H馬拉松不間斷直播[客服網址：discord.gg/DNuE7AZ] 2026-03-23 11:54",
+                "title": "豬哥會社 Chu Ke-Liang's Return 24H馬拉松不間斷直播[客服網址：discord.gg/DNuE7AZ] 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/v8MUGB4vst8/hqdefault.jpg",
                 "channel": "豬哥會社"
             },
             {
                 "id": "UJgN7q6jpns",
-                "title": "【LIVE】《飢餓遊戲》點閱人氣榜｜孫協志 王仁甫 許孟哲 蔡黃汝 峮峮｜完整版馬拉松直播｜ Hunger Games 24 Hours Live｜ 2026-03-23 11:54",
+                "title": "【LIVE】《飢餓遊戲》點閱人氣榜｜孫協志 王仁甫 許孟哲 蔡黃汝 峮峮｜完整版馬拉松直播｜ Hunger Games 24 Hours Live｜ 2026-04-24 12:43",
                 "thumbnail": "https://i.ytimg.com/vi/UJgN7q6jpns/hqdefault.jpg",
                 "channel": "飢餓遊戲Hunger Games"
             },
             {
-                "id": "0ePhPlTJbGo",
-                "title": "《天才衝衝衝完整集數#981 -#993》  24H不間斷 馬拉松直播｜24hrs Non-Stop｜曾國城 徐乃麟 張文綺 徐凱希 #live 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/0ePhPlTJbGo/hqdefault.jpg",
-                "channel": "華視綜藝頻道"
+                "id": "eHe-Sf016R0",
+                "title": "【去有風的地方-李現、劉亦菲】-24小時LIVE馬拉松 火熱全劇播出 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/eHe-Sf016R0/hqdefault.jpg",
+                "channel": "愛爾達影劇台"
             },
             {
-                "id": "uehKhWmttVE",
-                "title": "🔴【綜藝玩很大】憲哥 KID 坤達 小鬼 把不可能變可能！讓我們找出那無法被超越的感動！｜ 24小時不間斷直播 Mr.Player 24 Hours Live｜ミスター・プレイヤー｜미스터 플레이어 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/uehKhWmttVE/hqdefault.jpg",
-                "channel": "綜藝玩很大 Mr.Player"
+                "id": "BLag8MOBUg8",
+                "title": "【中文配音】《真珠美人魚 S1-S2》歡唱馬拉松🎤 陪你從早唱到晚｜回歸線娛樂 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/BLag8MOBUg8/hqdefault.jpg",
+                "channel": "回歸線娛樂"
+            },
+            {
+                "id": "k0uJVhYX12Y",
+                "title": "【怪奇聊天室】57怪奇物語頻道24小時線上直播｜Taiwan StrangerThings 24h live program｜精選合集 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/k0uJVhYX12Y/hqdefault.jpg",
+                "channel": "57怪奇物語"
+            },
+            {
+                "id": "wO0nqg5qcak",
+                "title": "《鑽石王牌 S1-S2-act2》馬拉松直播~4/24 17:00⚾ 2026年四月新番《鑽石王牌act2 第二季》播出時間與平台請持續關注木棉花社群！｜Muse木棉花 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/wO0nqg5qcak/hqdefault.jpg",
+                "channel": "Muse木棉花-TW"
+            },
+            {
+                "id": "iKcDemaGLlU",
+                "title": "後三國英雄對弈史詩《軍師聯盟+虎嘯龍吟》24小時全劇直播｜吳秀波｜劉濤｜李晨｜于和偉｜張鈞甯｜@龍華電視 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/iKcDemaGLlU/hqdefault.jpg",
+                "channel": "龍華電視"
             },
             {
                 "id": "OhA_G0s9pqw",
-                "title": "《現代嘉慶君EP1-EP60》 24H不間斷 馬拉松直播｜24hrs Non-Stop｜豬哥亮、陳亞蘭、呂雪鳳 2026-03-23 11:54",
+                "title": "《現代嘉慶君EP1-EP60》 24H不間斷 馬拉松直播｜24hrs Non-Stop｜豬哥亮、陳亞蘭、呂雪鳳 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/OhA_G0s9pqw/hqdefault.jpg",
                 "channel": "華視綜藝頻道"
             },
             {
-                "id": "zZviZGp9NmA",
-                "title": "🔴【天之驕女】洗嘞哈囉～連體嬰姊妹墜入愛河 她們該如何談戀愛呢？ 409集不間斷直播中！｜三立電視 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/zZviZGp9NmA/hqdefault.jpg",
-                "channel": "三立電視 SET TV"
+                "id": "GXPtTXCTXAs",
+                "title": "🔴【犀利人妻】 不被愛的才是第三者！可是瑞凡，我回不去了🍛｜隋棠 溫昇豪 朱芯儀 宥勝｜24小時直播 The Fierce Wife 24 Hours Live｜Vidol 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/GXPtTXCTXAs/hqdefault.jpg",
+                "channel": "Vidol TV"
             },
             {
-                "id": "9gx5EIyHmsw",
-                "title": "【綜藝一級棒】24小時歡樂不停播✨ 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/9gx5EIyHmsw/hqdefault.jpg",
-                "channel": "綜藝一級棒"
+                "id": "Q8z09zd6c4s",
+                "title": "🔴【下一站，幸福】 原來 愛情從來沒有離開過只是我記得 你忘了｜吳建豪 安以軒 許瑋甯 吳慷仁｜24小時直播  24 Hours Live｜Vidol 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/Q8z09zd6c4s/hqdefault.jpg",
+                "channel": "Vidol TV"
             },
             {
-                "id": "cimbpAZUjzw",
-                "title": "🔴東森綜合2台頻道 24 小時直播｜EBC Variety Shows 24h live｜台湾EBCバラエティ番組24 時間オンライン放送｜대만 버라이어티 쇼 생방송 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/cimbpAZUjzw/hqdefault.jpg",
-                "channel": "東森綜合台"
+                "id": "ESCvRS78MBk",
+                "title": "宿命愛情【九重紫LIVE】24小時直播-孟子義、李昀銳 主演｜Blossom 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/ESCvRS78MBk/hqdefault.jpg",
+                "channel": "愛爾達綜合台"
             },
             {
-                "id": "dKCewm0l1nM",
-                "title": "【LIVE】🤹‍♂️🤹‍♂️《飢餓遊戲》一次播到飽 孫協志 王仁甫 許孟哲 蔡黃汝 峮峮🤹‍♂️🤹‍♂️｜24小時不斷電直播｜ Hunger Games 24 Hours Live｜ 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/dKCewm0l1nM/hqdefault.jpg",
-                "channel": "飢餓遊戲Hunger Games"
+                "id": "B74dPMDRRjo",
+                "title": "《步步驚心》24小時馬拉松直播｜劉詩詩/吳奇隆/鄭嘉穎/袁弘/林更新/葉祖新｜GTV DRAMA 八大劇樂部 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/B74dPMDRRjo/hqdefault.jpg",
+                "channel": "GTV DRAMA 八大劇樂部"
             },
             {
-                "id": "FuRbrw9lliI",
-                "title": "🔴【一家團圓】永遠不忘為家付出的一念心💖 24 Hours Live｜台灣好戲 24HR不間斷直播｜三立電視 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/FuRbrw9lliI/hqdefault.jpg",
-                "channel": "三立電視 SET TV"
+                "id": "gnDok9gtopw",
+                "title": "《新哆啦A夢》🔵馬拉松直播 ｜《海螺小姐》 週一至週五19:00，敬請鎖定MOMO親子台🌸｜Muse木棉花 闔家歡 免費看 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/gnDok9gtopw/hqdefault.jpg",
+                "channel": "Muse木棉花-闔家歡"
+            },
+            {
+                "id": "sEeB5deB2MQ",
+                "title": "🔴香蜜沉沉燼如霜✨｜24小時不斷電直播 Ashes of Love 24 Hours Live｜楊紫 鄧倫 羅雲熙 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/sEeB5deB2MQ/hqdefault.jpg",
+                "channel": "中天快點看劇"
+            },
+            {
+                "id": "7PrYe8ykEjY",
+                "title": "【台灣靈異事件 LIVE】24 小時不斷電 一起追劇來辦案 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/7PrYe8ykEjY/hqdefault.jpg",
+                "channel": "華視戲劇頻道"
+            },
+            {
+                "id": "9e7p4F7myy8",
+                "title": "嘻嘻哈哈过新年🧨二十年弹指一挥间 小郭 祝你自由🥂24h马拉松直播🏃‍♂️【中英双语全集🔥】《武林外传My Own Swordsman》另类喜剧 戏说江湖 【CCTV电视剧直播】 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/9e7p4F7myy8/hqdefault.jpg",
+                "channel": "CCTV电视剧"
+            },
+            {
+                "id": "KZyk0WrarUQ",
+                "title": "《86-不存在的戰區- 》馬拉松直播🕊 膽大黨路跑 2026 正式公開🛸！詳情請見資訊欄🔍｜Muse木棉花 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/KZyk0WrarUQ/hqdefault.jpg",
+                "channel": "Muse木棉花-TW"
+            },
+            {
+                "id": "LifgWpNjkdI",
+                "title": "🔴青春暴走無極限！一看就停不下來 │櫻野3+1│24H不間斷直播│24hrs Non-Stop 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/LifgWpNjkdI/hqdefault.jpg",
+                "channel": "三立華劇 SET Drama"
             },
             {
                 "id": "DFqBPb7EW5g",
-                "title": "豬哥亮回來啦!! #豬哥亮 24H豬哥秀直播馬拉松   | 四季線上 FastTV 2026-03-23 11:54",
+                "title": "豬哥亮回來啦!! #豬哥亮 24H豬哥秀直播馬拉松   | 四季線上 FastTV 2026-04-24 12:44",
                 "thumbnail": "https://i.ytimg.com/vi/DFqBPb7EW5g/hqdefault.jpg",
                 "channel": "四季線上4gTV"
             },
             {
-                "id": "GBrN5vzJwNc",
-                "title": "🔴【炮仔聲】台灣人說：偷拔蔥，嫁好尪！初次邂逅 從蔥田開始｜24HR LIVE直播 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/GBrN5vzJwNc/hqdefault.jpg",
-                "channel": "三立電視 SET TV"
+                "id": "XNO0vjTNhzo",
+                "title": "骏马奔腾展新篇🐎24h马拉松直播🏃‍♂️三国英雄集结！权谋与忠义的较量！《三国演义》直播 带你领略英雄传奇！【CCTV电视剧直播】 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/XNO0vjTNhzo/hqdefault.jpg",
+                "channel": "CCTV电视剧"
             },
             {
-                "id": "ON6bMdKXBC4",
-                "title": "【#超級冰冰Show】24H馬拉松直播🎤大咖雲集 金曲不斷！ 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/ON6bMdKXBC4/hqdefault.jpg",
-                "channel": "民視 超級冰冰Show"
+                "id": "PP5bsVCPiMA",
+                "title": "🔴上班族一定懂！這部根本職場生存教科書 │三明治女孩的逆襲│24H不間斷直播│24hrs Non-Stop 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/PP5bsVCPiMA/hqdefault.jpg",
+                "channel": "三立華劇 SET Drama"
             },
             {
-                "id": "QMWZl6-1Qx8",
-                "title": "🔴【台灣龍捲風】甘～安～捏～高清版本24小時不間斷直播 台灣吵架第一品牌出爐 懷念金句挖○哩企系｜三立電視 (EP1-320) 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/QMWZl6-1Qx8/hqdefault.jpg",
-                "channel": "三立電視 SET TV"
+                "id": "Qq-uMi_1Rzk",
+                "title": "【包青天 LIVE】全劇24小時不斷電 一起跟包公辦案!! 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/Qq-uMi_1Rzk/hqdefault.jpg",
+                "channel": "華視戲劇頻道"
             },
             {
-                "id": "CXBlwhBHeZw",
-                "title": "🔴綜藝大熱門猜歌王直播！不間斷猜不停讓你第一集看到最新集數！｜24H不間斷直播｜24 hours Non-Stop｜吳宗憲 LULU 陳漢典｜Hot Door Night｜ホットドアナイト・生配信 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/CXBlwhBHeZw/hqdefault.jpg",
-                "channel": "綜藝大熱門 Hot Door Night"
+                "id": "0z4IHU4g-1M",
+                "title": "24h马拉松直播🏃‍♂️【ENG SUB】《雍正王朝The Era of Emperor Yongzheng》九子夺嫡 💥皇家的权谋之术【CCTV电视剧直播】 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/0z4IHU4g-1M/hqdefault.jpg",
+                "channel": "CCTV电视剧"
+            },
+            {
+                "id": "Zn_nwouK0pQ",
+                "title": "【24H直播】《光陰的故事》全集馬拉松📺 回到自強一村🏠找回眷村歲月最純真的感動！ 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/Zn_nwouK0pQ/hqdefault.jpg",
+                "channel": "中視經典戲劇"
+            },
+            {
+                "id": "CUmdyNBtuCw",
+                "title": "【夜市人生】24H馬拉松夜市營業中 | 張晨光 陳美鳳 蕭大陸 | 四季線上 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/CUmdyNBtuCw/hqdefault.jpg",
+                "channel": "四季線上4gTV"
+            },
+            {
+                "id": "I9rg5z8qXZQ",
+                "title": "🔥 一口氣追完《康熙帝國》！24H 皇權修羅場｜權力、謀略、帝王心術一次看完 🔥 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/I9rg5z8qXZQ/hqdefault.jpg",
+                "channel": "Videoland Max-TV"
+            },
+            {
+                "id": "tzXyaAN2_Uo",
+                "title": "【#綜藝大集合 24H直播台】 民視綜藝馬拉松｜經典大回顧陪你笑翻天 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/tzXyaAN2_Uo/hqdefault.jpg",
+                "channel": "民視綜藝娛樂 Formosa TV Entertainments"
+            },
+            {
+                "id": "iT7RicpCeic",
+                "title": "24h马拉松直播🏃‍♂️【ENG SUB】《康熙王朝Kangxi Dynasty》千古一帝💥康熙帝的传奇一生【CCTV电视剧直播】 2026-04-24 12:43",
+                "thumbnail": "https://i.ytimg.com/vi/iT7RicpCeic/hqdefault.jpg",
+                "channel": "CCTV电视剧"
+            },
+            {
+                "id": "gCGC21-URwA",
+                "title": "24H 马拉松直播🏃【汉武大帝】 高清修复（未删减无静音版）｜戏骨云集，神仙打架！陈宝国、焦晃、归亚蕾同台，演绎教科级演技，每个角色都有独特的魅力，堪称必看经典！ 2026-04-24 12:44",
+                "thumbnail": "https://i.ytimg.com/vi/gCGC21-URwA/hqdefault.jpg",
+                "channel": "百纳经典独播剧场"
             }
         ],
         "音樂": [
             {
                 "id": "jfKfPfyJRdk",
-                "title": "lofi hip hop radio 📚 beats to relax/study to 2026-03-23 11:54",
+                "title": "lofi hip hop radio 📚 beats to relax/study to 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/jfKfPfyJRdk/hqdefault.jpg",
                 "channel": "Lofi Girl"
             },
             {
                 "id": "4xDzrJKXOOY",
-                "title": "synthwave radio 🌌 beats to chill/game to 2026-03-23 11:55",
+                "title": "synthwave radio 🌌 beats to chill/game to 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/4xDzrJKXOOY/hqdefault.jpg",
                 "channel": "Lofi Girl"
             },
             {
                 "id": "5yx6BWlEVcY",
-                "title": "Chillhop Radio - jazzy & lofi hip hop beats 🐾 2026-03-23 11:54",
+                "title": "Chillhop Radio - jazzy & lofi hip hop beats 🐾 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/5yx6BWlEVcY/hqdefault.jpg",
                 "channel": "Chillhop Music"
             },
             {
                 "id": "7NOSDKb0HlU",
-                "title": "lofi hip hop radio - beats to study/relax to 🐾 2026-03-23 11:54",
+                "title": "lofi hip hop radio - beats to study/relax to 🐾 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/7NOSDKb0HlU/hqdefault.jpg",
                 "channel": "Chillhop Music"
             },
             {
-                "id": "HuFYqnbVbzY",
-                "title": "jazz lofi radio 🎷 beats to chill/study to 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/HuFYqnbVbzY/hqdefault.jpg",
-                "channel": "Lofi Girl"
-            },
-            {
                 "id": "Na0w3Mz46GA",
-                "title": "asian lofi radio ⛩️ beats to relax/study to 2026-03-23 11:54",
+                "title": "asian lofi radio ⛩️ beats to relax/study to 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/Na0w3Mz46GA/hqdefault.jpg",
                 "channel": "Lofi Girl"
             },
             {
+                "id": "28KRPhVzCus",
+                "title": "lofi hip hop radio 💤 beats to sleep/chill to 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/28KRPhVzCus/hqdefault.jpg",
+                "channel": "Lofi Girl"
+            },
+            {
                 "id": "rPjez8z61rI",
-                "title": "lofi hip hop radio – beats to sleep/study/relax to ☕ 2026-03-23 11:54",
+                "title": "lofi hip hop radio – beats to sleep/study/relax to ☕ 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/rPjez8z61rI/hqdefault.jpg",
                 "channel": "STEEZYASFUCK"
             },
             {
-                "id": "vYIYIVmOo3Q",
-                "title": "Calming Lofi Rain 🌧️ Chill Beats for Focus, Study & Sleep 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/vYIYIVmOo3Q/hqdefault.jpg",
-                "channel": "Lofi Tone Art"
-            },
-            {
                 "id": "Lcdi9O2XB4E",
-                "title": "tokyo night drive - lofi hiphop + chill + beats to sleep/relax/study to ✨ 2026-03-23 11:55",
+                "title": "tokyo night drive - lofi hiphop + chill + beats to sleep/relax/study to ✨ 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/Lcdi9O2XB4E/hqdefault.jpg",
                 "channel": "TOKYO TONES"
             },
             {
-                "id": "yf5NOyy1SXU",
-                "title": "Soft Lofi Room 🎧 Chill Vibes for Peaceful Study & Relaxation 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/yf5NOyy1SXU/hqdefault.jpg",
-                "channel": "Lofi Tone Art"
-            },
-            {
                 "id": "P6Segk8cr-c",
-                "title": "sad lofi radio ☔ beats for rainy days 2026-03-23 11:54",
+                "title": "sad lofi radio ☔ beats for rainy days 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/P6Segk8cr-c/hqdefault.jpg",
                 "channel": "Lofi Girl"
             },
             {
+                "id": "IxPANmjPaek",
+                "title": "medieval lofi radio 🏰 - beats to scribe manuscripts to 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/IxPANmjPaek/hqdefault.jpg",
+                "channel": "Lofi Girl"
+            },
+            {
                 "id": "R4jvhTed_gM",
-                "title": "Live | Lofi Room 🎧 calming beats to relax/study to | 2026.03.23 2026-03-23 11:55",
+                "title": "Live | Lofi Room 🎧 calming beats to relax/study to | 2026.04.24 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/R4jvhTed_gM/hqdefault.jpg",
                 "channel": "Myour Music"
             },
             {
                 "id": "erUTqlcsDJI",
-                "title": "LO:FI 2026-03-23 11:55",
+                "title": "LO:FI 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/erUTqlcsDJI/hqdefault.jpg",
                 "channel": "InYourChill"
             },
             {
                 "id": "bRnTGwCbr3E",
-                "title": "Japan Cafe Vibe ☕ Lofi Coffee 24/7 beats🍃 Lofi Hip Hop 24/7 / Lofi Music to sleep,relax,study... 2026-03-23 11:55",
+                "title": "Japan Cafe Vibe ☕ Lofi Coffee 24/7 beats🍃 Lofi Hip Hop 24/7 / Lofi Music to sleep,relax,study... 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/bRnTGwCbr3E/hqdefault.jpg",
                 "channel": "Healing Me"
             },
             {
-                "id": "92PvEVG0sKI",
-                "title": "Chill Lofi Beats🌠 Cozy Vibes to Relax / Study to 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/92PvEVG0sKI/hqdefault.jpg",
-                "channel": "Lofi Tone Art"
-            },
-            {
-                "id": "XSXEaikz0Bc",
-                "title": "christmas lofi music🎄cozy radio to get festive to 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/XSXEaikz0Bc/hqdefault.jpg",
-                "channel": "Lofi Girl"
+                "id": "7hfTa8nXKk8",
+                "title": "Rainy Smoky Night🚬 Lofi Hip Hop 🎵 [ Beats To Smoke / Chill / Relax / Stress Relief ] 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/7hfTa8nXKk8/hqdefault.jpg",
+                "channel": "Chilled Music"
             },
             {
                 "id": "TfWotiyXGfI",
-                "title": "1990s Lofi City 🌂A Cozy Balcony Between Two Times 🎼 Lofi Rain Playlist 2026-03-23 11:55",
+                "title": "1990s Lofi City 🌂A Cozy Balcony Between Two Times 🎼 Lofi Rain Playlist 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/TfWotiyXGfI/hqdefault.jpg",
                 "channel": "Retro-Rhythm"
             },
             {
+                "id": "A8jDx9TLMQc",
+                "title": "relaxing jazz music 🌹 cozy radio to study/chill to 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/A8jDx9TLMQc/hqdefault.jpg",
+                "channel": "Lofi Girl"
+            },
+            {
                 "id": "TfmECBzmOn4",
-                "title": "Lofi Hip Hop Radio 🍉 Relaxing Beats to Study, Sleep, Chill to 24/7 2026-03-23 11:55",
+                "title": "Lofi Hip Hop Radio 🍉 Relaxing Beats to Study, Sleep, Chill to 24/7 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/TfmECBzmOn4/hqdefault.jpg",
                 "channel": "Lofi Fruits"
             },
             {
-                "id": "4Q9jq-tdOoE",
-                "title": "Peaceful Lofi Coffee in 90's Tokyo Street 🌆 Rainy Lofi Hip Hop Mix 🌧️ Lofi Beats To Study/ Chill 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/4Q9jq-tdOoE/hqdefault.jpg",
-                "channel": "Lofi on the Rooftop"
-            },
-            {
                 "id": "FWjZ0x2M8og",
-                "title": "lofi hip hop radio 😴 sad & sleepy beats 2026-03-23 11:55",
+                "title": "lofi hip hop radio 😴 sad & sleepy beats 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/FWjZ0x2M8og/hqdefault.jpg",
                 "channel": "the bootleg boy"
             },
             {
-                "id": "nD1RB9cv0QA",
-                "title": "90's Lofi City 🌧️ Rainy Lofi Hip Hop ~ Lofi Music & Rain Sounds ☔️ Lofi Rain Playlist 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/nD1RB9cv0QA/hqdefault.jpg",
-                "channel": "Retro-Rhythm"
-            },
-            {
                 "id": "blAFxjhg62k",
-                "title": "Coffee Shop Radio  - 24/7 Chill Lo-Fi & Jazzy Beats 2026-03-23 11:55",
+                "title": "Coffee Shop Radio  - 24/7 Chill Lo-Fi & Jazzy Beats 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/blAFxjhg62k/hqdefault.jpg",
                 "channel": "STEEZYASFUCK"
             },
             {
-                "id": "XZq22QQR2zM",
-                "title": "Dopamine Hit ☀️ -24/7 lofi vibes to lift your mood, stress free 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/XZq22QQR2zM/hqdefault.jpg",
-                "channel": "Afro Lofi"
+                "id": "edn7FurOFxM",
+                "title": "Summer Lofi Chill ☀️ Ocean Coffee for Relaxing Morning 🌊 Lofi Hip Hop / Beats to relax/chill/study 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/edn7FurOFxM/hqdefault.jpg",
+                "channel": "Little Lofi Cute"
+            },
+            {
+                "id": "nD1RB9cv0QA",
+                "title": "90's Lofi City 🌧️ Rainy Lofi Hip Hop ~ Lofi Music & Rain Sounds ☔️ Lofi Rain Playlist 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/nD1RB9cv0QA/hqdefault.jpg",
+                "channel": "Retro-Rhythm"
             },
             {
                 "id": "6Jsnem7i848",
-                "title": "24/7 Beats Only Instrumental Hip-Hop - Jazzhop, Lo-Fi Jazz, Chillhop, Boom Bap 2026-03-23 11:54",
+                "title": "24/7 Beats Only Instrumental Hip-Hop - Jazzhop, Lo-Fi Jazz, Chillhop, Boom Bap 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/6Jsnem7i848/hqdefault.jpg",
                 "channel": "Sphere of Hip-Hop"
             },
             {
-                "id": "IC38LWnquWw",
-                "title": "Ocean Coffee 🍵 Smooth Mind 🌊 Morning Vibe for work / relax / sleep [ Lofi Hip Hop - Lofi Vibe ] 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/IC38LWnquWw/hqdefault.jpg",
-                "channel": "Healing Me"
-            },
-            {
                 "id": "dw_Bx0e0lis",
-                "title": "Honey Coffee ☕ Sweet Day with Lofi Cafe in Forest 🍯 Lofi Hip Hop for relax, work, study 24/7 2026-03-23 11:55",
+                "title": "Honey Coffee ☕ Sweet Day with Lofi Cafe in Forest 🍯 Lofi Hip Hop for relax, work, study 24/7 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/dw_Bx0e0lis/hqdefault.jpg",
                 "channel": "Healing Me"
             },
             {
-                "id": "9kiqPcGAuj0",
-                "title": "90's Chill Lofi ☕️ Chill Music Lofi Rain Hip Hop Beats [Study/Work/Relax] ☔️ Lofi Rain Playlist 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/9kiqPcGAuj0/hqdefault.jpg",
-                "channel": "Retro-Rhythm"
+                "id": "IC38LWnquWw",
+                "title": "Ocean Coffee 🍵 Smooth Mind 🌊 Morning Vibe for work / relax / sleep [ Lofi Hip Hop - Lofi Vibe ] 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/IC38LWnquWw/hqdefault.jpg",
+                "channel": "Healing Me"
             },
             {
-                "id": "WSlv8uPoGhY",
-                "title": "Tea time with My Cat 🍵🐾 Relaxing Lofi Beats for a Warm Day 🎶 Relax/ Heal/ Study 2026-03-23 11:54",
-                "thumbnail": "https://i.ytimg.com/vi/WSlv8uPoGhY/hqdefault.jpg",
-                "channel": "Lofi With My Cat"
+                "id": "i6WzngxTnBA",
+                "title": "late night vibes radio - calm lofi / dreamy beats 😴 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/i6WzngxTnBA/hqdefault.jpg",
+                "channel": "Chillhop Music"
             },
             {
-                "id": "vY4KiwatogU",
-                "title": "Chilling Lofi Morning ☕ Winter Lofi Beats Make Your Day Better ❄️ Lofi Hip Hop to Work, Relax 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/vY4KiwatogU/hqdefault.jpg",
-                "channel": "Little Lofi Cute"
+                "id": "nLMJmXqMaLo",
+                "title": "late night cafe radio - jazzy beats to chill/relax to 🎧 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/nLMJmXqMaLo/hqdefault.jpg",
+                "channel": "STEEZYASFUCK"
+            },
+            {
+                "id": "E_m998odXqo",
+                "title": "Chill Lofi Beats | Japanese Town Ambience & Golden Hour Hues 🎶 Retro Anime Vibes 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/E_m998odXqo/hqdefault.jpg",
+                "channel": "Lofi Tokyo Dreams"
+            },
+            {
+                "id": "Oblb4xGO6k4",
+                "title": "Boom Bap Hip Hop Instrumental Radio 24/7 | Beats to Work & Chill 🎧 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/Oblb4xGO6k4/hqdefault.jpg",
+                "channel": "Vibin' 🎼"
             },
             {
                 "id": "ByZGu229-yA",
-                "title": "lofi hip hop radio- 24/7 beats to study, relax and code to ✨️ 2026-03-23 11:54",
+                "title": "lofi hip hop radio- 24/7 beats to study, relax and code to ✨️ 2026-04-24 12:45",
                 "thumbnail": "https://i.ytimg.com/vi/ByZGu229-yA/hqdefault.jpg",
                 "channel": "Afro Lofi"
             },
             {
-                "id": "iRRx1GzgmYQ",
-                "title": "24/7 R&B Lofi Live - Vibing Energy for your Mood, Work & Study 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/iRRx1GzgmYQ/hqdefault.jpg",
+                "id": "qdbufMYZHJ4",
+                "title": "[No ADs] Campfire Crackling 🔥 Calm Lofi & Beautiful Relaxing Background Music - Lofi Hip Hop Mix 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/qdbufMYZHJ4/hqdefault.jpg",
+                "channel": "Aesthetic Lofi"
+            },
+            {
+                "id": "ExgsdQOn8PE",
+                "title": "24/7 Uplifting Lofi for Spring 🌻 Good Vibe Beats for Work, Study, Vibing [lofi hiphop, neo soul] 2026-04-24 12:45",
+                "thumbnail": "https://i.ytimg.com/vi/ExgsdQOn8PE/hqdefault.jpg",
                 "channel": "A Lofi Soul"
             }
         ],
         "運動": [
             {
                 "id": "MiJIODpKngw",
-                "title": "LIVE: talkSPORT 24/7 🚨 2026-03-23 11:55",
+                "title": "LIVE: talkSPORT 24/7 🚨 2026-04-24 12:46",
                 "thumbnail": "https://i.ytimg.com/vi/MiJIODpKngw/hqdefault.jpg",
                 "channel": "talkSPORT"
             },
             {
-                "id": "uAOagNRdqe4",
-                "title": "2025–26 NBA Season Live Scoreboard 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/uAOagNRdqe4/hqdefault.jpg",
-                "channel": "BL Football Talks"
-            },
-            {
-                "id": "PtS6uC7N10E",
-                "title": "March Madness DAY 4 LIVE 🚨: Reactions, updates, scores, previews & advice 2026-03-23 11:55",
-                "thumbnail": "https://i.ytimg.com/vi/PtS6uC7N10E/hqdefault.jpg",
-                "channel": "CBS Sports"
+                "id": "VC5TCZpH8y8",
+                "title": "Denver Nuggets vs Minnesota Timberwolves Game 3 | Live Play-By-Play & Reactions 2026-04-24 12:46",
+                "thumbnail": "https://i.ytimg.com/vi/VC5TCZpH8y8/hqdefault.jpg",
+                "channel": "The Sports Fury"
             }
         ],
         "即時影像": [
             {
                 "id": "UCG1aXVO8H8",
-                "title": "【4K】台東多良車站即時影像 Taitung Duoliang Station Live Camera 2026-03-23 11:56",
+                "title": "【4K】台東多良車站即時影像 Taitung Duoliang Station Live Camera 2026-04-24 12:46",
                 "thumbnail": "https://i.ytimg.com/vi/UCG1aXVO8H8/hqdefault.jpg",
                 "channel": "Amazing Taitung 台東就醬玩"
             },
             {
                 "id": "91PfFoqvuUk",
-                "title": "【4K】Taiwan Taoyuan International Airport (TPE/RCTP) Live Camera 24/7 桃園國際機場即時影像｜桃園機場 2026-03-23 11:56",
+                "title": "【4K】Taiwan Taoyuan International Airport (TPE/RCTP) Live Camera 24/7 桃園國際機場即時影像｜桃園機場 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/91PfFoqvuUk/hqdefault.jpg",
                 "channel": "Taoyuan Travel | Taiwan"
             },
             {
                 "id": "z_fY1pj1VBw",
-                "title": "【Taipei Live Cam】象山看台北 - 4K即時影像 | Overlooking Taipei at the top of Xiangshan | 象山から望む台北 | Taipei 101 2026-03-23 11:56",
+                "title": "【Taipei Live Cam】象山看台北 - 4K即時影像 | Overlooking Taipei at the top of Xiangshan | 象山から望む台北 | Taipei 101 2026-04-24 12:46",
                 "thumbnail": "https://i.ytimg.com/vi/z_fY1pj1VBw/hqdefault.jpg",
                 "channel": "LIVE Taipei | Taipei City Official Live Camera"
             },
             {
+                "id": "j2L_559nCjc",
+                "title": "4K Live cam-Alishan【阿里山美景4K直播】-二延平步道 Eryanping Trail 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/j2L_559nCjc/hqdefault.jpg",
+                "channel": "Alishan National Scenic Area"
+            },
+            {
                 "id": "2lVMTs_Fj0M",
-                "title": "[Live][01] 合歡山武嶺亭即時影像 Wuling Hehuanshan Taiwan #武嶺 #合歡山武嶺亭 2026-03-23 11:56",
+                "title": "[Live][01] 合歡山武嶺亭即時影像 Wuling Hehuanshan Taiwan #武嶺 #合歡山武嶺亭 2026-04-24 12:46",
                 "thumbnail": "https://i.ytimg.com/vi/2lVMTs_Fj0M/hqdefault.jpg",
                 "channel": "台灣即時影像監視器"
             },
             {
                 "id": "Ndo_8RuefH4",
-                "title": "【Taipei Live Cam】大稻埕碼頭 - 4K即時影像 | Taipei Dadaocheng Wharf | 台北大稲埕埠頭 2026-03-23 11:56",
+                "title": "【Taipei Live Cam】大稻埕碼頭 - 4K即時影像 | Taipei Dadaocheng Wharf | 台北大稲埕埠頭 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/Ndo_8RuefH4/hqdefault.jpg",
                 "channel": "LIVE Taipei | Taipei City Official Live Camera"
             },
             {
+                "id": "GUCaVR88ZFU",
+                "title": "Shihmen Reservoir Live Cam 石門水庫即時影像 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/GUCaVR88ZFU/hqdefault.jpg",
+                "channel": "Taoyuan Travel | Taiwan"
+            },
+            {
                 "id": "C03Itx8iSC0",
-                "title": "高雄壽山情人觀景台 4K即時影像 | Kaohsiung Shoushan Lovers' Viewing Platform 4K Live Camera 2026-03-23 11:56",
+                "title": "高雄壽山情人觀景台 4K即時影像 | Kaohsiung Shoushan Lovers' Viewing Platform 4K Live Camera 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/C03Itx8iSC0/hqdefault.jpg",
                 "channel": "高雄旅遊網"
             },
             {
                 "id": "XUWjAsajKXg",
-                "title": "Daxi Old Street Live Cam 大溪老街即時影像 2026-03-23 11:56",
+                "title": "Daxi Old Street Live Cam 大溪老街即時影像 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/XUWjAsajKXg/hqdefault.jpg",
                 "channel": "Taoyuan Travel | Taiwan"
             },
             {
                 "id": "dQ7Sd6PGLdA",
-                "title": "【Live Cam】東海岸即時影像 - 三仙台｜Sanxiantai｜三仙台（さんせんたい）風景区 2160p 2026-03-23 11:56",
+                "title": "【Live Cam】東海岸即時影像 - 三仙台｜Sanxiantai｜三仙台（さんせんたい）風景区 2160p 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/dQ7Sd6PGLdA/hqdefault.jpg",
                 "channel": "東部海岸國家風景區管理處"
             },
             {
+                "id": "xwAWSh35uuw",
+                "title": "淡水漁人碼頭即時影像 Tamsui Fisherman's Wharf Live Camera | 新北觀光即時影像 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/xwAWSh35uuw/hqdefault.jpg",
+                "channel": "New Taipei City Tour"
+            },
+            {
                 "id": "wWEnxWA7nnY",
-                "title": "🔴 TPE 4K桃園國際機場 北跑道觀景台即時影像｜Taoyuan International Airport North Runway Live plane spotting 2026-03-23 11:56",
+                "title": "🔴 TPE 4K桃園國際機場 北跑道觀景台即時影像｜Taoyuan International Airport North Runway Live plane spotting 2026-04-24 12:46",
                 "thumbnail": "https://i.ytimg.com/vi/wWEnxWA7nnY/hqdefault.jpg",
                 "channel": "Taoyuan Airport"
             },
             {
                 "id": "y3_x8el5ZJY",
-                "title": "🔴 TPE 4K桃園國際機場 南跑道觀景台即時影像｜Taoyuan International Airport South Runway Live plane spotting 2026-03-23 11:56",
+                "title": "🔴 TPE 4K桃園國際機場 南跑道觀景台即時影像｜Taoyuan International Airport South Runway Live plane spotting 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/y3_x8el5ZJY/hqdefault.jpg",
                 "channel": "Taoyuan Airport"
             },
             {
                 "id": "6kUEK3LVrro",
-                "title": "【4K】台東池上天堂路即時影像 Taitung Chihshang Live Camera 2026-03-23 11:56",
+                "title": "【4K】台東池上天堂路即時影像 Taitung Chihshang Live Camera 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/6kUEK3LVrro/hqdefault.jpg",
                 "channel": "Amazing Taitung 台東就醬玩"
             },
             {
+                "id": "q3KJt-SZc2s",
+                "title": "【4K】台東金樽 即時影像 Taitung Jinzun Live Camera 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/q3KJt-SZc2s/hqdefault.jpg",
+                "channel": "Amazing Taitung 台東就醬玩"
+            },
+            {
                 "id": "LSkq-wHMxQY",
-                "title": "【4K】台東南橫埡口即時影像 Taitung Southern Cross-Island Yakou Live Camera 2026-03-23 11:56",
+                "title": "【4K】台東南橫埡口即時影像 Taitung Southern Cross-Island Yakou Live Camera 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/LSkq-wHMxQY/hqdefault.jpg",
                 "channel": "Amazing Taitung 台東就醬玩"
             },
             {
+                "id": "uvwfYzwY8tg",
+                "title": "【Taipei Live Cam】碧山巖 - 4K即時影像 | Bishan Temple | 碧山巌開漳聖王廟 | TAIPEI 101 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/uvwfYzwY8tg/hqdefault.jpg",
+                "channel": "LIVE Taipei | Taipei City Official Live Camera"
+            },
+            {
                 "id": "BnPoNatG-HE",
-                "title": "高雄蓮池潭4K即時影像 Kaohsiung Lianchihtan (Lotus Pond)  4K Live Camera 2026-03-23 11:56",
+                "title": "高雄蓮池潭4K即時影像 Kaohsiung Lianchihtan (Lotus Pond)  4K Live Camera 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/BnPoNatG-HE/hqdefault.jpg",
                 "channel": "高雄旅遊網"
             },
             {
-                "id": "TY4qQElcUrA",
-                "title": "【4K】台東華源曙光觀景台即時影像 Taitung Huayuan Live Camera 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/TY4qQElcUrA/hqdefault.jpg",
-                "channel": "Amazing Taitung 台東就醬玩"
+                "id": "fjhg3gAnMFg",
+                "title": "【4K Live Camera】台中高美濕地4K即時影像 | Taichung Gaomei Wetland 4K Live Camera 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/fjhg3gAnMFg/hqdefault.jpg",
+                "channel": "大玩台中-臺中觀光旅遊局"
             },
             {
                 "id": "ZdqHgQwvZOw",
-                "title": "【Live Cam】東海岸即時影像 - 金樽遊憩區｜Jinzun｜金樽休憩エリア 2160p 2026-03-23 11:56",
+                "title": "【Live Cam】東海岸即時影像 - 金樽遊憩區｜Jinzun｜金樽休憩エリア 2160p 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/ZdqHgQwvZOw/hqdefault.jpg",
                 "channel": "東部海岸國家風景區管理處"
             },
             {
                 "id": "xxMRjVwCQ3o",
-                "title": "烘爐地即時影像 Hunglodei Live Camera | 新北觀光即時影像 2026-03-23 11:56",
+                "title": "烘爐地即時影像 Hunglodei Live Camera | 新北觀光即時影像 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/xxMRjVwCQ3o/hqdefault.jpg",
                 "channel": "New Taipei City Tour"
             },
             {
+                "id": "B6eki-0-w0g",
+                "title": "4K Live cam-Alishan【阿里山美景4K直播】-奮起湖 Fenqihu 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/B6eki-0-w0g/hqdefault.jpg",
+                "channel": "Alishan National Scenic Area"
+            },
+            {
+                "id": "JkoXcXI04Qk",
+                "title": "【Live Cam】東海岸即時影像 - 大石鼻山｜Dashshibi Hill｜大石鼻山 2160p 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/JkoXcXI04Qk/hqdefault.jpg",
+                "channel": "東部海岸國家風景區管理處"
+            },
+            {
+                "id": "jUnFuJSj0OU",
+                "title": "【墾丁LIVE】南灣即時影像  Kenting Nanwan bay Live Camera Taiwan / Just Hi就是海沙灘海景民宿提供 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/jUnFuJSj0OU/hqdefault.jpg",
+                "channel": "我愛墾丁旅遊票券中心"
+            },
+            {
                 "id": "pmM2CeSAx0I",
-                "title": "Live Cam Taiwan Taipei City 台湾、台北のライブカメラ川岸の夜景 給大家放鬆的畫面和音樂, 2026-03-23 11:56",
+                "title": "Live Cam Taiwan Taipei City 台湾、台北のライブカメラ川岸の夜景 給大家放鬆的畫面和音樂, 2026-04-24 12:46",
                 "thumbnail": "https://i.ytimg.com/vi/pmM2CeSAx0I/hqdefault.jpg",
                 "channel": "Taiwan Taipei Jacky"
             },
             {
                 "id": "NOZVUBsCDEI",
-                "title": "🔴【LIVE】Taiwan Taoyuan Int'l Airport (RCTP/TPE) ATC Tracking｜臺灣桃園國際機場｜即時航班動態＆塔台通訊 2026-03-23 11:56",
+                "title": "🔴【LIVE】Taiwan Taoyuan Int'l Airport (RCTP/TPE) ATC Tracking｜臺灣桃園國際機場｜即時航班動態＆塔台通訊 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/NOZVUBsCDEI/hqdefault.jpg",
                 "channel": "TWSkyWave 空中電波"
             },
             {
+                "id": "KpB5CMofRI8",
+                "title": "Ⓓ-08🔴 Live-高雄市 重要路口 即時影像 啦啦隊應援曲 x Jazz爵士曲風 🎧 歌曲已上線，💥禿鷹Music 獨播  24H Kaohsiung, Taiwan 》 天氣、車流人流 🅣Ⓚ16 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/KpB5CMofRI8/hqdefault.jpg",
+                "channel": "禿鷹 Music"
+            },
+            {
                 "id": "x0fI1yRA8I0",
-                "title": "🔴Live-台北市💥台北市熱門重要路口、各行政區 以及 公館圓環拆除-正交路口 即時影像 24H Taipei , Taiwan 》車流、人流、天氣狀況Ⓓ-10 古典鋼琴 🅣ⓅⓅ45 2026-03-23 11:57",
+                "title": "🔴Live-台北市💥台北市熱門重要路口、各行政區 以及 公館圓環拆除-正交路口 即時影像 24H Taipei , Taiwan 》車流、人流、天氣狀況Ⓓ-10 古典鋼琴 🅣ⓅⓅ45 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/x0fI1yRA8I0/hqdefault.jpg",
                 "channel": "禿鷹 Music"
             },
             {
-                "id": "oxM2E0SBITA",
-                "title": "🔴 Live-Taipei 台北市 重要路口 即時影像 台北市專屬 🎧 終極應援歌曲已上線 💥禿鷹Music 獨播 24H Taipei , Taiwan 》 天氣、車流人流狀況 🅣ⓉⓅ80-Ⓟ-03 2026-03-23 11:57",
-                "thumbnail": "https://i.ytimg.com/vi/oxM2E0SBITA/hqdefault.jpg",
-                "channel": "禿鷹 Music"
+                "id": "GMnZoTttoNY",
+                "title": "【LIVE】松柏嶺受天宮│門神視角即時影像│LIVE CAMERA│ライブカメラ│臺灣玄天上帝進香中心│TAIWAN 2026-04-24 12:46",
+                "thumbnail": "https://i.ytimg.com/vi/GMnZoTttoNY/hqdefault.jpg",
+                "channel": "ShouTianGong Temple,Songboling,Taiwan-Official Channel"
             },
             {
                 "id": "9rcEL_yWMk4",
-                "title": "新北市淡水區景點(即時影像) 淡水渡船頭 直播 #淡水河 #夕陽 #觀音山 #台北港 #淡水老街河岸 #淡水渡し船乗り場  Du Chuan Tou, Tamsui 2026-03-23 11:56",
+                "title": "新北市淡水區景點(即時影像) 淡水渡船頭 直播 #淡水河 #夕陽 #觀音山 #台北港 #淡水老街河岸 #淡水渡し船乗り場  Du Chuan Tou, Tamsui 2026-04-24 12:46",
                 "thumbnail": "https://i.ytimg.com/vi/9rcEL_yWMk4/hqdefault.jpg",
                 "channel": "紅樹林有線電視"
             },
             {
-                "id": "DcJCvEyjWqU",
-                "title": "🔴等雪來！台灣高山下雪實況 24H LIVE ❄️ 合歡山/太平山/玉山 即時影像 🎧 BGM 背景音樂 💖 舒緩神經的音樂-古典鋼琴 🅣ⓅⓅ45 Ⓒ-02 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/DcJCvEyjWqU/hqdefault.jpg",
-                "channel": "禿鷹 Music"
+                "id": "f3Um1RuFRB0",
+                "title": "【LIVE】松柏嶺受天宮│廟埕即時影像│LIVE CAMERA│ライブカメラ│臺灣玄天上帝進香中心│TAIWAN 2026-04-24 12:46",
+                "thumbnail": "https://i.ytimg.com/vi/f3Um1RuFRB0/hqdefault.jpg",
+                "channel": "ShouTianGong Temple,Songboling,Taiwan-Official Channel"
+            },
+            {
+                "id": "BUJJaW0vkJs",
+                "title": "【4K】台東鯉魚山即時影像 Taitung Liyu (Carp) Mountain Live Camera 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/BUJJaW0vkJs/hqdefault.jpg",
+                "channel": "Amazing Taitung 台東就醬玩"
             },
             {
                 "id": "RzwHRRUPccU",
-                "title": "Ⓔ-08-🔴Live 24H 九份老街 入口處 新北市 瑞芳區 人流車流即時影像》「黃金山城」九份老街 專屬 Jazz爵士曲風 🎧 歌曲已上線，💥禿鷹Music 獨播 #九份老街 #九份 🅣Ⓙ08 2026-03-23 11:56",
+                "title": "Ⓔ-08-🔴Live 24H 九份老街 入口處 新北市 瑞芳區 人流車流即時影像》「黃金山城」九份老街 專屬 Jazz爵士曲風 🎧 歌曲已上線，💥禿鷹Music 獨播 #九份老街 #九份 🅣Ⓙ08 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/RzwHRRUPccU/hqdefault.jpg",
                 "channel": "禿鷹 Music"
             },
             {
                 "id": "Kbkn-TGoa_0",
-                "title": "[4K] 觀音山即時影像 Guanyinshan Live Camera 2026-03-23 11:56",
+                "title": "[4K] 觀音山即時影像 Guanyinshan Live Camera 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/Kbkn-TGoa_0/hqdefault.jpg",
                 "channel": "北觀國家風景區管理處"
             },
             {
-                "id": "IdYxm1UdBJg",
-                "title": "【Live】陽明山國家公園 擎天崗 360 4K 全景即時影像 #360看見台灣 #陽明山國家公園 #擎天崗 2026-03-23 11:57",
-                "thumbnail": "https://i.ytimg.com/vi/IdYxm1UdBJg/hqdefault.jpg",
-                "channel": "陽明山國家公園管理處INFO"
-            },
-            {
-                "id": "GMnZoTttoNY",
-                "title": "【LIVE】松柏嶺受天宮│門神視角即時影像│LIVE CAMERA│ライブカメラ│臺灣玄天上帝進香中心│TAIWAN 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/GMnZoTttoNY/hqdefault.jpg",
-                "channel": "ShouTianGong Temple,Songboling,Taiwan-Official Channel"
-            },
-            {
-                "id": "va8zBSJWHVM",
-                "title": "Live Cam 台北市河岸直播即時影像 台湾、台北のライブカメラ川岸の夜景 河岸美景 relax music Sleep peacefully, help sleep, relax the mind 2026-03-23 11:57",
-                "thumbnail": "https://i.ytimg.com/vi/va8zBSJWHVM/hqdefault.jpg",
-                "channel": "Taiwan Taipei Jacky"
-            },
-            {
-                "id": "NA1hVcVgv74",
-                "title": "【Live】石榴火車站 360 4K全景即時影像｜Shiliu Station #360看見台灣 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/NA1hVcVgv74/hqdefault.jpg",
-                "channel": "雲林縣政府"
-            },
-            {
-                "id": "f3Um1RuFRB0",
-                "title": "【LIVE】松柏嶺受天宮│廟埕即時影像│LIVE CAMERA│ライブカメラ│臺灣玄天上帝進香中心│TAIWAN 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/f3Um1RuFRB0/hqdefault.jpg",
-                "channel": "ShouTianGong Temple,Songboling,Taiwan-Official Channel"
-            },
-            {
-                "id": "Oeb_kQmdlcg",
-                "title": "🔴【24H直播】看火車即時影像：台南永康康橋大道平交道（Railcam Taiwan）｜浪漫、療癒系音樂輪播｜英語・華語・韓語｜24/7》康橋大道與東橋一路口南桿即時影像》  🅣ⓁⓈ204 Ⓒ-07 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/Oeb_kQmdlcg/hqdefault.jpg",
-                "channel": "禿鷹 Music"
-            },
-            {
-                "id": "HFXS-_l1z5s",
-                "title": "【360 Live】高雄 #流行音樂中心 360 4K全景即時影像 #360看見台灣 #Formosa360 #360看見高雄 #KaohsiungMusicCenter #360LiveTaiwan 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/HFXS-_l1z5s/hqdefault.jpg",
-                "channel": "Rogy360看見台灣"
-            },
-            {
                 "id": "faYmTOvL9qw",
-                "title": "🔴【TEST】臺灣桃園國際機場｜北跑道即時影像｜台湾桃園国際空港 ライブカメラ｜Taiwan Taoyuan Int'l Airport (RCTP/TPE) 05L/23R Live Camera 2026-03-23 11:56",
+                "title": "🔴【LIVE】桃機北跑道即時影像 & 塔台通訊｜台湾桃園国際空港ライブ｜Taiwan Taoyuan Int'l Airport (TPE/RCTP) 05L/23R Live Cam & ATC 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/faYmTOvL9qw/hqdefault.jpg",
                 "channel": "TWSkyWave 空中電波"
             },
             {
-                "id": "6Y97q9KrhwA",
-                "title": "阿里山國家森林遊樂區小笠原平台觀日出直播 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/6Y97q9KrhwA/hqdefault.jpg",
-                "channel": "國家森林遊樂區即時影像"
+                "id": "iYCfNQSCqwY",
+                "title": "🔴【LIVE】台灣高雄小港機場直播 RCKH/KHH Live Camera ATC  24/7即時影像🔴 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/iYCfNQSCqwY/hqdefault.jpg",
+                "channel": "丹丹的飛機窩"
             },
             {
-                "id": "pBbFeqzsTE8",
-                "title": "Ⓔ-03🔴 桃園市 以及 大溪老街 重要路口 即時影像 桃園市專屬 🎧 應援歌曲 💥禿鷹Music 獨播 Live-Taoyuan, Taiwan 24H》 24/7 天氣、車流人流狀況 🅣ⓉⓎ16 2026-03-23 11:57",
-                "thumbnail": "https://i.ytimg.com/vi/pBbFeqzsTE8/hqdefault.jpg",
+                "id": "NA1hVcVgv74",
+                "title": "【360 Live】石榴火車站 360 4K全景即時影像｜Shiliu Station #360看見台灣 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/NA1hVcVgv74/hqdefault.jpg",
+                "channel": "雲林縣政府"
+            },
+            {
+                "id": "l4omud4afQQ",
+                "title": "🔴Live Ⓒ-08-新北市 中和區 重要路口 即時影像 24/7, 365 24H 》天氣、車流人流狀況 Love Song 🅣ⓁⒽ80 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/l4omud4afQQ/hqdefault.jpg",
                 "channel": "禿鷹 Music"
             },
             {
-                "id": "Ycb9CcZkjD0",
-                "title": "【墾丁LIVE】萬里桐即時影像 / 萬里桐浮潛中心提供/ Kenting Wanlitong Live Camera Taiwan 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/Ycb9CcZkjD0/hqdefault.jpg",
-                "channel": "我愛墾丁旅遊票券中心"
-            },
-            {
-                "id": "NA03F_l4KQE",
-                "title": "Ⓑ-07-🔴Live-基隆市 重要路口 即時影像 24H Keelung City, Taiwan》 24/7, 365 天氣、地震、車流人流狀況  Love Song 🅣ⓁⓈ204 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/NA03F_l4KQE/hqdefault.jpg",
+                "id": "Oeb_kQmdlcg",
+                "title": "🔴【24H直播】看火車即時影像：台南永康康橋大道平交道（Railcam Taiwan）｜浪漫、療癒系音樂輪播｜英語・華語・韓語｜24/7》康橋大道與東橋一路口南桿即時影像》  🅣ⓁⓈ204 Ⓒ-07 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/Oeb_kQmdlcg/hqdefault.jpg",
                 "channel": "禿鷹 Music"
             },
             {
-                "id": "FLwveRW0ucg",
-                "title": "🔴Live-台東縣重要路口即時影像 Love Song - 台灣語調-中文情歌、華語情歌 浪漫、心碎、療癒系精選 24/7, 365 24H 禿鷹 Music Ⓖ-07 🅣ⓁⓈⒸ62 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/FLwveRW0ucg/hqdefault.jpg",
+                "id": "S4AD-y60NMM",
+                "title": "Ⓖ-05🔴Live-台南火車站前，改為「U型雙向行車動線」重要路口 即時影像24H》 24/7, 365 天氣、地震、車流人流狀況（站前圓環已於2026年3月7日正式走入歷史） 🅣ⓁⒽ80 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/S4AD-y60NMM/hqdefault.jpg",
                 "channel": "禿鷹 Music"
             },
             {
-                "id": "TrWoNJ-wcq8",
-                "title": "【Live】東石漁人碼頭 360 4K全景即時影像 #360看見台灣 2026-03-23 11:57",
-                "thumbnail": "https://i.ytimg.com/vi/TrWoNJ-wcq8/hqdefault.jpg",
-                "channel": "嘉義縣文化觀光局"
+                "id": "HFXS-_l1z5s",
+                "title": "【360 4K Live】#高雄流行音樂中心 360 全景即時影像 #360看見台灣 #Formosa360 #360看見高雄 #KaohsiungMusicCenter #360LiveTaiwan 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/HFXS-_l1z5s/hqdefault.jpg",
+                "channel": "Rogy360看見台灣"
+            },
+            {
+                "id": "4AKop_729y4",
+                "title": "🔴 淡江大橋直播｜24小時即時影像・天氣 Danjiang Bridge Live Cam | Taiwan 24/7 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/4AKop_729y4/hqdefault.jpg",
+                "channel": "5MIN Webcam Live"
             },
             {
                 "id": "eo2CMMxMYHg",
-                "title": "Ⓐ-07-🔴Live-宜蘭縣 重要路口 即時影像-Yilan County, Taiwan  24H》 24/7, 365 天氣、車流人流狀況 Love Song 🅣ⓁⓈ204 2026-03-23 11:56",
+                "title": "Ⓐ-07-🔴Live-宜蘭縣 重要路口 即時影像-Yilan County, Taiwan  24H》 24/7, 365 天氣、車流人流狀況 Love Song 🅣ⓁⓈ204 2026-04-24 12:47",
                 "thumbnail": "https://i.ytimg.com/vi/eo2CMMxMYHg/hqdefault.jpg",
                 "channel": "禿鷹 Music"
             },
             {
-                "id": "2VU1H3JQDe0",
-                "title": "Ⓑ-01-🔴Live-彰化縣 重要路口 即時影像-Changhua County, Taiwan  24H》 24/7, 365 天氣、車流人流狀況 背景音樂 💖 舒緩神經的音樂-古典鋼琴🅣ⓅⓅ21 2026-03-23 11:57",
-                "thumbnail": "https://i.ytimg.com/vi/2VU1H3JQDe0/hqdefault.jpg",
-                "channel": "禿鷹 Music"
+                "id": "vTDmOvNLm1w",
+                "title": "【Live】  虎山巖金針花 360 4K全景即時影像 #360看見台灣 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/vTDmOvNLm1w/hqdefault.jpg",
+                "channel": "交通部觀光署-參山風管處"
             },
             {
-                "id": "3FvqMn29jKo",
-                "title": "Ⓑ-06🔴Live-苗栗縣 重要路口 即時影像- Miaoli County, Taiwan  24H》 24/7, 365 天氣、車流人流狀況 背景音樂 💖 舒緩神經的音樂-古典鋼琴 🅣ⓅⓅ21 2026-03-23 11:57",
-                "thumbnail": "https://i.ytimg.com/vi/3FvqMn29jKo/hqdefault.jpg",
-                "channel": "禿鷹 Music"
+                "id": "Irte-zWhjYA",
+                "title": "【墾丁LIVE】萬里桐即時影像 / 萬里桐浮潛中心提供/ Kenting Wanlitong Live Camera Taiwan 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/Irte-zWhjYA/hqdefault.jpg",
+                "channel": "我愛墾丁旅遊票券中心"
             },
             {
-                "id": "KfBv0kT3ezE",
-                "title": "墾丁國家森林遊樂區觀海樓即時影像 2026-03-23 11:56",
-                "thumbnail": "https://i.ytimg.com/vi/KfBv0kT3ezE/hqdefault.jpg",
-                "channel": "國家森林遊樂區即時影像"
+                "id": "FLwveRW0ucg",
+                "title": "🔴Live-台東縣重要路口即時影像 Love Song - 台灣語調-中文情歌、華語情歌 浪漫、心碎、療癒系精選 24/7, 365 24H 禿鷹 Music Ⓖ-07 🅣ⓁⓈⒸ62 2026-04-24 12:47",
+                "thumbnail": "https://i.ytimg.com/vi/FLwveRW0ucg/hqdefault.jpg",
+                "channel": "禿鷹 Music"
             }
         ]
     }
