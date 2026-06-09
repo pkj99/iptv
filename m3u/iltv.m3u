@@ -11,7 +11,7 @@ http://74.91.26.218:82/live/cctv13hd.m3u8
 http://74.91.26.218:82/live/cctv14hd.m3u8
 #EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV15.png" tvg-name="CCTV15" group-title="其他頻道",CCTV15
 http://74.91.26.218:82/live/cctv15hd.m3u8
-#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV16.png" tvg-name="CCTV16" group-title="其他頻道",CCTV16
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV16-4K.png" tvg-name="CCTV16" group-title="其他頻道",CCTV16
 http://74.91.26.218:82/live/cctv16hd.m3u8
 #EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV17.png" tvg-name="CCTV17" group-title="其他頻道",CCTV17
 http://74.91.26.218:82/live/cctv17hd.m3u8
@@ -89,8 +89,6 @@ http://74.91.26.218:82/live/ttv.m3u8
 http://74.91.26.218:82/live/ttvcj.m3u8
 #EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png" tvg-name="台视新闻台" group-title="其他頻道",台视新闻台
 http://74.91.26.218:82/live/ttvnews.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/台视综合台.png" tvg-name="台视综合台" group-title="其他頻道",台视综合台
-http://74.91.26.218:82/live/ttvzh.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="TVB千禧经典台" group-title="其他頻道",TVB千禧经典台
 http://74.91.26.218:82/live/tvbjd.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="TVB星河" group-title="其他頻道",TVB星河
