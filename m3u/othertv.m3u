@@ -27,3 +27,5 @@ http://74.91.26.218:82/live/tvbjd.m3u8
 http://74.91.26.218:82/live/nowbg.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="TVB星河" group-title="其他頻道",TVB星河
 http://74.91.26.218:82/live/tvbxh.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="华语电视" group-title="其他頻道",华语电视
+http://38.64.72.148:80/hls/modn/list/4003/chunklist0.m3u8
