@@ -45,17 +45,17 @@ http://iptv.4666888.xyz/iptv2A.php?id=51
 http://iptv.4666888.xyz/iptv2A.php?id=30
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/龙华洋片.png" tvg-name="龙华洋片" group-title="4666888",龙华洋片
 http://iptv.4666888.xyz/iptv2A.php?id=60
-#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" tvg-name="CCTV1" group-title="4666888",CCTV1
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" tvg-name="1" group-title="4666888",1
 http://iptv.4666888.xyz/iptv2A.php?id=7
-#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" tvg-name="CCTV2" group-title="4666888",CCTV2
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" tvg-name="2" group-title="4666888",2
 http://iptv.4666888.xyz/iptv2A.php?id=8
-#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV3.png" tvg-name="CCTV3" group-title="4666888",CCTV3
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV3.png" tvg-name="3" group-title="4666888",3
 http://iptv.4666888.xyz/iptv2A.php?id=9
-#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV4.png" tvg-name="CCTV4" group-title="4666888",CCTV4
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV4.png" tvg-name="4" group-title="4666888",4
 http://iptv.4666888.xyz/iptv2A.php?id=10
-#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV13.png" tvg-name="CCTV13" group-title="4666888",CCTV13
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV13.png" tvg-name="13" group-title="4666888",13
 http://iptv.4666888.xyz/iptv2A.php?id=11
-#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" tvg-name="CCTV14" group-title="4666888",CCTV14
+#EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" tvg-name="14" group-title="4666888",14
 http://iptv.4666888.xyz/iptv2A.php?id=12
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV1.png" tvg-name="龙华电影" group-title="4666888",龙华电影
 http://iptv.4666888.xyz/iptv2A.php?id=45
