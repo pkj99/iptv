@@ -13,6 +13,32 @@
 
 <script>
 
+async function loadHLSStream(url) {
+  try {
+    // 1. Fetch 取得 HLS 內容 (.m3u8)
+    const response = await fetch(url);
+    
+    if (!response.ok) {
+      throw new Error('網路回應失敗');
+    }
+
+    // 2. 讀取文字內容（M3U8 播放列表）
+    const m3u8Text = await response.text();
+    console.log('M3U8 內容：', m3u8Text);
+
+    // 3. 建立新的 Response 物件回傳或處理
+    const newResponse = new Response(m3u8Text, {
+      headers: { 'Content-Type': 'application/vnd.apple.mpegurl' }
+    });
+
+    return newResponse;
+  } catch (error) {
+        console.error('載入串流發生錯誤：', error);
+  }
+}
+
+
+
 function chUrl(asset_id, media_type, callback)
 {
     asset_id = decodeURIComponent(asset_id);
@@ -29,7 +55,10 @@ function chUrl(asset_id, media_type, callback)
         console.log(Url);
         // location.href = 'dpplayer.html?url='+Url;
         // location.href = Url;
-        window.location.replace(Url);
+        // window.location.replace(Url);
+
+        loadHLSStream(Url);
+
     });
 }
 
