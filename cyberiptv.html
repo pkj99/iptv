@@ -116,11 +116,9 @@
             <!-- Source Selector -->
             <div class="relative min-w-[140px] sm:min-w-[200px]">
                 <select id="preset-selector" onchange="loadPresetPlaylist(this.value)" class="w-full bg-slate-900/90 border border-slate-700 text-xs sm:text-sm text-cyan-300 rounded-lg px-2 sm:px-3 py-1.5 focus:outline-none focus:border-cyan-500 cursor-pointer">
-                    <option value="./m3u/twtv.m3u">TWTV</option>
-                    <option value="./m3u/cntv.m3u">CNTV</option>
-                    <option value="./m3u/ofiii.m3u">Ofiii</option>
-                    <option value="./m3u/486tv.m3u">486TV</option>
                     <option value="https://iptv-org.github.io/iptv/countries/tw.m3u">🇹🇼 台灣電視 (IPTV-org)</option>
+                    <option value="https://pkj99.github.io/iptv/m3u/ofiii.m3u">🇹🇼 Ofiii 歐飛影視 (pkj99)</option>
+                    <option value="https://pkj99.github.io/iptv/m3u/486tv.m3u">🇹🇼 486 TV 台灣電視 (pkj99)</option>
                     <option value="https://iptv-org.github.io/iptv/languages/zho.m3u">🌏 中文頻道大全 (IPTV-org)</option>
                     <option value="https://iptv-org.github.io/iptv/index.m3u">🌐 全球精選 (IPTV-org)</option>
                     <option value="demo">📺 內建高畫質示範頻道</option>
@@ -133,9 +131,9 @@
                 <select id="cors-proxy-select" onchange="updateCorsProxy(this.value)" class="bg-slate-900/90 border border-slate-700 text-xs text-purple-300 rounded-lg px-2 py-1.5 focus:outline-none focus:border-purple-500 cursor-pointer">
                     <option value="auto">CORS 模式: 智能自動切換 (Auto)</option>
                     <option value="none">CORS 模式: Direct (直連)</option>
-                    <option value="https://corsproxy.io/?">CORS Engine: CorsProxy.io</option>
                     <option value="https://api.allorigins.win/raw?url=">CORS Engine: AllOrigins</option>
                     <option value="https://api.codetabs.com/v1/proxy?quest=">CORS Engine: CodeTabs</option>
+                    <option value="https://corsproxy.io/?">CORS Engine: CorsProxy.io</option>
                 </select>
             </div>
 
@@ -176,7 +174,7 @@
                     </div>
                 </div>
 
-                <!-- Touch Control Fast Actions (Mobile overlay controls) -->
+                <!-- Touch Control Fast Actions -->
                 <div class="absolute bottom-16 right-4 flex flex-col gap-2 opacity-80 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
                     <button onclick="togglePictureInPicture()" class="w-10 h-10 rounded-full glass-panel text-white flex items-center justify-center hover:bg-cyan-500/30 text-xs" title="畫中畫">
                         <i class="fa-solid fa-clone"></i>
@@ -295,9 +293,9 @@
                     <select id="modal-cors-select" onchange="updateCorsProxy(this.value)" class="w-full bg-slate-900 border border-slate-700 text-slate-200 p-2 rounded-lg focus:outline-none focus:border-purple-500">
                         <option value="auto">Auto (智能多階段自動切換 - 推薦)</option>
                         <option value="none">Direct 直連 (禁用代理)</option>
-                        <option value="https://corsproxy.io/?">CorsProxy.io</option>
                         <option value="https://api.allorigins.win/raw?url=">AllOrigins Proxy</option>
                         <option value="https://api.codetabs.com/v1/proxy?quest=">CodeTabs Proxy</option>
+                        <option value="https://corsproxy.io/?">CorsProxy.io</option>
                     </select>
                 </div>
 
@@ -376,9 +374,9 @@
         function updateProxyLabel() {
             const label = document.getElementById('current-proxy-label');
             if (currentCorsProxy === 'auto') label.innerText = 'CORS: Auto (智能切換)';
-            else if (currentCorsProxy.includes('corsproxy')) label.innerText = 'CORS: CorsProxy.io';
             else if (currentCorsProxy.includes('allorigins')) label.innerText = 'CORS: AllOrigins';
             else if (currentCorsProxy.includes('codetabs')) label.innerText = 'CORS: CodeTabs';
+            else if (currentCorsProxy.includes('corsproxy')) label.innerText = 'CORS: CorsProxy.io';
             else if (currentCorsProxy === 'none') label.innerText = 'CORS: 直連 (Direct)';
             else label.innerText = 'CORS: 自訂代理';
         }
@@ -394,14 +392,13 @@
         function applyCustomM3U() {
             const url = document.getElementById('custom-m3u-url').value.trim();
             if (!url) {
-                showToast('請輸入有效的 M3U 網址！', 'error');
+                showToast('請輸入有效的 M3U 網址！');
                 return;
             }
             toggleModal('m3u-modal');
             fetchM3UPlaylist(url);
         }
 
-        // Helper: Hide Error Banner
         function hideError() {
             if (errorBanner) {
                 errorBanner.classList.add('hidden');
@@ -419,8 +416,8 @@
             const demoM3U = `#EXTM3U
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/Free_Logo.svg" group-title="示範頻道", Big Buck Bunny (4K/HLS)
 https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/Free_Logo.svg" group-title="示範頻道", Sintel (HLS 測試源)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/Free_Logo.svg" group-title="示範頻道", Sintel (1080p HLS - JWPlayer)
+https://cdn.jwplayer.com/manifests/pvh8y212.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/Free_Logo.svg" group-title="示範頻道", Tears of Steel (720p HLS)
 https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/Free_Logo.svg" group-title="示範頻道", Apple 官方 HLS 範例
@@ -443,7 +440,7 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_
             // Define fallback chain of proxies and direct
             const fetchChain = [];
             
-            // 1. Direct fetch first (GitHub pages / static files support native CORS)
+            // 1. Direct fetch first
             fetchChain.push('direct');
 
             // 2. Add current selected proxy if specifically chosen
@@ -452,9 +449,9 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_
             }
 
             // 3. Fallback proxies
-            fetchChain.push('https://corsproxy.io/?');
             fetchChain.push('https://api.allorigins.win/raw?url=');
             fetchChain.push('https://api.codetabs.com/v1/proxy?quest=');
+            fetchChain.push('https://corsproxy.io/?');
 
             let lastError = null;
 
@@ -492,7 +489,7 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_
                 }
             }
 
-            // If all remote fetch options fail, notify user and load demo channels fallback
+            // Fallback to demo channels on error
             hideLoader();
             showError(`載入清單失敗 (${lastError?.message || 'CORS / HTTP 阻擋'})。已為您切換至測試頻道。`);
             loadDemoChannels();
@@ -503,10 +500,11 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_
             categories.clear();
 
             const lines = content.split('\n');
-            let currentChannel = {};
+            let currentChannel = null;
 
             for (let i = 0; i < lines.length; i++) {
                 let line = lines[i].trim();
+                if (!line) continue;
 
                 if (line.startsWith('#EXTINF:')) {
                     currentChannel = {};
@@ -517,23 +515,28 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_
 
                     // Extract group-title
                     const groupMatch = line.match(/group-title="([^"]*)"/);
-                    const group = groupMatch ? groupMatch[1].trim() : '綜合/未分類';
-                    currentChannel.group = group;
-                    categories.add(group);
+                    let group = groupMatch ? groupMatch[1].trim() : '';
 
-                    // Extract Channel Name
+                    // Extract Channel Name after last comma
                     const commaIdx = line.lastIndexOf(',');
                     if (commaIdx !== -1) {
                         currentChannel.name = line.substring(commaIdx + 1).trim();
                     } else {
-                        currentChannel.name = '未知頻道';
+                        currentChannel.name = '未命名頻道';
                     }
-                } else if (line && !line.startsWith('#')) {
-                    if (currentChannel.name) {
+                    currentChannel.group = group || '綜合/未分類';
+                } else if (line.startsWith('#EXTGRP:')) {
+                    if (currentChannel) {
+                        currentChannel.group = line.replace('#EXTGRP:', '').trim() || currentChannel.group;
+                    }
+                } else if (!line.startsWith('#')) {
+                    if (currentChannel) {
                         currentChannel.url = line;
                         currentChannel.id = 'ch_' + Math.random().toString(36).substring(2, 9);
+                        if (!currentChannel.group) currentChannel.group = '綜合/未分類';
+                        categories.add(currentChannel.group);
                         allChannels.push(currentChannel);
-                        currentChannel = {};
+                        currentChannel = null;
                     }
                 }
             }
@@ -624,29 +627,31 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_
                 card.onclick = () => playChannel(idx);
 
                 card.innerHTML = `
-                    <div class="flex items-center gap-3 overflow-hidden">
-                        ${ch.logo ? `<img src="${ch.logo}" class="w-7 h-7 object-contain rounded bg-slate-900/50 p-0.5 shrink-0" onerror="this.style.display='none'">` : '<div class="w-7 h-7 rounded bg-slate-800 flex items-center justify-center text-slate-500 text-xs shrink-0"><i class="fa-solid fa-play"></i></div>'}
+                    <div class="flex items-center gap-2.5 overflow-hidden">
+                        <div class="w-8 h-8 rounded-lg bg-slate-800/80 border border-slate-700/50 flex items-center justify-center shrink-0 overflow-hidden">
+                            ${ch.logo ? `<img src="${ch.logo}" class="w-full h-full object-contain" onerror="this.src=''; this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"><i class="fa-solid fa-tv text-cyan-400 text-xs hidden"></i>` : `<i class="fa-solid fa-tv text-cyan-400 text-xs"></i>`}
+                        </div>
                         <div class="truncate">
-                            <h4 class="text-xs font-semibold text-slate-200 group-hover:text-cyan-300 truncate ${isPlaying ? 'text-cyan-400 font-bold' : ''}">${ch.name}</h4>
+                            <p class="text-xs font-medium ${isPlaying ? 'text-cyan-300 font-bold' : 'text-slate-200'} truncate group-hover:text-cyan-300 transition">${ch.name}</p>
                             <p class="text-[10px] text-slate-500 truncate">${ch.group}</p>
                         </div>
                     </div>
-                    <button onclick="toggleFavorite(event, '${ch.url}')" class="text-slate-600 hover:text-yellow-400 p-1 transition ${isFav ? 'text-yellow-400' : ''}">
-                        <i class="${isFav ? 'fa-solid' : 'fa-regular'} fa-star text-xs"></i>
+                    <button onclick="toggleFavorite(event, '${ch.url.replace(/'/g, "\\'")}')" class="p-1.5 text-slate-500 hover:text-yellow-400 transition shrink-0" title="收藏">
+                        <i class="${isFav ? 'fa-solid text-yellow-400' : 'fa-regular'} fa-star text-xs"></i>
                     </button>
                 `;
                 container.appendChild(card);
             });
         }
 
-        function playChannel(index) {
+        function playChannel(index, isProxyRetry = false) {
             if (index < 0 || index >= filteredChannels.length) return;
 
             currentChannelIndex = index;
             const channel = filteredChannels[index];
 
             renderChannelList(); // Update active UI state
-            showLoader(`加載中: ${channel.name}`);
+            showLoader(`加載中: ${channel.name}${isProxyRetry ? ' (跨域代理修復中)' : ''}`);
             hideError();
 
             // Update Header Overlay
@@ -660,8 +665,13 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_
                 logoImg.classList.add('hidden');
             }
 
-            const streamUrl = channel.url;
-            
+            let streamUrl = channel.url;
+            if (isProxyRetry) {
+                // Apply fallback CORS proxy for stream if direct load failed
+                const activeProxy = (currentCorsProxy !== 'auto' && currentCorsProxy !== 'none') ? currentCorsProxy : 'https://corsproxy.io/?';
+                streamUrl = activeProxy + encodeURIComponent(channel.url);
+            }
+
             // Destroy previous Hls instance
             if (hlsInstance) {
                 hlsInstance.destroy();
@@ -672,7 +682,9 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_
             if (Hls.isSupported() && (streamUrl.includes('.m3u8') || streamUrl.includes('m3u') || !streamUrl.endsWith('.mp4'))) {
                 hlsInstance = new Hls({
                     enableWorker: true,
-                    lowLatencyMode: true
+                    lowLatencyMode: true,
+                    manifestLoadingTimeOut: 10000,
+                    fragLoadingTimeOut: 15000
                 });
 
                 hlsInstance.loadSource(streamUrl);
@@ -686,16 +698,30 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_
                 hlsInstance.on(Hls.Events.ERROR, (event, data) => {
                     if (data.fatal) {
                         console.warn('HLS Fatal Error:', data.type);
+                        if (!isProxyRetry && (data.type === Hls.ErrorTypes.NETWORK_ERROR || data.type === Hls.ErrorTypes.OTHER_ERROR)) {
+                            // Automatically retry with CORS Proxy
+                            console.log('Attempting CORS proxy playback retry...');
+                            if (hlsInstance) {
+                                hlsInstance.destroy();
+                                hlsInstance = null;
+                            }
+                            playChannel(index, true);
+                            return;
+                        }
+
                         switch (data.type) {
                             case Hls.ErrorTypes.NETWORK_ERROR:
-                                showError(`串流網路連線失敗，來源伺服器可能無回應。`);
+                                showError(`串流網路連線失敗，來源伺服器可能無回應或存取遭拒 (CORS/HTTP 阻擋)。`);
                                 break;
                             case Hls.ErrorTypes.MEDIA_ERROR:
                                 hlsInstance.recoverMediaError();
                                 break;
                             default:
-                                hlsInstance.destroy();
-                                showError(`影片加載失敗，直播源可能已失效。`);
+                                if (hlsInstance) {
+                                    hlsInstance.destroy();
+                                    hlsInstance = null;
+                                }
+                                showError(`影片加載失敗，直播源可能已失效或防盜鏈限制。`);
                                 break;
                         }
                     }
