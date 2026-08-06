@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CYBER IPTV PRO | 科技感 IPTV 播放器</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            bg: '#080c14',
+                            card: '#0f172a',
+                            border: '#1e293b',
+                            primary: '#06b6d4',
+                            accent: '#a855f7',
+                            neon: '#00f0ff'
+                        }
+                    },
+                    boxShadow: {
+                        'neon-cyan': '0 0 15px rgba(6, 182, 212, 0.4)',
+                        'neon-purple': '0 0 15px rgba(168, 85, 247, 0.4)',
+                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- HLS.js for m3u8 streaming -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Orbitron & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050811;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        /* Grid background effect */
+        .bg-grid-pattern {
+            background-size: 30px 30px;
+            background-image: 
+                linear-gradient(to right, rgba(30, 41, 59, 0.3) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(30, 41, 59, 0.3) 1px, transparent 1px);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.6);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #06b6d4;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0891b2;
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.2s ease-in-out;
+        }
+        .glass-card:hover {
+            background: rgba(6, 182, 212, 0.1);
+            border-color: rgba(6, 182, 212, 0.4);
+            transform: translateY(-2px);
+        }
+        .active-channel {
+            background: rgba(6, 182, 212, 0.2) !important;
+            border-color: #06b6d4 !important;
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+        }
+    </style>
+</head>
+<body class="h-screen w-screen flex flex-col bg-grid-pattern overflow-hidden">
+
+    <!-- Top Header -->
+    <header class="h-16 border-b border-slate-800 glass-panel flex items-center justify-between px-4 z-30 shrink-0">
+        <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-cyan-500 to-purple-600 flex items-center justify-center shadow-neon-cyan">
+                <i class="fa-solid fa-tv text-white text-lg"></i>
+            </div>
+            <div>
+                <h1 class="font-orbitron font-bold text-lg tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-teal-300 to-purple-400">
+                    CYBER<span class="text-cyan-400">IPTV</span>
+                </h1>
+                <p class="text-[10px] text-slate-400 tracking-widest uppercase font-orbitron hidden sm:block">Next-Gen Stream Player</p>
+            </div>
+        </div>
+
+        <!-- Controls / Quick Settings Header Toolbar -->
+        <div class="flex items-center gap-2 sm:gap-4">
+            <!-- Source Selector -->
+            <div class="relative min-w-[140px] sm:min-w-[200px]">
+                <select id="preset-selector" onchange="loadPresetPlaylist(this.value)" class="w-full bg-slate-900/90 border border-slate-700 text-xs sm:text-sm text-cyan-300 rounded-lg px-2 sm:px-3 py-1.5 focus:outline-none focus:border-cyan-500 cursor-pointer">
+                    <option value="./m3u/twtv.m3u">TWTV</option>
+                    <option value="./m3u/cntv.m3u">CNTV</option>
+                    <option value="./m3u/ofiii.m3u">Ofiii</option>
+                    <option value="./m3u/486tv.m3u">486TV</option>
+                    <option value="https://iptv-org.github.io/iptv/countries/tw.m3u">🇹🇼 台灣電視 (IPTV-org)</option>
+                    <option value="https://iptv-org.github.io/iptv/languages/zho.m3u">🌏 中文頻道大全 (IPTV-org)</option>
+                    <option value="https://iptv-org.github.io/iptv/index.m3u">🌐 全球精選 (IPTV-org)</option>
+                    <option value="demo">📺 內建高畫質示範頻道</option>
+                    <option value="custom">⚙️ 自訂 M3U / M3U8 網址...</option>
+                </select>
+            </div>
+
+            <!-- CORS Proxy Selector -->
+            <div class="relative hidden md:block">
+                <select id="cors-proxy-select" onchange="updateCorsProxy(this.value)" class="bg-slate-900/90 border border-slate-700 text-xs text-purple-300 rounded-lg px-2 py-1.5 focus:outline-none focus:border-purple-500 cursor-pointer">
+                    <option value="auto">CORS 模式: 智能自動切換 (Auto)</option>
+                    <option value="none">CORS 模式: Direct (直連)</option>
+                    <option value="https://corsproxy.io/?">CORS Engine: CorsProxy.io</option>
+                    <option value="https://api.allorigins.win/raw?url=">CORS Engine: AllOrigins</option>
+                    <option value="https://api.codetabs.com/v1/proxy?quest=">CORS Engine: CodeTabs</option>
+                </select>
+            </div>
+
+            <!-- Custom URL Modal Trigger Button -->
+            <button onclick="toggleModal('m3u-modal')" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 p-2 rounded-lg text-xs sm:text-sm transition flex items-center gap-1.5" title="輸入網址">
+                <i class="fa-solid fa-link text-cyan-400"></i>
+                <span class="hidden sm:inline">輸入來源</span>
+            </button>
+
+            <!-- Settings Modal Trigger -->
+            <button onclick="toggleModal('settings-modal')" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 p-2 rounded-lg text-xs sm:text-sm transition" title="設置">
+                <i class="fa-solid fa-gear text-purple-400"></i>
+            </button>
+
+            <!-- Mobile Sidebar Toggle -->
+            <button id="mobile-menu-btn" onclick="toggleSidebar()" class="lg:hidden bg-cyan-950/80 hover:bg-cyan-900 text-cyan-400 border border-cyan-800 p-2 rounded-lg text-sm">
+                <i class="fa-solid fa-list-ul"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <div class="flex-1 flex overflow-hidden relative">
+        
+        <!-- Video Player Section (Left / Top) -->
+        <main class="flex-1 flex flex-col bg-black relative justify-center items-center overflow-hidden">
+            
+            <!-- Dynamic Video Canvas Container -->
+            <div class="relative w-full h-full flex items-center justify-center bg-black group">
+                <video id="video-player" class="w-full h-full object-contain max-h-screen" controls preload="auto" playsinline crossorigin="anonymous"></video>
+                
+                <!-- Video Overlay Badge (Channel Info) -->
+                <div id="player-overlay-info" class="absolute top-4 left-4 glass-panel px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none flex items-center gap-3 border-cyan-500/30">
+                    <img id="player-channel-logo" src="" class="w-8 h-8 object-contain hidden" alt="logo">
+                    <div>
+                        <p id="player-channel-title" class="text-xs font-bold text-cyan-300">未選擇頻道</p>
+                        <p id="player-channel-group" class="text-[10px] text-slate-400">CYBER IPTV</p>
+                    </div>
+                </div>
+
+                <!-- Touch Control Fast Actions (Mobile overlay controls) -->
+                <div class="absolute bottom-16 right-4 flex flex-col gap-2 opacity-80 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+                    <button onclick="togglePictureInPicture()" class="w-10 h-10 rounded-full glass-panel text-white flex items-center justify-center hover:bg-cyan-500/30 text-xs" title="畫中畫">
+                        <i class="fa-solid fa-clone"></i>
+                    </button>
+                    <button onclick="toggleAspectRatio()" class="w-10 h-10 rounded-full glass-panel text-white flex items-center justify-center hover:bg-cyan-500/30 text-xs" title="畫面比例">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Loading Indicator Overlay -->
+            <div id="player-loader" class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm flex flex-col items-center justify-center gap-3 hidden z-20">
+                <div class="w-12 h-12 border-4 border-cyan-500/20 border-t-cyan-400 rounded-full animate-spin shadow-neon-cyan"></div>
+                <p id="loader-text" class="text-xs font-orbitron text-cyan-400 tracking-wider animate-pulse">CONNECTING STREAM...</p>
+            </div>
+
+            <!-- Error Banner -->
+            <div id="player-error" class="absolute top-6 inset-x-6 max-w-md mx-auto glass-panel border-red-500/50 p-4 rounded-xl hidden z-30 flex items-start gap-3 shadow-2xl">
+                <i class="fa-solid fa-triangle-exclamation text-red-400 text-lg mt-0.5"></i>
+                <div class="flex-1">
+                    <h4 class="text-xs font-bold text-red-400">播放 / 載入提示</h4>
+                    <p id="error-message" class="text-[11px] text-slate-300 mt-1">請嘗試切換右上角 CORS 代理或換個頻道來源。</p>
+                </div>
+                <button onclick="hideError()" class="text-slate-400 hover:text-white text-xs"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </main>
+
+        <!-- Channel Drawer / Sidebar -->
+        <aside id="channel-sidebar" class="absolute lg:relative right-0 top-0 h-full w-80 sm:w-96 glass-panel border-l border-slate-800 flex flex-col z-20 transition-transform duration-300 translate-x-full lg:translate-x-0">
+            
+            <!-- Sidebar Header & Search -->
+            <div class="p-3 border-b border-slate-800/80 space-y-2 shrink-0">
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-orbitron font-bold text-cyan-400 tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-list text-purple-400"></i> CHANNELS (<span id="channel-count">0</span>)
+                    </span>
+                    <div class="flex items-center gap-1">
+                        <button onclick="filterFavoritesOnly()" id="fav-filter-btn" class="px-2 py-1 rounded bg-slate-800 text-[11px] text-slate-400 hover:text-yellow-400 border border-slate-700 transition">
+                            <i class="fa-solid fa-star text-yellow-400"></i> 收藏
+                        </button>
+                        <button onclick="toggleSidebar()" class="lg:hidden text-slate-400 p-1 hover:text-white">
+                            <i class="fa-solid fa-xmark text-base"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-500 text-xs"></i>
+                    <input type="text" id="search-input" onkeyup="filterChannels()" placeholder="搜尋頻道名稱..." class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-lg pl-8 pr-8 py-2 focus:outline-none focus:border-cyan-500 transition">
+                    <button onclick="clearSearch()" class="absolute right-2.5 top-2 text-slate-500 hover:text-slate-300 text-xs">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Group Filter Pills -->
+                <div id="category-bar" class="flex gap-1.5 overflow-x-auto py-1 no-scrollbar text-[11px]">
+                    <button onclick="selectCategory('ALL')" class="category-btn active bg-cyan-500/20 text-cyan-300 border border-cyan-500/50 px-2.5 py-1 rounded-full whitespace-nowrap">全部</button>
+                </div>
+            </div>
+
+            <!-- Channel List Scroll Container -->
+            <div id="channel-list" class="flex-1 overflow-y-auto p-2 space-y-1.5">
+                <!-- Channels rendered dynamically via JS -->
+            </div>
+
+            <!-- Sidebar Bottom Info -->
+            <div class="p-2.5 border-t border-slate-800/80 bg-slate-950/50 text-[10px] text-slate-500 flex justify-between items-center shrink-0">
+                <span id="current-proxy-label" class="truncate max-w-[200px]">CORS: Auto (智能切換)</span>
+                <span class="font-orbitron text-cyan-500/70">v2.1 PRO</span>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- M3U Custom Input Modal -->
+    <div id="m3u-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="glass-panel border border-slate-700 max-w-md w-full rounded-2xl p-5 shadow-2xl space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                <h3 class="text-sm font-bold font-orbitron text-cyan-400 flex items-center gap-2">
+                    <i class="fa-solid fa-link"></i> 載入自訂 M3U 網址
+                </h3>
+                <button onclick="toggleModal('m3u-modal')" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="space-y-3">
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">M3U / M3U8 播放清單連結</label>
+                    <input type="url" id="custom-m3u-url" placeholder="https://example.com/playlist.m3u" class="w-full bg-slate-900 border border-slate-700 text-xs text-cyan-200 p-2.5 rounded-lg focus:outline-none focus:border-cyan-500">
+                </div>
+                <div class="text-[11px] text-slate-500">
+                    💡 提示：系統會自動採用智能代理與備用網絡鏈路抓取清單。
+                </div>
+            </div>
+
+            <div class="flex justify-end gap-2 pt-2">
+                <button onclick="toggleModal('m3u-modal')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg text-xs">取消</button>
+                <button onclick="applyCustomM3U()" class="px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white rounded-lg text-xs font-bold shadow-neon-cyan">載入清單</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="glass-panel border border-slate-700 max-w-md w-full rounded-2xl p-5 shadow-2xl space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                <h3 class="text-sm font-bold font-orbitron text-purple-400 flex items-center gap-2">
+                    <i class="fa-solid fa-sliders"></i> 播放器進階設定
+                </h3>
+                <button onclick="toggleModal('settings-modal')" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="space-y-3 text-xs">
+                <div>
+                    <label class="text-slate-300 block mb-1 font-semibold">CORS 跨域解鎖引擎</label>
+                    <select id="modal-cors-select" onchange="updateCorsProxy(this.value)" class="w-full bg-slate-900 border border-slate-700 text-slate-200 p-2 rounded-lg focus:outline-none focus:border-purple-500">
+                        <option value="auto">Auto (智能多階段自動切換 - 推薦)</option>
+                        <option value="none">Direct 直連 (禁用代理)</option>
+                        <option value="https://corsproxy.io/?">CorsProxy.io</option>
+                        <option value="https://api.allorigins.win/raw?url=">AllOrigins Proxy</option>
+                        <option value="https://api.codetabs.com/v1/proxy?quest=">CodeTabs Proxy</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="text-slate-300 block mb-1 font-semibold">自訂代理前綴 (Custom Proxy Prefix)</label>
+                    <input type="text" id="custom-proxy-input" placeholder="https://your-custom-proxy.com/?" class="w-full bg-slate-900 border border-slate-700 text-slate-200 p-2 rounded-lg focus:outline-none focus:border-purple-500">
+                </div>
+            </div>
+
+            <div class="flex justify-end gap-2 pt-2">
+                <button onclick="saveSettings()" class="px-4 py-2 bg-purple-600 hover:bg-purple-500 text-white rounded-lg text-xs font-bold shadow-neon-purple">儲存設定</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Box -->
+    <div id="toast-container" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+    <script>
+        // State Management
+        let allChannels = [];
+        let filteredChannels = [];
+        let categories = new Set();
+        let selectedCategory = 'ALL';
+        let currentChannelIndex = -1;
+        let favorites = JSON.parse(localStorage.getItem('iptv_favs') || '[]');
+        let currentCorsProxy = localStorage.getItem('iptv_cors_proxy') || 'auto';
+        let hlsInstance = null;
+        let isFavOnly = false;
+
+        const videoPlayer = document.getElementById('video-player');
+        const loader = document.getElementById('player-loader');
+        const loaderText = document.getElementById('loader-text');
+        const errorBanner = document.getElementById('player-error');
+
+        // Init App on Load
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('cors-proxy-select').value = currentCorsProxy;
+            document.getElementById('modal-cors-select').value = currentCorsProxy;
+            updateProxyLabel();
+
+            // Load default preset
+            const defaultM3U = document.getElementById('preset-selector').value;
+            loadPresetPlaylist(defaultM3U);
+
+            // Handle video error events
+            videoPlayer.addEventListener('error', handleVideoError);
+        });
+
+        function getProxiedUrl(url, proxyOverride = null) {
+            if (!url) return '';
+            const proxy = proxyOverride || currentCorsProxy;
+            if (proxy === 'none' || proxy === 'direct' || url.startsWith('blob:') || url.startsWith('data:')) {
+                return url;
+            }
+            if (proxy === 'auto') {
+                return url; // Auto handles fetching multi-tier inside fetchM3UPlaylist
+            }
+            return proxy + encodeURIComponent(url);
+        }
+
+        function updateCorsProxy(proxyUrl) {
+            currentCorsProxy = proxyUrl;
+            localStorage.setItem('iptv_cors_proxy', proxyUrl);
+            document.getElementById('cors-proxy-select').value = proxyUrl;
+            document.getElementById('modal-cors-select').value = proxyUrl;
+            updateProxyLabel();
+            showToast('已更新 CORS 跨域代理設定');
+
+            // Reload current channel if playing
+            if (currentChannelIndex >= 0 && filteredChannels[currentChannelIndex]) {
+                playChannel(currentChannelIndex);
+            }
+        }
+
+        function updateProxyLabel() {
+            const label = document.getElementById('current-proxy-label');
+            if (currentCorsProxy === 'auto') label.innerText = 'CORS: Auto (智能切換)';
+            else if (currentCorsProxy.includes('corsproxy')) label.innerText = 'CORS: CorsProxy.io';
+            else if (currentCorsProxy.includes('allorigins')) label.innerText = 'CORS: AllOrigins';
+            else if (currentCorsProxy.includes('codetabs')) label.innerText = 'CORS: CodeTabs';
+            else if (currentCorsProxy === 'none') label.innerText = 'CORS: 直連 (Direct)';
+            else label.innerText = 'CORS: 自訂代理';
+        }
+
+        async function loadPresetPlaylist(url) {
+            if (url === 'custom') {
+                toggleModal('m3u-modal');
+                return;
+            }
+            fetchM3UPlaylist(url);
+        }
+
+        function applyCustomM3U() {
+            const url = document.getElementById('custom-m3u-url').value.trim();
+            if (!url) {
+                showToast('請輸入有效的 M3U 網址！', 'error');
+                return;
+            }
+            toggleModal('m3u-modal');
+            fetchM3UPlaylist(url);
+        }
+
+        // Helper: Hide Error Banner
+        function hideError() {
+            if (errorBanner) {
+                errorBanner.classList.add('hidden');
+            }
+        }
+
+        function showError(msg) {
+            document.getElementById('error-message').innerText = msg;
+            errorBanner.classList.remove('hidden');
+            hideLoader();
+        }
+
+        // Built-in Demo Channels fallback
+        function loadDemoChannels() {
+            const demoM3U = `#EXTM3U
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/Free_Logo.svg" group-title="示範頻道", Big Buck Bunny (4K/HLS)
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/Free_Logo.svg" group-title="示範頻道", Sintel (HLS 測試源)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/Free_Logo.svg" group-title="示範頻道", Tears of Steel (720p HLS)
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/Free_Logo.svg" group-title="示範頻道", Apple 官方 HLS 範例
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8`;
+            parseM3UContent(demoM3U);
+        }
+
+        // Smart Multi-Tier Fetch Engine to completely bypass CORS 403 & failures
+        async function fetchM3UPlaylist(url) {
+            showLoader('正在載入與解析 M3U 播放清單...');
+            hideError();
+
+            if (url === 'demo') {
+                loadDemoChannels();
+                hideLoader();
+                showToast('已載入內建高畫質示範頻道');
+                return;
+            }
+
+            // Define fallback chain of proxies and direct
+            const fetchChain = [];
+            
+            // 1. Direct fetch first (GitHub pages / static files support native CORS)
+            fetchChain.push('direct');
+
+            // 2. Add current selected proxy if specifically chosen
+            if (currentCorsProxy !== 'auto' && currentCorsProxy !== 'none' && currentCorsProxy !== 'direct') {
+                fetchChain.unshift(currentCorsProxy);
+            }
+
+            // 3. Fallback proxies
+            fetchChain.push('https://corsproxy.io/?');
+            fetchChain.push('https://api.allorigins.win/raw?url=');
+            fetchChain.push('https://api.codetabs.com/v1/proxy?quest=');
+
+            let lastError = null;
+
+            for (let proxy of fetchChain) {
+                try {
+                    let targetUrl = url;
+                    if (proxy !== 'direct') {
+                        targetUrl = proxy + encodeURIComponent(url);
+                    }
+
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 7000); // 7s timeout per proxy
+
+                    const response = await fetch(targetUrl, { signal: controller.signal });
+                    clearTimeout(timeoutId);
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}`);
+                    }
+
+                    const text = await response.text();
+                    
+                    if (text && (text.includes('#EXTM3U') || text.includes('http://') || text.includes('https://'))) {
+                        parseM3UContent(text);
+                        if (allChannels.length > 0) {
+                            hideLoader();
+                            showToast(`成功載入 ${allChannels.length} 個頻道`);
+                            return; // Successfully parsed!
+                        }
+                    }
+                    throw new Error('回應非有效 M3U 格式');
+                } catch (err) {
+                    console.warn(`Attempt with proxy [${proxy}] failed:`, err.message);
+                    lastError = err;
+                }
+            }
+
+            // If all remote fetch options fail, notify user and load demo channels fallback
+            hideLoader();
+            showError(`載入清單失敗 (${lastError?.message || 'CORS / HTTP 阻擋'})。已為您切換至測試頻道。`);
+            loadDemoChannels();
+        }
+
+        function parseM3UContent(content) {
+            allChannels = [];
+            categories.clear();
+
+            const lines = content.split('\n');
+            let currentChannel = {};
+
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i].trim();
+
+                if (line.startsWith('#EXTINF:')) {
+                    currentChannel = {};
+                    
+                    // Extract tvg-logo
+                    const logoMatch = line.match(/tvg-logo="([^"]*)"/);
+                    if (logoMatch) currentChannel.logo = logoMatch[1];
+
+                    // Extract group-title
+                    const groupMatch = line.match(/group-title="([^"]*)"/);
+                    const group = groupMatch ? groupMatch[1].trim() : '綜合/未分類';
+                    currentChannel.group = group;
+                    categories.add(group);
+
+                    // Extract Channel Name
+                    const commaIdx = line.lastIndexOf(',');
+                    if (commaIdx !== -1) {
+                        currentChannel.name = line.substring(commaIdx + 1).trim();
+                    } else {
+                        currentChannel.name = '未知頻道';
+                    }
+                } else if (line && !line.startsWith('#')) {
+                    if (currentChannel.name) {
+                        currentChannel.url = line;
+                        currentChannel.id = 'ch_' + Math.random().toString(36).substring(2, 9);
+                        allChannels.push(currentChannel);
+                        currentChannel = {};
+                    }
+                }
+            }
+
+            renderCategoryTabs();
+            filterChannels();
+
+            // Auto-play first channel if available
+            if (allChannels.length > 0) {
+                playChannel(0);
+            }
+        }
+
+        function renderCategoryTabs() {
+            const bar = document.getElementById('category-bar');
+            bar.innerHTML = `
+                <button onclick="selectCategory('ALL')" class="category-btn ${selectedCategory === 'ALL' ? 'active bg-cyan-500/20 text-cyan-300 border border-cyan-500/50' : 'bg-slate-800 text-slate-400 border border-slate-700'} px-2.5 py-1 rounded-full whitespace-nowrap">全部</button>
+            `;
+
+            Array.from(categories).sort().forEach(cat => {
+                const isActive = selectedCategory === cat;
+                const btn = document.createElement('button');
+                btn.className = `category-btn ${isActive ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/50' : 'bg-slate-800 text-slate-400 border border-slate-700'} px-2.5 py-1 rounded-full whitespace-nowrap`;
+                btn.innerText = cat;
+                btn.onclick = () => selectCategory(cat);
+                bar.appendChild(btn);
+            });
+        }
+
+        function selectCategory(cat) {
+            selectedCategory = cat;
+            isFavOnly = false;
+            document.getElementById('fav-filter-btn').classList.remove('bg-yellow-500/20', 'text-yellow-300', 'border-yellow-500/50');
+            renderCategoryTabs();
+            filterChannels();
+        }
+
+        function filterFavoritesOnly() {
+            isFavOnly = !isFavOnly;
+            const btn = document.getElementById('fav-filter-btn');
+            if (isFavOnly) {
+                btn.classList.add('bg-yellow-500/20', 'text-yellow-300', 'border-yellow-500/50');
+            } else {
+                btn.classList.remove('bg-yellow-500/20', 'text-yellow-300', 'border-yellow-500/50');
+            }
+            filterChannels();
+        }
+
+        function filterChannels() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+
+            filteredChannels = allChannels.filter(ch => {
+                const matchesCat = (selectedCategory === 'ALL' || ch.group === selectedCategory);
+                const matchesQuery = ch.name.toLowerCase().includes(query) || ch.group.toLowerCase().includes(query);
+                const matchesFav = !isFavOnly || favorites.includes(ch.url);
+                return matchesCat && matchesQuery && matchesFav;
+            });
+
+            document.getElementById('channel-count').innerText = filteredChannels.length;
+            renderChannelList();
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            filterChannels();
+        }
+
+        function renderChannelList() {
+            const container = document.getElementById('channel-list');
+            container.innerHTML = '';
+
+            if (filteredChannels.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-10 text-slate-500 text-xs">
+                        <i class="fa-solid fa-tv-slash text-2xl mb-2 block"></i>
+                        無相關頻道
+                    </div>
+                `;
+                return;
+            }
+
+            filteredChannels.forEach((ch, idx) => {
+                const isPlaying = (currentChannelIndex === idx);
+                const isFav = favorites.includes(ch.url);
+
+                const card = document.createElement('div');
+                card.className = `glass-card p-2.5 rounded-xl flex items-center justify-between cursor-pointer group ${isPlaying ? 'active-channel' : ''}`;
+                card.onclick = () => playChannel(idx);
+
+                card.innerHTML = `
+                    <div class="flex items-center gap-3 overflow-hidden">
+                        ${ch.logo ? `<img src="${ch.logo}" class="w-7 h-7 object-contain rounded bg-slate-900/50 p-0.5 shrink-0" onerror="this.style.display='none'">` : '<div class="w-7 h-7 rounded bg-slate-800 flex items-center justify-center text-slate-500 text-xs shrink-0"><i class="fa-solid fa-play"></i></div>'}
+                        <div class="truncate">
+                            <h4 class="text-xs font-semibold text-slate-200 group-hover:text-cyan-300 truncate ${isPlaying ? 'text-cyan-400 font-bold' : ''}">${ch.name}</h4>
+                            <p class="text-[10px] text-slate-500 truncate">${ch.group}</p>
+                        </div>
+                    </div>
+                    <button onclick="toggleFavorite(event, '${ch.url}')" class="text-slate-600 hover:text-yellow-400 p-1 transition ${isFav ? 'text-yellow-400' : ''}">
+                        <i class="${isFav ? 'fa-solid' : 'fa-regular'} fa-star text-xs"></i>
+                    </button>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function playChannel(index) {
+            if (index < 0 || index >= filteredChannels.length) return;
+
+            currentChannelIndex = index;
+            const channel = filteredChannels[index];
+
+            renderChannelList(); // Update active UI state
+            showLoader(`加載中: ${channel.name}`);
+            hideError();
+
+            // Update Header Overlay
+            document.getElementById('player-channel-title').innerText = channel.name;
+            document.getElementById('player-channel-group').innerText = channel.group;
+            const logoImg = document.getElementById('player-channel-logo');
+            if (channel.logo) {
+                logoImg.src = channel.logo;
+                logoImg.classList.remove('hidden');
+            } else {
+                logoImg.classList.add('hidden');
+            }
+
+            const streamUrl = channel.url;
+            
+            // Destroy previous Hls instance
+            if (hlsInstance) {
+                hlsInstance.destroy();
+                hlsInstance = null;
+            }
+
+            // Check HLS JS support
+            if (Hls.isSupported() && (streamUrl.includes('.m3u8') || streamUrl.includes('m3u') || !streamUrl.endsWith('.mp4'))) {
+                hlsInstance = new Hls({
+                    enableWorker: true,
+                    lowLatencyMode: true
+                });
+
+                hlsInstance.loadSource(streamUrl);
+                hlsInstance.attachMedia(videoPlayer);
+
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+                    videoPlayer.play().catch(e => console.log("Auto-play blocked:", e));
+                    hideLoader();
+                });
+
+                hlsInstance.on(Hls.Events.ERROR, (event, data) => {
+                    if (data.fatal) {
+                        console.warn('HLS Fatal Error:', data.type);
+                        switch (data.type) {
+                            case Hls.ErrorTypes.NETWORK_ERROR:
+                                showError(`串流網路連線失敗，來源伺服器可能無回應。`);
+                                break;
+                            case Hls.ErrorTypes.MEDIA_ERROR:
+                                hlsInstance.recoverMediaError();
+                                break;
+                            default:
+                                hlsInstance.destroy();
+                                showError(`影片加載失敗，直播源可能已失效。`);
+                                break;
+                        }
+                    }
+                });
+            } else if (videoPlayer.canPlayType('application/vnd.apple.mpegurl')) {
+                // Safari Native HLS
+                videoPlayer.src = streamUrl;
+                videoPlayer.addEventListener('loadedmetadata', () => {
+                    videoPlayer.play();
+                    hideLoader();
+                });
+            } else {
+                // Native MP4
+                videoPlayer.src = streamUrl;
+                videoPlayer.play().then(() => hideLoader()).catch(() => hideLoader());
+            }
+        }
+
+        function handleVideoError(e) {
+            console.error('Native Video Error:', e);
+            hideLoader();
+            showError('無法播放該串流。可能該電視台目前離線或源位址無效。');
+        }
+
+        function toggleFavorite(e, url) {
+            e.stopPropagation();
+            if (favorites.includes(url)) {
+                favorites = favorites.filter(f => f !== url);
+                showToast('已從收藏移除');
+            } else {
+                favorites.push(url);
+                showToast('已加入我的最愛！');
+            }
+            localStorage.setItem('iptv_favs', JSON.stringify(favorites));
+            filterChannels();
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('channel-sidebar');
+            sidebar.classList.toggle('translate-x-full');
+        }
+
+        function toggleModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.toggle('hidden');
+        }
+
+        function togglePictureInPicture() {
+            if (document.pictureInPictureElement) {
+                document.exitPictureInPicture();
+            } else if (document.pictureInPictureEnabled) {
+                videoPlayer.requestPictureInPicture();
+            }
+        }
+
+        function toggleAspectRatio() {
+            const modes = ['object-contain', 'object-cover', 'object-fill'];
+            let currentMode = modes.find(m => videoPlayer.classList.contains(m)) || 'object-contain';
+            let nextIndex = (modes.indexOf(currentMode) + 1) % modes.length;
+
+            modes.forEach(m => videoPlayer.classList.remove(m));
+            videoPlayer.classList.add(modes[nextIndex]);
+
+            const modeLabels = {'object-contain': '適應畫面', 'object-cover': '裁切填滿', 'object-fill': '拉伸填滿'};
+            showToast(`畫面比例: ${modeLabels[modes[nextIndex]]}`);
+        }
+
+        function saveSettings() {
+            const customProxy = document.getElementById('custom-proxy-input').value.trim();
+            if (customProxy) {
+                updateCorsProxy(customProxy);
+            }
+            toggleModal('settings-modal');
+        }
+
+        function showLoader(text) {
+            loaderText.innerText = text || 'LOADING...';
+            loader.classList.remove('hidden');
+        }
+
+        function hideLoader() {
+            loader.classList.add('hidden');
+        }
+
+        function showToast(message) {
+            const toastContainer = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `glass-panel px-4 py-2 rounded-full text-xs font-semibold text-white shadow-xl flex items-center gap-2 transition-all duration-300 opacity-0 translate-y-2 border-cyan-500/50`;
+            toast.innerHTML = `<i class="fa-solid fa-circle-info text-cyan-400"></i> ${message}`;
+            
+            toastContainer.appendChild(toast);
+
+            setTimeout(() => {
+                toast.classList.remove('opacity-0', 'translate-y-2');
+            }, 10);
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-2');
+                setTimeout(() => toast.remove(), 300);
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
