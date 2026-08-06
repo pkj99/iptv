@@ -168,11 +168,6 @@
             <button class="source-btn" onclick="changeSource('./m3u/ftv.m3u', this)">民視</button>
             <button class="source-btn" onclick="changeSource('./m3u/twtv.m3u', this)">台灣</button>
             <button class="source-btn" onclick="changeSource('./m3u/cntv.m3u', this)">大陸</button>
-            <!-- <button class="source-btn" onclick="changeSource('./m3u/486tv.m3u', this)">486</button> -->
-            <!-- <button class="source-btn" onclick="changeSource('./m3u/othertv.m3u', this)">其他</button> -->
-            <!-- <button class="source-btn" onclick="changeSource('./m3u/local-4gtv.m3u', this)">四季L</button> -->
-            <!-- <button class="source-btn" onclick="changeSource('https://iptv.catvod.com/tv.m3u', this)">CAT</button> -->
-            <!-- <button class="source-btn" onclick="changeSource('https://t.freetv.fun/m3u/taiwan_original.m3u', this)">FreeTV</button> -->
         </div>
 
         <div id="playlist">
@@ -269,8 +264,8 @@
             ftvPlay(url, el)
         } else if (url.includes('cntv.html')) {
             corsPlay(url, el)
-        // } else if (url.includes('486tv.html')) {
-        //     corsPlay(url, el)
+        } else if (url.includes('twtv.html')) {
+            corsPlay(url, el)
         // } else if (url.includes('freetv')) {
         //     corsPlay(url, el)
         } else {
@@ -407,7 +402,16 @@
         document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
         el.classList.add('active');
 
-        fetch(`https://corsproxy.io/?url=${encodeURIComponent(url)}`)
+
+        var Headers = {
+            method: 'GET',
+            headers: {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                "Referer":"https://pkj99.github.io/"
+            }
+        }
+
+        fetch(`https://corsproxy.io/?url=${encodeURIComponent(url)}`,Headers)
         .then(response => {
             if (response.ok) return response.text()        
             throw new Error('Network response was not ok.')
