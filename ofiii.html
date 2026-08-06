@@ -13,28 +13,117 @@
 
 <script>
 
+
+
+/**
+ * 解析 Master M3U8 並提取最高畫質/頻寬的 Variant Stream 網址
+ * @param {string} masterUrl - Master Playlist 網址
+ * @returns {Promise<{url: string, bandwidth: number, resolution: string}|null>}
+ */
+async function getHighestResM3u8(masterUrl) {
+    try {
+        console.log(`📡 正在下載 Master Playlist: ${masterUrl}`);
+        const response = await fetch(masterUrl, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP 錯誤，狀態碼: ${response.status}`);
+        }
+
+        const m3u8Content = await response.text();
+        
+        const lines = m3u8Content.split(/\r?\n/);
+        let maxBandwidth = -1;
+        let maxResolution = '未知';
+        let bestStreamUrl = null;
+
+        let currentBandwidth = 0;
+        let currentResolution = '';
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+
+            if (line.startsWith('#EXT-X-STREAM-INF:')) {
+                // 提取 BANDWIDTH 數值
+                const bwMatch = line.match(/BANDWIDTH=(\d+)/);
+                if (bwMatch) {
+                    currentBandwidth = parseInt(bwMatch[1], 10);
+                }
+
+                // 提取 RESOLUTION 數值 (例如: 1920x1080)
+                const resMatch = line.match(/RESOLUTION=([0-9x]+)/);
+                if (resMatch) {
+                    currentResolution = resMatch[1];
+                }
+            } else if (line && !line.startsWith('#')) {
+                // 找到對應的子串流相對或絕對路徑
+                if (currentBandwidth > maxBandwidth) {
+                    maxBandwidth = currentBandwidth;
+                    maxResolution = currentResolution || maxResolution;
+                    
+                    // 使用 URL 類別處理相對路徑拼接 (Relative Path Resolution)
+                    bestStreamUrl = new URL(line, masterUrl).href;
+                }
+                
+                // 重設暫存變數
+                currentBandwidth = 0;
+                currentResolution = '';
+            }
+        }
+
+        if (!bestStreamUrl) {
+            throw new Error('未能在 Master Playlist 中找到任何有效的 Variant Stream！');
+        }
+
+        return {
+            url: bestStreamUrl,
+            bandwidth: maxBandwidth,
+            resolution: maxResolution
+        };
+
+    } catch (error) {
+        console.error('❌ 解析過程發生錯誤:', error.message);
+        return null;
+    }
+}
+
+
+
+
 async function loadHLSStream(url) {
   try {
-    // 1. Fetch 取得 HLS 內容 (.m3u8)
-    const response = await fetch(url);
-    
-    if (!response.ok) {
-      throw new Error('網路回應失敗');
+
+        const result = await getHighestResM3u8(url);
+
+        if (result){
+            const maxResM3u8 = result.url;
+
+            // 1. Fetch 取得 HLS 內容 (.m3u8)
+            const response = await fetch(result.url);
+            
+            if (!response.ok) {
+                throw new Error('網路回應失敗');
+            }
+
+            // 2. 讀取文字內容（M3U8 播放列表）
+            const m3u8Text = await response.text();
+            console.log('M3U8 內容：', m3u8Text);
+
+            // 3. 建立新的 Response 物件回傳或處理
+            const newResponse = new Response(m3u8Text, {
+            headers: { 'Content-Type': 'application/vnd.apple.mpegurl' }
+            });
+        
+            return newResponse;
+            }
+    } catch (error) {
+            console.error('載入串流發生錯誤：', error);
     }
 
-    // 2. 讀取文字內容（M3U8 播放列表）
-    const m3u8Text = await response.text();
-    console.log('M3U8 內容：', m3u8Text);
 
-    // 3. 建立新的 Response 物件回傳或處理
-    const newResponse = new Response(m3u8Text, {
-      headers: { 'Content-Type': 'application/vnd.apple.mpegurl' }
-    });
-
-    return newResponse;
-  } catch (error) {
-        console.error('載入串流發生錯誤：', error);
-  }
 }
 
 
@@ -56,7 +145,7 @@ function chUrl(asset_id, media_type, callback)
         // location.href = 'dpplayer.html?url='+Url;
         // location.href = Url;
         // window.location.replace(Url);
-
+        
         loadHLSStream(Url);
 
     });
