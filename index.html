@@ -12,6 +12,9 @@
     <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- OpenCC for Traditional/Simplified Chinese conversion -->
+    <script src="https://cdn.jsdelivr.net/npm/opencc-js@1.4.1/dist/umd/full.js"></script>
+
     <style>
         :root {
             --bg-main: #020408;
@@ -185,6 +188,29 @@
     const DEFAULT_LOGO = "./images/iptv/tv.svg";
     let hlsInstance = null;
 
+    let openccS2T = null;
+    let openccT2S = null;
+    var currentStreamUrl = '';
+
+    // Safe OpenCC converter wrappers to prevent null call exceptions
+    function toTC(str) {
+        if (str === null || str === undefined) return '';
+        if (typeof openccS2T === 'function') {
+            try { return openccS2T(str); } catch (e) { return String(str); }
+        }
+        return String(str);
+    }
+
+    function toSC(str) {
+        if (str === null || str === undefined) return '';
+        if (typeof openccT2S === 'function') {
+            try { return openccT2S(str); } catch (e) { return String(str); }
+        }
+        return String(str);
+    }
+
+
+
     async function changeSource(file, btn) {
         document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
@@ -239,7 +265,7 @@
                 item.className = 'channel-card';
                 item.innerHTML = `
                     <img class="channel-logo" src="${logo}" onerror="this.src='${DEFAULT_LOGO}'">
-                    <div class="channel-name">${ch.name}</div>
+                    <div class="channel-name">${toTC(ch.name)}</div>
                 `;
                 item.onclick = () => startPlay(ch.url, item);                
                 playlistContainer.appendChild(item);
@@ -288,6 +314,83 @@
     }
 
 
+    /**
+     * 解析 Master M3U8 並提取最高畫質/頻寬的 Variant Stream 網址
+     * @param {string} masterUrl - Master Playlist 網址
+     * @returns {Promise<{url: string, bandwidth: number, resolution: string}|null>}
+     */
+    async function getHighestResM3u8(masterUrl) {
+        try {
+            console.log(`📡 正在下載 Master Playlist: ${masterUrl}`);
+            const response = await fetch(masterUrl, {
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP 錯誤，狀態碼: ${response.status}`);
+            }
+
+            const m3u8Content = await response.text();
+            
+            const lines = m3u8Content.split(/\r?\n/);
+            let maxBandwidth = -1;
+            let maxResolution = '未知';
+            let bestStreamUrl = null;
+
+            let currentBandwidth = 0;
+            let currentResolution = '';
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+
+                if (line.startsWith('#EXT-X-STREAM-INF:')) {
+                    // 提取 BANDWIDTH 數值
+                    const bwMatch = line.match(/BANDWIDTH=(\d+)/);
+                    if (bwMatch) {
+                        currentBandwidth = parseInt(bwMatch[1], 10);
+                    }
+
+                    // 提取 RESOLUTION 數值 (例如: 1920x1080)
+                    const resMatch = line.match(/RESOLUTION=([0-9x]+)/);
+                    if (resMatch) {
+                        currentResolution = resMatch[1];
+                    }
+                } else if (line && !line.startsWith('#')) {
+                    // 找到對應的子串流相對或絕對路徑
+                    if (currentBandwidth > maxBandwidth) {
+                        maxBandwidth = currentBandwidth;
+                        maxResolution = currentResolution || maxResolution;
+                        
+                        // 使用 URL 類別處理相對路徑拼接 (Relative Path Resolution)
+                        bestStreamUrl = new URL(line, masterUrl).href;
+                    }
+                    
+                    // 重設暫存變數
+                    currentBandwidth = 0;
+                    currentResolution = '';
+                }
+            }
+
+            if (!bestStreamUrl) {
+                throw new Error('未能在 Master Playlist 中找到任何有效的 Variant Stream！');
+            }
+
+            return {
+                url: bestStreamUrl,
+                bandwidth: maxBandwidth,
+                resolution: maxResolution
+            };
+
+        } catch (error) {
+            console.error('❌ 解析過程發生錯誤:', error.message);
+            return null;
+        }
+    }
+
+
+
     function ofiiiPlay(url, el) {
         document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
         el.classList.add('active');
@@ -302,14 +405,21 @@
             var j = JSON.parse(data);
             url = j.asset_urls[0];
 
+            const result = getHighestResM3u8(url);
+            if (result) { 
+                m3u8Url = result.url;
+            } else {
+                m3u8Url = url;
+            }
+
             if (Hls.isSupported()) {
                 if (hlsInstance) hlsInstance.destroy();
                 hlsInstance = new Hls();
-                hlsInstance.loadSource(url);
+                hlsInstance.loadSource(m3u8Url);
                 hlsInstance.attachMedia(video);
                 hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => video.play());
             } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = url;
+                video.src = m3u8Url;
                 video.play();
             }
         });
@@ -332,9 +442,9 @@
 
         url = url.replace('https://pkj99.github.io/iptv/ftv.html?ChannelId=','https://app301.4gtv.tv/Data/GetChannelURL_Mozai.ashx?callback=channelname&Type=LIVE&HostURL=https://www.ftv.com.tw/&_=1770090857974&ChannelId=');
 
-        // fetch(url, Headers)
+        fetch(url, Headers)
         // fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`, Headers)
-        fetch(`https://corsproxy.io/?url=${encodeURIComponent(url)}`, Headers)
+        // fetch(`https://corsproxy.io/?url=${encodeURIComponent(url)}`, Headers)
 
         .then(response => {
             if (response.ok) return response.text()        
@@ -367,33 +477,11 @@
     }
     
     function catPlay(url, el) {
-
         video.pause();
         window.open(url,'videoWindow');
 
         document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
         el.classList.add('active');
-
-        // fetch(url)
-        // .then(response => {
-        //     if (response.ok) return response.text()        
-        //     throw new Error('Network response was not ok.')
-        // })
-        // .then(data => {
-        //     if (data.redirectUrl) {
-        //         url = data.redirectUrl;
-        //         if (Hls.isSupported()) {
-        //             if (hlsInstance) hlsInstance.destroy();
-        //             hlsInstance = new Hls();
-        //             hlsInstance.loadSource(url);
-        //             hlsInstance.attachMedia(video);
-        //             hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => video.play());
-        //         } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        //             video.src = url;
-        //             video.play();
-        //         }
-        //     }
-        // });
     }
 
 
@@ -435,6 +523,15 @@
 
 
     // 初始啟動
+    try {
+        if (typeof OpenCC !== 'undefined') {
+            openccS2T = OpenCC.Converter({ from: 'cn', to: 'tw' });
+            openccT2S = OpenCC.Converter({ from: 'tw', to: 'cn' });
+        }
+    } catch (err) {
+        console.warn("OpenCC 初始化失敗:", err);
+    }
+
     fetchAndRender('./m3u/ofiii.m3u');
 </script>
 
