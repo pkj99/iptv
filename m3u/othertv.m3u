@@ -11,8 +11,6 @@ http://61.221.215.25:8800/hls/40/index.m3u8
 http://61.221.215.25:8800/hls/57/index.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="nhkworld" group-title="其他頻道",nhkworld
 http://61.221.215.25:8800/hls/51/index.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="49号" group-title="其他頻道",49号
-http://61.221.215.25:8800/hls/49/index.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="Dbox" group-title="其他頻道",Dbox
 http://61.221.215.25:8800/hls/54/index.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="无线新闻台" group-title="其他頻道",无线新闻台
@@ -29,3 +27,5 @@ http://74.91.26.218:82/live/nowbg.m3u8
 http://74.91.26.218:82/live/tvbxh.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="华语电视" group-title="其他頻道",华语电视
 http://38.64.72.148:80/hls/modn/list/4003/chunklist0.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="49号" group-title="其他頻道",49号
+http://61.221.215.25:8800/hls/49/index.m3u8
