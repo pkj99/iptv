@@ -29,8 +29,10 @@ https://pkj99.github.io/iptv/ofiii.html?asset_id=litv-xinchuang11
 https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv103
 #EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv052_tv.png" tvg-name="華視新聞" group-title="歐飛頻道",華視新聞
 https://pkj99.github.io/iptv/ofiii.html?asset_id=4gtv-4gtv052
-#EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_nnews_tv.png" tvg-name="倪珍播新聞" group-title="歐飛頻道",倪珍播新聞
-https://pkj99.github.io/iptv/ofiii.html?asset_id=nnews-zh
+#EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_mnews_tv.png" tvg-name="鏡電視新聞台" group-title="歐飛頻道",鏡電視新聞台
+https://pkj99.github.io/iptv/ofiii.html?asset_id=mnews
+#EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_setnews_tv.png" tvg-name="三立新聞LIVE" group-title="歐飛頻道",三立新聞LIVE
+https://pkj99.github.io/iptv/ofiii.html?asset_id=setnews
 #EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_iNEWS_tv.png" tvg-name="三立新聞iNEWS" group-title="歐飛頻道",三立新聞iNEWS
 https://pkj99.github.io/iptv/ofiii.html?asset_id=iNEWS
 #EXTINF:-1 tvg-logo="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_litv-longturn23_tv.png" tvg-name="寰宇財經台" group-title="歐飛頻道",寰宇財經台
