@@ -420,18 +420,18 @@
             var j = JSON.parse(data);
             url = j.asset_urls[0];
 
-            // getHighestResM3u8(url);
+            getHighestResM3u8(url);
 
-            if (Hls.isSupported()) {
-                if (hlsInstance) hlsInstance.destroy();
-                hlsInstance = new Hls();
-                hlsInstance.loadSource(url);
-                hlsInstance.attachMedia(video);
-                hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => video.play());
-            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = url;
-                video.play();
-            }
+            // if (Hls.isSupported()) {
+            //     if (hlsInstance) hlsInstance.destroy();
+            //     hlsInstance = new Hls();
+            //     hlsInstance.loadSource(url);
+            //     hlsInstance.attachMedia(video);
+            //     hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+            // } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            //     video.src = url;
+            //     video.play();
+            // }
         });
     }
 
