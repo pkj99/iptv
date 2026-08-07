@@ -378,7 +378,7 @@
             if (!bestStreamUrl) {
                 throw new Error('未能在 Master Playlist 中找到任何有效的 Variant Stream！');
             }
-
+            console.log(bestStreamUrl);
             return {
                 url: bestStreamUrl,
                 bandwidth: maxBandwidth,
