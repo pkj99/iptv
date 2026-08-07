@@ -333,7 +333,9 @@
             }
 
             const m3u8Content = await response.text();
-            
+
+            console.log(m3u8Content);
+
             const lines = m3u8Content.split(/\r?\n/);
             let maxBandwidth = -1;
             let maxResolution = '未知';
@@ -406,6 +408,7 @@
             url = j.asset_urls[0];
 
             const result = getHighestResM3u8(url);
+            console.log(result);
             if (result) { 
                 m3u8Url = result.url;
             } else {
