@@ -289,9 +289,9 @@
         } else if (url.includes('ftv.html')) {
             ftvPlay(url, el)
         } else if (url.includes('74.91.26.218:82')) {
-            corsPlay(url, el)
+            catPlay(url, el)
         } else if (url.includes('cctv')) {
-            corsPlay(url, el)
+            catPlay(url, el)
         // } else if (url.includes('freetv')) {
         //     corsPlay(url, el)
         } else {
@@ -452,9 +452,9 @@
 
         url = url.replace('https://pkj99.github.io/iptv/ftv.html?ChannelId=','https://app301.4gtv.tv/Data/GetChannelURL_Mozai.ashx?callback=channelname&Type=LIVE&HostURL=https://www.ftv.com.tw/&_=1770090857974&ChannelId=');
 
-        // fetch(url, Headers)
+        fetch(url, Headers)
         // fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`, Headers)
-        fetch(`https://corsproxy.io/?url=${encodeURIComponent(url)}`, Headers)
+        // fetch(`https://corsproxy.io/?url=${encodeURIComponent(url)}`, Headers)
 
         .then(response => {
             if (response.ok) return response.text()        

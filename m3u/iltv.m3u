@@ -81,8 +81,6 @@ http://74.91.26.218:82/live/szwshd.m3u8
 http://74.91.26.218:82/live/cctv5p.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/广东新闻.png" tvg-name="广东新闻" group-title="台灣頻道",广东新闻
 http://74.91.26.218:82/live/gdxw.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="华视教育体育文化" group-title="其他頻道",华视教育体育文化
-http://74.91.26.218:82/live/ctsjy.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="无线新闻台" group-title="其他頻道",无线新闻台
 http://74.91.26.218:82/live/inews.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="NOW星影台" group-title="其他頻道",NOW星影台
