@@ -168,7 +168,7 @@
         
         <div class="source-bar">
             <button class="source-btn active" onclick="changeSource('./m3u/ofiii.m3u', this)">歐飛</button>
-            <button class="source-btn" onclick="changeSource('./m3u/ftv.m3u', this)">民視</button>
+            <!-- <button class="source-btn" onclick="changeSource('./m3u/ftv.m3u', this)">民視</button> -->
             <button class="source-btn" onclick="changeSource('./m3u/twtv.m3u', this)">台灣</button>
             <button class="source-btn" onclick="changeSource('./m3u/cntv.m3u', this)">大陸</button>
         </div>
@@ -274,7 +274,7 @@
                     initItem = item;
                 }
             });
-            if(initUrl.includes('catvod') == false){
+            if(initUrl.includes('74.91.26.218:82') == false && initUrl.includes('cctv') == false){
                 startPlay(initUrl,initItem);
             }
         } catch (err) {
@@ -488,7 +488,7 @@
     
     function catPlay(url, el) {
         video.pause();
-        window.open(url,'videoWindow');
+        window.open(url,'_blank','width=640,height=360');
 
         document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
         el.classList.add('active');
