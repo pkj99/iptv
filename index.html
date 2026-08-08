@@ -487,11 +487,11 @@
     }
     
     function catPlay(url, el) {
-        video.pause();
-        window.open(url,'_blank','width=640,height=360');
-
         document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
         el.classList.add('active');
+
+        video.pause();
+        window.open(url,'_blank','width=640,height=360');
     }
 
 

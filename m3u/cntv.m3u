@@ -1,8 +1,4 @@
 #EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"
-#EXTINF:-1 tvg-logo="" tvg-name="CCTV17农业农村" group-title="央视",CCTV17农业农村
-http://74.91.26.218:82/live/cctv17hd.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="CCTV5体育" group-title="央视",CCTV5体育
-http://74.91.26.218:82/live/cctv5hd.m3u8
 #EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" tvg-name="CCTV1" group-title="央视",CCTV1
 http://74.91.26.218:82/live/cctv1hd.m3u8
 #EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" tvg-name="CCTV2" group-title="央视",CCTV2
@@ -43,8 +39,6 @@ http://74.91.26.218:82/live/cctv17hd.m3u8
 http://74.91.26.218:82/live/cctv5p.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="湖南卫视4K" group-title="卫视",湖南卫视4K
 http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="海峡卫视" group-title="卫视",海峡卫视
-http://hlsbkmgsplive.miguvideo.com/migu/kailu/haixiaws/57/20230724/01.m3u8?msisdn=&Channel_ID=&ContentId=&HlsSubType=&HlsProfileId=&encrypt=
 #EXTINF:-1 tvg-logo="" tvg-name="亚洲卫视" group-title="卫视",亚洲卫视
 https://p2hs.vzan.com/slowlive/821481626725612419/live.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="唐人卫视" group-title="卫视",唐人卫视
@@ -68,4 +62,4 @@ http://1.94.31.214/php/hntv.php?id=hnws
 #EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/延边卫视.png" tvg-name="延边卫视" group-title="卫视",延边卫视
 https://srs.iyb983.cn:443/video/CYS/index.m3u8
 #EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/福建海峡卫视.png" tvg-name="福建海峡卫视" group-title="卫视",福建海峡卫视
-http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8
+http://hlsbkmgsplive.miguvideo.com/migu/kailu/haixiaws/57/20230724/01.m3u8?msisdn=&Channel_ID=&ContentId=&HlsSubType=&HlsProfileId=&encrypt=
