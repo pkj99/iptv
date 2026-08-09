@@ -37,3 +37,19 @@ http://38.64.72.148:80/hls/modn/list/4008/chunklist1.m3u8
 http://38.64.72.148:80/hls/modn/list/4005/chunklist1.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="广东珠江" group-title="其他頻道",广东珠江
 http://74.91.26.218:82/live/gdzj.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="华视好剧-FastTV飞速看" group-title="其他頻道",华视好剧-FastTV飞速看
+https://ha.msbot.dpdns.org/4gtv_api.php?id=330
+#EXTINF:-1 tvg-logo="" tvg-name="金光布袋戏-FastTV飞速看" group-title="其他頻道",金光布袋戏-FastTV飞速看
+https://ha.msbot.dpdns.org/4gtv_api.php?id=339
+#EXTINF:-1 tvg-logo="" tvg-name="民视生活通-FastTV飞速看" group-title="其他頻道",民视生活通-FastTV飞速看
+https://ha.msbot.dpdns.org/4gtv_api.php?id=387
+#EXTINF:-1 tvg-logo="" tvg-name="TVBS看板人物-FastTV飞速看" group-title="其他頻道",TVBS看板人物-FastTV飞速看
+https://ha.msbot.dpdns.org/4gtv_api.php?id=394
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-xinchuang08.png" tvg-name="博斯运动二台" group-title="其他頻道",博斯运动二台
+https://ha.msbot.dpdns.org/4gtv_api.php?id=495
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-xinchuang13.png" tvg-name="博斯无限二台" group-title="其他頻道",博斯无限二台
+https://ha.msbot.dpdns.org/4gtv_api.php?id=496
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn07_mobile.png" tvg-name="博斯运动一台" group-title="其他頻道",博斯运动一台
+https://ha.msbot.dpdns.org/4gtv_api.php?id=487
+#EXTINF:-1 tvg-logo="" tvg-name="民视健康美丽生活-FastTV飞速看" group-title="其他頻道",民视健康美丽生活-FastTV飞速看
+https://ha.msbot.dpdns.org/4gtv_api.php?id=376

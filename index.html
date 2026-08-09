@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber IPTV</title>
+    <title>Cyber TV</title>
     <link rel="icon" type="image/png" href="images/favicon2.png">
     <link rel="shortcut icon" href="images/favicon2.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/favicon2.png" />
@@ -102,7 +102,8 @@
         .channel-card {
             display: flex;
             align-items: center;
-            padding: 15px;
+            padding: 5px;
+            margin-left: 8px;
             margin-bottom: 8px;
             border-radius: 8px;
             cursor: pointer;
@@ -164,11 +165,11 @@
 
 <div class="app-wrapper">
     <aside id="sidebar">
-        <div class="nav-header">CYBER IPTV</div>
+        <div class="nav-header">CYBER TV</div>
         
         <div class="source-bar">
             <button class="source-btn active" onclick="changeSource('./m3u/ofiii.m3u', this)">歐飛</button>
-            <!-- <button class="source-btn" onclick="changeSource('./m3u/ftv.m3u', this)">民視</button> -->
+            <button class="source-btn" onclick="changeSource('./m3u/ftv.m3u', this)">民視</button>
             <button class="source-btn" onclick="changeSource('./m3u/twtv.m3u', this)">台灣</button>
             <button class="source-btn" onclick="changeSource('./m3u/cntv.m3u', this)">大陸</button>
             <button class="source-btn" onclick="changeSource('./m3u/local-4gtv.m3u', this)">四季</button>
@@ -275,7 +276,7 @@
                     initItem = item;
                 }
             });
-            if(initUrl.includes('74.91.26.218:82') == false && initUrl.includes('cctv') == false){
+            if(initUrl.includes('ofiii.html')){
                 startPlay(initUrl,initItem);
             }
         } catch (err) {
@@ -290,11 +291,11 @@
         } else if (url.includes('ftv.html')) {
             ftvPlay(url, el)
         } else if (url.includes('74.91.26.218:82')) {
-            catPlay(url, el)
+            newWindowPlay(url, el)
         } else if (url.includes('cctv')) {
-            catPlay(url, el)
-        // } else if (url.includes('freetv')) {
-        //     corsPlay(url, el)
+            newWindowPlay(url, el)
+        } else if (url.includes(':5050')) {
+            newWindowPlay(url, el)
         } else {
 
         document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
@@ -314,13 +315,12 @@
         }
     }
 
-
-    /**
-     * 解析 Master M3U8 並提取最高畫質/頻寬的 Variant Stream 網址
-     * @param {string} masterUrl - Master Playlist 網址
-     * @returns {Promise<{url: string, bandwidth: number, resolution: string}|null>}
-     */
     async function getHighestResM3u8(masterUrl) {
+   
+        //  解析 Master M3U8 並提取最高畫質/頻寬的 Variant Stream 網址
+        //  @param {string} masterUrl - Master Playlist 網址
+        //  @returns {Promise<{url: string, bandwidth: number, resolution: string}|null>}
+
         try {
             // console.log(`📡 正在下載 Master Playlist: ${masterUrl}`);
             const response = await fetch(masterUrl, {
@@ -405,8 +405,6 @@
         }
     }
 
-
-
     function ofiiiPlay(url, el) {
         document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
         el.classList.add('active');
@@ -437,65 +435,99 @@
     }
 
     function ftvPlay(url, el) {
-        document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
-        el.classList.add('active');
 
-        var Headers = {
-            method: 'GET',
-            authority: 'app301.4gtv.tv',
-            headers: {
-                "Content-Type":"application/json",
-                "Accept": "application/json",
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-                "Referer":"https://embed.4gtv.tv/"
-            }
-        }
+        const channel = {"4gtv-4gtv002":"FTV","4gtv-4gtv003":"FMTV","4gtv-4gtv001":"FTTV","litv-ftv13":"FTVNews","litv-ftv09":"FTVDrama","4gtv-4gtv004":"FTVVariety","litv-ftv07":"FTVTravel"};
 
-        url = url.replace('https://pkj99.github.io/iptv/ftv.html?ChannelId=','https://app301.4gtv.tv/Data/GetChannelURL_Mozai.ashx?callback=channelname&Type=LIVE&HostURL=https://www.ftv.com.tw/&_=1770090857974&ChannelId=');
-
-        fetch(url, Headers)
-        // fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`, Headers)
-        // fetch(`https://corsproxy.io/?url=${encodeURIComponent(url)}`, Headers)
-
-        .then(response => {
-            if (response.ok) return response.text()        
-            throw new Error('Network response was not ok.')
-        })
-        .then(data => {
-            var jsonData = data.substring(data.indexOf("(") + 1, data.lastIndexOf(")"));
-            try {
-                var j = JSON.parse(jsonData);
-            } catch(e) {
-                alert('is not valid JSON');
-                return false;
-            }
-            var url = j.VideoURL;
-
-            // var j = JSON.parse(data);
-            // url = j.VideoURL;
-
-            if (Hls.isSupported()) {
-                if (hlsInstance) hlsInstance.destroy();
-                hlsInstance = new Hls();
-                hlsInstance.loadSource(url);
-                hlsInstance.attachMedia(video);
-                hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => video.play());
-            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = url;
-                video.play();
-            }
-        });
-    }
-    
-    function catPlay(url, el) {
         document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
         el.classList.add('active');
 
         video.pause();
-        window.open(url,'_blank','width=640,height=360');
+        ChannelId = url.replace('https://pkj99.github.io/iptv/ftv.html?ChannelId=','');
+        // window.open("https://embed.4gtv.tv/ftv/"+channel[ChannelId]+".html?player_autoplay=on&player_mute=off",'_blank','width=640,height=360,left=320,top=100');
+        openCenteredWindow("https://embed.4gtv.tv/ftv/"+channel[ChannelId]+".html?player_autoplay=on&player_mute=off",'_blank', 1280, 720);
+
+
+        // var Headers = {
+        //     method: 'GET',
+        //     authority: 'app301.4gtv.tv',
+        //     headers: {
+        //         "Content-Type":"application/json",
+        //         "Accept": "application/json",
+        //         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+        //         "Referer":"https://embed.4gtv.tv/"
+        //     }
+        // }
+
+        // url = url.replace('https://pkj99.github.io/iptv/ftv.html?ChannelId=','https://app301.4gtv.tv/Data/GetChannelURL_Mozai.ashx?callback=channelname&Type=LIVE&HostURL=https://www.ftv.com.tw/&_=1770090857974&ChannelId=');
+
+        // fetch(url, Headers)
+        // // fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`, Headers)
+        // // fetch(`https://corsproxy.io/?url=${encodeURIComponent(url)}`, Headers)
+
+        // .then(response => {
+        //     if (response.ok) return response.text()        
+        //     throw new Error('Network response was not ok.')
+        // })
+        // .then(data => {
+        //     var jsonData = data.substring(data.indexOf("(") + 1, data.lastIndexOf(")"));
+        //     try {
+        //         var j = JSON.parse(jsonData);
+        //     } catch(e) {
+        //         alert('is not valid JSON');
+        //         return false;
+        //     }
+        //     var url = j.VideoURL;
+
+        //     // var j = JSON.parse(data);
+        //     // url = j.VideoURL;
+
+        //     if (Hls.isSupported()) {
+        //         if (hlsInstance) hlsInstance.destroy();
+        //         hlsInstance = new Hls();
+        //         hlsInstance.loadSource(url);
+        //         hlsInstance.attachMedia(video);
+        //         hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+        //     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        //         video.src = url;
+        //         video.play();
+        //     }
+        // });
     }
 
+    function openCenteredWindow(url, winName, w, h) {
+        // 取得螢幕的可用寬高（扣除工作列等）
+        // const dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : window.screenX;
+        // const dualScreenTop = window.screenTop !== undefined ? window.screenTop : window.screenY;
 
+        const width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+        const height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+        // 計算置中的 left 與 top 座標
+        // const left = ((width / 2) - (w / 2)) + dualScreenLeft;
+        // const top = ((height / 2) - (h / 2)) + dualScreenTop;
+        const left = ((width / 2) - (w / 2));
+        const top = ((height / 2) - (h / 2));
+
+        // 組合視窗特徵參數
+        const features = `width=${w},height=${h},top=${top},left=${left},scrollbars=yes,resizable=yes,location=no,status=no,toolbar=no,menubar=no`;
+
+        // 開啟新視窗
+        const newWindow = window.open(url, winName, features);
+
+        // 讓新視窗取得焦點
+        if (window.focus) {
+            newWindow.focus();
+        }
+    }    
+
+    function newWindowPlay(url, el) {
+        document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
+        el.classList.add('active');
+
+        video.pause();
+        // window.open(url,'_blank','width=640,height=360,left=320,top=100');
+        openCenteredWindow(url,'_blank', 1280, 720);
+    }
 
     function corsPlay(url, el) {
         document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));

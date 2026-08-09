@@ -11,6 +11,7 @@
 
     <!-- <a target="_blank" href="ftv.html?ChannelName=FTV"><img src="images/ftv/民視.png"></a>
     <a target="_blank" href="ftv.html?ChannelName=FMTV"><img src="images/ftv/民視第一台.png"></a>
+    <a target="_blank" href="ftv.html?ChannelName=FTTV"><img src="images/ftv/民視台灣台.png"></a>
     <a target="_blank" href="ftv.html?ChannelName=FTVNews"><img src="images/ftv/民視新聞台.png"></a>
     <a target="_blank" href="ftv.html?ChannelName=FTVDrama"><img src="images/ftv/民視影劇台.png"></a>
     <a target="_blank" href="ftv.html?ChannelName=FTVVariety"><img src="images/ftv/民視綜藝台.png"></a>
@@ -26,7 +27,10 @@
 
 
 <script>
-function ajaxUrl(ChannelName, callback)
+
+const channel = {"4gtv-4gtv002":"FTV","4gtv-4gtv003":"FMTV","4gtv-4gtv001":"FTTV","litv-ftv13":"FTVNews","litv-ftv09":"FTVDrama","4gtv-4gtv004":"FTVVariety","litv-ftv07":"FTVTravel"};
+
+function ajaxUrl(ChannelId, callback)
 {
     var Headers = {
         method: 'GET',
@@ -35,12 +39,14 @@ function ajaxUrl(ChannelName, callback)
             "Content-Type":"application/json",
             "Accept": "application/json",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-            "Referer":"https://embed.4gtv.tv/"
+            "Referer":"https://embed.4gtv.tv/",
+            "Cookie":"Account_ID=false; __gpi=UID=00001307b45ade47:T=1762220857:RT=1777128634:S=ALNI_MZ7XnhoPu_y9kvJWH7HXQD_Mb9OwQ; _cfuvid=hszEunyAQ03hXFIgy_evvOnG.hW4vXJ.O5nGpFdl59k-1786245063.724608-1.0.1.1-cCTPV8Qwr2Fltf12eKNeRfaTsWSU2RZpI_IRjTHb4Zc; _gid=GA1.2.183023182.1786245101; _gcl_au=1.1.1546437493.1786245102; cf_clearance=w9jsNPMfcTL5bvmpP2Mvz1dAC_qcNFNscSNg3j553mA-1786245288-1.2.1.1-onOZ2jA_qKn1di5ESO6eu2Zoj1b_fXdjJjuoaWQhNXkZV2dW96I7U18yvzROJgARWcFGjSVTU8QZxbP_VtAkRQEy4WEWJmxu1t8RkTxzpeHYjZGnwtWiOSpdt7FzYUIGldWCtT5cA1ovHTbps28zmwl.VSVJoXbj78rFCShTr8e7pgg3KJlzzkvz3D1CvZ5.nUbgyCvGfFDm9_TZgYkuaEH.WVSfMGqDp2yh4Yn5pl_.0I1u7ar_OHIMRd.KKL2RyglW9mvkTL7cYZQwpZ_PMQGXKtuPgMeSmgwP1d9Lk_qc8ukgCOpLPWFqeyGEToDgNyiIN.xE1vBZYoGzPlIPTJ5CSzyLZHpUy26q0fge0sU; AWSALB=59IgT7/HClaOHsSnmdTNOmvUT7aXI8mDVmcg3Xq2lhoycRa/jYfhltQVLgQDWC2oi7YBRtexXY8oMA4kvJay56j2Y8glmuxZFpsxM4zH1NzIkUqY2x936clm7aGo; nol_fpid=wb55ozjie0u4zrgbxtajm2fsrppa91786245289|1786245289401|1786245453384|1786245453474; __gads=ID=40a33e80bbecc5ae:T=1762220857:RT=1786245454:S=ALNI_Mbc5K-7lWcG5YXb5SWu35bClIVHXw; AWSALBCORS=Ik7V4Fb3hrLooFrNsmay0UOEJcspgCeRIj0kMud+ZiZGkjO87SL0J3eOId+mGwLXqeuq3wcW7vUdVCswnfP6WS1x1WWDDD0sEUBmbrRyDu+RABO6CUjwW08uY/qS; _ga=GA1.1.1059288239.1786245101; _gat_gtag_UA_51469004_13=1; _gat_gtag_UA_63498140_21=1; _gat_gtag_UA_63498140_2=1; _ga_DM13V08WV8=GS2.1.s1786245101$o2$g1$t1786245723$j10$l0$h0; _ga_5HN73V0GHH=GS2.1.s1786245101$o1$g1$t1786245723$j10$l0$h0; __cf_bm=WOhrCe87VEjv_8ocrP9cLD5Vqx6tdOfsgxDvVd3peko-1786245723.4961932-1.0.1.1-RkrE6CMQ4P9tWSiHRnOhOUeVchx2NIRKSJ9g78pSmKU.dh20JXBpBYJ4SpA326rBjXY_FQ.aBHyLqPNGRfrScmMC0o7zHg91.AKyIBinNldjddOw0WpyL2WEigLiHiCs"
         }
     }
 
     // fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent('https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName='+ChannelName)}`, Headers)
     fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent('https://app301.4gtv.tv/Data/GetChannelURL_Mozai.ashx?callback=channelname&Type=LIVE&HostURL=https://www.ftv.com.tw/&_=1770090857974&ChannelId='+ChannelId)}`, Headers)
+    // fetch('https://app301.4gtv.tv/Data/GetChannelURL_Mozai.ashx?callback=channelname&Type=LIVE&HostURL=https://www.ftv.com.tw/&_=1770090857974&ChannelId='+ChannelId, Headers)
     .then(response => {
         if (response.ok) return response.text()
         throw new Error('Network response was not ok.')
@@ -51,8 +57,11 @@ function ajaxUrl(ChannelName, callback)
         var jsonData = contents.substring(contents.indexOf("(") + 1, contents.lastIndexOf(")"));
         var j = JSON.parse(jsonData);
         var Url = j.VideoURL;
-        location.href = Url;
-        // location.href = Url.replace("master.m3u8", "stream2.m3u8");
+        alert(Url);
+        if (Url){
+            location.href = Url;
+            // location.href = Url.replace("master.m3u8", "stream2.m3u8");
+        }
     });
 }
 
@@ -70,14 +79,17 @@ function ajaxUrl(ChannelName, callback)
         urlParams[decode(match[1])] = decode(match[2]);
 })();
 
-// if (urlParams["ChannelName"] != null) { 
-//     ChannelName = urlParams["ChannelName"];
-//     ajaxUrl(ChannelName);
-// }
+if (urlParams["ChannelName"] != null) { 
+    ChannelName = urlParams["ChannelName"];
+    window.open("https://embed.4gtv.tv/ftv/"+ChannelName+".html?player_autoplay=on&player_mute=off",'_blank');
+    // ajaxUrl(ChannelName);
+}
 
 if (urlParams["ChannelId"] != null) { 
     ChannelId = urlParams["ChannelId"];
-    ajaxUrl(ChannelId);
+    window.open("https://embed.4gtv.tv/ftv/"+channel[ChannelId]+".html?player_autoplay=on&player_mute=off",'_blank');
+
+    // ajaxUrl(ChannelId);
 }
 
 </script>
