@@ -1,0 +1,243 @@
+台灣頻道,#genre#
+民视第一台,http://74.91.26.218:82/live/ftvdy.m3u8
+民视台湾台,http://74.91.26.218:82/live/ftvtw.m3u8
+民视,http://74.91.26.218:82/live/ftv.m3u8
+台视,http://74.91.26.218:82/live/ttv.m3u8
+中视,http://74.91.26.218:82/live/ctv.m3u8
+中视经典,http://74.91.26.218:82/live/ctvjd.m3u8
+华视,http://74.91.26.218:82/live/cts.m3u8
+中视菁采台,http://74.91.26.218:82/live/ctvjc.m3u8
+台视新闻台,http://74.91.26.218:82/live/ttvnews.m3u8
+华视新闻,http://74.91.26.218:82/live/ctsnews.m3u8
+民视新闻台,http://74.91.26.218:82/live/ftvnews.m3u8
+中视新闻,http://74.91.26.218:82/live/ctvnews.m3u8
+公视,http://74.91.26.218:82/live/ptsty.m3u8
+公视,http://74.91.26.218:82/live/pts.m3u8
+台视财经台,http://74.91.26.218:82/live/ttvcj.m3u8
+广东新闻,http://74.91.26.218:82/live/gdxw.m3u8
+大陸頻道,#genre#
+CCTV1,http://74.91.26.218:82/live/cctv1hd.m3u8
+CCTV2,http://74.91.26.218:82/live/cctv2hd.m3u8
+CCTV3,http://74.91.26.218:82/live/cctv3hd.m3u8
+CCTV4,http://74.91.26.218:82/live/cctv4hd.m3u8
+CCTV5,http://74.91.26.218:82/live/cctv5hd.m3u8
+CCTV5+,http://74.91.26.218:82/live/cctv5p.m3u8
+CCTV6,http://74.91.26.218:82/live/cctv6hd.m3u8
+CCTV7,http://74.91.26.218:82/live/cctv7hd.m3u8
+CCTV8,http://74.91.26.218:82/live/cctv8hd.m3u8
+CCTV9,http://74.91.26.218:82/live/cctv9hd.m3u8
+CCTV10,http://74.91.26.218:82/live/cctv10hd.m3u8
+CCTV11,http://74.91.26.218:82/live/cctv11hd.m3u8
+CCTV12,http://74.91.26.218:82/live/cctv12hd.m3u8
+CCTV13,http://74.91.26.218:82/live/cctv13hd.m3u8
+CCTV14,http://74.91.26.218:82/live/cctv14hd.m3u8
+CCTV15,http://74.91.26.218:82/live/cctv15hd.m3u8
+CCTV16,http://74.91.26.218:82/live/cctv16hd.m3u8
+CCTV17,http://74.91.26.218:82/live/cctv17hd.m3u8
+湖南卫视,http://74.91.26.218:82/live/hnwshd.m3u8
+浙江卫视,http://74.91.26.218:82/live/zjwshd.m3u8
+江苏卫视,http://74.91.26.218:82/live/jswshd.m3u8
+东方卫视,http://74.91.26.218:82/live/dfwshd.m3u8
+广东卫视,http://74.91.26.218:82/live/gdwshd.m3u8
+深圳卫视,http://74.91.26.218:82/live/szwshd.m3u8
+广东体育,http://74.91.26.218:82/live/cctv5p.m3u8
+大湾区卫视,http://74.91.26.218:82/live/nfws.m3u8
+BOT頻道,#genre#
+民视第一台,https://ha.msbot.dpdns.org/4gtv_api.php?id=1
+民视台湾台,https://ha.msbot.dpdns.org/4gtv_api.php?id=2
+民视,https://ha.msbot.dpdns.org/4gtv_api.php?id=3
+中视,https://ha.msbot.dpdns.org/4gtv_api.php?id=4
+华视,https://ha.msbot.dpdns.org/4gtv_api.php?id=6
+三立综合台,https://ha.msbot.dpdns.org/4gtv_api.php?id=169
+八大综合台,https://ha.msbot.dpdns.org/4gtv_api.php?id=114
+TVBS精采台,https://ha.msbot.dpdns.org/4gtv_api.php?id=227
+靖天综合台,https://ha.msbot.dpdns.org/4gtv_api.php?id=21
+靖天日本台,https://ha.msbot.dpdns.org/4gtv_api.php?id=22
+LiveABC互动英语频道,https://ha.msbot.dpdns.org/4gtv_api.php?id=188
+ELTV生活英语台,https://ha.msbot.dpdns.org/4gtv_api.php?id=490
+Nick Jr. 儿童频道,https://ha.msbot.dpdns.org/4gtv_api.php?id=219
+尼克儿童频道,https://ha.msbot.dpdns.org/4gtv_api.php?id=185
+DreamWorks 梦工厂动画,https://ha.msbot.dpdns.org/4gtv_api.php?id=282
+靖天卡通台,https://ha.msbot.dpdns.org/4gtv_api.php?id=15
+靖洋卡通Nice Bingo,https://ha.msbot.dpdns.org/4gtv_api.php?id=59
+MOMO亲子台,https://ha.msbot.dpdns.org/4gtv_api.php?id=231
+东森新闻台,https://ha.msbot.dpdns.org/4gtv_api.php?id=292
+华视新闻,https://ha.msbot.dpdns.org/4gtv_api.php?id=34
+民视新闻台,https://ha.msbot.dpdns.org/4gtv_api.php?id=257
+三立新闻台,https://ha.msbot.dpdns.org/4gtv_api.php?id=229
+TVBS新闻台,https://ha.msbot.dpdns.org/4gtv_api.php?id=473
+东森财经新闻台,https://ha.msbot.dpdns.org/4gtv_api.php?id=211
+中视新闻,https://ha.msbot.dpdns.org/4gtv_api.php?id=33
+中天新闻台,https://ha.msbot.dpdns.org/4gtv_api.php?id=30
+寰宇新闻,https://ha.msbot.dpdns.org/4gtv_api.php?id=36
+寰宇新闻台湾台,https://ha.msbot.dpdns.org/4gtv_api.php?id=280
+TVBS,https://ha.msbot.dpdns.org/4gtv_api.php?id=183
+民视综艺台,https://ha.msbot.dpdns.org/4gtv_api.php?id=16
+靖天育乐台,https://ha.msbot.dpdns.org/4gtv_api.php?id=83
+靖天国际,https://ha.msbot.dpdns.org/4gtv_api.php?id=84
+靖天欢乐台,https://ha.msbot.dpdns.org/4gtv_api.php?id=119
+靖天资讯台,https://ha.msbot.dpdns.org/4gtv_api.php?id=88
+TVBS欢乐台,https://ha.msbot.dpdns.org/4gtv_api.php?id=184
+Mezzo Live,https://ha.msbot.dpdns.org/4gtv_api.php?id=79
+CLASSICA 古典乐,https://ha.msbot.dpdns.org/4gtv_api.php?id=80
+博斯高球台,https://ha.msbot.dpdns.org/4gtv_api.php?id=486
+博斯运动一台,https://ha.msbot.dpdns.org/4gtv_api.php?id=487
+博斯无限台,https://ha.msbot.dpdns.org/4gtv_api.php?id=266
+博斯网球台,https://ha.msbot.dpdns.org/4gtv_api.php?id=488
+博斯运动二台,https://ha.msbot.dpdns.org/4gtv_api.php?id=495
+博斯魅力,https://ha.msbot.dpdns.org/4gtv_api.php?id=493
+博斯无限二台,https://ha.msbot.dpdns.org/4gtv_api.php?id=496
+智林体育台,https://ha.msbot.dpdns.org/4gtv_api.php?id=58
+Pet Club TV,https://ha.msbot.dpdns.org/4gtv_api.php?id=19
+民视旅游台,https://ha.msbot.dpdns.org/4gtv_api.php?id=61
+滚动力rollor,https://ha.msbot.dpdns.org/4gtv_api.php?id=249
+亚洲旅游,https://ha.msbot.dpdns.org/4gtv_api.php?id=250
+fun探索娱乐台,https://ha.msbot.dpdns.org/4gtv_api.php?id=274
+History 历史频道,https://ha.msbot.dpdns.org/4gtv_api.php?id=214
+爱尔达综合,https://ha.msbot.dpdns.org/4gtv_api.php?id=237
+TV5MONDE STYLE  生活时尚,https://ha.msbot.dpdns.org/4gtv_api.php?id=178
+公视,https://ha.msbot.dpdns.org/4gtv_api.php?id=337
+民视影剧台,https://ha.msbot.dpdns.org/4gtv_api.php?id=24
+HITS频道,https://ha.msbot.dpdns.org/4gtv_api.php?id=186
+八大精彩台,https://ha.msbot.dpdns.org/4gtv_api.php?id=172
+靖天戏剧台,https://ha.msbot.dpdns.org/4gtv_api.php?id=116
+靖洋戏剧台,https://ha.msbot.dpdns.org/4gtv_api.php?id=118
+CI 罪案侦查频道,https://ha.msbot.dpdns.org/4gtv_api.php?id=215
+视纳华仁纪实频道,https://ha.msbot.dpdns.org/4gtv_api.php?id=38
+影迷数位纪实台,https://ha.msbot.dpdns.org/4gtv_api.php?id=445
+金光布袋戏,https://ha.msbot.dpdns.org/4gtv_api.php?id=236
+采昌影剧台,https://ha.msbot.dpdns.org/4gtv_api.php?id=25
+靖天映画,https://ha.msbot.dpdns.org/4gtv_api.php?id=42
+靖天电影台,https://ha.msbot.dpdns.org/4gtv_api.php?id=82
+影迷数位电影台,https://ha.msbot.dpdns.org/4gtv_api.php?id=40
+amc电影台,https://ha.msbot.dpdns.org/4gtv_api.php?id=39
+CinemaWorld,https://ha.msbot.dpdns.org/4gtv_api.php?id=225
+My Cinema Europe  我的欧洲电影,https://ha.msbot.dpdns.org/4gtv_api.php?id=463
+TVBS综艺台,https://ha.msbot.dpdns.org/4gtv_api.php?id=476
+TVBS台剧台,https://ha.msbot.dpdns.org/4gtv_api.php?id=477
+911頻道,#genre#
+民视第一台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=民視第一台
+民视台湾台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=民視台灣台
+民视,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=民視
+大爱一台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=大愛一台
+中视,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=中視
+华视,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=華視
+三立综合台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=三立綜合台
+客家电视台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=客家電視台
+八大综合台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=八大綜合台
+TVBS精采台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TVBS精采台
+靖天综合台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖天綜合台
+靖天日本台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖天日本台
+新唐人亚太台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=新唐人亞太台
+ARIRANG阿里郎频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=ARIRANG阿里郎頻道
+Global Trekker,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Global Trekker
+原住民频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=原住民頻道
+东森购物二台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=東森購物二台
+LiveABC互动英语频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=LiveABC互動英語頻道
+达芬奇频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=達文西頻道
+ELTV生活英语台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=ELTV生活英語台
+Nick Jr. 儿童频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Nick Jr. 兒童頻道
+尼克儿童频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=尼克兒童頻道
+DreamWorks 梦工厂动画,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=DreamWorks 夢工廠動畫
+靖天卡通台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖天卡通台
+靖洋卡通Nice Bingo,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖洋卡通Nice Bingo
+MOMO亲子台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=MOMO親子台
+东森购物一台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=東森購物一台
+镜电视新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=鏡電視新聞台
+东森新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=東森新聞台
+华视新闻,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=華視新聞
+民视新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=民視新聞台
+三立新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=三立新聞台
+TVBS新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TVBS新聞台
+东森财经新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=東森財經新聞台
+中视新闻,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=中視新聞
+Bloomberg TV,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Bloomberg TV
+寰宇新闻,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=寰宇新聞
+寰宇新闻台湾台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=寰宇新聞台灣台
+SBN全球财经台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=SBN全球財經台
+TVBS,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TVBS
+东森购物四台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=東森購物四台
+民视综艺台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=民視綜藝台
+猪哥亮歌厅秀,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=豬哥亮歌廳秀
+靖天育乐台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖天育樂台
+靖天国际,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖天國際
+靖天欢乐台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖天歡樂台
+靖天资讯台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖天資訊台
+TVBS欢乐台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TVBS歡樂台
+Lifetime 娱乐频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Lifetime 娛樂頻道
+电影原声台CMusic,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=電影原聲台CMusic
+TRACE Urban,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TRACE Urban
+Mezzo Live,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Mezzo Live
+东森购物三台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=東森購物三台
+Getwin Sports运动台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Getwin Sports運動台
+INULTRA,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=INULTRA
+博斯高球台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯高球檯
+博斯高球二台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯高球二台
+博斯运动一台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯運動一台
+博斯无限台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯無限台
+博斯网球台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯網球台
+博斯运动二台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯運動二台
+博斯魅力,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯魅力
+博斯无限二台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯無限二台
+TRACE Sport Stars,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TRACE Sport Stars
+智林体育台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=智林體育台
+时尚运动X,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=時尚運動X
+GINX Esports TV,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=GINX Esports TV
+民视旅游台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=民視旅遊台
+滚动力rollor,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=滾動力rollor
+亚洲旅游,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=亞洲旅遊
+fun探索娱乐台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=fun探索娛樂台
+幸福空間居家台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=幸福空間居家台
+Love Nature,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Love Nature
+History 历史频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=History 歷史頻道
+爱尔达综合,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=愛爾達綜合
+LUXE TV Channel,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=LUXE TV Channel
+TV5MONDE STYLE  生活时尚,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TV5MONDE STYLE  生活時尚
+公视,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=公視
+民视影剧台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=民視影劇台
+HITS频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=HITS頻道
+八大精彩台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=八大精彩台
+靖天戏剧台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖天戲劇台
+靖洋戏剧台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖洋戲劇台
+CI 罪案侦查频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=CI 罪案偵查頻道
+视纳华仁纪实频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=視納華仁紀實頻道
+影迷数位纪实台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=影迷數位紀實台
+金光布袋戏,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=金光布袋戲
+ROCK Entertainment,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=ROCK Entertainment
+OUTtv,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=OUTtv
+采昌影剧台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=采昌影劇台
+靖天映画,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖天映畫
+靖天电影台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=靖天電影台
+wedotv Movies,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=wedotv Movies
+影迷数位电影台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=影迷數位電影台
+amc电影台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=amc電影台
+My Cinema Europe  我的欧洲电影,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=My Cinema Europe  我的歐洲電影
+好消息,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=好消息
+好消息2台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=好消息2台
+大爱二台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=大愛二台
+人间卫视,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=人間衛視
+ABC Australia 澳洲公广频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=ABC Australia 澳洲公廣頻道
+NHK WORLD-JAPAN,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=NHK WORLD-JAPAN
+FRANCE24 英文台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=FRANCE24 英文台
+半岛国际新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=半島國際新聞台
+CNBC Asia 财经台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=CNBC Asia 財經台
+DW德国之声,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=DW德國之聲
+国会频道1,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=國會頻道1
+国会频道2,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=國會頻道2
+经典电影台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=經典電影台
+经典卡通台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=經典卡通台
+精选动漫台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=精選動漫台
+龙华洋片,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=龍華洋片
+龙华经典,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=龍華經典
+韩国娱乐台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=韓國娛樂台
+CLASSICA古典乐,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=CLASSICA古典樂
+车迷 TV,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=車迷 TV
+Cinema World,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Cinema World
+SMART知识台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=SMART知識台
+龙华动画,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=龍華動畫
+龙华电影,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=龍華電影
+龙华日韩台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=龍華日韓台
+龙华偶像,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=龍華偶像
+龙华戏剧,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=龍華戲劇
+台湾戏剧台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=台灣戲劇台
+第1商业台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=第1商業台
