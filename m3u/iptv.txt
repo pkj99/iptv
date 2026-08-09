@@ -148,11 +148,11 @@ MOMO亲子台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=MOMO親子
 华视新闻,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=華視新聞
 民视新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=民視新聞台
 三立新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=三立新聞台
-TVBS新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TVBS新聞台
+TVBS新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TVBS新聞
 东森财经新闻台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=東森財經新聞台
 中视新闻,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=中視新聞
 Bloomberg TV,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Bloomberg TV
-寰宇新闻,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=寰宇新聞
+寰宇新闻,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=寰宇新聞台
 寰宇新闻台湾台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=寰宇新聞台灣台
 SBN全球财经台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=SBN全球財經台
 TVBS,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TVBS
@@ -171,13 +171,13 @@ Mezzo Live,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Mezzo Live
 东森购物三台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=東森購物三台
 Getwin Sports运动台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Getwin Sports運動台
 INULTRA,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=INULTRA
-博斯高球台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯高球檯
+博斯高球台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯高球台
 博斯高球二台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯高球二台
 博斯运动一台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯運動一台
 博斯无限台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯無限台
 博斯网球台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯網球台
 博斯运动二台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯運動二台
-博斯魅力,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯魅力
+博斯魅力,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯魅力台
 博斯无限二台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=博斯無限二台
 TRACE Sport Stars,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TRACE Sport Stars
 智林体育台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=智林體育台
@@ -185,7 +185,7 @@ TRACE Sport Stars,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TRACE 
 GINX Esports TV,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=GINX Esports TV
 民视旅游台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=民視旅遊台
 滚动力rollor,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=滾動力rollor
-亚洲旅游,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=亞洲旅遊
+亚洲旅游,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=亞洲旅遊台
 fun探索娱乐台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=fun探索娛樂台
 幸福空間居家台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=幸福空間居家台
 Love Nature,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=Love Nature
@@ -193,7 +193,7 @@ History 历史频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=His
 爱尔达综合,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=愛爾達綜合
 LUXE TV Channel,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=LUXE TV Channel
 TV5MONDE STYLE  生活时尚,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=TV5MONDE STYLE  生活時尚
-公视,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=公視
+公视,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=公視戲劇
 民视影剧台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=民視影劇台
 HITS频道,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=HITS頻道
 八大精彩台,https://4gtv.tv911.ccwu.cc/playlist?token=tv123&channel=八大精彩台
