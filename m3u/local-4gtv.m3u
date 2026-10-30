@@ -107,7 +107,7 @@ http://192.168.1.249:5050/4gtv-4gtv104/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2
 http://192.168.1.249:5050/4gtv-4gtv152/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv019_mobile.png" tvg-name="东森财经新闻台" group-title="四季頻道",东森财经新闻台
 http://192.168.1.249:5050/4gtv-4gtv153/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn15_mobile.png" tvg-name="寰宇新闻台湾台" group-title="四季頻道",寰宇新闻台湾台
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv156.png" tvg-name="寰宇新闻台湾台" group-title="四季頻道",寰宇新闻台湾台
 http://192.168.1.249:5050/4gtv-4gtv156/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv007_mobile.png" tvg-name="大爱一台" group-title="四季頻道",大爱一台
 http://192.168.1.249:5050/4gtv-live007/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
@@ -165,7 +165,7 @@ http://192.168.1.249:5050/4gtv-live089/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2
 http://192.168.1.249:5050/4gtv-live105/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live106_mobile.png" tvg-name="大爱二台" group-title="四季頻道",大爱二台
 http://192.168.1.249:5050/4gtv-live106/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live107.png" tvg-name="MOMO亲子台" group-title="四季頻道",MOMO亲子台
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/4gtv-live107.png" tvg-name="MOMO亲子台" group-title="四季頻道",MOMO亲子台
 http://192.168.1.249:5050/4gtv-live107/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-live112_mobile.png" tvg-name="Global Trekker" group-title="四季頻道",Global Trekker
 http://192.168.1.249:5050/4gtv-live112/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
@@ -209,7 +209,7 @@ http://192.168.1.249:5050/4gtv-live215/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2
 http://192.168.1.249:5050/4gtv-live401/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv003_mobile.png" tvg-name="民视第一台" group-title="四季頻道",民视第一台
 http://192.168.1.249:5050/4gtv-live403/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn14_mobile.png" tvg-name="寰宇新闻" group-title="四季頻道",寰宇新闻
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn14.png" tvg-name="寰宇新闻" group-title="四季頻道",寰宇新闻
 http://192.168.1.249:5050/4gtv-live408/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv014_mobile.png" tvg-name="时尚运动X" group-title="四季頻道",时尚运动X
 http://192.168.1.249:5050/4gtv-live411/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
@@ -237,7 +237,7 @@ http://192.168.1.249:5050/litv-ftv15/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8
 http://192.168.1.249:5050/litv-ftv16/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
 #EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-ftv17_mobile.png" tvg-name="好消息2台" group-title="四季頻道",好消息2台
 http://192.168.1.249:5050/litv-ftv17/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
-#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn14_mobile.png" tvg-name="寰宇新闻" group-title="四季頻道",寰宇新闻
+#EXTINF:-1 tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_litv-longturn14.png" tvg-name="寰宇新闻" group-title="四季頻道",寰宇新闻
 http://192.168.1.249:5050/litv-longturn14/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV9.png" tvg-name="龙华动画" group-title="四季頻道",龙华动画
 http://192.168.1.249:5050/litv-xinchuang01/index.m3u8?token=uhhhwpBFowWcjyGDf0rS4iW2C8Ml1VmQnnec9UKxsndZNYorc4ws8ajS3xg6G8Xm&proxy=true
